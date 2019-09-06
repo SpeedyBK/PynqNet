@@ -1,29 +1,19 @@
-# Foobar
+# PynqNet
 
-Foobar is a Python library for dealing with word pluralization.
+The PynqNet project will contain IP-Cores which allow to use the eathernet port (Realtek RTL8211E) on Zynq-Devices to get data to
+and from the device. Currenty it is not working and WIP.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
-```bash
-pip install foobar
-```
+toDo...
 
 ## Usage
 
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+toDo...
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+Just don't do it. ^^
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+toDo...
