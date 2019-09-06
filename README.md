@@ -8,7 +8,7 @@ Currenty it is not working and WIP.
 
 ## ToDo
 
-Everything.
+1. Figure out, how to access the Ethernet Chip from the PL.
 
 ## Installation
 
