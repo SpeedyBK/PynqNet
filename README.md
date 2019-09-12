@@ -15,6 +15,11 @@ Currenty it is not working and WIP.
 2. Use the EMIO Ports to establisch a connection between the Ethernet Chip and the PL of the Zynq Device. 
 3. Figure out, how to access the Ethernet Chip correctly.
 
+## IP-Cores or Sub-Designs
+
+1. MinimalEmioExample: This design should just help to understand the EMIO ports of the Zynq PS. There are no PL-Ressourses used. 
+Just the PS to flash some LEDs.
+
 ## Installation
 
 toDo...
