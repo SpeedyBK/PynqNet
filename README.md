@@ -13,7 +13,8 @@ Currenty it is not working and WIP.
 
 1. Figure out if it is possible to access the Ethernet chip with the EMIO-Ports. (DONE)
 2. Use the EMIO Ports to establisch a connection between the Ethernet Chip and the PL of the Zynq Device. 
-3. Figure out, how to access the Ethernet Chip correctly.
+3. Find a testmethode to verify if there is a connection. 
+4. Figure out, how to access the Ethernet Chip correctly.
 
 ## IP-Cores or Sub-Designs
 
