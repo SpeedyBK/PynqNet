@@ -29,6 +29,8 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
+set_property ip_repo_paths /home/benjamin/PynqNet/IpRepository [current_project]
+update_ip_catalog
 set_property ip_output_repo /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/hdl/PynqNetTop_wrapper.vhd
@@ -37,10 +39,10 @@ set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet
 set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_axi_gpio_0_0/PynqNetTop_axi_gpio_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_axi_gpio_0_0/PynqNetTop_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_axi_gpio_0_0/PynqNetTop_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_rst_ps7_0_100M_0/PynqNetTop_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_rst_ps7_0_100M_0/PynqNetTop_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_rst_ps7_0_100M_0/PynqNetTop_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/PynqNetTop_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

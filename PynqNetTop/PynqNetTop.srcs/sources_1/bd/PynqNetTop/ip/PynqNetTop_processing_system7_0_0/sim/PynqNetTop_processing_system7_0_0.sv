@@ -677,6 +677,17 @@
 
 //MODULE DECLARATION
  module PynqNetTop_processing_system7_0_0 (
+  ENET0_GMII_TX_EN,
+  ENET0_GMII_TX_ER,
+  ENET0_GMII_TXD,
+  ENET0_GMII_COL,
+  ENET0_GMII_CRS,
+  ENET0_GMII_RX_CLK,
+  ENET0_GMII_RX_DV,
+  ENET0_GMII_RX_ER,
+  ENET0_GMII_TX_CLK,
+  ENET0_EXT_INTIN,
+  ENET0_GMII_RXD,
   USB0_PORT_INDCTL,
   USB0_VBUS_PWRSELECT,
   USB0_VBUS_PWRFAULT,
@@ -747,7 +758,7 @@
 //PARAMETERS
 
       parameter C_EN_EMIO_PJTAG = 0;
-      parameter C_EN_EMIO_ENET0 = 0;
+      parameter C_EN_EMIO_ENET0 = 1;
       parameter C_EN_EMIO_ENET1 = 0;
       parameter C_EN_EMIO_TRACE = 0;
       parameter C_INCLUDE_TRACE_BUFFER = 0;
@@ -805,6 +816,17 @@
 
 //INPUT AND OUTPUT PORTS
 
+      output  [0 : 0] ENET0_GMII_TX_EN;
+      output  [0 : 0] ENET0_GMII_TX_ER;
+      output  [7 : 0] ENET0_GMII_TXD;
+      input  ENET0_GMII_COL;
+      input  ENET0_GMII_CRS;
+      input  ENET0_GMII_RX_CLK;
+      input  ENET0_GMII_RX_DV;
+      input  ENET0_GMII_RX_ER;
+      input  ENET0_GMII_TX_CLK;
+      input  ENET0_EXT_INTIN;
+      input  [7 : 0] ENET0_GMII_RXD;
       output  [1 : 0] USB0_PORT_INDCTL;
       output  USB0_VBUS_PWRSELECT;
       input  USB0_VBUS_PWRFAULT;
@@ -873,6 +895,9 @@
 
 //REG DECLARATIONS
 
+      reg [0 : 0] ENET0_GMII_TX_EN;
+      reg [0 : 0] ENET0_GMII_TX_ER;
+      reg [7 : 0] ENET0_GMII_TXD;
       reg [1 : 0] USB0_PORT_INDCTL;
       reg USB0_VBUS_PWRSELECT;
       reg M_AXI_GP0_ARVALID;

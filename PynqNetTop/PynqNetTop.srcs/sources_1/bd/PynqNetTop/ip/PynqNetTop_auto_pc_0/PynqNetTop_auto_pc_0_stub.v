@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Thu Sep  5 22:39:39 2019
+// Date        : Thu Sep  5 22:39:38 2019
 // Host        : Laptop running 64-bit Ubuntu 18.04.3 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top PynqNetTop_auto_pc_0 -prefix
+//               PynqNetTop_auto_pc_0_ PynqNetTop_auto_pc_0_stub.v
 // Design      : PynqNetTop_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

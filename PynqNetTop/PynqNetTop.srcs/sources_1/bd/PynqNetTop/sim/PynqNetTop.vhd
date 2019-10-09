@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
---Date        : Thu Sep  5 22:37:35 2019
+--Date        : Mon Oct  7 12:07:56 2019
 --Host        : Laptop running 64-bit Ubuntu 18.04.3 LTS
 --Command     : generate_target PynqNetTop.bd
 --Design      : PynqNetTop
@@ -602,7 +602,7 @@ entity PynqNetTop is
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of PynqNetTop : entity is "PynqNetTop,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=PynqNetTop,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of PynqNetTop : entity is "PynqNetTop,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=PynqNetTop,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=9,numReposBlks=7,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of PynqNetTop : entity is "PynqNetTop.hwdef";
 end PynqNetTop;
@@ -610,6 +610,17 @@ end PynqNetTop;
 architecture STRUCTURE of PynqNetTop is
   component PynqNetTop_processing_system7_0_0 is
   port (
+    ENET0_GMII_TX_EN : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ENET0_GMII_TX_ER : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ENET0_GMII_TXD : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    ENET0_GMII_COL : in STD_LOGIC;
+    ENET0_GMII_CRS : in STD_LOGIC;
+    ENET0_GMII_RX_CLK : in STD_LOGIC;
+    ENET0_GMII_RX_DV : in STD_LOGIC;
+    ENET0_GMII_RX_ER : in STD_LOGIC;
+    ENET0_GMII_TX_CLK : in STD_LOGIC;
+    ENET0_EXT_INTIN : in STD_LOGIC;
+    ENET0_GMII_RXD : in STD_LOGIC_VECTOR ( 7 downto 0 );
     USB0_PORT_INDCTL : out STD_LOGIC_VECTOR ( 1 downto 0 );
     USB0_VBUS_PWRSELECT : out STD_LOGIC;
     USB0_VBUS_PWRFAULT : in STD_LOGIC;
@@ -715,6 +726,26 @@ architecture STRUCTURE of PynqNetTop is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component PynqNetTop_rst_ps7_0_100M_0;
+  component PynqNetTop_PynqNetDebugTop_0_0 is
+  port (
+    clk_i : in STD_LOGIC;
+    reset_i : in STD_LOGIC;
+    out_o : out STD_LOGIC
+  );
+  end component PynqNetTop_PynqNetDebugTop_0_0;
+  component PynqNetTop_xlconcat_0_0 is
+  port (
+    In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In1 : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    dout : out STD_LOGIC_VECTOR ( 7 downto 0 )
+  );
+  end component PynqNetTop_xlconcat_0_0;
+  component PynqNetTop_xlconstant_0_0 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 6 downto 0 )
+  );
+  end component PynqNetTop_xlconstant_0_0;
+  signal PynqNetDebugTop_0_out_o : STD_LOGIC;
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -795,7 +826,12 @@ architecture STRUCTURE of PynqNetTop is
   signal ps7_0_axi_periph_M00_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal ps7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
+  signal NLW_processing_system7_0_ENET0_GMII_TXD_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_processing_system7_0_ENET0_GMII_TX_EN_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_processing_system7_0_ENET0_GMII_TX_ER_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -829,6 +865,12 @@ architecture STRUCTURE of PynqNetTop is
   attribute X_INTERFACE_INFO of btns_4bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 btns_4bits TRI_I";
 begin
   axi_gpio_0_GPIO_TRI_I(3 downto 0) <= btns_4bits_tri_i(3 downto 0);
+PynqNetDebugTop_0: component PynqNetTop_PynqNetDebugTop_0_0
+     port map (
+      clk_i => processing_system7_0_FCLK_CLK0,
+      out_o => PynqNetDebugTop_0_out_o,
+      reset_i => processing_system7_0_FCLK_RESET0_N
+    );
 axi_gpio_0: component PynqNetTop_axi_gpio_0_0
      port map (
       gpio_io_i(3 downto 0) => axi_gpio_0_GPIO_TRI_I(3 downto 0),
@@ -871,6 +913,17 @@ processing_system7_0: component PynqNetTop_processing_system7_0_0
       DDR_VRN => FIXED_IO_ddr_vrn,
       DDR_VRP => FIXED_IO_ddr_vrp,
       DDR_WEB => DDR_we_n,
+      ENET0_EXT_INTIN => '0',
+      ENET0_GMII_COL => '0',
+      ENET0_GMII_CRS => '0',
+      ENET0_GMII_RXD(7 downto 0) => xlconcat_0_dout(7 downto 0),
+      ENET0_GMII_RX_CLK => '0',
+      ENET0_GMII_RX_DV => '0',
+      ENET0_GMII_RX_ER => '0',
+      ENET0_GMII_TXD(7 downto 0) => NLW_processing_system7_0_ENET0_GMII_TXD_UNCONNECTED(7 downto 0),
+      ENET0_GMII_TX_CLK => '0',
+      ENET0_GMII_TX_EN(0) => NLW_processing_system7_0_ENET0_GMII_TX_EN_UNCONNECTED(0),
+      ENET0_GMII_TX_ER(0) => NLW_processing_system7_0_ENET0_GMII_TX_ER_UNCONNECTED(0),
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
@@ -996,5 +1049,15 @@ rst_ps7_0_100M: component PynqNetTop_rst_ps7_0_100M_0
       peripheral_aresetn(0) => rst_ps7_0_100M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => processing_system7_0_FCLK_CLK0
+    );
+xlconcat_0: component PynqNetTop_xlconcat_0_0
+     port map (
+      In0(0) => PynqNetDebugTop_0_out_o,
+      In1(6 downto 0) => xlconstant_0_dout(6 downto 0),
+      dout(7 downto 0) => xlconcat_0_dout(7 downto 0)
+    );
+xlconstant_0: component PynqNetTop_xlconstant_0_0
+     port map (
+      dout(6 downto 0) => xlconstant_0_dout(6 downto 0)
     );
 end STRUCTURE;

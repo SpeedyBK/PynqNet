@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Sep  5 22:39:41 2019
-# Process ID: 9450
+# Start of session at: Mon Oct  7 12:08:33 2019
+# Process ID: 2155
 # Current directory: /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1
 # Command line: vivado -log PynqNetTop_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PynqNetTop_wrapper.tcl
 # Log file: /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/PynqNetTop_wrapper.vds
@@ -11,7 +11,7 @@
 #-----------------------------------------------------------
 source PynqNetTop_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/PynqNet/IpRepository'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
 Command: synth_design -top PynqNetTop_wrapper -part xc7z020clg400-1
 Starting synth_design
@@ -19,33 +19,111 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9474 
+INFO: Helper process launched with PID 2174 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1747.562 ; gain = 154.715 ; free physical = 2390 ; free virtual = 5823
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1748.137 ; gain = 153.715 ; free physical = 1727 ; free virtual = 6500
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'PynqNetTop_wrapper' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/hdl/PynqNetTop_wrapper.vhd:41]
 INFO: [Synth 8-3491] module 'PynqNetTop' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:579' bound to instance 'PynqNetTop_i' of component 'PynqNetTop' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/hdl/PynqNetTop_wrapper.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'PynqNetTop' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:610]
-INFO: [Synth 8-3491] module 'PynqNetTop_axi_gpio_0_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-9450-Laptop/realtime/PynqNetTop_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'PynqNetTop_axi_gpio_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:832]
-INFO: [Synth 8-638] synthesizing module 'PynqNetTop_axi_gpio_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-9450-Laptop/realtime/PynqNetTop_axi_gpio_0_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'PynqNetTop_processing_system7_0_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-9450-Laptop/realtime/PynqNetTop_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'PynqNetTop_processing_system7_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:855]
-INFO: [Synth 8-638] synthesizing module 'PynqNetTop_processing_system7_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-9450-Laptop/realtime/PynqNetTop_processing_system7_0_0_stub.vhdl:76]
+INFO: [Synth 8-3491] module 'PynqNetTop_PynqNetDebugTop_0_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_PynqNetDebugTop_0_0_stub.vhdl:5' bound to instance 'PynqNetDebugTop_0' of component 'PynqNetTop_PynqNetDebugTop_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:868]
+INFO: [Synth 8-638] synthesizing module 'PynqNetTop_PynqNetDebugTop_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_PynqNetDebugTop_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'PynqNetTop_axi_gpio_0_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'PynqNetTop_axi_gpio_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:874]
+INFO: [Synth 8-638] synthesizing module 'PynqNetTop_axi_gpio_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'PynqNetTop_processing_system7_0_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'PynqNetTop_processing_system7_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:897]
+INFO: [Synth 8-638] synthesizing module 'PynqNetTop_processing_system7_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_processing_system7_0_0_stub.vhdl:87]
 INFO: [Synth 8-638] synthesizing module 'PynqNetTop_ps7_0_axi_periph_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:392]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_Z98UMN' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:78]
-INFO: [Synth 8-3491] module 'PynqNetTop_auto_pc_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-9450-Laptop/realtime/PynqNetTop_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'PynqNetTop_auto_pc_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:259]
-INFO: [Synth 8-638] synthesizing module 'PynqNetTop_auto_pc_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-9450-Laptop/realtime/PynqNetTop_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'PynqNetTop_auto_pc_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'PynqNetTop_auto_pc_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'PynqNetTop_auto_pc_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_Z98UMN' (1#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:78]
 INFO: [Synth 8-256] done synthesizing module 'PynqNetTop_ps7_0_axi_periph_0' (2#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:392]
-INFO: [Synth 8-3491] module 'PynqNetTop_rst_ps7_0_100M_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-9450-Laptop/realtime/PynqNetTop_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'PynqNetTop_rst_ps7_0_100M_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:987]
-INFO: [Synth 8-638] synthesizing module 'PynqNetTop_rst_ps7_0_100M_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-9450-Laptop/realtime/PynqNetTop_rst_ps7_0_100M_0_stub.vhdl:21]
-INFO: [Synth 8-256] done synthesizing module 'PynqNetTop' (3#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:610]
-INFO: [Synth 8-256] done synthesizing module 'PynqNetTop_wrapper' (4#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/hdl/PynqNetTop_wrapper.vhd:41]
+INFO: [Synth 8-3491] module 'PynqNetTop_rst_ps7_0_100M_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'PynqNetTop_rst_ps7_0_100M_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:1040]
+INFO: [Synth 8-638] synthesizing module 'PynqNetTop_rst_ps7_0_100M_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/.Xil/Vivado-2155-Laptop/realtime/PynqNetTop_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'PynqNetTop_xlconcat_0_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_xlconcat_0_0/synth/PynqNetTop_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'PynqNetTop_xlconcat_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:1053]
+INFO: [Synth 8-6157] synthesizing module 'PynqNetTop_xlconcat_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_xlconcat_0_0/synth/PynqNetTop_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 7 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 8 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (3#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'PynqNetTop_xlconcat_0_0' (4#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_xlconcat_0_0/synth/PynqNetTop_xlconcat_0_0.v:58]
+INFO: [Synth 8-3491] module 'PynqNetTop_xlconstant_0_0' declared at '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_xlconstant_0_0/synth/PynqNetTop_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'PynqNetTop_xlconstant_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:1059]
+INFO: [Synth 8-6157] synthesizing module 'PynqNetTop_xlconstant_0_0' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_xlconstant_0_0/synth/PynqNetTop_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (5#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PynqNetTop_xlconstant_0_0' (6#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_xlconstant_0_0/synth/PynqNetTop_xlconstant_0_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'PynqNetTop' (7#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/synth/PynqNetTop.vhd:610]
+INFO: [Synth 8-256] done synthesizing module 'PynqNetTop_wrapper' (8#1) [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/hdl/PynqNetTop_wrapper.vhd:41]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
 WARNING: [Synth 8-3331] design s00_couplers_imp_Z98UMN has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_Z98UMN has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design PynqNetTop_ps7_0_axi_periph_0 has unconnected port ACLK
 WARNING: [Synth 8-3331] design PynqNetTop_ps7_0_axi_periph_0 has unconnected port ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1805.281 ; gain = 212.434 ; free physical = 2414 ; free virtual = 5846
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1805.855 ; gain = 211.434 ; free physical = 1752 ; free virtual = 6525
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -58,10 +136,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1808.250 ; gain = 215.402 ; free physical = 2412 ; free virtual = 5845
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1808.824 ; gain = 214.402 ; free physical = 1772 ; free virtual = 6546
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1808.250 ; gain = 215.402 ; free physical = 2412 ; free virtual = 5845
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1808.824 ; gain = 214.402 ; free physical = 1772 ; free virtual = 6546
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -71,28 +149,30 @@ Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd
 Finished Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_processing_system7_0_0/PynqNetTop_processing_system7_0_0/PynqNetTop_processing_system7_0_0_in_context.xdc] for cell 'PynqNetTop_i/processing_system7_0'
 Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_axi_gpio_0_0/PynqNetTop_axi_gpio_0_0/PynqNetTop_axi_gpio_0_0_in_context.xdc] for cell 'PynqNetTop_i/axi_gpio_0'
 Finished Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_axi_gpio_0_0/PynqNetTop_axi_gpio_0_0/PynqNetTop_axi_gpio_0_0_in_context.xdc] for cell 'PynqNetTop_i/axi_gpio_0'
-Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0_in_context.xdc] for cell 'PynqNetTop_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0_in_context.xdc] for cell 'PynqNetTop_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_rst_ps7_0_100M_0/PynqNetTop_rst_ps7_0_100M_0/PynqNetTop_rst_ps7_0_100M_0_in_context.xdc] for cell 'PynqNetTop_i/rst_ps7_0_100M'
 Finished Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_rst_ps7_0_100M_0/PynqNetTop_rst_ps7_0_100M_0/PynqNetTop_rst_ps7_0_100M_0_in_context.xdc] for cell 'PynqNetTop_i/rst_ps7_0_100M'
+Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0_in_context.xdc] for cell 'PynqNetTop_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0/PynqNetTop_auto_pc_0_in_context.xdc] for cell 'PynqNetTop_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_PynqNetDebugTop_0_0/PynqNetTop_PynqNetDebugTop_0_0/PynqNetTop_PynqNetDebugTop_0_0_in_context.xdc] for cell 'PynqNetTop_i/PynqNetDebugTop_0'
+Finished Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.srcs/sources_1/bd/PynqNetTop/ip/PynqNetTop_PynqNetDebugTop_0_0/PynqNetTop_PynqNetDebugTop_0_0/PynqNetTop_PynqNetDebugTop_0_0_in_context.xdc] for cell 'PynqNetTop_i/PynqNetDebugTop_0'
 Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1907.969 ; gain = 0.000 ; free physical = 2315 ; free virtual = 5748
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1910.543 ; gain = 0.000 ; free physical = 1677 ; free virtual = 6450
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1907.969 ; gain = 0.000 ; free physical = 2315 ; free virtual = 5748
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1910.543 ; gain = 0.000 ; free physical = 1677 ; free virtual = 6450
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2384 ; free virtual = 5817
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1750 ; free virtual = 6524
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2384 ; free virtual = 5817
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1750 ; free virtual = 6524
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -360,14 +440,17 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint
 Applied set_property DONT_TOUCH = true for PynqNetTop_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for PynqNetTop_i/processing_system7_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for PynqNetTop_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for PynqNetTop_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for PynqNetTop_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for PynqNetTop_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for PynqNetTop_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for PynqNetTop_i/PynqNetDebugTop_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for PynqNetTop_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for PynqNetTop_i/xlconstant_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2386 ; free virtual = 5819
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1750 ; free virtual = 6524
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2385 ; free virtual = 5818
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1751 ; free virtual = 6524
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -407,7 +490,7 @@ WARNING: [Synth 8-3331] design PynqNetTop_ps7_0_axi_periph_0 has unconnected por
 WARNING: [Synth 8-3331] design PynqNetTop_ps7_0_axi_periph_0 has unconnected port M00_ACLK
 WARNING: [Synth 8-3331] design PynqNetTop_ps7_0_axi_periph_0 has unconnected port M00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2382 ; free virtual = 5818
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1747 ; free virtual = 6523
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -421,13 +504,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'PynqNetTop_i/processing_system7_0/FCLK_CLK0' to pin 'PynqNetTop_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2259 ; free virtual = 5695
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1624 ; free virtual = 6400
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2259 ; free virtual = 5695
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1624 ; free virtual = 6400
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -439,7 +522,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2258 ; free virtual = 5694
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1622 ; free virtual = 6398
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -463,7 +546,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2257 ; free virtual = 5693
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1622 ; free virtual = 6398
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -476,7 +559,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2257 ; free virtual = 5693
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1622 ; free virtual = 6398
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -488,25 +571,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2257 ; free virtual = 5693
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1622 ; free virtual = 6398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2257 ; free virtual = 5693
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1622 ; free virtual = 6398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2257 ; free virtual = 5693
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1622 ; free virtual = 6398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2257 ; free virtual = 5693
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1622 ; free virtual = 6398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -517,51 +600,55 @@ Report BlackBoxes:
 |      |BlackBox name                     |Instances |
 +------+----------------------------------+----------+
 |1     |PynqNetTop_auto_pc_0              |         1|
-|2     |PynqNetTop_axi_gpio_0_0           |         1|
-|3     |PynqNetTop_processing_system7_0_0 |         1|
-|4     |PynqNetTop_rst_ps7_0_100M_0       |         1|
+|2     |PynqNetTop_PynqNetDebugTop_0_0    |         1|
+|3     |PynqNetTop_axi_gpio_0_0           |         1|
+|4     |PynqNetTop_processing_system7_0_0 |         1|
+|5     |PynqNetTop_rst_ps7_0_100M_0       |         1|
 +------+----------------------------------+----------+
 
 Report Cell Usage: 
 +------+-----------------------------------------+------+
 |      |Cell                                     |Count |
 +------+-----------------------------------------+------+
-|1     |PynqNetTop_auto_pc_0_bbox_2              |     1|
-|2     |PynqNetTop_axi_gpio_0_0_bbox_0           |     1|
-|3     |PynqNetTop_processing_system7_0_0_bbox_1 |     1|
-|4     |PynqNetTop_rst_ps7_0_100M_0_bbox_3       |     1|
-|5     |IBUF                                     |     4|
+|1     |PynqNetTop_PynqNetDebugTop_0_0_bbox_0    |     1|
+|2     |PynqNetTop_auto_pc_0_bbox_3              |     1|
+|3     |PynqNetTop_axi_gpio_0_0_bbox_1           |     1|
+|4     |PynqNetTop_processing_system7_0_0_bbox_2 |     1|
+|5     |PynqNetTop_rst_ps7_0_100M_0_bbox_4       |     1|
+|6     |IBUF                                     |     4|
 +------+-----------------------------------------+------+
 
 Report Instance Areas: 
 +------+---------------------+------------------------------+------+
 |      |Instance             |Module                        |Cells |
 +------+---------------------+------------------------------+------+
-|1     |top                  |                              |   418|
-|2     |  PynqNetTop_i       |PynqNetTop                    |   414|
+|1     |top                  |                              |   429|
+|2     |  PynqNetTop_i       |PynqNetTop                    |   425|
 |3     |    ps7_0_axi_periph |PynqNetTop_ps7_0_axi_periph_0 |   177|
 |4     |      s00_couplers   |s00_couplers_imp_Z98UMN       |   177|
+|5     |    xlconcat_0       |PynqNetTop_xlconcat_0_0       |     0|
+|6     |    xlconstant_0     |PynqNetTop_xlconstant_0_0     |     0|
 +------+---------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2257 ; free virtual = 5693
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1622 ; free virtual = 6398
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1907.969 ; gain = 215.402 ; free physical = 2314 ; free virtual = 5750
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1907.969 ; gain = 315.121 ; free physical = 2314 ; free virtual = 5750
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1910.543 ; gain = 214.402 ; free physical = 1679 ; free virtual = 6455
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1910.543 ; gain = 316.121 ; free physical = 1679 ; free virtual = 6455
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1919.750 ; gain = 0.000 ; free physical = 2257 ; free virtual = 5692
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1920.324 ; gain = 0.000 ; free physical = 1624 ; free virtual = 6400
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+43 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1919.750 ; gain = 519.531 ; free physical = 2347 ; free virtual = 5783
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1919.750 ; gain = 0.000 ; free physical = 2347 ; free virtual = 5783
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1920.324 ; gain = 496.289 ; free physical = 1714 ; free virtual = 6490
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1920.324 ; gain = 0.000 ; free physical = 1714 ; free virtual = 6490
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/PynqNetTop_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file PynqNetTop_wrapper_utilization_synth.rpt -pb PynqNetTop_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Sep  5 22:40:17 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 12:09:00 2019...

@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Sep  5 22:39:41 2019
-# Process ID: 9450
+# Start of session at: Mon Oct  7 12:08:33 2019
+# Process ID: 2155
 # Current directory: /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1
 # Command line: vivado -log PynqNetTop_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PynqNetTop_wrapper.tcl
 # Log file: /home/benjamin/PynqNet/PynqNetTop/PynqNetTop.runs/synth_1/PynqNetTop_wrapper.vds
