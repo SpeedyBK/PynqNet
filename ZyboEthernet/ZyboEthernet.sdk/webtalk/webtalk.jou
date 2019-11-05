@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# 
+# Start of session at: Mon Nov  4 14:52:10 2019
+# Process ID: 16087
+# Current directory: /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/webtalk/webtalk.log
+# Journal file: /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

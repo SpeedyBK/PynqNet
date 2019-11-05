@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/benjamin/PynqNet/ZyNet/src/ZyNet/Base.cpp
+cstring
+-
+Base.h
+/home/benjamin/PynqNet/ZyNet/src/ZyNet/Base.h
+Exception.h
+/home/benjamin/PynqNet/ZyNet/src/ZyNet/Exception.h
+
+/home/benjamin/PynqNet/ZyNet/src/ZyNet/Base.h
+iostream
+-
+sys/types.h
+-
+sys/socket.h
+-
+netdb.h
+-
+string.h
+-
+string
+-
+unistd.h
+-
+arpa/inet.h
+-
+
+/home/benjamin/PynqNet/ZyNet/src/ZyNet/Exception.h
+exception
+-
+ostream
+-
+

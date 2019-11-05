@@ -1,0 +1,1246 @@
+13:51:49 **** Build of project standalone_bsp_0 ****
+make -k all 
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ddrps
+arm-none-eabi-ar: Erzeugen von ../../../lib/libxil.a
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling dmaps
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling cpu_cortexa9
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scugic
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling emacps
+Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ttcps
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling standalone
+In file included from xtime_l.c:49:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:56:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling qspips
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling xadcps
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling sdps
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling devcfg
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scuwdt
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling usbps
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling scutimer
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling coresightps_dcc
+Finished building libraries
+13:52:37 **** Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54368	   2336	3168560	3225264	 3136b0	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+13:52:39 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:20:37 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:419:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54208	   2336	3168560	3225104	 313610	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+14:23:39 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:479:59: error: 'PhyReg1' undeclared (first use in this function); did you mean 'PhyReg21'?
+  Status = XEmacPs_PhyRead(EmacPsInstancePtr, PhyAddr, 1, &PhyReg1);
+                                                           ^~~~~~~
+                                                           PhyReg21
+../src/xemacps_example_util.c:479:59: note: each undeclared identifier is reported only once for each function it appears in
+../src/xemacps_example_util.c:480:21: error: 'PHY_R1_AN_COMPLETE' undeclared (first use in this function)
+  while (!(PhyReg1 & PHY_R1_AN_COMPLETE)) {
+                     ^~~~~~~~~~~~~~~~~~
+../src/xemacps_example_util.c:419:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+src/subdir.mk:24: recipe for target 'src/xemacps_example_util.o' failed
+make: *** [src/xemacps_example_util.o] Error 1
+14:24:06 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:481:59: error: 'PhyReg1' undeclared (first use in this function); did you mean 'PhyReg21'?
+  Status = XEmacPs_PhyRead(EmacPsInstancePtr, PhyAddr, 1, &PhyReg1);
+                                                           ^~~~~~~
+                                                           PhyReg21
+../src/xemacps_example_util.c:481:59: note: each undeclared identifier is reported only once for each function it appears in
+../src/xemacps_example_util.c:421:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+src/subdir.mk:24: recipe for target 'src/xemacps_example_util.o' failed
+make: *** [src/xemacps_example_util.o] Error 1
+14:25:12 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:483:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Status'
+  Status = XEmacPs_PhyRead(EmacPsInstancePtr, PhyAddr, 1, &PhyReg1);
+  ^~~~~~
+../src/xemacps_example_util.c:483:59: error: 'PhyReg1' undeclared (first use in this function); did you mean 'PhyReg21'?
+  Status = XEmacPs_PhyRead(EmacPsInstancePtr, PhyAddr, 1, &PhyReg1);
+                                                           ^~~~~~~
+                                                           PhyReg21
+../src/xemacps_example_util.c:483:59: note: each undeclared identifier is reported only once for each function it appears in
+../src/xemacps_example_util.c:421:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+src/subdir.mk:24: recipe for target 'src/xemacps_example_util.o' failed
+make: *** [src/xemacps_example_util.o] Error 1
+14:25:20 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:421:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54300	   2336	3168560	3225196	 31366c	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+14:27:45 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:495:8: error: 'i' undeclared (first use in this function)
+    for(i=0;i<0xfffff;i++);
+        ^
+../src/xemacps_example_util.c:495:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+src/subdir.mk:24: recipe for target 'src/xemacps_example_util.o' failed
+make: *** [src/xemacps_example_util.o] Error 1
+14:28:04 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54444	   2336	3168560	3225340	 3136fc	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+14:28:23 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:31:17 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:33:25 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54508	   2336	3168560	3225404	 31373c	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+14:33:45 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:37:38 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54444	   2336	3168560	3225340	 3136fc	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+14:37:45 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:44:35 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54388	   2336	3168560	3225284	 3136c4	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+14:44:42 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:48:17 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:50:49 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54388	   2336	3168560	3225284	 3136c4	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+14:50:53 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:51:00 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:53:16 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:56:02 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54388	   2336	3168560	3225284	 3136c4	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+14:56:08 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:57:33 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54452	   2336	3168560	3225348	 313704	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+14:57:40 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:57:49 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:58:15 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:59:12 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:00:08 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54460	   2336	3168560	3225356	 31370c	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:00:10 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:01:19 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54452	   2336	3168560	3225348	 313704	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:02:11 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54444	   2336	3168560	3225340	 3136fc	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:02:46 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:03:49 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54388	   2336	3168560	3225284	 3136c4	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:03:53 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:04:39 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54452	   2336	3168560	3225348	 313704	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:05:49 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54452	   2336	3168560	3225348	 313704	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:07:40 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:496:8: error: 'i' undeclared (first use in this function)
+    for(i=0;i<0xfffff;i++);
+        ^
+../src/xemacps_example_util.c:496:8: note: each undeclared identifier is reported only once for each function it appears in
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+src/subdir.mk:24: recipe for target 'src/xemacps_example_util.o' failed
+make: *** [src/xemacps_example_util.o] Error 1
+15:07:53 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54452	   2336	3168560	3225348	 313704	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:07:56 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:09:50 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54452	   2336	3168560	3225348	 313704	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:12:01 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:12:52 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:14:05 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:22:22 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54800	   2336	3168560	3225696	 313860	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:22:29 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:26:34 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54952	   2336	3168560	3225848	 3138f8	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:26:38 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:29:36 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55072	   2336	3168560	3225968	 313970	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:29:40 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:38:17 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:422:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55072	   2336	3168560	3225968	 313970	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:42:59 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55072	   2336	3168560	3225968	 313970	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:43:05 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:45:19 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:673:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54888	   2336	3168560	3225784	 3138b8	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:45:24 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:46:05 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:673:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54976	   2336	3168560	3225872	 313910	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:46:12 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+15:49:07 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:671:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54912	   2336	3168560	3225808	 3138d0	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+15:49:18 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+16:00:53 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:671:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55716	   2336	3168560	3226612	 313bf4	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+16:01:03 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+16:08:56 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+16:10:57 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:673:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55780	   2336	3168560	3226676	 313c34	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+16:14:42 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:835:43: error: expected ';' before 'Status'
+  xil_printf("Postprecessing Done .. \r\n")
+                                           ^
+                                           ;
+../src/xemacps_example_intr_dma.c:846:2:
+  Status = XEmacPs_BdRingFree(&(XEmacPs_GetTxRing(EmacPsInstancePtr)),
+  ~~~~~~                                    
+../src/xemacps_example_intr_dma.c:673:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+make: *** [src/xemacps_example_intr_dma.o] Error 1
+src/subdir.mk:24: recipe for target 'src/xemacps_example_intr_dma.o' failed
+16:15:21 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:673:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55808	   2336	3168560	3226704	 313c50	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+16:16:49 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:671:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55744	   2336	3168560	3226640	 313c10	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+16:17:29 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+16:18:40 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:671:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55744	   2336	3168560	3226640	 313c10	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+16:31:18 **** Auto Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+../src/xemacps_example_intr_dma.c: In function 'EmacPsDmaSingleFrameIntrExample':
+../src/xemacps_example_intr_dma.c:671:6: warning: variable 'RxFrLen' set but not used [-Wunused-but-set-variable]
+  u32 RxFrLen;
+      ^~~~~~~
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:436:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56116	   2336	3168560	3227012	 313d84	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+16:31:22 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+16:32:21 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:436:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56116	   2336	3168560	3227012	 313d84	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+16:33:43 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:438:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56116	   2336	3168560	3227012	 313d84	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+16:35:38 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:440:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56180	   2336	3168560	3227076	 313dc4	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
+16:46:21 **** Incremental Build of configuration Debug for project standalone_bsp_0_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+../src/xemacps_example_util.c: In function 'EmacPsUtilMarvellPhyLoopback':
+../src/xemacps_example_util.c:511:6: warning: unused variable 'PhyReg22' [-Wunused-variable]
+  u16 PhyReg22  = 0;
+      ^~~~~~~~
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: standalone_bsp_0_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size standalone_bsp_0_xemacps_example_intr_dma_1.elf  |tee "standalone_bsp_0_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57588	   2336	3168560	3228484	 314344	standalone_bsp_0_xemacps_example_intr_dma_1.elf
+Finished building: standalone_bsp_0_xemacps_example_intr_dma_1.elf.size
+ 
