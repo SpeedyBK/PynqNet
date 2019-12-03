@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CRC-Generator.srcs/sources_1/new/crc_generator.vhd" \
+"../../../../CRC-Generator.srcs/sim_1/new/crc_TB.vhd" \
+
+# Do not sort compile order
+nosort

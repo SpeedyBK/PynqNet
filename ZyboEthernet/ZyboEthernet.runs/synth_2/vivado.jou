@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  5 10:21:36 2019
+# Process ID: 20337
+# Current directory: /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.runs/synth_2
+# Command line: vivado -log ZyboEthernet_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ZyboEthernet_wrapper.tcl
+# Log file: /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.runs/synth_2/ZyboEthernet_wrapper.vds
+# Journal file: /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.runs/synth_2/vivado.jou
+#-----------------------------------------------------------
+source ZyboEthernet_wrapper.tcl -notrace

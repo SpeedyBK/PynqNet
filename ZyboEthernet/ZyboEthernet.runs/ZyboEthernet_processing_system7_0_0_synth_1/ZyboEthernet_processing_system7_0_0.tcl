@@ -19,7 +19,7 @@ proc create_report { reportName command } {
 }
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
-create_project -in_memory -part xc7z010clg400-1
+create_project -in_memory -part xc7z020clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -29,7 +29,7 @@ set_property webtalk.parent_dir /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet
 set_property parent.project_path /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
+set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
 set_property ip_output_repo /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.srcs/sources_1/bd/ZyboEthernet/ip/ZyboEthernet_processing_system7_0_0/ZyboEthernet_processing_system7_0_0.xci
@@ -52,7 +52,7 @@ set cached_ip [config_ip_cache -export -no_bom  -dir /home/benjamin/PynqNet/Zybo
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
 
-synth_design -top ZyboEthernet_processing_system7_0_0 -part xc7z010clg400-1 -mode out_of_context
+synth_design -top ZyboEthernet_processing_system7_0_0 -part xc7z020clg400-1 -mode out_of_context
 
 #---------------------------------------------------------
 # Generate Checkpoint/Stub/Simulation Files For IP Cache

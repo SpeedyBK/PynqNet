@@ -2129,3 +2129,239 @@ con
 
 16:46:30 INFO  : Launch script is exported to file '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_standalone_bsp_0_xemacps_example_intr_dma_1.elf_on_local.tcl'
 16:47:22 INFO  : Disconnected from the channel tcfchan#39.
+10:25:46 INFO  : Registering command handlers for SDK TCF services
+10:25:49 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/temp_xsdb_launch_script.tcl
+10:25:53 INFO  : XSCT server has started successfully.
+10:25:53 INFO  : Successfully done setting XSCT server connection channel  
+10:25:53 INFO  : Successfully done setting SDK workspace  
+10:25:53 INFO  : Processing command line option -hwspec /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper.hdf.
+10:25:53 INFO  : Checking for hwspec changes in the project ZyboEthernet_wrapper_hw_platform_0.
+10:25:59 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1572945873000,  Project:1572871275000
+10:25:59 INFO  : The hardware specification for project 'ZyboEthernet_wrapper_hw_platform_0' is different from /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper.hdf.
+10:25:59 INFO  : Copied contents of /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper.hdf into /ZyboEthernet_wrapper_hw_platform_0/system.hdf.
+10:26:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:26:05 INFO  : 
+10:26:06 INFO  : Updating hardware inferred compiler options for standalone_bsp_0_xemacps_example_intr_dma_1.
+10:26:06 INFO  : Clearing existing target manager status.
+10:26:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A9395CA" && level==0} -index 1' command is executed.
+10:26:56 INFO  : 'fpga -state' command is executed.
+10:27:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:00 WARN  : Part name present in the hardware specification 'xc7z010clg400-1' doesn't match the one present on the target 'xc7z020'.
+10:27:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:27:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A9395CA" && level==0} -index 1' command is executed.
+10:27:18 INFO  : 'fpga -state' command is executed.
+10:27:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:19 WARN  : Part name present in the hardware specification 'xc7z010clg400-1' doesn't match the one present on the target 'xc7z020'.
+10:27:21 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A9395CA' is selected.
+10:27:21 INFO  : 'jtag frequency' command is executed.
+10:27:21 INFO  : Sourcing of '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:27:21 INFO  : Context for 'APU' is selected.
+10:27:21 INFO  : Hardware design information is loaded from '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf'.
+10:27:21 INFO  : 'configparams force-mem-access 1' command is executed.
+10:27:21 INFO  : Context for 'APU' is selected.
+10:27:21 INFO  : 'stop' command is executed.
+10:27:22 INFO  : 'ps7_init' command is executed.
+10:27:22 INFO  : 'ps7_post_config' command is executed.
+10:27:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:27:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:27:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:27:24 ERROR : Memory write error at 0x100000. APB AP transaction error, DAP status f0000021
+10:27:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A9395CA"} -index 0
+loadhw -hw /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A9395CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A9395CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A9395CA"} -index 0
+dow /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/standalone_bsp_0_xemacps_example_intr_dma_1/Debug/standalone_bsp_0_xemacps_example_intr_dma_1.elf
+----------------End of Script----------------
+
+10:41:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574055A" && level==0} -index 1' command is executed.
+10:41:37 INFO  : 'fpga -state' command is executed.
+10:41:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:41:40 INFO  : Jtag cable 'Digilent Zybo 210279574055A' is selected.
+10:41:40 INFO  : 'jtag frequency' command is executed.
+10:41:40 INFO  : Sourcing of '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:41:40 INFO  : Context for 'APU' is selected.
+10:41:40 INFO  : Hardware design information is loaded from '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf'.
+10:41:40 INFO  : 'configparams force-mem-access 1' command is executed.
+10:41:40 INFO  : Context for 'APU' is selected.
+10:41:40 INFO  : 'stop' command is executed.
+10:41:40 INFO  : 'ps7_init' command is executed.
+10:41:41 INFO  : 'ps7_post_config' command is executed.
+10:41:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:41:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:41 INFO  : The application '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/standalone_bsp_0_xemacps_example_intr_dma_1/Debug/standalone_bsp_0_xemacps_example_intr_dma_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:41:41 INFO  : 'configparams force-mem-access 0' command is executed.
+10:41:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+loadhw -hw /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+dow /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/standalone_bsp_0_xemacps_example_intr_dma_1/Debug/standalone_bsp_0_xemacps_example_intr_dma_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:41:41 INFO  : Memory regions updated for context APU
+10:41:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:41:41 INFO  : 'con' command is executed.
+10:41:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+con
+----------------End of Script----------------
+
+10:41:41 INFO  : Launch script is exported to file '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_standalone_bsp_0_xemacps_example_intr_dma_1.elf_on_local.tcl'
+10:42:23 INFO  : Disconnected from the channel tcfchan#1.
+10:42:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574055A" && level==0} -index 1' command is executed.
+10:42:24 INFO  : 'fpga -state' command is executed.
+10:42:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:27 INFO  : Jtag cable 'Digilent Zybo 210279574055A' is selected.
+10:42:27 INFO  : 'jtag frequency' command is executed.
+10:42:27 INFO  : Sourcing of '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:42:27 INFO  : Context for 'APU' is selected.
+10:42:29 INFO  : Hardware design information is loaded from '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf'.
+10:42:29 INFO  : 'configparams force-mem-access 1' command is executed.
+10:42:29 INFO  : Context for 'APU' is selected.
+10:42:29 INFO  : 'stop' command is executed.
+10:42:30 INFO  : 'ps7_init' command is executed.
+10:42:30 INFO  : 'ps7_post_config' command is executed.
+10:42:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:42:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:30 INFO  : The application '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/standalone_bsp_0_xemacps_example_intr_dma_1/Debug/standalone_bsp_0_xemacps_example_intr_dma_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:42:30 INFO  : 'configparams force-mem-access 0' command is executed.
+10:42:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+loadhw -hw /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+dow /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/standalone_bsp_0_xemacps_example_intr_dma_1/Debug/standalone_bsp_0_xemacps_example_intr_dma_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:42:30 INFO  : Memory regions updated for context APU
+10:42:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:42:30 INFO  : 'con' command is executed.
+10:42:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+con
+----------------End of Script----------------
+
+10:42:30 INFO  : Launch script is exported to file '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_standalone_bsp_0_xemacps_example_intr_dma_1.elf_on_local.tcl'
+10:53:39 INFO  : Disconnected from the channel tcfchan#2.
+10:53:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574055A" && level==0} -index 1' command is executed.
+10:53:40 INFO  : 'fpga -state' command is executed.
+10:53:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:53:42 INFO  : Jtag cable 'Digilent Zybo 210279574055A' is selected.
+10:53:42 INFO  : 'jtag frequency' command is executed.
+10:53:42 INFO  : Sourcing of '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:53:42 INFO  : Context for 'APU' is selected.
+10:53:42 INFO  : Hardware design information is loaded from '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf'.
+10:53:42 INFO  : 'configparams force-mem-access 1' command is executed.
+10:53:42 INFO  : Context for 'APU' is selected.
+10:53:42 INFO  : 'stop' command is executed.
+10:53:42 INFO  : 'ps7_init' command is executed.
+10:53:42 INFO  : 'ps7_post_config' command is executed.
+10:53:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:53:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:53:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:53:42 INFO  : The application '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/standalone_bsp_0_xemacps_example_intr_dma_1/Debug/standalone_bsp_0_xemacps_example_intr_dma_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:53:42 INFO  : 'configparams force-mem-access 0' command is executed.
+10:53:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+loadhw -hw /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+dow /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/standalone_bsp_0_xemacps_example_intr_dma_1/Debug/standalone_bsp_0_xemacps_example_intr_dma_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:53:42 INFO  : Memory regions updated for context APU
+10:53:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:53:43 INFO  : 'con' command is executed.
+10:53:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+con
+----------------End of Script----------------
+
+10:53:43 INFO  : Launch script is exported to file '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_standalone_bsp_0_xemacps_example_intr_dma_1.elf_on_local.tcl'
+11:30:29 INFO  : Disconnected from the channel tcfchan#3.
+11:30:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo 210279574055A" && level==0} -index 1' command is executed.
+11:30:31 INFO  : 'fpga -state' command is executed.
+11:30:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:30:32 INFO  : Jtag cable 'Digilent Zybo 210279574055A' is selected.
+11:30:32 INFO  : 'jtag frequency' command is executed.
+11:30:32 INFO  : Sourcing of '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:30:32 INFO  : Context for 'APU' is selected.
+11:30:32 INFO  : Hardware design information is loaded from '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf'.
+11:30:32 INFO  : 'configparams force-mem-access 1' command is executed.
+11:30:32 INFO  : Context for 'APU' is selected.
+11:30:32 INFO  : 'stop' command is executed.
+11:30:32 INFO  : 'ps7_init' command is executed.
+11:30:32 INFO  : 'ps7_post_config' command is executed.
+11:30:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:30:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:30:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:30:33 INFO  : The application '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/standalone_bsp_0_xemacps_example_intr_dma_1/Debug/standalone_bsp_0_xemacps_example_intr_dma_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:30:33 INFO  : 'configparams force-mem-access 0' command is executed.
+11:30:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+loadhw -hw /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/ZyboEthernet_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+dow /home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/standalone_bsp_0_xemacps_example_intr_dma_1/Debug/standalone_bsp_0_xemacps_example_intr_dma_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:30:33 INFO  : Memory regions updated for context APU
+11:30:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:30:33 INFO  : 'con' command is executed.
+11:30:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo 210279574055A"} -index 0
+con
+----------------End of Script----------------
+
+11:30:33 INFO  : Launch script is exported to file '/home/benjamin/PynqNet/ZyboEthernet/ZyboEthernet.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_standalone_bsp_0_xemacps_example_intr_dma_1.elf_on_local.tcl'
+15:45:43 INFO  : Disconnected from the channel tcfchan#4.
