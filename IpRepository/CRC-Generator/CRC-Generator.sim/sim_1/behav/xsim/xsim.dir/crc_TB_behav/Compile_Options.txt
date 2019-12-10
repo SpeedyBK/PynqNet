@@ -1,1 +1,1 @@
--wto "d12cc4fe205646538daf1b5100dfc90e" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "crc_TB_behav" "xil_defaultlib.crc_TB" -log "elaborate.log" 
+-wto "d12cc4fe205646538daf1b5100dfc90e" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "crc_TB_behav" "xil_defaultlib.crc_TB" -log "elaborate.log" 

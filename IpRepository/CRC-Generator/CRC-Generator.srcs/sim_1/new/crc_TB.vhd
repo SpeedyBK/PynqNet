@@ -270,6 +270,8 @@ begin
             elsif (count = 360*4) then 
                 data <= data_byte_62;             
             end if; 
+        elsif (count > 360*4 + 10) then 
+            calc <= '0';
         else
             reset <= '1';
             val <= '0';
