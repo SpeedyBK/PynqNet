@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Dec 16 09:47:16 2019
+# Process ID: 6686
+# Current directory: /home/bkessler/Repositories/PynqNet
+# Command line: vivado
+# Log file: /home/bkessler/Repositories/PynqNet/vivado.log
+# Journal file: /home/bkessler/Repositories/PynqNet/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/bkessler/Repositories/PynqNet/IpRepository/EtherNetComponent/EtherNetComponent.xpr
+INFO: [Project 1-313] Project file moved from '/home/benjamin/Repositories/PynqNet/IpRepository/EtherNetComponent' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2019) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2019) not recognized by Vivado. 
+
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory '/home/bkessler/Repositories/PynqNet/IpRepository/EtherNetComponent/EtherNetComponent.ip_user_files', nor could it be found using path '/home/benjamin/Repositories/PynqNet/IpRepository/EtherNetComponent/EtherNetComponent.ip_user_files'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name MEMEnableMemoryMapGeneration
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for www.digilentinc.com:pynq-z1:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+WARNING: [Project 1-231] Project 'EtherNetComponent.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/vivado2018.1/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 6321.715 ; gain = 149.684 ; free physical = 112481 ; free virtual = 153895
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 09:50:33 2019...
