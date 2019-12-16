@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section name="Workbench">
-	<item value="Local" key="ZyboEthernet_wrapper_hw_platform_0-target"/>
-	<item value="ZyboEthernet_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
-	<item value="Auto Detect" key="ZyboEthernet_wrapper_hw_platform_0-device"/>
-	<item value="false" key="ZyboEthernet_wrapper_hw_platform_0-partial_bit"/>
-	<item value="" key="ZyboEthernet_wrapper_hw_platform_0-bmmFile"/>
-	<item value="ZyboEthernet_wrapper.bit" key="ZyboEthernet_wrapper_hw_platform_0-bitFile"/>
-</section>
