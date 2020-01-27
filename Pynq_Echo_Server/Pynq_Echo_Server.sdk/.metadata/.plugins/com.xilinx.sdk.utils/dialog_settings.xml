@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug" key="bootgen_files_selection"/>
+	<item value="/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/FSBL/Debug" key="zynq_flash_files_selection"/>
+	<item value="/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/FSBL/Debug" key="last_stored_selection"/>
+</section>
