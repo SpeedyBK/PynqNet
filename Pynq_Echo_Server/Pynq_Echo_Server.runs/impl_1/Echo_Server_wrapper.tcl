@@ -60,6 +60,8 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,16 +72,19 @@ set rc [catch {
   set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt [current_project]
-  set_property parent.project_path /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.xpr [current_project]
-  set_property ip_output_repo /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt [current_project]
+  set_property parent.project_path /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.xpr [current_project]
+  set_property ip_repo_paths /home/benjamin/Repositories/PynqNet/IpRepository/Display/SixDigitHexDisplay_1.0 [current_project]
+  update_ip_catalog
+  set_property ip_output_repo /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/Echo_Server_wrapper.dcp
+  add_files -quiet /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/Echo_Server_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/Echo_Server.bd
+  add_files /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/Echo_Server.bd
   set_param project.isImplRun false
+  read_xdc /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc
   set_param project.isImplRun true
   link_design -top Echo_Server_wrapper -part xc7z020clg400-1
   set_param project.isImplRun false

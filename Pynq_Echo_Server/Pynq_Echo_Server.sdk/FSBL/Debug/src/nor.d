@@ -16,7 +16,7 @@ src/nor.o src/nor.o: ../src/nor.c ../src/fsbl.h \
  ../../FSBL_bsp/ps7_cortexa9_0/include/xil_io.h \
  ../../FSBL_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../FSBL_bsp/ps7_cortexa9_0/include/xil_assert.h ../src/fsbl_debug.h \
- /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.h \
+ /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.h \
  ../src/nor.h ../../FSBL_bsp/ps7_cortexa9_0/include/xstatus.h
 
 ../src/fsbl.h:
@@ -59,7 +59,7 @@ src/nor.o src/nor.o: ../src/nor.c ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.h:
+/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.h:
 
 ../src/nor.h:
 

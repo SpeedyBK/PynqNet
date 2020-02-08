@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1'
+HD_PWD='/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

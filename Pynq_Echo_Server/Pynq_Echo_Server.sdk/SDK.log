@@ -323,3 +323,9 @@ con
 22:29:51 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/benjamin/Pynq_Echo_Server/BOOT.bin
 22:29:51 INFO  : Creating new bif file /home/benjamin/Pynq_Echo_Server/output.bif
 22:29:53 INFO  : Bootgen command execution is done.
+12:43:02 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
+12:43:04 INFO  : XSCT server has started successfully.
+12:43:04 INFO  : Successfully done setting XSCT server connection channel  
+12:43:04 INFO  : Successfully done setting SDK workspace  
+12:43:09 INFO  : Registering command handlers for SDK TCF services
+12:43:09 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
