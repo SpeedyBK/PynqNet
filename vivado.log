@@ -1,31 +1,1305 @@
 #-----------------------------------------------------------
-# Vivado v2018.1 (64-bit)
-# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
-# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Mon Dec 16 09:47:16 2019
-# Process ID: 6686
-# Current directory: /home/bkessler/Repositories/PynqNet
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Feb  9 16:09:52 2020
+# Process ID: 17533
+# Current directory: /home/benjamin/Repositories/PynqNet
 # Command line: vivado
-# Log file: /home/bkessler/Repositories/PynqNet/vivado.log
-# Journal file: /home/bkessler/Repositories/PynqNet/vivado.jou
+# Log file: /home/benjamin/Repositories/PynqNet/vivado.log
+# Journal file: /home/benjamin/Repositories/PynqNet/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/bkessler/Repositories/PynqNet/IpRepository/EtherNetComponent/EtherNetComponent.xpr
-INFO: [Project 1-313] Project file moved from '/home/benjamin/Repositories/PynqNet/IpRepository/EtherNetComponent' since last save.
+open_project /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.xpr
 Scanning sources...
 Finished scanning sources
-CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2019) not recognized by Vivado. 
-
-CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2019) not recognized by Vivado. 
-
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory '/home/bkessler/Repositories/PynqNet/IpRepository/EtherNetComponent/EtherNetComponent.ip_user_files', nor could it be found using path '/home/benjamin/Repositories/PynqNet/IpRepository/EtherNetComponent/EtherNetComponent.ip_user_files'.
-CRITICAL WARNING: [Project 1-505] Unrecognized Option Name MEMEnableMemoryMapGeneration
-CRITICAL WARNING: [Board 49-67] The board_part definition was not found for www.digilentinc.com:pynq-z1:part0:1.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
-WARNING: [Project 1-231] Project 'EtherNetComponent.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/vivado2018.1/Vivado/2018.1/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 6321.715 ; gain = 149.684 ; free physical = 112481 ; free virtual = 153895
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/IpRepository/Display/SixDigitHexDisplay_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 6526.488 ; gain = 140.402 ; free physical = 2479 ; free virtual = 7592
 update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {/home/benjamin/Repositories/PynqNet/IpRepository/Display/SixDigitHexDisplay_1.0 /home/benjamin/Repositories/PynqNet/IpRepository} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/benjamin/Repositories/PynqNet/IpRepository/Display/SixDigitHexDisplay_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/IpRepository'.
+set_property  ip_repo_paths  /home/benjamin/Repositories/PynqNet/IpRepository [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/IpRepository'.
+open_bd_design {/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/Echo_Server.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- user.org:user:SixDigitHexDisplay:1.0 - SixDigitHexDisplay_0
+Successfully read diagram <Echo_Server> from BD file </home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/Echo_Server.bd>
+validate_bd_design -force
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+startgroup
+create_bd_cell -type ip -vlnv user.org:user:ManInput:1.0 ManInput_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/ManInput_0/S00_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins ManInput_0/S00_AXI]
+Slave segment </ManInput_0/S00_AXI/S00_AXI_reg> is being mapped into address space </processing_system7_0/Data> at <0x43C1_0000 [ 64K ]>
+startgroup
+create_bd_port -dir I push_to_send_i
+connect_bd_net [get_bd_pins /ManInput_0/push_to_send_i] [get_bd_ports push_to_send_i]
+endgroup
+startgroup
+create_bd_port -dir I -from 7 -to 0 switches_i
+connect_bd_net [get_bd_pins /ManInput_0/switches_i] [get_bd_ports switches_i]
+endgroup
+startgroup
+create_bd_port -dir O -from 7 -to 0 bleds_o
+connect_bd_net [get_bd_pins /ManInput_0/bleds_o] [get_bd_ports bleds_o]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7_0' with propagated value(100). Command ignored
+reset_run Echo_Server_xbar_0_synth_1
+launch_runs Echo_Server_xbar_0_synth_1
+[Sun Feb  9 16:14:29 2020] Launched Echo_Server_xbar_0_synth_1...
+Run output will be captured here: /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_xbar_0_synth_1/runme.log
+wait_on_run Echo_Server_xbar_0_synth_1
+[Sun Feb  9 16:14:29 2020] Waiting for Echo_Server_xbar_0_synth_1 to finish...
+[Sun Feb  9 16:14:34 2020] Waiting for Echo_Server_xbar_0_synth_1 to finish...
+[Sun Feb  9 16:14:39 2020] Waiting for Echo_Server_xbar_0_synth_1 to finish...
+[Sun Feb  9 16:14:44 2020] Waiting for Echo_Server_xbar_0_synth_1 to finish...
+[Sun Feb  9 16:14:54 2020] Waiting for Echo_Server_xbar_0_synth_1 to finish...
+[Sun Feb  9 16:15:04 2020] Waiting for Echo_Server_xbar_0_synth_1 to finish...
+[Sun Feb  9 16:15:14 2020] Waiting for Echo_Server_xbar_0_synth_1 to finish...
+[Sun Feb  9 16:15:24 2020] Waiting for Echo_Server_xbar_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log Echo_Server_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Echo_Server_xbar_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Echo_Server_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/IpRepository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top Echo_Server_xbar_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18199 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1748.016 ; gain = 152.684 ; free physical = 1602 ; free virtual = 6808
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Echo_Server_xbar_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_xbar_0/synth/Echo_Server_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 3 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100001111000001000000000000000000000000000000000000000000000000010000111100000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 96'b000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
+	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 96'b000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
+	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_AXILITE_SIZE bound to: 3'b010 
+	Parameter P_INCR bound to: 2'b01 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 3'b111 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 3'b111 
+	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter P_M_AXI_ERR_MODE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_LEN bound to: 8 - type: integer 
+	Parameter P_LOCK bound to: 1 - type: integer 
+	Parameter P_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 3 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 192'b000000000000000000000000000000000100001111000001000000000000000000000000000000000000000000000000010000111100000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100001111000001111111111111111100000000000000000000000000000000010000111100000011111111111111110000000000000000000000000000000001000001001000001111111111111111 
+	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 3'b111 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 3'b111 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 96'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 4 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 2 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 2 - type: integer 
+	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
+	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
+	Parameter P_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter P_BMESG_WIDTH bound to: 3 - type: integer 
+	Parameter P_RMESG_WIDTH bound to: 36 - type: integer 
+	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
+	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+	Parameter P_M_SECURE_MASK bound to: 3'b000 
+	Parameter P_M_AXILITE_MASK bound to: 3'b000 
+	Parameter P_FIXED bound to: 2'b00 
+	Parameter P_BYPASS bound to: 0 - type: integer 
+	Parameter P_LIGHTWT bound to: 7 - type: integer 
+	Parameter P_FULLY_REG bound to: 1 - type: integer 
+	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
+	Parameter P_DECERR bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_TARGETS bound to: 3 - type: integer 
+	Parameter C_NUM_TARGETS_LOG bound to: 2 - type: integer 
+	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+	Parameter C_REGION_ENC bound to: 1 - type: integer 
+	Parameter C_BASE_ADDR bound to: 192'b000000000000000000000000000000000100001111000001000000000000000000000000000000000000000000000000010000111100000000000000000000000000000000000000000000000000000001000001001000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 192'b000000000000000000000000000000000100001111000001111111111111111100000000000000000000000000000000010000111100000011111111111111110000000000000000000000000000000001000001001000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 4'b0111 
+	Parameter C_RESOLUTION bound to: 2 - type: integer 
+	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000010010000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+	Parameter C_FAMILY bound to: rtl - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000111100000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000111100000100000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' (3#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_RESP bound to: 3 - type: integer 
+	Parameter P_WRITE_IDLE bound to: 2'b00 
+	Parameter P_WRITE_DATA bound to: 2'b01 
+	Parameter P_WRITE_RESP bound to: 2'b10 
+	Parameter P_READ_IDLE bound to: 1'b0 
+	Parameter P_READ_DATA bound to: 1'b1 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' (4#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_S bound to: 1 - type: integer 
+	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
+	Parameter C_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter C_GRANT_ENC bound to: 1 - type: integer 
+	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter P_PRIO_MASK bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' (5#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter' (6#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' (6#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 4 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 1 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 4 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' (8#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 4 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (8#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' (9#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (10#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'Echo_Server_xbar_0' (11#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_xbar_0/synth/Echo_Server_xbar_0.v:59]
+WARNING: [Synth 8-3331] design generic_baseblocks_v2_1_0_mux_enc__parameterized0 has unconnected port S[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_WLAST
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_addr_decoder has unconnected port ADDR[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_addr_decoder has unconnected port ADDR[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port S_AXI_ARID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_BID[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_BID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_RID[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_RID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awsize[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awburst[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awburst[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlock[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awcache[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awcache[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awcache[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awcache[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awqos[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awqos[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awqos[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awqos[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_wid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_wlast[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_wuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arsize[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arsize[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arsize[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arburst[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arburst[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlock[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arcache[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arcache[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arcache[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arcache[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arqos[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arqos[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arqos[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arqos[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_aruser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_bid[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_bid[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_bid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rid[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rid[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rlast[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rlast[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rlast[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1896.703 ; gain = 301.371 ; free physical = 1623 ; free virtual = 6831
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1899.672 ; gain = 304.340 ; free physical = 1623 ; free virtual = 6831
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 1899.672 ; gain = 304.340 ; free physical = 1623 ; free virtual = 6831
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_xbar_0/Echo_Server_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_xbar_0/Echo_Server_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2047.484 ; gain = 0.000 ; free physical = 1516 ; free virtual = 6738
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2047.484 ; gain = 0.000 ; free physical = 1514 ; free virtual = 6737
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1588 ; free virtual = 6812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1588 ; free virtual = 6812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1588 ; free virtual = 6812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1580 ; free virtual = 6804
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_crossbar_v2_1_20_addr_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module axi_crossbar_v2_1_20_decerr_slave 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_crossbar_v2_1_20_addr_arbiter_sasd 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module axi_crossbar_v2_1_20_splitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module axi_crossbar_v2_1_20_splitter__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module generic_baseblocks_v2_1_0_mux_enc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module axi_register_slice_v2_1_19_axic_register_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module axi_crossbar_v2_1_20_crossbar_sasd 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awsize[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1564 ; free virtual = 6792
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1436 ; free virtual = 6672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1430 ; free virtual = 6666
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1430 ; free virtual = 6665
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1430 ; free virtual = 6666
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1429 ; free virtual = 6664
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1429 ; free virtual = 6664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1429 ; free virtual = 6664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1429 ; free virtual = 6664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1429 ; free virtual = 6664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    11|
+|3     |LUT3 |    38|
+|4     |LUT4 |    51|
+|5     |LUT5 |    35|
+|6     |LUT6 |    42|
+|7     |FDRE |   131|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------------------------------+------+
+|      |Instance                             |Module                                         |Cells |
++------+-------------------------------------+-----------------------------------------------+------+
+|1     |top                                  |                                               |   310|
+|2     |  inst                               |axi_crossbar_v2_1_20_axi_crossbar              |   310|
+|3     |    \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_20_crossbar_sasd             |   310|
+|4     |      addr_arbiter_inst              |axi_crossbar_v2_1_20_addr_arbiter_sasd         |   128|
+|5     |      \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_20_decerr_slave              |    13|
+|6     |      reg_slice_r                    |axi_register_slice_v2_1_19_axic_register_slice |   147|
+|7     |      splitter_ar                    |axi_crossbar_v2_1_20_splitter__parameterized0  |     4|
+|8     |      splitter_aw                    |axi_crossbar_v2_1_20_splitter                  |     7|
++------+-------------------------------------+-----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1429 ; free virtual = 6664
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:37 . Memory (MB): peak = 2047.484 ; gain = 304.340 ; free physical = 1484 ; free virtual = 6720
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2047.484 ; gain = 452.152 ; free physical = 1484 ; free virtual = 6720
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2047.484 ; gain = 0.000 ; free physical = 1428 ; free virtual = 6665
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 2047.484 ; gain = 645.719 ; free physical = 1525 ; free virtual = 6761
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2047.484 ; gain = 0.000 ; free physical = 1525 ; free virtual = 6761
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_xbar_0_synth_1/Echo_Server_xbar_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Echo_Server_xbar_0, cache-ID = b2d6d378c6285b6f
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2071.496 ; gain = 0.000 ; free physical = 1523 ; free virtual = 6760
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_xbar_0_synth_1/Echo_Server_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Echo_Server_xbar_0_utilization_synth.rpt -pb Echo_Server_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  9 16:15:24 2020...
+[Sun Feb  9 16:15:25 2020] Echo_Server_xbar_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:47 ; elapsed = 00:00:56 . Memory (MB): peak = 6935.238 ; gain = 0.000 ; free physical = 2190 ; free virtual = 7424
+generate_target all [get_files /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/Echo_Server.bd]
+INFO: [BD 41-1662] The design 'Echo_Server.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/Echo_Server.bd> 
+Wrote  : </home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ui/bd_3b7eea1d.ui> 
+VHDL Output written to : /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd
+VHDL Output written to : /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/sim/Echo_Server.vhd
+VHDL Output written to : /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SixDigitHexDisplay_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ManInput_0 .
+Exporting to file /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hw_handoff/Echo_Server.hwh
+Generated Block Design Tcl file /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hw_handoff/Echo_Server_bd.tcl
+Generated Hardware Definition File /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.hwdef
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/Echo_Server.bd]
+launch_runs Echo_Server_auto_pc_0_synth_1
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Echo_Server_auto_pc_0, cache-ID = 918c20c150427b09; cache size = 3,780 MB.
+[Sun Feb  9 16:15:28 2020] Launched Echo_Server_auto_pc_0_synth_1...
+Run output will be captured here: /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_auto_pc_0_synth_1/runme.log
+wait_on_run Echo_Server_auto_pc_0_synth_1
+[Sun Feb  9 16:15:28 2020] Waiting for Echo_Server_auto_pc_0_synth_1 to finish...
+[Sun Feb  9 16:15:33 2020] Waiting for Echo_Server_auto_pc_0_synth_1 to finish...
+[Sun Feb  9 16:15:38 2020] Waiting for Echo_Server_auto_pc_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log Echo_Server_auto_pc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Echo_Server_auto_pc_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Echo_Server_auto_pc_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/IpRepository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Echo_Server_auto_pc_0, cache-ID = 918c20c150427b09.
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  9 16:15:38 2020...
+[Sun Feb  9 16:15:39 2020] Echo_Server_auto_pc_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 6949.102 ; gain = 0.000 ; free physical = 2054 ; free virtual = 7291
+launch_runs Echo_Server_ManInput_0_0_synth_1
+[Sun Feb  9 16:15:39 2020] Launched Echo_Server_ManInput_0_0_synth_1...
+Run output will be captured here: /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_ManInput_0_0_synth_1/runme.log
+wait_on_run Echo_Server_ManInput_0_0_synth_1
+[Sun Feb  9 16:15:39 2020] Waiting for Echo_Server_ManInput_0_0_synth_1 to finish...
+[Sun Feb  9 16:15:44 2020] Waiting for Echo_Server_ManInput_0_0_synth_1 to finish...
+[Sun Feb  9 16:15:49 2020] Waiting for Echo_Server_ManInput_0_0_synth_1 to finish...
+[Sun Feb  9 16:15:54 2020] Waiting for Echo_Server_ManInput_0_0_synth_1 to finish...
+[Sun Feb  9 16:16:04 2020] Waiting for Echo_Server_ManInput_0_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log Echo_Server_ManInput_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Echo_Server_ManInput_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Echo_Server_ManInput_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/IpRepository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top Echo_Server_ManInput_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18588 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1740.078 ; gain = 152.715 ; free physical = 1454 ; free virtual = 6693
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_ManInput_0_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/synth/Echo_Server_ManInput_0_0.vhd:85]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ManInput_v1_0' declared at '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0.vhd:5' bound to instance 'U0' of component 'ManInput_v1_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/synth/Echo_Server_ManInput_0_0.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'ManInput_v1_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0.vhd:51]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'ManInput_v1_0_S00_AXI' declared at '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd:5' bound to instance 'ManInput_v1_0_S00_AXI_inst' of component 'ManInput_v1_0_S00_AXI' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'ManInput_v1_0_S00_AXI' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd:88]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd:237]
+INFO: [Synth 8-226] default block is never used [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd:367]
+WARNING: [Synth 8-614] signal 'codeword' is read in the process but is not in the sensitivity list [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd:362]
+INFO: [Synth 8-3491] module 'ManInput' declared at '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput.vhd:34' bound to instance 'IO' of component 'ManInput' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd:401]
+INFO: [Synth 8-638] synthesizing module 'ManInput' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ManInput' (1#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'ManInput_v1_0_S00_AXI' (2#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'ManInput_v1_0' (3#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'Echo_Server_ManInput_0_0' (4#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/synth/Echo_Server_ManInput_0_0.vhd:85]
+WARNING: [Synth 8-3331] design ManInput_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design ManInput_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design ManInput_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design ManInput_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design ManInput_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design ManInput_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1795.797 ; gain = 208.434 ; free physical = 1481 ; free virtual = 6718
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1801.734 ; gain = 214.371 ; free physical = 1479 ; free virtual = 6716
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1801.734 ; gain = 214.371 ; free physical = 1479 ; free virtual = 6716
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1963.484 ; gain = 0.000 ; free physical = 1393 ; free virtual = 6631
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1966.453 ; gain = 2.969 ; free physical = 1391 ; free virtual = 6628
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1454 ; free virtual = 6691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1454 ; free virtual = 6691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1454 ; free virtual = 6691
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'codeword_reg' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/4aab/hdl/ManInput.vhd:88]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1444 ; free virtual = 6682
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ManInput 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ManInput_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Echo_Server_ManInput_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design Echo_Server_ManInput_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design Echo_Server_ManInput_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design Echo_Server_ManInput_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design Echo_Server_ManInput_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design Echo_Server_ManInput_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'U0/ManInput_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/ManInput_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/ManInput_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/ManInput_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/ManInput_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/ManInput_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1433 ; free virtual = 6673
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1311 ; free virtual = 6551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1311 ; free virtual = 6551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1309 ; free virtual = 6549
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1309 ; free virtual = 6549
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1309 ; free virtual = 6549
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1309 ; free virtual = 6549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1309 ; free virtual = 6549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1309 ; free virtual = 6549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1309 ; free virtual = 6549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     4|
+|2     |LUT1   |     3|
+|3     |LUT2   |     2|
+|4     |LUT3   |     3|
+|5     |LUT4   |    24|
+|6     |LUT5   |     2|
+|7     |LUT6   |    48|
+|8     |FDRE   |   207|
+|9     |FDSE   |     3|
+|10    |LD     |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------+------+
+|      |Instance                       |Module                |Cells |
++------+-------------------------------+----------------------+------+
+|1     |top                            |                      |   304|
+|2     |  U0                           |ManInput_v1_0         |   304|
+|3     |    ManInput_v1_0_S00_AXI_inst |ManInput_v1_0_S00_AXI |   304|
+|4     |      IO                       |ManInput              |    83|
++------+-------------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1309 ; free virtual = 6549
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1966.453 ; gain = 214.371 ; free physical = 1365 ; free virtual = 6605
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1966.453 ; gain = 379.090 ; free physical = 1365 ; free virtual = 6605
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1966.453 ; gain = 0.000 ; free physical = 1314 ; free virtual = 6554
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LD => LDCE: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1966.453 ; gain = 564.688 ; free physical = 1410 ; free virtual = 6650
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1966.453 ; gain = 0.000 ; free physical = 1411 ; free virtual = 6652
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_ManInput_0_0_synth_1/Echo_Server_ManInput_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Echo_Server_ManInput_0_0, cache-ID = 4abf16447be15044
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1990.465 ; gain = 0.000 ; free physical = 1409 ; free virtual = 6649
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_ManInput_0_0_synth_1/Echo_Server_ManInput_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Echo_Server_ManInput_0_0_utilization_synth.rpt -pb Echo_Server_ManInput_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  9 16:16:11 2020...
+[Sun Feb  9 16:16:12 2020] Echo_Server_ManInput_0_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 6949.102 ; gain = 0.000 ; free physical = 2053 ; free virtual = 7291
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: Echo_Server_wrapper
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7245.734 ; gain = 21.656 ; free physical = 1756 ; free virtual = 6994
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_wrapper' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:46]
+INFO: [Synth 8-3491] module 'Echo_Server' declared at '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1354' bound to instance 'Echo_Server_i' of component 'Echo_Server' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1392]
+INFO: [Synth 8-3491] module 'Echo_Server_ManInput_0_0' declared at '/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_ManInput_0_0_stub.vhdl:5' bound to instance 'ManInput_0' of component 'Echo_Server_ManInput_0_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1725]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_ManInput_0_0' [/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_ManInput_0_0_stub.vhdl:35]
+INFO: [Synth 8-3491] module 'Echo_Server_SixDigitHexDisplay_0_0' declared at '/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_SixDigitHexDisplay_0_0_stub.vhdl:5' bound to instance 'SixDigitHexDisplay_0' of component 'Echo_Server_SixDigitHexDisplay_0_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1752]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_SixDigitHexDisplay_0_0' [/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_SixDigitHexDisplay_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'Echo_Server_axi_gpio_0_0' declared at '/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'Echo_Server_axi_gpio_0_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1778]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_axi_gpio_0_0' [/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_axi_gpio_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'Echo_Server_processing_system7_0_0' declared at '/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'Echo_Server_processing_system7_0_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1803]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_processing_system7_0_0' [/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_processing_system7_0_0_stub.vhdl:76]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_ps7_0_axi_periph_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:761]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_30LDPW' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_30LDPW' (1#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_15CJFVU' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_15CJFVU' (2#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1U2DHVT' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:273]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1U2DHVT' (3#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:273]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1S2399G' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:403]
+INFO: [Synth 8-3491] module 'Echo_Server_auto_pc_0' declared at '/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Echo_Server_auto_pc_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:586]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_auto_pc_0' [/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1S2399G' (4#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:403]
+INFO: [Synth 8-3491] module 'Echo_Server_xbar_0' declared at '/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'Echo_Server_xbar_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1268]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_xbar_0' [/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'Echo_Server_ps7_0_axi_periph_0' (5#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:761]
+INFO: [Synth 8-3491] module 'Echo_Server_rst_ps7_0_100M_0' declared at '/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'Echo_Server_rst_ps7_0_100M_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1977]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_rst_ps7_0_100M_0' [/home/benjamin/Repositories/PynqNet/.Xil/Vivado-17533-Laptop/realtime/Echo_Server_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'Echo_Server' (6#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1392]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115' bound to instance 'leds_4bits_tri_iobuf_0' of component 'IOBUF' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:146]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (7#1) [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115' bound to instance 'leds_4bits_tri_iobuf_1' of component 'IOBUF' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:153]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115' bound to instance 'leds_4bits_tri_iobuf_2' of component 'IOBUF' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:160]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115' bound to instance 'leds_4bits_tri_iobuf_3' of component 'IOBUF' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'Echo_Server_wrapper' (8#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:46]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1S2399G has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1S2399G has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1U2DHVT has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1U2DHVT has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1U2DHVT has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1U2DHVT has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_15CJFVU has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_15CJFVU has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_15CJFVU has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_15CJFVU has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_30LDPW has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_30LDPW has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_30LDPW has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_30LDPW has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7279.672 ; gain = 55.594 ; free physical = 1786 ; free virtual = 7024
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7297.484 ; gain = 73.406 ; free physical = 1785 ; free virtual = 7024
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7297.484 ; gain = 73.406 ; free physical = 1785 ; free virtual = 7024
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0.dcp' for cell 'Echo_Server_i/ManInput_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/Echo_Server_SixDigitHexDisplay_0_0.dcp' for cell 'Echo_Server_i/SixDigitHexDisplay_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_axi_gpio_0_0/Echo_Server_axi_gpio_0_0.dcp' for cell 'Echo_Server_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_processing_system7_0_0/Echo_Server_processing_system7_0_0.dcp' for cell 'Echo_Server_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_rst_ps7_0_100M_0/Echo_Server_rst_ps7_0_100M_0.dcp' for cell 'Echo_Server_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_xbar_0/Echo_Server_xbar_0.dcp' for cell 'Echo_Server_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0.dcp' for cell 'Echo_Server_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 9 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 22 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_processing_system7_0_0/Echo_Server_processing_system7_0_0.xdc] for cell 'Echo_Server_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_processing_system7_0_0/Echo_Server_processing_system7_0_0.xdc] for cell 'Echo_Server_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_processing_system7_0_0/Echo_Server_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Echo_Server_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Echo_Server_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_axi_gpio_0_0/Echo_Server_axi_gpio_0_0_board.xdc] for cell 'Echo_Server_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_axi_gpio_0_0/Echo_Server_axi_gpio_0_0_board.xdc] for cell 'Echo_Server_i/axi_gpio_0/U0'
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_axi_gpio_0_0/Echo_Server_axi_gpio_0_0.xdc] for cell 'Echo_Server_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_axi_gpio_0_0/Echo_Server_axi_gpio_0_0.xdc] for cell 'Echo_Server_i/axi_gpio_0/U0'
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_rst_ps7_0_100M_0/Echo_Server_rst_ps7_0_100M_0_board.xdc] for cell 'Echo_Server_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_rst_ps7_0_100M_0/Echo_Server_rst_ps7_0_100M_0_board.xdc] for cell 'Echo_Server_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_rst_ps7_0_100M_0/Echo_Server_rst_ps7_0_100M_0.xdc] for cell 'Echo_Server_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_rst_ps7_0_100M_0/Echo_Server_rst_ps7_0_100M_0.xdc] for cell 'Echo_Server_i/rst_ps7_0_100M/U0'
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc]
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7501.121 ; gain = 0.000 ; free physical = 1678 ; free virtual = 6916
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 7603.352 ; gain = 379.273 ; free physical = 1577 ; free virtual = 6826
+52 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 7603.352 ; gain = 654.250 ; free physical = 1577 ; free virtual = 6826
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Sun Feb  9 16:17:45 2020] Launched synth_1...
+Run output will be captured here: /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/runme.log
+[Sun Feb  9 16:17:45 2020] Launched impl_1...
+Run output will be captured here: /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00,24 ; elapsed = 00:00:00,23 . Memory (MB): peak = 7909.246 ; gain = 0.000 ; free physical = 1146 ; free virtual = 6252
+Restored from archive | CPU: 0,240000 secs | Memory: 2,537506 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00,24 ; elapsed = 00:00:00,23 . Memory (MB): peak = 7909.246 ; gain = 0.000 ; free physical = 1146 ; free virtual = 6252
+Netlist sorting complete. Time (s): cpu = 00:00:00,01 ; elapsed = 00:00:00 . Memory (MB): peak = 7909.246 ; gain = 0.000 ; free physical = 1146 ; free virtual = 6253
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 8053.145 ; gain = 319.730 ; free physical = 1137 ; free virtual = 6192
+launch_sdk -workspace /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk -hwspec /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk -hwspec /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Feb  9 16:21:16 2020] Launched impl_1...
+Run output will be captured here: /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/impl_1/runme.log
+file copy -force /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/impl_1/Echo_Server_wrapper.sysdef /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf
+
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/benjamin/Repositories/PynqNet/IpRepository/Display/SixDigitHexDisplay_1.0/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/benjamin/Repositories/PynqNet/IpRepository/ManInput/ManInput_1.0/component.xml. It will be created.
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 09:50:33 2019...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb  9 16:26:09 2020...
