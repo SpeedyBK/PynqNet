@@ -24,7 +24,7 @@ else:
 if args.port == "":
     port = 8000
 else:
-    port = args.port
+    port = int(args.port)
 
 if args.filename == "":
     data = ' '.join(args.cmd)
@@ -40,10 +40,7 @@ else:
 
 addr = (host, port)
 TCPSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-print >> sys.stderr, "Destination Host: " + host
-print >> sys.stderr, "Destination Port: " + str(port)
-print >> sys.stderr, "sending: " + data
-TCPSock.sendto(data.encode(), addr)
+TCPSock.connect(addr)
+TCPSock.send(data.encode())
 TCPSock.close()
 exit(0)

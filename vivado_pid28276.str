@@ -1,0 +1,164 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 28276
+License: Customer
+
+Current time: 	Sun Feb 09 16:46:23 CET 2020
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Ubuntu
+OS Version: 5.3.0-28-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 88 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	benjamin
+User home directory: /home/benjamin
+User working directory: /home/benjamin/Repositories/PynqNet
+User country: 	DE
+User language: 	de
+User locale: 	de_DE
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/benjamin/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/benjamin/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/benjamin/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/benjamin/Repositories/PynqNet/vivado.log
+Vivado journal file location: 	/home/benjamin/Repositories/PynqNet/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-28276-Laptop
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.1
+XILINX_SDK: /tools/Xilinx/SDK/2019.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	286 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 994 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.xpr", 0); // q (O, cl)
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 89 MB (+90937kb) [00:00:11]
+// [Engine Memory]: 1,065 MB (+965184kb) [00:00:11]
+// [GUI Memory]: 98 MB (+4218kb) [00:00:11]
+// [GUI Memory]: 105 MB (+2436kb) [00:00:12]
+// [GUI Memory]: 111 MB (+659kb) [00:00:12]
+// [GUI Memory]: 124 MB (+8323kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  3459 ms.
+// Tcl Message: open_project /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,024 MB. GUI used memory: 61 MB. Current time: 2/9/20, 4:46:29 PM CET
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 6503.004 ; gain = 108.754 ; free physical = 1538 ; free virtual = 7298 
+// Project name: Pynq_Echo_Server; location: /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server; part: xc7z020clg400-1
+// [Engine Memory]: 1,187 MB (+72505kb) [00:00:15]
+dismissDialog("Open Project"); // by (cl)
+// [Engine Memory]: 1,308 MB (+64112kb) [00:00:20]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X (cl): Export Hardware: addNotify
+selectCheckBox(PAResourceItoN.NewExportHardwareDialog_INCLUDE_BITSTREAM, "Include bitstream", true); // g (Q, X): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (X)
+dismissDialog("Export Hardware"); // X (cl)
+// Tcl Message: file mkdir /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk 
+// Tcl Message: file copy -force /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/impl_1/Echo_Server_wrapper.sysdef /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf  
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (cl): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (cl)
+// Tcl Message: launch_sdk -workspace /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk -hwspec /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk -hwspec /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,066 MB. GUI used memory: 61 MB. Current time: 2/9/20, 5:16:30 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,045 MB. GUI used memory: 55 MB. Current time: 2/9/20, 5:46:30 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,046 MB. GUI used memory: 55 MB. Current time: 2/9/20, 6:16:31 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,046 MB. GUI used memory: 56 MB. Current time: 2/9/20, 6:46:31 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,046 MB. GUI used memory: 56 MB. Current time: 2/9/20, 7:16:31 PM CET

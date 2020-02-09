@@ -1,4 +1,4 @@
-16:20:20 **** Auto Build of project FSBL_bsp ****
+16:48:51 **** Build of project FSBL_bsp ****
 make -k all 
 Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
@@ -12,6 +12,8 @@ Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src
 make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
 make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/SixDigitHexDisplay_v1_0/src
+make -C ps7_cortexa9_0/libsrc/SixDigitHexDisplay_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
 make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src
@@ -32,6 +34,8 @@ Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src
 make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src
 make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make include in ps7_cortexa9_0/libsrc/ManInput_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ManInput_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
 make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
@@ -41,6 +45,7 @@ make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=/bin/s
 Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Compiling ddrps
+arm-none-eabi-ar: Erzeugen von ../../../lib/libxil.a
 Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src
 make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Compiling dmaps
@@ -55,6 +60,16 @@ make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER
 Compiling emacps
 Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_5/src
 make -C ps7_cortexa9_0/libsrc/xilrsa_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Running Make libs in ps7_cortexa9_0/libsrc/SixDigitHexDisplay_v1_0/src
+make -C ps7_cortexa9_0/libsrc/SixDigitHexDisplay_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling SixDigitHexDisplay...
+SixDigitHexDisplay_selftest.c: In function 'SIXDIGITHEXDISPLAY_Reg_SelfTest':
+SixDigitHexDisplay_selftest.c:52:67: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( SIXDIGITHEXDISPLAY_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                                   ^~
+SixDigitHexDisplay_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
 Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src
 make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Compiling gpiops
@@ -65,11 +80,11 @@ In file included from xtime_l.c:49:
 xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
-In file included from xil_sleeptimer.c:51:
+In file included from sleep.c:53:
 xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
-In file included from sleep.c:53:
+In file included from xil_sleeptimer.c:51:
 xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
@@ -101,6 +116,16 @@ Compiling gpio
 Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src
 make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Compiling uartps
+Running Make libs in ps7_cortexa9_0/libsrc/ManInput_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ManInput_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+Compiling ManInput...
+ManInput_selftest.c: In function 'MANINPUT_Reg_SelfTest':
+ManInput_selftest.c:52:57: warning: comparison of integer expressions of different signedness: 'u32' {aka 'long unsigned int'} and 'int' [-Wsign-compare]
+    if ( MANINPUT_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+ManInput_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
 Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
 make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 Compiling usbps
@@ -112,5 +137,5 @@ make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=/bin/sh" 
 Compiling coresightps_dcc
 Finished building libraries
 
-16:20:31 Build Finished (took 11s.33ms)
+16:49:03 Build Finished (took 11s.215ms)
 

@@ -31,6 +31,28 @@
  
  
 /******************************************************************/
+/* Definitions for driver MANINPUT */
+#define XPAR_MANINPUT_NUM_INSTANCES 1
+
+/* Definitions for peripheral MANINPUT_0 */
+#define XPAR_MANINPUT_0_DEVICE_ID 0
+#define XPAR_MANINPUT_0_S00_AXI_BASEADDR 0x43C10000
+#define XPAR_MANINPUT_0_S00_AXI_HIGHADDR 0x43C1FFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver SIXDIGITHEXDISPLAY */
+#define XPAR_SIXDIGITHEXDISPLAY_NUM_INSTANCES 1
+
+/* Definitions for peripheral SIXDIGITHEXDISPLAY_0 */
+#define XPAR_SIXDIGITHEXDISPLAY_0_DEVICE_ID 0
+#define XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_BASEADDR 0x43C00000
+#define XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_HIGHADDR 0x43C0FFFF
+
+
+/******************************************************************/
+
 
 /* Definitions for peripheral PS7_DDR_0 */
 #define XPAR_PS7_DDR_0_S_AXI_BASEADDR 0x00100000

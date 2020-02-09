@@ -1,0 +1,8 @@
+19:19:58 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+
+19:19:59 Build Finished (took 130ms)
+

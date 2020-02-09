@@ -1,353 +1,1092 @@
-20:32:30 INFO  : Registering command handlers for SDK TCF services
-20:32:32 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
-20:32:36 INFO  : XSCT server has started successfully.
-20:32:36 INFO  : Successfully done setting XSCT server connection channel  
-20:32:36 INFO  : Successfully done setting SDK workspace  
-20:32:36 INFO  : Processing command line option -hwspec /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
-20:40:43 INFO  : Refreshed build settings on project Echo_Server
-20:46:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-20:46:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-20:46:03 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
-20:47:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-20:47:41 INFO  : 'fpga -state' command is executed.
-20:47:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-20:47:41 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
-20:47:41 INFO  : 'jtag frequency' command is executed.
-20:47:41 INFO  : Sourcing of '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
-20:47:41 INFO  : Context for 'APU' is selected.
-20:47:41 INFO  : Hardware design information is loaded from '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
-20:47:41 INFO  : 'configparams force-mem-access 1' command is executed.
-20:47:41 INFO  : Context for 'APU' is selected.
-20:47:41 INFO  : 'stop' command is executed.
-20:47:42 INFO  : 'ps7_init' command is executed.
-20:47:42 INFO  : 'ps7_post_config' command is executed.
-20:47:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-20:47:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
-20:47:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-20:47:42 INFO  : The application '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf' is downloaded to processor 'ps7_cortexa9_0'.
-20:47:42 INFO  : 'configparams force-mem-access 0' command is executed.
-20:47:42 INFO  : ----------------XSDB Script----------------
+16:46:57 INFO  : Registering command handlers for SDK TCF services
+16:46:58 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
+16:47:02 INFO  : XSCT server has started successfully.
+16:47:02 INFO  : Successfully done setting XSCT server connection channel  
+16:47:02 INFO  : Successfully done setting SDK workspace  
+16:47:02 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
+17:59:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:59:04 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+17:59:04 INFO  : 'jtag frequency' command is executed.
+17:59:04 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:59:04 INFO  : Context for 'APU' is selected.
+17:59:04 INFO  : System reset is completed.
+17:59:07 INFO  : 'after 3000' command is executed.
+17:59:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+17:59:09 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+17:59:09 INFO  : Context for 'APU' is selected.
+17:59:09 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+17:59:09 INFO  : 'configparams force-mem-access 1' command is executed.
+17:59:10 INFO  : Context for 'APU' is selected.
+17:59:10 INFO  : 'ps7_init' command is executed.
+17:59:10 INFO  : 'ps7_post_config' command is executed.
+17:59:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:59:10 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:59:10 INFO  : 'configparams force-mem-access 0' command is executed.
+17:59:10 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
-source /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-loadhw -hw /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-stop
 ps7_init
 ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-rst -processor
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-dow /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
 configparams force-mem-access 0
 ----------------End of Script----------------
 
-20:47:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-20:47:42 INFO  : 'con' command is executed.
-20:47:42 INFO  : ----------------XSDB Script (After Launch)----------------
+17:59:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:59:10 INFO  : 'con' command is executed.
+17:59:10 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
 con
 ----------------End of Script----------------
 
-20:47:42 INFO  : Disconnected from the channel tcfchan#1.
-20:48:39 INFO  : Refreshed build settings on project Echo_Server
-20:48:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-20:48:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-20:48:53 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
-20:49:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-20:49:03 INFO  : 'fpga -state' command is executed.
-20:49:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-20:49:03 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
-20:49:03 INFO  : 'jtag frequency' command is executed.
-20:49:03 INFO  : Sourcing of '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
-20:49:03 INFO  : Context for 'APU' is selected.
-20:49:03 INFO  : Hardware design information is loaded from '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
-20:49:03 INFO  : 'configparams force-mem-access 1' command is executed.
-20:49:03 INFO  : Context for 'APU' is selected.
-20:49:03 INFO  : 'stop' command is executed.
-20:49:03 INFO  : 'ps7_init' command is executed.
-20:49:03 INFO  : 'ps7_post_config' command is executed.
-20:49:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-20:49:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
-20:49:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-20:49:04 INFO  : The application '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf' is downloaded to processor 'ps7_cortexa9_0'.
-20:49:04 INFO  : 'configparams force-mem-access 0' command is executed.
-20:49:04 INFO  : ----------------XSDB Script----------------
+17:59:10 INFO  : Disconnected from the channel tcfchan#1.
+18:01:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:01:56 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:01:56 INFO  : 'jtag frequency' command is executed.
+18:01:56 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:01:56 INFO  : Context for 'APU' is selected.
+18:01:56 INFO  : System reset is completed.
+18:01:59 INFO  : 'after 3000' command is executed.
+18:01:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:02:02 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:02:02 INFO  : Context for 'APU' is selected.
+18:02:02 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:02:02 INFO  : 'configparams force-mem-access 1' command is executed.
+18:02:02 INFO  : Context for 'APU' is selected.
+18:02:02 INFO  : 'ps7_init' command is executed.
+18:02:02 INFO  : 'ps7_post_config' command is executed.
+18:02:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:02 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:02:02 INFO  : 'configparams force-mem-access 0' command is executed.
+18:02:02 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
-source /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-loadhw -hw /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-stop
 ps7_init
 ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-rst -processor
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-dow /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
 configparams force-mem-access 0
 ----------------End of Script----------------
 
-20:49:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-20:49:04 INFO  : 'con' command is executed.
-20:49:04 INFO  : ----------------XSDB Script (After Launch)----------------
+18:02:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:02:02 INFO  : 'con' command is executed.
+18:02:02 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
 con
 ----------------End of Script----------------
 
-20:49:04 INFO  : Disconnected from the channel tcfchan#2.
-20:59:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-20:59:02 INFO  : 'fpga -state' command is executed.
-20:59:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-20:59:02 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
-20:59:02 INFO  : 'jtag frequency' command is executed.
-20:59:02 INFO  : Sourcing of '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
-20:59:02 INFO  : Context for 'APU' is selected.
-20:59:02 INFO  : Hardware design information is loaded from '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
-20:59:02 INFO  : 'configparams force-mem-access 1' command is executed.
-20:59:02 INFO  : Context for 'APU' is selected.
-20:59:02 INFO  : 'stop' command is executed.
-20:59:03 INFO  : 'ps7_init' command is executed.
-20:59:03 INFO  : 'ps7_post_config' command is executed.
-20:59:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-20:59:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
-20:59:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-20:59:03 INFO  : The application '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf' is downloaded to processor 'ps7_cortexa9_0'.
-20:59:03 INFO  : 'configparams force-mem-access 0' command is executed.
-20:59:03 INFO  : ----------------XSDB Script----------------
+18:02:02 INFO  : Disconnected from the channel tcfchan#2.
+18:03:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:03:54 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:03:54 INFO  : 'jtag frequency' command is executed.
+18:03:54 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:03:54 INFO  : Context for 'APU' is selected.
+18:03:54 INFO  : System reset is completed.
+18:03:57 INFO  : 'after 3000' command is executed.
+18:03:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:04:00 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:04:00 INFO  : Context for 'APU' is selected.
+18:04:00 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:04:00 INFO  : 'configparams force-mem-access 1' command is executed.
+18:04:00 INFO  : Context for 'APU' is selected.
+18:04:01 INFO  : 'ps7_init' command is executed.
+18:04:01 INFO  : 'ps7_post_config' command is executed.
+18:04:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:04:01 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:04:01 INFO  : 'configparams force-mem-access 0' command is executed.
+18:04:01 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
-source /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-loadhw -hw /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-stop
 ps7_init
 ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-rst -processor
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-dow /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
 configparams force-mem-access 0
 ----------------End of Script----------------
 
-20:59:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-20:59:03 INFO  : 'con' command is executed.
-20:59:03 INFO  : ----------------XSDB Script (After Launch)----------------
+18:04:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:04:01 INFO  : 'con' command is executed.
+18:04:01 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
 con
 ----------------End of Script----------------
 
-20:59:03 INFO  : Disconnected from the channel tcfchan#3.
-21:00:21 INFO  : Refreshed build settings on project Echo_Server
-21:00:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-21:00:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-21:00:47 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
-21:01:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-21:01:12 INFO  : 'fpga -state' command is executed.
-21:01:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-21:01:12 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
-21:01:12 INFO  : 'jtag frequency' command is executed.
-21:01:12 INFO  : Sourcing of '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
-21:01:12 INFO  : Context for 'APU' is selected.
-21:01:12 INFO  : Hardware design information is loaded from '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
-21:01:12 INFO  : 'configparams force-mem-access 1' command is executed.
-21:01:12 INFO  : Context for 'APU' is selected.
-21:01:12 INFO  : 'stop' command is executed.
-21:01:12 INFO  : 'ps7_init' command is executed.
-21:01:12 INFO  : 'ps7_post_config' command is executed.
-21:01:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:01:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
-21:01:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:01:13 INFO  : The application '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf' is downloaded to processor 'ps7_cortexa9_0'.
-21:01:13 INFO  : 'configparams force-mem-access 0' command is executed.
-21:01:13 INFO  : ----------------XSDB Script----------------
+18:04:01 INFO  : Disconnected from the channel tcfchan#3.
+18:06:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:22 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:06:22 INFO  : 'jtag frequency' command is executed.
+18:06:22 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:06:22 INFO  : Context for 'APU' is selected.
+18:06:22 INFO  : System reset is completed.
+18:06:25 INFO  : 'after 3000' command is executed.
+18:06:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:06:27 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:06:27 INFO  : Context for 'APU' is selected.
+18:06:27 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:06:27 INFO  : 'configparams force-mem-access 1' command is executed.
+18:06:27 INFO  : Context for 'APU' is selected.
+18:06:28 INFO  : 'ps7_init' command is executed.
+18:06:28 INFO  : 'ps7_post_config' command is executed.
+18:06:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:28 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:06:28 INFO  : 'configparams force-mem-access 0' command is executed.
+18:06:28 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
-source /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-loadhw -hw /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-stop
 ps7_init
 ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-rst -processor
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-dow /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
 configparams force-mem-access 0
 ----------------End of Script----------------
 
-21:01:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:01:13 INFO  : 'con' command is executed.
-21:01:13 INFO  : ----------------XSDB Script (After Launch)----------------
+18:06:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:28 INFO  : 'con' command is executed.
+18:06:28 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
 con
 ----------------End of Script----------------
 
-21:01:13 INFO  : Disconnected from the channel tcfchan#4.
-21:09:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-21:09:20 INFO  : 'fpga -state' command is executed.
-21:09:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-21:09:20 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
-21:09:20 INFO  : 'jtag frequency' command is executed.
-21:09:20 INFO  : Sourcing of '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
-21:09:20 INFO  : Context for 'APU' is selected.
-21:09:22 INFO  : Hardware design information is loaded from '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
-21:09:22 INFO  : 'configparams force-mem-access 1' command is executed.
-21:09:22 INFO  : Context for 'APU' is selected.
-21:09:22 INFO  : 'stop' command is executed.
-21:09:22 INFO  : 'ps7_init' command is executed.
-21:09:22 INFO  : 'ps7_post_config' command is executed.
-21:09:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:09:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
-21:09:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:09:22 INFO  : The application '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf' is downloaded to processor 'ps7_cortexa9_0'.
-21:09:22 INFO  : 'configparams force-mem-access 0' command is executed.
-21:09:22 INFO  : ----------------XSDB Script----------------
+18:06:28 INFO  : Disconnected from the channel tcfchan#4.
+18:10:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:10:01 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:10:01 INFO  : 'jtag frequency' command is executed.
+18:10:01 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:10:01 INFO  : Context for 'APU' is selected.
+18:10:01 INFO  : System reset is completed.
+18:10:04 INFO  : 'after 3000' command is executed.
+18:10:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:10:06 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:10:06 INFO  : Context for 'APU' is selected.
+18:10:06 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:10:06 INFO  : 'configparams force-mem-access 1' command is executed.
+18:10:06 INFO  : Context for 'APU' is selected.
+18:10:07 INFO  : 'ps7_init' command is executed.
+18:10:07 INFO  : 'ps7_post_config' command is executed.
+18:10:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:07 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:10:07 INFO  : 'configparams force-mem-access 0' command is executed.
+18:10:07 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
-source /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-loadhw -hw /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-stop
 ps7_init
 ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-rst -processor
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-dow /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
 configparams force-mem-access 0
 ----------------End of Script----------------
 
-21:09:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:09:23 INFO  : 'con' command is executed.
-21:09:23 INFO  : ----------------XSDB Script (After Launch)----------------
+18:10:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:07 INFO  : 'con' command is executed.
+18:10:07 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
 con
 ----------------End of Script----------------
 
-21:09:23 INFO  : Disconnected from the channel tcfchan#5.
-21:30:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-21:30:15 INFO  : 'fpga -state' command is executed.
-21:30:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-21:30:15 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
-21:30:15 INFO  : 'jtag frequency' command is executed.
-21:30:15 INFO  : Sourcing of '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
-21:30:15 INFO  : Context for 'APU' is selected.
-21:30:17 INFO  : Hardware design information is loaded from '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
-21:30:17 INFO  : 'configparams force-mem-access 1' command is executed.
-21:30:17 INFO  : Context for 'APU' is selected.
-21:30:17 INFO  : 'stop' command is executed.
-21:30:17 INFO  : 'ps7_init' command is executed.
-21:30:17 INFO  : 'ps7_post_config' command is executed.
-21:30:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:30:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
-21:30:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:30:17 INFO  : The application '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf' is downloaded to processor 'ps7_cortexa9_0'.
-21:30:17 INFO  : 'configparams force-mem-access 0' command is executed.
-21:30:17 INFO  : ----------------XSDB Script----------------
+18:10:07 INFO  : Disconnected from the channel tcfchan#5.
+18:11:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:11:02 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:11:02 INFO  : 'jtag frequency' command is executed.
+18:11:02 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:11:02 INFO  : Context for 'APU' is selected.
+18:11:02 INFO  : System reset is completed.
+18:11:05 INFO  : 'after 3000' command is executed.
+18:11:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:11:07 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:11:07 INFO  : Context for 'APU' is selected.
+18:11:07 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:11:07 INFO  : 'configparams force-mem-access 1' command is executed.
+18:11:07 INFO  : Context for 'APU' is selected.
+18:11:08 INFO  : 'ps7_init' command is executed.
+18:11:08 INFO  : 'ps7_post_config' command is executed.
+18:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:08 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:11:08 INFO  : 'configparams force-mem-access 0' command is executed.
+18:11:08 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
-source /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-loadhw -hw /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-stop
 ps7_init
 ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-rst -processor
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-dow /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
 configparams force-mem-access 0
 ----------------End of Script----------------
 
-21:30:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:30:18 INFO  : 'con' command is executed.
-21:30:18 INFO  : ----------------XSDB Script (After Launch)----------------
+18:11:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:11:08 INFO  : 'con' command is executed.
+18:11:08 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
 con
 ----------------End of Script----------------
 
-21:30:18 INFO  : Disconnected from the channel tcfchan#6.
-21:49:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
-21:49:24 INFO  : 'fpga -state' command is executed.
-21:49:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-21:49:24 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
-21:49:24 INFO  : 'jtag frequency' command is executed.
-21:49:24 INFO  : Sourcing of '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
-21:49:24 INFO  : Context for 'APU' is selected.
-21:49:26 INFO  : Hardware design information is loaded from '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
-21:49:26 INFO  : 'configparams force-mem-access 1' command is executed.
-21:49:26 INFO  : Context for 'APU' is selected.
-21:49:26 INFO  : 'stop' command is executed.
-21:49:26 INFO  : 'ps7_init' command is executed.
-21:49:26 INFO  : 'ps7_post_config' command is executed.
-21:49:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:49:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
-21:49:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:49:26 INFO  : The application '/home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf' is downloaded to processor 'ps7_cortexa9_0'.
-21:49:26 INFO  : 'configparams force-mem-access 0' command is executed.
-21:49:26 INFO  : ----------------XSDB Script----------------
+18:11:08 INFO  : Disconnected from the channel tcfchan#6.
+18:16:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:16:50 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:16:50 INFO  : 'jtag frequency' command is executed.
+18:16:50 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:16:50 INFO  : Context for 'APU' is selected.
+18:16:50 INFO  : System reset is completed.
+18:16:53 INFO  : 'after 3000' command is executed.
+18:17:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:17:12 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:17:14 INFO  : Context for 'APU' is selected.
+18:17:14 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:17:14 INFO  : 'configparams force-mem-access 1' command is executed.
+18:17:14 INFO  : Context for 'APU' is selected.
+18:17:14 INFO  : 'ps7_init' command is executed.
+18:17:14 INFO  : 'ps7_post_config' command is executed.
+18:17:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:15 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:17:15 INFO  : 'configparams force-mem-access 0' command is executed.
+18:17:15 INFO  : ----------------XSDB Script----------------
 connect -url tcp:127.0.0.1:3121
-source /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-loadhw -hw /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
 configparams force-mem-access 1
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-stop
 ps7_init
 ps7_post_config
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-rst -processor
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
-dow /home/benjamin/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server/Debug/Echo_Server.elf
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
 configparams force-mem-access 0
 ----------------End of Script----------------
 
-21:49:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
-21:49:26 INFO  : 'con' command is executed.
-21:49:26 INFO  : ----------------XSDB Script (After Launch)----------------
+18:17:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:15 INFO  : 'con' command is executed.
+18:17:15 INFO  : ----------------XSDB Script (After Launch)----------------
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
 con
 ----------------End of Script----------------
 
-21:49:26 INFO  : Disconnected from the channel tcfchan#7.
-22:25:33 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/benjamin/Repositories/PynqNet/PynqPS_ENet/BOOT.bin
-22:25:33 INFO  : Creating new bif file /home/benjamin/Repositories/PynqNet/PynqPS_ENet/output.bif
-22:25:34 INFO  : Bootgen command execution is done.
-22:29:51 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/benjamin/Pynq_Echo_Server/BOOT.bin
-22:29:51 INFO  : Creating new bif file /home/benjamin/Pynq_Echo_Server/output.bif
-22:29:53 INFO  : Bootgen command execution is done.
-12:43:02 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
-12:43:04 INFO  : XSCT server has started successfully.
-12:43:04 INFO  : Successfully done setting XSCT server connection channel  
-12:43:04 INFO  : Successfully done setting SDK workspace  
-12:43:09 INFO  : Registering command handlers for SDK TCF services
-12:43:09 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
-16:20:00 INFO  : Registering command handlers for SDK TCF services
-16:20:01 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
-16:20:04 INFO  : XSCT server has started successfully.
-16:20:04 INFO  : Successfully done setting XSCT server connection channel  
-16:20:04 INFO  : Successfully done setting SDK workspace  
-16:20:04 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
-16:20:04 INFO  : Checking for hwspec changes in the project Echo_Server_wrapper_hw_platform_1.
-16:20:08 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1581260931000,  Project:1581162089000
-16:20:08 INFO  : The hardware specification for project 'Echo_Server_wrapper_hw_platform_1' is different from /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
-16:20:19 INFO  : Copied contents of /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf into /Echo_Server_wrapper_hw_platform_1/system.hdf.
-16:20:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-16:20:33 INFO  : Clearing existing target manager status.
-16:20:33 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
-16:20:33 WARN  : Linker script will not be updated automatically. Users need to update it manually.
-16:22:51 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1581261745000,  Project:1581260931000
-16:22:51 INFO  : Project Echo_Server_wrapper_hw_platform_1's source hardware specification located at /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf is now different from the local copy.
-		 The local copy will be replaced with the source specification and your workspace will be updated.
-16:23:05 INFO  : Copied contents of /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf into /Echo_Server_wrapper_hw_platform_1/system.hdf.
-16:23:09 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
-16:23:09 INFO  : Clearing existing target manager status.
-16:23:09 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
-16:23:09 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+18:17:15 INFO  : Disconnected from the channel tcfchan#7.
+18:17:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:15 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:17:15 INFO  : 'jtag frequency' command is executed.
+18:17:15 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:17:15 INFO  : Context for 'APU' is selected.
+18:17:15 INFO  : System reset is completed.
+18:17:18 INFO  : 'after 3000' command is executed.
+18:17:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:17:21 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:17:21 INFO  : Context for 'APU' is selected.
+18:17:23 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:17:23 INFO  : 'configparams force-mem-access 1' command is executed.
+18:17:23 INFO  : Context for 'APU' is selected.
+18:17:23 INFO  : 'ps7_init' command is executed.
+18:17:23 INFO  : 'ps7_post_config' command is executed.
+18:17:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:23 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:17:23 INFO  : 'configparams force-mem-access 0' command is executed.
+18:17:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:17:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:23 INFO  : 'con' command is executed.
+18:17:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:17:23 INFO  : Disconnected from the channel tcfchan#8.
+18:22:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:22:38 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:22:38 INFO  : 'jtag frequency' command is executed.
+18:22:38 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:22:38 INFO  : Context for 'APU' is selected.
+18:22:38 INFO  : System reset is completed.
+18:22:41 INFO  : 'after 3000' command is executed.
+18:22:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:22:43 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:22:43 INFO  : Context for 'APU' is selected.
+18:22:43 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:22:43 INFO  : 'configparams force-mem-access 1' command is executed.
+18:22:43 INFO  : Context for 'APU' is selected.
+18:22:44 INFO  : 'ps7_init' command is executed.
+18:22:44 INFO  : 'ps7_post_config' command is executed.
+18:22:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:22:44 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:22:44 INFO  : 'configparams force-mem-access 0' command is executed.
+18:22:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:22:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:22:44 INFO  : 'con' command is executed.
+18:22:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:22:44 INFO  : Disconnected from the channel tcfchan#9.
+18:27:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:27:53 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:27:53 INFO  : 'jtag frequency' command is executed.
+18:27:53 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:27:53 INFO  : Context for 'APU' is selected.
+18:27:53 INFO  : System reset is completed.
+18:27:56 INFO  : 'after 3000' command is executed.
+18:27:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:27:59 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:27:59 INFO  : Context for 'APU' is selected.
+18:27:59 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:27:59 INFO  : 'configparams force-mem-access 1' command is executed.
+18:27:59 INFO  : Context for 'APU' is selected.
+18:27:59 INFO  : 'ps7_init' command is executed.
+18:27:59 INFO  : 'ps7_post_config' command is executed.
+18:27:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:27:59 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:27:59 INFO  : 'configparams force-mem-access 0' command is executed.
+18:27:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:27:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:27:59 INFO  : 'con' command is executed.
+18:27:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:27:59 INFO  : Disconnected from the channel tcfchan#10.
+18:30:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:30:16 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:30:16 INFO  : 'jtag frequency' command is executed.
+18:30:16 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:30:16 INFO  : Context for 'APU' is selected.
+18:30:16 INFO  : System reset is completed.
+18:30:19 INFO  : 'after 3000' command is executed.
+18:30:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:30:22 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:30:22 INFO  : Context for 'APU' is selected.
+18:30:22 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:30:22 INFO  : 'configparams force-mem-access 1' command is executed.
+18:30:22 INFO  : Context for 'APU' is selected.
+18:30:22 INFO  : 'ps7_init' command is executed.
+18:30:22 INFO  : 'ps7_post_config' command is executed.
+18:30:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:30:23 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:30:23 INFO  : 'configparams force-mem-access 0' command is executed.
+18:30:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:30:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:30:23 INFO  : 'con' command is executed.
+18:30:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:30:23 INFO  : Disconnected from the channel tcfchan#11.
+18:33:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:33:52 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:33:52 INFO  : 'jtag frequency' command is executed.
+18:33:52 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:33:52 INFO  : Context for 'APU' is selected.
+18:33:52 INFO  : System reset is completed.
+18:33:55 INFO  : 'after 3000' command is executed.
+18:33:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:33:58 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:33:58 INFO  : Context for 'APU' is selected.
+18:33:58 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:33:58 INFO  : 'configparams force-mem-access 1' command is executed.
+18:33:58 INFO  : Context for 'APU' is selected.
+18:33:58 INFO  : 'ps7_init' command is executed.
+18:33:58 INFO  : 'ps7_post_config' command is executed.
+18:33:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:33:58 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:33:58 INFO  : 'configparams force-mem-access 0' command is executed.
+18:33:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:33:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:33:58 INFO  : 'con' command is executed.
+18:33:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:33:58 INFO  : Disconnected from the channel tcfchan#12.
+18:40:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:40:58 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:40:58 INFO  : 'jtag frequency' command is executed.
+18:40:58 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:40:58 INFO  : Context for 'APU' is selected.
+18:40:58 INFO  : System reset is completed.
+18:41:01 INFO  : 'after 3000' command is executed.
+18:41:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:41:04 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:41:04 INFO  : Context for 'APU' is selected.
+18:41:04 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:41:04 INFO  : 'configparams force-mem-access 1' command is executed.
+18:41:04 INFO  : Context for 'APU' is selected.
+18:41:04 INFO  : 'ps7_init' command is executed.
+18:41:04 INFO  : 'ps7_post_config' command is executed.
+18:41:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:41:05 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:41:05 INFO  : 'configparams force-mem-access 0' command is executed.
+18:41:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:41:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:41:05 INFO  : 'con' command is executed.
+18:41:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:41:05 INFO  : Disconnected from the channel tcfchan#13.
+18:43:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:43:28 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:43:28 INFO  : 'jtag frequency' command is executed.
+18:43:28 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:43:28 INFO  : Context for 'APU' is selected.
+18:43:28 INFO  : System reset is completed.
+18:43:31 INFO  : 'after 3000' command is executed.
+18:43:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:43:34 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:43:34 INFO  : Context for 'APU' is selected.
+18:43:34 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:43:34 INFO  : 'configparams force-mem-access 1' command is executed.
+18:43:34 INFO  : Context for 'APU' is selected.
+18:43:34 INFO  : 'ps7_init' command is executed.
+18:43:34 INFO  : 'ps7_post_config' command is executed.
+18:43:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:43:34 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:43:34 INFO  : 'configparams force-mem-access 0' command is executed.
+18:43:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:43:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:43:34 INFO  : 'con' command is executed.
+18:43:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:43:34 INFO  : Disconnected from the channel tcfchan#14.
+18:46:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:46:32 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:46:32 INFO  : 'jtag frequency' command is executed.
+18:46:32 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:46:32 INFO  : Context for 'APU' is selected.
+18:46:32 INFO  : System reset is completed.
+18:46:35 INFO  : 'after 3000' command is executed.
+18:46:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:46:37 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:46:38 INFO  : Context for 'APU' is selected.
+18:46:38 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:46:38 INFO  : 'configparams force-mem-access 1' command is executed.
+18:46:38 INFO  : Context for 'APU' is selected.
+18:46:38 INFO  : 'ps7_init' command is executed.
+18:46:38 INFO  : 'ps7_post_config' command is executed.
+18:46:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:46:38 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:46:38 INFO  : 'configparams force-mem-access 0' command is executed.
+18:46:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:46:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:46:38 INFO  : 'con' command is executed.
+18:46:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:46:38 INFO  : Disconnected from the channel tcfchan#15.
+18:47:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:10 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:47:10 INFO  : 'jtag frequency' command is executed.
+18:47:10 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:47:10 INFO  : Context for 'APU' is selected.
+18:47:10 INFO  : System reset is completed.
+18:47:13 INFO  : 'after 3000' command is executed.
+18:47:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:47:15 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:47:16 INFO  : Context for 'APU' is selected.
+18:47:16 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:47:16 INFO  : 'configparams force-mem-access 1' command is executed.
+18:47:16 INFO  : Context for 'APU' is selected.
+18:47:16 INFO  : 'ps7_init' command is executed.
+18:47:16 INFO  : 'ps7_post_config' command is executed.
+18:47:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:16 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:47:16 INFO  : 'configparams force-mem-access 0' command is executed.
+18:47:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:47:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:16 INFO  : 'con' command is executed.
+18:47:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:47:16 INFO  : Disconnected from the channel tcfchan#16.
+18:51:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:51:09 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:51:09 INFO  : 'jtag frequency' command is executed.
+18:51:09 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:51:09 INFO  : Context for 'APU' is selected.
+18:51:09 INFO  : System reset is completed.
+18:51:12 INFO  : 'after 3000' command is executed.
+18:51:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:51:15 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:51:15 INFO  : Context for 'APU' is selected.
+18:51:15 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:51:15 INFO  : 'configparams force-mem-access 1' command is executed.
+18:51:15 INFO  : Context for 'APU' is selected.
+18:51:15 INFO  : 'ps7_init' command is executed.
+18:51:15 INFO  : 'ps7_post_config' command is executed.
+18:51:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:51:15 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:51:15 INFO  : 'configparams force-mem-access 0' command is executed.
+18:51:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:51:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:51:15 INFO  : 'con' command is executed.
+18:51:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:51:15 INFO  : Disconnected from the channel tcfchan#17.
+18:55:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:55:46 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:55:46 INFO  : 'jtag frequency' command is executed.
+18:55:46 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:55:46 INFO  : Context for 'APU' is selected.
+18:55:46 INFO  : System reset is completed.
+18:55:49 INFO  : 'after 3000' command is executed.
+18:55:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:55:52 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:55:52 INFO  : Context for 'APU' is selected.
+18:55:52 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:55:52 INFO  : 'configparams force-mem-access 1' command is executed.
+18:55:52 INFO  : Context for 'APU' is selected.
+18:55:52 INFO  : 'ps7_init' command is executed.
+18:55:52 INFO  : 'ps7_post_config' command is executed.
+18:55:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:55:52 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:55:52 INFO  : 'configparams force-mem-access 0' command is executed.
+18:55:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:55:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:55:52 INFO  : 'con' command is executed.
+18:55:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:55:52 INFO  : Disconnected from the channel tcfchan#18.
+18:57:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:57:36 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:57:36 INFO  : 'jtag frequency' command is executed.
+18:57:36 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:57:36 INFO  : Context for 'APU' is selected.
+18:57:36 INFO  : System reset is completed.
+18:57:39 INFO  : 'after 3000' command is executed.
+18:57:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:57:41 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:57:41 INFO  : Context for 'APU' is selected.
+18:57:41 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:57:41 INFO  : 'configparams force-mem-access 1' command is executed.
+18:57:41 INFO  : Context for 'APU' is selected.
+18:57:42 INFO  : 'ps7_init' command is executed.
+18:57:42 INFO  : 'ps7_post_config' command is executed.
+18:57:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:57:42 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:57:42 INFO  : 'configparams force-mem-access 0' command is executed.
+18:57:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:57:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:57:42 INFO  : 'con' command is executed.
+18:57:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:57:42 INFO  : Disconnected from the channel tcfchan#19.
+18:58:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:58:23 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:58:23 INFO  : 'jtag frequency' command is executed.
+18:58:23 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:58:23 INFO  : Context for 'APU' is selected.
+18:58:23 INFO  : System reset is completed.
+18:58:26 INFO  : 'after 3000' command is executed.
+18:58:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:58:29 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:58:29 INFO  : Context for 'APU' is selected.
+18:58:29 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:58:29 INFO  : 'configparams force-mem-access 1' command is executed.
+18:58:29 INFO  : Context for 'APU' is selected.
+18:58:29 INFO  : 'ps7_init' command is executed.
+18:58:29 INFO  : 'ps7_post_config' command is executed.
+18:58:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:58:30 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:58:30 INFO  : 'configparams force-mem-access 0' command is executed.
+18:58:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:58:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:58:30 INFO  : 'con' command is executed.
+18:58:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:58:30 INFO  : Disconnected from the channel tcfchan#20.
+18:59:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:59:24 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+18:59:24 INFO  : 'jtag frequency' command is executed.
+18:59:24 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:59:24 INFO  : Context for 'APU' is selected.
+18:59:24 INFO  : System reset is completed.
+18:59:27 INFO  : 'after 3000' command is executed.
+18:59:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+18:59:29 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+18:59:30 INFO  : Context for 'APU' is selected.
+18:59:30 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+18:59:30 INFO  : 'configparams force-mem-access 1' command is executed.
+18:59:30 INFO  : Context for 'APU' is selected.
+18:59:30 INFO  : 'ps7_init' command is executed.
+18:59:30 INFO  : 'ps7_post_config' command is executed.
+18:59:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:59:30 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:59:30 INFO  : 'configparams force-mem-access 0' command is executed.
+18:59:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:59:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:59:30 INFO  : 'con' command is executed.
+18:59:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+18:59:30 INFO  : Disconnected from the channel tcfchan#21.
+19:00:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:00:48 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+19:00:48 INFO  : 'jtag frequency' command is executed.
+19:00:48 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:00:48 INFO  : Context for 'APU' is selected.
+19:00:49 INFO  : System reset is completed.
+19:00:52 INFO  : 'after 3000' command is executed.
+19:00:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+19:00:54 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+19:00:54 INFO  : Context for 'APU' is selected.
+19:00:54 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+19:00:54 INFO  : 'configparams force-mem-access 1' command is executed.
+19:00:54 INFO  : Context for 'APU' is selected.
+19:00:55 INFO  : 'ps7_init' command is executed.
+19:00:55 INFO  : 'ps7_post_config' command is executed.
+19:00:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:00:55 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:00:55 INFO  : 'configparams force-mem-access 0' command is executed.
+19:00:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:00:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:00:55 INFO  : 'con' command is executed.
+19:00:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+19:00:55 INFO  : Disconnected from the channel tcfchan#22.
+19:08:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:08:09 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+19:08:09 INFO  : 'jtag frequency' command is executed.
+19:08:09 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:08:09 INFO  : Context for 'APU' is selected.
+19:08:10 INFO  : System reset is completed.
+19:08:13 INFO  : 'after 3000' command is executed.
+19:08:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+19:08:15 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+19:08:15 INFO  : Context for 'APU' is selected.
+19:08:15 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+19:08:15 INFO  : 'configparams force-mem-access 1' command is executed.
+19:08:15 INFO  : Context for 'APU' is selected.
+19:08:15 INFO  : 'ps7_init' command is executed.
+19:08:15 INFO  : 'ps7_post_config' command is executed.
+19:08:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:08:16 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:08:16 INFO  : 'configparams force-mem-access 0' command is executed.
+19:08:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:08:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:08:16 INFO  : 'con' command is executed.
+19:08:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+19:08:16 INFO  : Disconnected from the channel tcfchan#23.
+19:19:29 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/BOOT.bin -w on
+19:19:29 INFO  : Overwriting existing bif file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/output.bif
+19:19:31 INFO  : Bootgen command execution is done.
+19:19:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:19:59 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6E103A' is selected.
+19:19:59 INFO  : 'jtag frequency' command is executed.
+19:19:59 INFO  : Sourcing of '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:19:59 INFO  : Context for 'APU' is selected.
+19:20:00 INFO  : System reset is completed.
+19:20:03 INFO  : 'after 3000' command is executed.
+19:20:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1' command is executed.
+19:20:05 INFO  : FPGA configured successfully with bitstream "/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit"
+19:20:05 INFO  : Context for 'APU' is selected.
+19:20:05 INFO  : Hardware design information is loaded from '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf'.
+19:20:05 INFO  : 'configparams force-mem-access 1' command is executed.
+19:20:05 INFO  : Context for 'APU' is selected.
+19:20:05 INFO  : 'ps7_init' command is executed.
+19:20:05 INFO  : 'ps7_post_config' command is executed.
+19:20:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:20:06 INFO  : The application '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:20:06 INFO  : 'configparams force-mem-access 0' command is executed.
+19:20:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A" && level==0} -index 1
+fpga -file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/Echo_Server_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+loadhw -hw /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+dow /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/EchoServer.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:20:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:20:06 INFO  : 'con' command is executed.
+19:20:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6E103A"} -index 0
+con
+----------------End of Script----------------
+
+19:20:06 INFO  : Disconnected from the channel tcfchan#24.
+19:21:31 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/BOOT.bin -w on
+19:21:31 INFO  : Overwriting existing bif file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/output.bif
+19:21:33 INFO  : Bootgen command execution is done.
