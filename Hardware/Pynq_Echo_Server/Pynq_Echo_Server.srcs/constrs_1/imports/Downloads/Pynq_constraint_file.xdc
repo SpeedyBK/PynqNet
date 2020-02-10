@@ -100,7 +100,7 @@ set_property -dict { PACKAGE_PIN V6    IOSTANDARD LVCMOS33 } [get_ports { digit_
 set_property -dict { PACKAGE_PIN V5    IOSTANDARD LVCMOS33 } [get_ports { digit_o[1] }];               # ck_io[27]
 set_property -dict { PACKAGE_PIN U5    IOSTANDARD LVCMOS33 } [get_ports { digit_o[0] }]; #most right   # ck_io[26]
 
-set_property -dict { PACKAGE_PIN R16     IOSTANDARD LVCMOS33 } [get_ports { value_o[0] }]; # a           # ck_io[06]
+set_property -dict { PACKAGE_PIN R16     IOSTANDARD LVCMOS33 } [get_ports { value_o[0] }]; # d           # ck_io[06]
 set_property -dict { PACKAGE_PIN T14     IOSTANDARD LVCMOS33 } [get_ports { value_o[1] }]; # b           # ck_io[02]
 set_property -dict { PACKAGE_PIN U12     IOSTANDARD LVCMOS33 } [get_ports { value_o[2] }]; # c           # ck_io[01]
 set_property -dict { PACKAGE_PIN T15     IOSTANDARD LVCMOS33 } [get_ports { value_o[3] }]; # d           # ck_io[05]
