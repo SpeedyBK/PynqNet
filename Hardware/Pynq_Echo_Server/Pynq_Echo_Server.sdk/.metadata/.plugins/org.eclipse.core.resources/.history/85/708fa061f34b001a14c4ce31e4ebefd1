@@ -35,6 +35,8 @@
 #include "ManInput.h"
 #include "SixDigitHexDisplay.h"
 
+#include "CustomDataTyps.h"
+
 #include "netif/xadapter.h"
 
 #include "platform.h"
@@ -57,7 +59,7 @@
 /* defined by each RAW mode application */
 void print_app_header();
 int start_application();
-int transfer_data();
+struct pointer_length transfer_data();
 void tcp_fasttmr(void);
 void tcp_slowtmr(void);
 
@@ -75,6 +77,8 @@ extern volatile int TcpFastTmrFlag;
 extern volatile int TcpSlowTmrFlag;
 static struct netif server_netif;
 struct netif *echo_netif;
+
+XGpio Gpio;
 
 #if LWIP_IPV6==1
 void print_ip6(char *msg, ip_addr_t *ip)
@@ -123,6 +127,29 @@ int IicPhyReset(void);
 #endif
 #endif
 
+void gpio_print(void* p, int length){
+	u8* bums = (u8*) p;
+	for (int i = 0; i < length; i++){
+		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
+			XGpio_DiscreteWrite(&Gpio, 1, *(bums+i)-48);
+		}
+	}
+}
+
+void display_print(void* p, int length){
+	if (length > 6){
+		xil_printf("To much Data to show \r\n");
+		return;
+	}
+	u8* bums = (u8*) p;
+	for (int i = 0; i < 6; i++){
+		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
+			SIXDIGITHEXDISPLAY_mWriteReg(XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_BASEADDR, 4*i, i-48); //*(bums+i)-48);
+			xil_printf("%X\r\n", SIXDIGITHEXDISPLAY_mReadReg(XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_BASEADDR, 4*i));
+		}
+	}
+}
+
 int main()
 {
 #if LWIP_IPV6==0
@@ -150,7 +177,8 @@ int main()
 #endif
 
 	init_platform();
-	XGpio xgpio;
+	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_SetDataDirection(&Gpio, 1, 0);
 
 #if LWIP_IPV6==0
 #if LWIP_DHCP==1
@@ -243,7 +271,9 @@ int main()
 			TcpSlowTmrFlag = 0;
 		}
 		xemacif_input(echo_netif);
-		struct pointer_length pl = transfer_data();
+		struct pointer_length p = transfer_data();
+		gpio_print(p.pl, p.length);
+		display_print(p.pl, p.length);
 	}
 
 	/* never reached */

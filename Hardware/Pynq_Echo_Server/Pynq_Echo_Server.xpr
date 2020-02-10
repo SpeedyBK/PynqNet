@@ -68,26 +68,26 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_axi_gpio_0_0/Echo_Server_axi_gpio_0_0.xci">
+          <Proxy FileSetName="Echo_Server_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_processing_system7_0_0/Echo_Server_processing_system7_0_0.xci">
           <Proxy FileSetName="Echo_Server_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_rst_ps7_0_100M_0/Echo_Server_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="Echo_Server_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0.xci">
           <Proxy FileSetName="Echo_Server_ManInput_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_xbar_0/Echo_Server_xbar_0.xci">
-          <Proxy FileSetName="Echo_Server_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0.xci">
+          <Proxy FileSetName="Echo_Server_auto_pc_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_SixDigitHexDisplay_0_0/Echo_Server_SixDigitHexDisplay_0_0.xci">
           <Proxy FileSetName="Echo_Server_SixDigitHexDisplay_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0.xci">
-          <Proxy FileSetName="Echo_Server_auto_pc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_axi_gpio_0_0/Echo_Server_axi_gpio_0_0.xci">
-          <Proxy FileSetName="Echo_Server_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_rst_ps7_0_100M_0/Echo_Server_rst_ps7_0_100M_0.xci">
-          <Proxy FileSetName="Echo_Server_rst_ps7_0_100M_0"/>
+        <CompFileExtendedInfo CompFileName="Echo_Server.bd" FileRelPathName="ip/Echo_Server_xbar_0/Echo_Server_xbar_0.xci">
+          <Proxy FileSetName="Echo_Server_xbar_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd">

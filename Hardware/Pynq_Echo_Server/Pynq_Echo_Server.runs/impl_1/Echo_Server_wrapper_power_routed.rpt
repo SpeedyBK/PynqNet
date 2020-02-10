@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Sun Feb  9 16:19:22 2020
+| Date             : Mon Feb 10 13:49:40 2020
 | Host             : Laptop running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file Echo_Server_wrapper_power_routed.rpt -pb Echo_Server_wrapper_power_summary_routed.pb -rpx Echo_Server_wrapper_power_routed.rpx
 | Design           : Echo_Server_wrapper
@@ -52,15 +52,15 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.005 |        3 |       --- |             --- |
+| Clocks                  |     0.004 |        3 |       --- |             --- |
 | Slice Logic             |     0.001 |     2535 |       --- |             --- |
-|   LUT as Logic          |     0.001 |      746 |     53200 |            1.40 |
+|   LUT as Logic          |     0.001 |      747 |     53200 |            1.40 |
 |   Register              |    <0.001 |     1265 |    106400 |            1.19 |
 |   CARRY4                |    <0.001 |       26 |     13300 |            0.20 |
 |   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
 |   Others                |     0.000 |      211 |       --- |             --- |
 |   F7/F8 Muxes           |     0.000 |       32 |     53200 |            0.06 |
-| Signals                 |     0.002 |     1954 |       --- |             --- |
+| Signals                 |     0.002 |     1953 |       --- |             --- |
 | I/O                     |     0.013 |       35 |       125 |           28.00 |
 | PS7                     |     1.256 |        1 |       --- |             --- |
 | Static Power            |     0.138 |          |           |                 |
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.022 |       0.008 |      0.013 |
+| Vccint    |       1.000 |     0.021 |       0.008 |      0.013 |
 | Vccaux    |       1.800 |     0.015 |       0.000 |      0.014 |
 | Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -152,8 +152,8 @@ Table of Contents
 +--------------------------+-----------+
 | Echo_Server_wrapper      |     1.277 |
 |   Echo_Server_i          |     1.264 |
-|     SixDigitHexDisplay_0 |     0.002 |
-|       U0                 |     0.002 |
+|     SixDigitHexDisplay_0 |     0.001 |
+|       U0                 |     0.001 |
 |     processing_system7_0 |     1.257 |
 |       inst               |     1.257 |
 |     ps7_0_axi_periph     |     0.005 |

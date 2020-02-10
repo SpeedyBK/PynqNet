@@ -29,6 +29,15 @@
 #include <stdio.h>
 #include <string.h>
 #include "CustomDataTyps.h"
+#include "ManInput.h"
+#include "SixDigitHexDisplay.h"
+#include "xparameters.h"
+#include "platform.h"
+#include "platform_config.h"
+#include "xil_cache.h"
+#include "xil_types.h"
+#include "xstatus.h"
+#include "xgpio.h"
 
 #include "lwip/err.h"
 #include "lwip/tcp.h"
@@ -55,6 +64,19 @@ void print_data(void* p, int length){
 		}
 	}
 	xil_printf("\n");
+}
+
+void display_print(void* p, int length){
+	if (length > 6){
+		xil_printf("To much Data to show \r\n");
+		return;
+	}
+	u8* bums = (u8*) p;
+	for (int i = 0; i < length; i++){
+		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
+			SIXDIGITHEXDISPLAY_mWriteReg(XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_BASEADDR, 4*i, *(bums+i) - 32); // Noch in Hardware Fixen!
+		}
+	}
 }
 
 void print_app_header()
@@ -84,6 +106,7 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
 	length = p->len;
 
 	print_data(pay, length);
+	display_print(pay, length);
 
 	/* echo back the payload */
 	/* in this case, we assume that the payload is < TCP_SND_BUF */

@@ -35,7 +35,11 @@
 #include "ManInput.h"
 #include "SixDigitHexDisplay.h"
 
+/*Custom Datatypes*/
 #include "CustomDataTyps.h"
+
+/*Custom Functions*/
+#include "CustomFunction.h"
 
 #include "netif/xadapter.h"
 
@@ -132,19 +136,6 @@ void gpio_print(void* p, int length){
 	for (int i = 0; i < length; i++){
 		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
 			XGpio_DiscreteWrite(&Gpio, 1, *(bums+i)-48);
-		}
-	}
-}
-
-void display_print(void* p, int length){
-	if (length > 5){
-		xil_printf("To much Data to show \r\n");
-		return;
-	}
-	u8* bums = (u8*) p;
-	for (int i = 0; i < length; i++){
-		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
-			SIXDIGITHEXDISPLAY_mWriteReg(XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_BASEADDR, 4*i, *(bums+i)-48);
 		}
 	}
 }
@@ -272,7 +263,6 @@ int main()
 		xemacif_input(echo_netif);
 		struct pointer_length p = transfer_data();
 		gpio_print(p.pl, p.length);
-		display_print(p.pl, p.length);
 	}
 
 	/* never reached */
