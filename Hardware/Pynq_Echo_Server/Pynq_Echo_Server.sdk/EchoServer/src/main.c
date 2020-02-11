@@ -60,7 +60,7 @@
 #endif
 #endif
 
-#define LWIP_DHCP 0 // Stuff added;
+//#define LWIP_DHCP 0 // Stuff added;
 
 /* defined by each RAW mode application */
 void print_app_header();
@@ -192,8 +192,6 @@ int main()
 	netmask.addr = 0;
 #else
 	/* initliaze IP addresses to be used */
-	xil_printf("HAllo\n");
-	xil_printf(" %d\r\n", (char)XGpio_DiscreteRead(&Gpio2, 1));
 	switch (XGpio_DiscreteRead(&Gpio2, 1)){
 	 case 0  : IP4_ADDR(&ipaddr,  192, 168,  1, 10); break;
 	 case 1  : IP4_ADDR(&ipaddr,  192, 168,  1, 11); break;
@@ -201,7 +199,7 @@ int main()
 	 case 3  : IP4_ADDR(&ipaddr,  192, 168,  1, 13); break;
 	 default : IP4_ADDR(&ipaddr,  192, 168,  1, 20); break;
 	}
-	//IP4_ADDR(&ipaddr,  192, 168,   1, 10);
+	IP4_ADDR(&ipaddr,  192, 168,   1, 10);
 	IP4_ADDR(&netmask, 255, 255, 255,  0);
 	IP4_ADDR(&gw,      192, 168,   1,  1);
 #endif
@@ -257,7 +255,13 @@ int main()
 		if ((echo_netif->ip_addr.addr) == 0) {
 			xil_printf("DHCP Timeout\r\n");
 			xil_printf("Configuring default IP of 192.168.1.10\r\n");
-			IP4_ADDR(&(echo_netif->ip_addr),  192, 168,   1, 10);
+			switch (XGpio_DiscreteRead(&Gpio2, 1)){
+			 case 0  : IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 10); break;
+			 case 1  : IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 11); break;
+			 case 2  : IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 12); break;
+			 case 3  : IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 13); break;
+			 default : IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 20); break;
+			}
 			IP4_ADDR(&(echo_netif->netmask), 255, 255, 255,  0);
 			IP4_ADDR(&(echo_netif->gw),      192, 168,   1,  1);
 		}

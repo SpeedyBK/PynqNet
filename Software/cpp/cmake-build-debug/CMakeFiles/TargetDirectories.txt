@@ -1,3 +1,0 @@
-/home/benjamin/PynqNet/ZyNet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/benjamin/PynqNet/ZyNet/cmake-build-debug/CMakeFiles/ZyNet.dir
-/home/benjamin/PynqNet/ZyNet/cmake-build-debug/CMakeFiles/edit_cache.dir

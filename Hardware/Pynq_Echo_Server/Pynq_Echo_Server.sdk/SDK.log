@@ -3691,3 +3691,13 @@ connect -url tcp:127.0.0.1:3121
 15:13:47 INFO  : Updating hardware inferred compiler options for EchoServer.
 15:13:47 INFO  : Updating hardware inferred compiler options for FSBL.
 15:13:47 INFO  : Clearing existing target manager status.
+23:42:11 INFO  : Registering command handlers for SDK TCF services
+23:42:13 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
+23:42:16 INFO  : XSCT server has started successfully.
+23:42:16 INFO  : Successfully done setting XSCT server connection channel  
+23:42:16 INFO  : Successfully done setting SDK workspace  
+23:42:16 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
+23:42:16 INFO  : Checking for hwspec changes in the project Echo_Server_wrapper_hw_platform_0.
+23:48:27 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynq -o /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/BOOT.bin -w on
+23:48:27 INFO  : Overwriting existing bif file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/output.bif
+23:48:29 INFO  : Bootgen command execution is done.

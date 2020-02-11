@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ZyNet.dir/src/ZyNet.cpp.o CMakeFiles/ZyNet.dir/src/ZyNet/Exception.cpp.o CMakeFiles/ZyNet.dir/src/ZyNet/Base.cpp.o  -o ZyNet 

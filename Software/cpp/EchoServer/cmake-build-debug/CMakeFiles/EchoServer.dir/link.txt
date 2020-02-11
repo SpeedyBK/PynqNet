@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/EchoServer.dir/main.cpp.o  -o EchoServer 
