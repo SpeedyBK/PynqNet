@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: user.org:user:SixDigitHexDisplay:1.0
--- IP Revision: 3
+-- IP Revision: 5
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,7 +55,7 @@ USE ieee.numeric_std.ALL;
 
 ENTITY Echo_Server_SixDigitHexDisplay_0_0 IS
   PORT (
-    digit_o : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+    digit_o : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     value_o : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
     s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -90,7 +90,7 @@ ARCHITECTURE Echo_Server_SixDigitHexDisplay_0_0_arch OF Echo_Server_SixDigitHexD
       C_S00_AXI_ADDR_WIDTH : INTEGER -- Width of S_AXI address bus
     );
     PORT (
-      digit_o : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+      digit_o : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
       value_o : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
       s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);

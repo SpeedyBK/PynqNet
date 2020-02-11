@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Feb 10 13:46:44 2020
-# Process ID: 12793
+# Start of session at: Mon Feb 10 17:53:55 2020
+# Process ID: 27798
 # Current directory: /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1
 # Command line: vivado -log Echo_Server_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Echo_Server_wrapper.tcl
 # Log file: /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/Echo_Server_wrapper.vds
@@ -19,21 +19,21 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12829 
+INFO: Helper process launched with PID 27822 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1754.047 ; gain = 152.684 ; free physical = 302 ; free virtual = 5010
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1754.113 ; gain = 153.715 ; free physical = 265 ; free virtual = 3917
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Echo_Server_wrapper' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:46]
 INFO: [Synth 8-3491] module 'Echo_Server' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1354' bound to instance 'Echo_Server_i' of component 'Echo_Server' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:105]
 INFO: [Synth 8-638] synthesizing module 'Echo_Server' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1392]
-INFO: [Synth 8-3491] module 'Echo_Server_ManInput_0_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_ManInput_0_0_stub.vhdl:5' bound to instance 'ManInput_0' of component 'Echo_Server_ManInput_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1725]
-INFO: [Synth 8-638] synthesizing module 'Echo_Server_ManInput_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_ManInput_0_0_stub.vhdl:35]
-INFO: [Synth 8-3491] module 'Echo_Server_SixDigitHexDisplay_0_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_SixDigitHexDisplay_0_0_stub.vhdl:5' bound to instance 'SixDigitHexDisplay_0' of component 'Echo_Server_SixDigitHexDisplay_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1752]
-INFO: [Synth 8-638] synthesizing module 'Echo_Server_SixDigitHexDisplay_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_SixDigitHexDisplay_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'Echo_Server_axi_gpio_0_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'Echo_Server_axi_gpio_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1778]
-INFO: [Synth 8-638] synthesizing module 'Echo_Server_axi_gpio_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_axi_gpio_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'Echo_Server_processing_system7_0_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'Echo_Server_processing_system7_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1803]
-INFO: [Synth 8-638] synthesizing module 'Echo_Server_processing_system7_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_processing_system7_0_0_stub.vhdl:76]
+INFO: [Synth 8-3491] module 'Echo_Server_ManInput_0_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_ManInput_0_0_stub.vhdl:5' bound to instance 'ManInput_0' of component 'Echo_Server_ManInput_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1725]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_ManInput_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_ManInput_0_0_stub.vhdl:35]
+INFO: [Synth 8-3491] module 'Echo_Server_SixDigitHexDisplay_0_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_SixDigitHexDisplay_0_0_stub.vhdl:5' bound to instance 'SixDigitHexDisplay_0' of component 'Echo_Server_SixDigitHexDisplay_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1752]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_SixDigitHexDisplay_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_SixDigitHexDisplay_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'Echo_Server_axi_gpio_0_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'Echo_Server_axi_gpio_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1778]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_axi_gpio_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_axi_gpio_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'Echo_Server_processing_system7_0_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'Echo_Server_processing_system7_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1803]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_processing_system7_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_processing_system7_0_0_stub.vhdl:76]
 INFO: [Synth 8-638] synthesizing module 'Echo_Server_ps7_0_axi_periph_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:761]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_30LDPW' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_30LDPW' (1#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:57]
@@ -42,14 +42,14 @@ INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_15CJFVU' (2#1) [/
 INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1U2DHVT' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:273]
 INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1U2DHVT' (3#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:273]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1S2399G' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:403]
-INFO: [Synth 8-3491] module 'Echo_Server_auto_pc_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Echo_Server_auto_pc_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:586]
-INFO: [Synth 8-638] synthesizing module 'Echo_Server_auto_pc_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'Echo_Server_auto_pc_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'Echo_Server_auto_pc_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:586]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_auto_pc_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1S2399G' (4#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:403]
-INFO: [Synth 8-3491] module 'Echo_Server_xbar_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'Echo_Server_xbar_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1268]
-INFO: [Synth 8-638] synthesizing module 'Echo_Server_xbar_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'Echo_Server_xbar_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'Echo_Server_xbar_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1268]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_xbar_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'Echo_Server_ps7_0_axi_periph_0' (5#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:761]
-INFO: [Synth 8-3491] module 'Echo_Server_rst_ps7_0_100M_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'Echo_Server_rst_ps7_0_100M_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1977]
-INFO: [Synth 8-638] synthesizing module 'Echo_Server_rst_ps7_0_100M_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-12793-Laptop/realtime/Echo_Server_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'Echo_Server_rst_ps7_0_100M_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'Echo_Server_rst_ps7_0_100M_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1977]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_rst_ps7_0_100M_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/.Xil/Vivado-27798-Laptop/realtime/Echo_Server_rst_ps7_0_100M_0_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'Echo_Server' (6#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/synth/Echo_Server.vhd:1392]
 INFO: [Synth 8-3491] module 'IOBUF' declared at '/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115' bound to instance 'leds_4bits_tri_iobuf_0' of component 'IOBUF' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/hdl/Echo_Server_wrapper.vhd:146]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
@@ -85,7 +85,7 @@ WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected po
 WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1812.766 ; gain = 211.402 ; free physical = 322 ; free virtual = 5033
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1812.832 ; gain = 212.434 ; free physical = 289 ; free virtual = 3941
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -98,10 +98,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1815.734 ; gain = 214.371 ; free physical = 319 ; free virtual = 5029
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1815.801 ; gain = 215.402 ; free physical = 284 ; free virtual = 3936
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1815.734 ; gain = 214.371 ; free physical = 319 ; free virtual = 5029
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1815.801 ; gain = 215.402 ; free physical = 284 ; free virtual = 3936
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -119,10 +119,10 @@ Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/
 Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_xbar_0/Echo_Server_xbar_0/Echo_Server_xbar_0_in_context.xdc] for cell 'Echo_Server_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/Echo_Server_SixDigitHexDisplay_0_0/Echo_Server_SixDigitHexDisplay_0_0_in_context.xdc] for cell 'Echo_Server_i/SixDigitHexDisplay_0'
 Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/Echo_Server_SixDigitHexDisplay_0_0/Echo_Server_SixDigitHexDisplay_0_0_in_context.xdc] for cell 'Echo_Server_i/SixDigitHexDisplay_0'
-Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0_in_context.xdc] for cell 'Echo_Server_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0_in_context.xdc] for cell 'Echo_Server_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0_in_context.xdc] for cell 'Echo_Server_i/ManInput_0'
 Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0_in_context.xdc] for cell 'Echo_Server_i/ManInput_0'
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0_in_context.xdc] for cell 'Echo_Server_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0_in_context.xdc] for cell 'Echo_Server_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc]
 Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Echo_Server_wrapper_propImpl.xdc].
@@ -131,21 +131,21 @@ Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/
 Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1940.391 ; gain = 0.000 ; free physical = 204 ; free virtual = 4931
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1940.426 ; gain = 0.000 ; free physical = 190 ; free virtual = 3844
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1940.391 ; gain = 0.000 ; free physical = 204 ; free virtual = 4931
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1940.426 ; gain = 0.000 ; free physical = 190 ; free virtual = 3844
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 287 ; free virtual = 5006
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 265 ; free virtual = 3919
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 287 ; free virtual = 5006
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 265 ; free virtual = 3919
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -417,13 +417,13 @@ Applied set_property DONT_TOUCH = true for Echo_Server_i/ps7_0_axi_periph. (cons
 Applied set_property DONT_TOUCH = true for Echo_Server_i/rst_ps7_0_100M. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Echo_Server_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Echo_Server_i/SixDigitHexDisplay_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for Echo_Server_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Echo_Server_i/ManInput_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Echo_Server_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 287 ; free virtual = 5006
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 268 ; free virtual = 3922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 286 ; free virtual = 5006
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 267 ; free virtual = 3922
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -467,7 +467,7 @@ WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected po
 WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design Echo_Server_ps7_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 283 ; free virtual = 5006
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 264 ; free virtual = 3921
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -481,13 +481,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'Echo_Server_i/processing_system7_0/FCLK_CLK0' to pin 'Echo_Server_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 141 ; free virtual = 4871
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 130 ; free virtual = 3788
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 141 ; free virtual = 4871
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 130 ; free virtual = 3788
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -499,7 +499,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 139 ; free virtual = 4869
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 128 ; free virtual = 3786
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -523,7 +523,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 148 ; free virtual = 4878
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 136 ; free virtual = 3794
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -536,7 +536,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 148 ; free virtual = 4878
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 136 ; free virtual = 3794
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -548,25 +548,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 148 ; free virtual = 4878
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 136 ; free virtual = 3794
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 148 ; free virtual = 4878
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 136 ; free virtual = 3794
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 148 ; free virtual = 4878
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 136 ; free virtual = 3794
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 148 ; free virtual = 4878
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 137 ; free virtual = 3794
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -598,30 +598,30 @@ Report Cell Usage:
 |7     |Echo_Server_xbar_0_bbox_5                 |     1|
 |8     |IBUF                                      |     9|
 |9     |IOBUF                                     |     4|
-|10    |OBUF                                      |    22|
+|10    |OBUF                                      |    24|
 +------+------------------------------------------+------+
 
 Report Instance Areas: 
 +------+---------------------+-------------------------------+------+
 |      |Instance             |Module                         |Cells |
 +------+---------------------+-------------------------------+------+
-|1     |top                  |                               |   935|
-|2     |  Echo_Server_i      |Echo_Server                    |   900|
+|1     |top                  |                               |   939|
+|2     |  Echo_Server_i      |Echo_Server                    |   902|
 |3     |    ps7_0_axi_periph |Echo_Server_ps7_0_axi_periph_0 |   551|
 |4     |      s00_couplers   |s00_couplers_imp_1S2399G       |   177|
 +------+---------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 148 ; free virtual = 4878
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 136 ; free virtual = 3794
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1940.391 ; gain = 214.371 ; free physical = 206 ; free virtual = 4935
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 1940.391 ; gain = 339.027 ; free physical = 217 ; free virtual = 4946
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1940.426 ; gain = 215.402 ; free physical = 192 ; free virtual = 3850
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1940.426 ; gain = 340.027 ; free physical = 199 ; free virtual = 3856
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1940.391 ; gain = 0.000 ; free physical = 149 ; free virtual = 4879
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1940.426 ; gain = 0.000 ; free physical = 137 ; free virtual = 3795
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 4 instances
@@ -629,10 +629,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 54 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1940.391 ; gain = 538.625 ; free physical = 238 ; free virtual = 4968
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1940.391 ; gain = 0.000 ; free physical = 238 ; free virtual = 4968
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1940.426 ; gain = 541.625 ; free physical = 226 ; free virtual = 3884
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1940.426 ; gain = 0.000 ; free physical = 226 ; free virtual = 3884
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/synth_1/Echo_Server_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Echo_Server_wrapper_utilization_synth.rpt -pb Echo_Server_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 13:47:43 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 17:54:37 2020...

@@ -165,7 +165,7 @@ proc create_root_design { parentCell } {
 
   # Create ports
   set bleds_o [ create_bd_port -dir O -from 7 -to 0 bleds_o ]
-  set digit_o [ create_bd_port -dir O -from 5 -to 0 digit_o ]
+  set digit_o [ create_bd_port -dir O -from 7 -to 0 digit_o ]
   set push_to_send_i [ create_bd_port -dir I push_to_send_i ]
   set switches_i [ create_bd_port -dir I -from 7 -to 0 switches_i ]
   set value_o [ create_bd_port -dir O -from 7 -to 0 value_o ]

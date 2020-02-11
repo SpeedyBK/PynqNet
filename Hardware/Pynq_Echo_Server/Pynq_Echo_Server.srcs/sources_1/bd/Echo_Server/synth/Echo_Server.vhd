@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
---Date        : Sun Feb  9 16:15:26 2020
+--Date        : Mon Feb 10 17:52:41 2020
 --Host        : Laptop running 64-bit Ubuntu 18.04.3 LTS
 --Command     : generate_target Echo_Server.bd
 --Design      : Echo_Server
@@ -1375,7 +1375,7 @@ entity Echo_Server is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     bleds_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    digit_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    digit_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     leds_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1499,33 +1499,6 @@ architecture STRUCTURE of Echo_Server is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component Echo_Server_rst_ps7_0_100M_0;
-  component Echo_Server_SixDigitHexDisplay_0_0 is
-  port (
-    digit_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    value_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
-  );
-  end component Echo_Server_SixDigitHexDisplay_0_0;
   component Echo_Server_ManInput_0_0 is
   port (
     switches_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -1554,8 +1527,35 @@ architecture STRUCTURE of Echo_Server is
     s00_axi_aresetn : in STD_LOGIC
   );
   end component Echo_Server_ManInput_0_0;
+  component Echo_Server_SixDigitHexDisplay_0_0 is
+  port (
+    digit_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    value_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC
+  );
+  end component Echo_Server_SixDigitHexDisplay_0_0;
   signal ManInput_0_bleds_o : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal SixDigitHexDisplay_0_digit_o : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal SixDigitHexDisplay_0_digit_o : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal SixDigitHexDisplay_0_value_o : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal axi_gpio_0_GPIO_TRI_I : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1716,7 +1716,7 @@ architecture STRUCTURE of Echo_Server is
 begin
   axi_gpio_0_GPIO_TRI_I(3 downto 0) <= leds_4bits_tri_i(3 downto 0);
   bleds_o(7 downto 0) <= ManInput_0_bleds_o(7 downto 0);
-  digit_o(5 downto 0) <= SixDigitHexDisplay_0_digit_o(5 downto 0);
+  digit_o(7 downto 0) <= SixDigitHexDisplay_0_digit_o(7 downto 0);
   leds_4bits_tri_o(3 downto 0) <= axi_gpio_0_GPIO_TRI_O(3 downto 0);
   leds_4bits_tri_t(3 downto 0) <= axi_gpio_0_GPIO_TRI_T(3 downto 0);
   push_to_send_i_1 <= push_to_send_i;
@@ -1751,7 +1751,7 @@ ManInput_0: component Echo_Server_ManInput_0_0
     );
 SixDigitHexDisplay_0: component Echo_Server_SixDigitHexDisplay_0_0
      port map (
-      digit_o(5 downto 0) => SixDigitHexDisplay_0_digit_o(5 downto 0),
+      digit_o(7 downto 0) => SixDigitHexDisplay_0_digit_o(7 downto 0),
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
       s00_axi_araddr(4 downto 0) => ps7_0_axi_periph_M01_AXI_ARADDR(4 downto 0),
       s00_axi_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),

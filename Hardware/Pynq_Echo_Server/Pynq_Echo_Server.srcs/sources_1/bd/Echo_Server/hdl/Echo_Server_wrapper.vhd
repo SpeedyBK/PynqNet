@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
---Date        : Sun Feb  9 16:15:26 2020
+--Date        : Mon Feb 10 17:52:42 2020
 --Host        : Laptop running 64-bit Ubuntu 18.04.3 LTS
 --Command     : generate_target Echo_Server_wrapper.bd
 --Design      : Echo_Server_wrapper
@@ -35,7 +35,7 @@ entity Echo_Server_wrapper is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     bleds_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    digit_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    digit_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     leds_4bits_tri_io : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     push_to_send_i : in STD_LOGIC;
     switches_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -46,8 +46,11 @@ end Echo_Server_wrapper;
 architecture STRUCTURE of Echo_Server_wrapper is
   component Echo_Server is
   port (
-    digit_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    digit_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     value_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    push_to_send_i : in STD_LOGIC;
+    switches_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    bleds_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -63,18 +66,15 @@ architecture STRUCTURE of Echo_Server_wrapper is
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    leds_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    leds_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    push_to_send_i : in STD_LOGIC;
-    switches_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    bleds_o : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component Echo_Server;
   component IOBUF is
@@ -126,7 +126,7 @@ Echo_Server_i: component Echo_Server
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
       bleds_o(7 downto 0) => bleds_o(7 downto 0),
-      digit_o(5 downto 0) => digit_o(5 downto 0),
+      digit_o(7 downto 0) => digit_o(7 downto 0),
       leds_4bits_tri_i(3) => leds_4bits_tri_i_3(3),
       leds_4bits_tri_i(2) => leds_4bits_tri_i_2(2),
       leds_4bits_tri_i(1) => leds_4bits_tri_i_1(1),

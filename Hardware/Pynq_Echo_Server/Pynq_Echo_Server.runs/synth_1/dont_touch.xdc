@@ -24,10 +24,10 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Echo_Server_xba
 # IP: bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/Echo_Server_SixDigitHexDisplay_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Echo_Server_SixDigitHexDisplay_0_0 || ORIG_REF_NAME==Echo_Server_SixDigitHexDisplay_0_0} -quiet] -quiet
 
-# IP: bd/Echo_Server/ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Echo_Server_auto_pc_0 || ORIG_REF_NAME==Echo_Server_auto_pc_0} -quiet] -quiet
-
 # IP: bd/Echo_Server/ip/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Echo_Server_ManInput_0_0 || ORIG_REF_NAME==Echo_Server_ManInput_0_0} -quiet] -quiet
+
+# IP: bd/Echo_Server/ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Echo_Server_auto_pc_0 || ORIG_REF_NAME==Echo_Server_auto_pc_0} -quiet] -quiet
 
 # XDC: bd/Echo_Server/Echo_Server_ooc.xdc

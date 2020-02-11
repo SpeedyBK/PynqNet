@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Sat Feb  8 12:29:33 2020
+// Date        : Mon Feb 10 17:53:53 2020
 // Host        : Laptop running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
-//               /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/Echo_Server_SixDigitHexDisplay_0_0_sim_netlist.v
+//               /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/Echo_Server_SixDigitHexDisplay_0_0_sim_netlist.v
 // Design      : Echo_Server_SixDigitHexDisplay_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -38,7 +38,7 @@ module Echo_Server_SixDigitHexDisplay_0_0
     s00_axi_rready,
     s00_axi_aclk,
     s00_axi_aresetn);
-  output [5:0]digit_o;
+  output [7:0]digit_o;
   output [7:0]value_o;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 7, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 5, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.000, CLK_DOMAIN Echo_Server_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [4:0]s00_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
@@ -63,7 +63,8 @@ module Echo_Server_SixDigitHexDisplay_0_0
   (* x_interface_info = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
 
   wire \<const0> ;
-  wire [5:0]digit_o;
+  wire \<const1> ;
+  wire [7:0]digit_o;
   wire s00_axi_aclk;
   wire [4:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -81,12 +82,14 @@ module Echo_Server_SixDigitHexDisplay_0_0
   wire s00_axi_wready;
   wire [3:0]s00_axi_wstrb;
   wire s00_axi_wvalid;
-  wire [7:0]value_o;
+  wire [7:1]\^value_o ;
 
   assign s00_axi_bresp[1] = \<const0> ;
   assign s00_axi_bresp[0] = \<const0> ;
   assign s00_axi_rresp[1] = \<const0> ;
   assign s00_axi_rresp[0] = \<const0> ;
+  assign value_o[7:1] = \^value_o [7:1];
+  assign value_o[0] = \<const1> ;
   GND GND
        (.G(\<const0> ));
   Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0 U0
@@ -108,33 +111,39 @@ module Echo_Server_SixDigitHexDisplay_0_0
         .s00_axi_wdata(s00_axi_wdata),
         .s00_axi_wstrb(s00_axi_wstrb),
         .s00_axi_wvalid(s00_axi_wvalid),
-        .value_o(value_o));
+        .value_o(\^value_o ));
+  VCC VCC
+       (.P(\<const1> ));
 endmodule
 
 (* ORIG_REF_NAME = "DisplayController" *) 
 module Echo_Server_SixDigitHexDisplay_0_0_DisplayController
-   (digit_o,
-    value_o,
+   (value_o,
+    digit_o,
     s00_axi_aclk,
     s00_axi_aresetn,
     Q,
-    \value_o[7] ,
-    \value_o[7]_0 ,
-    \value_o[7]_1 ,
-    \value_o[7]_2 ,
-    \value_o[7]_3 );
-  output [5:0]digit_o;
-  output [7:0]value_o;
+    \value_o[7]_INST_0_i_4_0 ,
+    \value_o[7]_INST_0_i_4_1 ,
+    \value_o[7]_INST_0_i_4_2 ,
+    \value_o[7]_INST_0_i_4_3 ,
+    \value_o[7]_INST_0_i_4_4 ,
+    \value_o[7]_INST_0_i_4_5 ,
+    \value_o[7]_INST_0_i_4_6 );
+  output [6:0]value_o;
+  output [7:0]digit_o;
   input s00_axi_aclk;
   input s00_axi_aresetn;
-  input [6:0]Q;
-  input [6:0]\value_o[7] ;
-  input [6:0]\value_o[7]_0 ;
-  input [6:0]\value_o[7]_1 ;
-  input [6:0]\value_o[7]_2 ;
-  input [6:0]\value_o[7]_3 ;
+  input [3:0]Q;
+  input [3:0]\value_o[7]_INST_0_i_4_0 ;
+  input [3:0]\value_o[7]_INST_0_i_4_1 ;
+  input [3:0]\value_o[7]_INST_0_i_4_2 ;
+  input [3:0]\value_o[7]_INST_0_i_4_3 ;
+  input [3:0]\value_o[7]_INST_0_i_4_4 ;
+  input [3:0]\value_o[7]_INST_0_i_4_5 ;
+  input [3:0]\value_o[7]_INST_0_i_4_6 ;
 
-  wire [6:0]Q;
+  wire [3:0]Q;
   wire \counter[0]_i_1_n_0 ;
   wire \counter[0]_i_3_n_0 ;
   wire \counter[0]_i_4_n_0 ;
@@ -175,48 +184,30 @@ module Echo_Server_SixDigitHexDisplay_0_0_DisplayController
   wire \digitCount_reg_n_0_[0] ;
   wire \digitCount_reg_n_0_[1] ;
   wire \digitCount_reg_n_0_[2] ;
-  wire [5:0]digit_o;
+  wire [7:0]digit_o;
   wire enable;
   wire enable_i_1_n_0;
-  wire g0_b0_i_10_n_0;
-  wire g0_b0_i_11_n_0;
-  wire g0_b0_i_12_n_0;
-  wire g0_b0_i_1_n_0;
-  wire g0_b0_i_2_n_0;
-  wire g0_b0_i_3_n_0;
-  wire g0_b0_i_4_n_0;
-  wire g0_b0_i_5_n_0;
-  wire g0_b0_i_6_n_0;
-  wire g0_b0_i_7_n_0;
-  wire g0_b0_i_8_n_0;
-  wire g0_b0_i_9_n_0;
-  wire g0_b0_n_0;
-  wire g0_b1_n_0;
-  wire g0_b2_n_0;
-  wire g0_b3_n_0;
-  wire g0_b4_n_0;
-  wire g0_b5_n_0;
-  wire g0_b6_n_0;
-  wire g0_b7_n_0;
-  wire g1_b0_n_0;
-  wire g1_b1_n_0;
-  wire g1_b2_n_0;
-  wire g1_b3_n_0;
-  wire g1_b4_n_0;
-  wire g1_b5_n_0;
-  wire g1_b6_n_0;
   wire s00_axi_aclk;
   wire s00_axi_aresetn;
-  wire [7:0]value_o;
-  wire \value_o[6]_INST_0_i_1_n_0 ;
-  wire [6:0]\value_o[7] ;
-  wire [6:0]\value_o[7]_0 ;
-  wire [6:0]\value_o[7]_1 ;
-  wire [6:0]\value_o[7]_2 ;
-  wire [6:0]\value_o[7]_3 ;
+  wire [6:0]value_o;
+  wire \value_o[7]_INST_0_i_10_n_0 ;
+  wire \value_o[7]_INST_0_i_11_n_0 ;
   wire \value_o[7]_INST_0_i_1_n_0 ;
   wire \value_o[7]_INST_0_i_2_n_0 ;
   wire \value_o[7]_INST_0_i_3_n_0 ;
+  wire [3:0]\value_o[7]_INST_0_i_4_0 ;
+  wire [3:0]\value_o[7]_INST_0_i_4_1 ;
+  wire [3:0]\value_o[7]_INST_0_i_4_2 ;
+  wire [3:0]\value_o[7]_INST_0_i_4_3 ;
+  wire [3:0]\value_o[7]_INST_0_i_4_4 ;
+  wire [3:0]\value_o[7]_INST_0_i_4_5 ;
+  wire [3:0]\value_o[7]_INST_0_i_4_6 ;
+  wire \value_o[7]_INST_0_i_4_n_0 ;
+  wire \value_o[7]_INST_0_i_5_n_0 ;
+  wire \value_o[7]_INST_0_i_6_n_0 ;
+  wire \value_o[7]_INST_0_i_7_n_0 ;
+  wire \value_o[7]_INST_0_i_8_n_0 ;
+  wire \value_o[7]_INST_0_i_9_n_0 ;
   wire [3:1]\NLW_counter_reg[12]_i_1_CO_UNCONNECTED ;
   wire [3:2]\NLW_counter_reg[12]_i_1_O_UNCONNECTED ;
 
@@ -364,35 +355,31 @@ module Echo_Server_SixDigitHexDisplay_0_0_DisplayController
         .D(\counter_reg[8]_i_1_n_6 ),
         .Q(counter_reg[9]),
         .R(\counter[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT5 #(
-    .INIT(32'h22220888)) 
+  LUT3 #(
+    .INIT(8'h28)) 
     \digitCount[0]_i_1 
        (.I0(s00_axi_aresetn),
         .I1(enable),
-        .I2(\digitCount_reg_n_0_[2] ),
-        .I3(\digitCount_reg_n_0_[1] ),
-        .I4(\digitCount_reg_n_0_[0] ),
+        .I2(\digitCount_reg_n_0_[0] ),
         .O(\digitCount[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT5 #(
-    .INIT(32'h22082A00)) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT4 #(
+    .INIT(16'h2A80)) 
     \digitCount[1]_i_1 
        (.I0(s00_axi_aresetn),
         .I1(enable),
-        .I2(\digitCount_reg_n_0_[2] ),
+        .I2(\digitCount_reg_n_0_[0] ),
         .I3(\digitCount_reg_n_0_[1] ),
-        .I4(\digitCount_reg_n_0_[0] ),
         .O(\digitCount[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
-    .INIT(32'h282020A0)) 
+    .INIT(32'h2AAA8000)) 
     \digitCount[2]_i_1 
        (.I0(s00_axi_aresetn),
         .I1(enable),
-        .I2(\digitCount_reg_n_0_[2] ),
+        .I2(\digitCount_reg_n_0_[0] ),
         .I3(\digitCount_reg_n_0_[1] ),
-        .I4(\digitCount_reg_n_0_[0] ),
+        .I4(\digitCount_reg_n_0_[2] ),
         .O(\digitCount[2]_i_1_n_0 ));
   FDRE \digitCount_reg[0] 
        (.C(s00_axi_aclk),
@@ -412,7 +399,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_DisplayController
         .D(\digitCount[2]_i_1_n_0 ),
         .Q(\digitCount_reg_n_0_[2] ),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \digit_o[0]_INST_0 
@@ -436,7 +423,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_DisplayController
         .I1(\digitCount_reg_n_0_[0] ),
         .I2(\digitCount_reg_n_0_[2] ),
         .O(digit_o[2]));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT3 #(
     .INIT(8'hBF)) 
     \digit_o[3]_INST_0 
@@ -444,7 +431,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_DisplayController
         .I1(\digitCount_reg_n_0_[0] ),
         .I2(\digitCount_reg_n_0_[1] ),
         .O(digit_o[3]));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
     .INIT(8'hFD)) 
     \digit_o[4]_INST_0 
@@ -452,14 +439,30 @@ module Echo_Server_SixDigitHexDisplay_0_0_DisplayController
         .I1(\digitCount_reg_n_0_[0] ),
         .I2(\digitCount_reg_n_0_[1] ),
         .O(digit_o[4]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'hBF)) 
     \digit_o[5]_INST_0 
        (.I0(\digitCount_reg_n_0_[1] ),
-        .I1(\digitCount_reg_n_0_[2] ),
-        .I2(\digitCount_reg_n_0_[0] ),
+        .I1(\digitCount_reg_n_0_[0] ),
+        .I2(\digitCount_reg_n_0_[2] ),
         .O(digit_o[5]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT3 #(
+    .INIT(8'hBF)) 
+    \digit_o[6]_INST_0 
+       (.I0(\digitCount_reg_n_0_[0] ),
+        .I1(\digitCount_reg_n_0_[2] ),
+        .I2(\digitCount_reg_n_0_[1] ),
+        .O(digit_o[6]));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'h7F)) 
+    \digit_o[7]_INST_0 
+       (.I0(\digitCount_reg_n_0_[1] ),
+        .I1(\digitCount_reg_n_0_[0] ),
+        .I2(\digitCount_reg_n_0_[2] ),
+        .O(digit_o[7]));
   LUT5 #(
     .INIT(32'h80800080)) 
     enable_i_1
@@ -476,396 +479,176 @@ module Echo_Server_SixDigitHexDisplay_0_0_DisplayController
         .Q(enable),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'h6C0FE8EBDFED0710)) 
-    g0_b0
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g0_b0_n_0));
-  LUT6 #(
-    .INIT(64'h3A0A3A3A3A0A0A0A)) 
-    g0_b0_i_1
-       (.I0(g0_b0_i_7_n_0),
-        .I1(\digitCount_reg_n_0_[1] ),
+    .INIT(64'h0000A95900000151)) 
+    \value_o[1]_INST_0 
+       (.I0(\value_o[7]_INST_0_i_1_n_0 ),
+        .I1(\value_o[7]_INST_0_i_2_n_0 ),
         .I2(\digitCount_reg_n_0_[2] ),
-        .I3(\value_o[7] [0]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(Q[0]),
-        .O(g0_b0_i_1_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    g0_b0_i_10
-       (.I0(\value_o[7]_0 [3]),
-        .I1(\value_o[7]_1 [3]),
-        .I2(\digitCount_reg_n_0_[1] ),
-        .I3(\value_o[7]_2 [3]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(\value_o[7]_3 [3]),
-        .O(g0_b0_i_10_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    g0_b0_i_11
-       (.I0(\value_o[7]_0 [4]),
-        .I1(\value_o[7]_1 [4]),
-        .I2(\digitCount_reg_n_0_[1] ),
-        .I3(\value_o[7]_2 [4]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(\value_o[7]_3 [4]),
-        .O(g0_b0_i_11_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    g0_b0_i_12
-       (.I0(\value_o[7]_0 [5]),
-        .I1(\value_o[7]_1 [5]),
-        .I2(\digitCount_reg_n_0_[1] ),
-        .I3(\value_o[7]_2 [5]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(\value_o[7]_3 [5]),
-        .O(g0_b0_i_12_n_0));
-  LUT6 #(
-    .INIT(64'h3A0A3A3A3A0A0A0A)) 
-    g0_b0_i_2
-       (.I0(g0_b0_i_8_n_0),
-        .I1(\digitCount_reg_n_0_[1] ),
-        .I2(\digitCount_reg_n_0_[2] ),
-        .I3(\value_o[7] [1]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(Q[1]),
-        .O(g0_b0_i_2_n_0));
-  LUT6 #(
-    .INIT(64'h3A0A3A3A3A0A0A0A)) 
-    g0_b0_i_3
-       (.I0(g0_b0_i_9_n_0),
-        .I1(\digitCount_reg_n_0_[1] ),
-        .I2(\digitCount_reg_n_0_[2] ),
-        .I3(\value_o[7] [2]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(Q[2]),
-        .O(g0_b0_i_3_n_0));
-  LUT6 #(
-    .INIT(64'h3A0A3A3A3A0A0A0A)) 
-    g0_b0_i_4
-       (.I0(g0_b0_i_10_n_0),
-        .I1(\digitCount_reg_n_0_[1] ),
-        .I2(\digitCount_reg_n_0_[2] ),
-        .I3(\value_o[7] [3]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(Q[3]),
-        .O(g0_b0_i_4_n_0));
-  LUT6 #(
-    .INIT(64'h3A0A3A3A3A0A0A0A)) 
-    g0_b0_i_5
-       (.I0(g0_b0_i_11_n_0),
-        .I1(\digitCount_reg_n_0_[1] ),
-        .I2(\digitCount_reg_n_0_[2] ),
-        .I3(\value_o[7] [4]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(Q[4]),
-        .O(g0_b0_i_5_n_0));
-  LUT6 #(
-    .INIT(64'h3A0A3A3A3A0A0A0A)) 
-    g0_b0_i_6
-       (.I0(g0_b0_i_12_n_0),
-        .I1(\digitCount_reg_n_0_[1] ),
-        .I2(\digitCount_reg_n_0_[2] ),
-        .I3(\value_o[7] [5]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(Q[5]),
-        .O(g0_b0_i_6_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    g0_b0_i_7
-       (.I0(\value_o[7]_0 [0]),
-        .I1(\value_o[7]_1 [0]),
-        .I2(\digitCount_reg_n_0_[1] ),
-        .I3(\value_o[7]_2 [0]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(\value_o[7]_3 [0]),
-        .O(g0_b0_i_7_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    g0_b0_i_8
-       (.I0(\value_o[7]_0 [1]),
-        .I1(\value_o[7]_1 [1]),
-        .I2(\digitCount_reg_n_0_[1] ),
-        .I3(\value_o[7]_2 [1]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(\value_o[7]_3 [1]),
-        .O(g0_b0_i_8_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    g0_b0_i_9
-       (.I0(\value_o[7]_0 [2]),
-        .I1(\value_o[7]_1 [2]),
-        .I2(\digitCount_reg_n_0_[1] ),
-        .I3(\value_o[7]_2 [2]),
-        .I4(\digitCount_reg_n_0_[0] ),
-        .I5(\value_o[7]_3 [2]),
-        .O(g0_b0_i_9_n_0));
-  LUT6 #(
-    .INIT(64'h67E7C513C39F826E)) 
-    g0_b1
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g0_b1_n_0));
-  LUT6 #(
-    .INIT(64'h3368ED970BFB005A)) 
-    g0_b2
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g0_b2_n_0));
-  LUT6 #(
-    .INIT(64'hAEFA94BD2F6D0318)) 
-    g0_b3
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g0_b3_n_0));
-  LUT6 #(
-    .INIT(64'h0D75FFFF81459828)) 
-    g0_b4
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g0_b4_n_0));
-  LUT6 #(
-    .INIT(64'h5BFFDBEE13710D9C)) 
-    g0_b5
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g0_b5_n_0));
-  LUT6 #(
-    .INIT(64'h171B0977F37CA878)) 
-    g0_b6
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g0_b6_n_0));
-  LUT6 #(
-    .INIT(64'h0000000080004022)) 
-    g0_b7
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g0_b7_n_0));
-  LUT6 #(
-    .INIT(64'h00000000440B08E2)) 
-    g1_b0
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g1_b0_n_0));
-  LUT6 #(
-    .INIT(64'h000000000F0300B3)) 
-    g1_b1
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g1_b1_n_0));
-  LUT6 #(
-    .INIT(64'h000000000BEAED96)) 
-    g1_b2
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g1_b2_n_0));
-  LUT6 #(
-    .INIT(64'h00000000067884BE)) 
-    g1_b3
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g1_b3_n_0));
-  LUT6 #(
-    .INIT(64'h0000000035F5FB7E)) 
-    g1_b4
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g1_b4_n_0));
-  LUT6 #(
-    .INIT(64'h00000000331B19E4)) 
-    g1_b5
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g1_b5_n_0));
-  LUT6 #(
-    .INIT(64'h000000002F1FC9FE)) 
-    g1_b6
-       (.I0(g0_b0_i_1_n_0),
-        .I1(g0_b0_i_2_n_0),
-        .I2(g0_b0_i_3_n_0),
-        .I3(g0_b0_i_4_n_0),
-        .I4(g0_b0_i_5_n_0),
-        .I5(g0_b0_i_6_n_0),
-        .O(g1_b6_n_0));
-  LUT6 #(
-    .INIT(64'h01515151FD5D5D5D)) 
-    \value_o[0]_INST_0 
-       (.I0(g0_b0_n_0),
-        .I1(\value_o[6]_INST_0_i_1_n_0 ),
-        .I2(\value_o[7]_INST_0_i_2_n_0 ),
         .I3(\value_o[7]_INST_0_i_3_n_0 ),
-        .I4(\value_o[7]_INST_0_i_1_n_0 ),
-        .I5(g1_b0_n_0),
+        .I4(\value_o[7]_INST_0_i_4_n_0 ),
+        .I5(\value_o[7]_INST_0_i_5_n_0 ),
         .O(value_o[0]));
   LUT6 #(
-    .INIT(64'h01515151FD5D5D5D)) 
-    \value_o[1]_INST_0 
-       (.I0(g0_b1_n_0),
-        .I1(\value_o[6]_INST_0_i_1_n_0 ),
-        .I2(\value_o[7]_INST_0_i_2_n_0 ),
+    .INIT(64'h0000ABFB000002A2)) 
+    \value_o[2]_INST_0 
+       (.I0(\value_o[7]_INST_0_i_1_n_0 ),
+        .I1(\value_o[7]_INST_0_i_2_n_0 ),
+        .I2(\digitCount_reg_n_0_[2] ),
         .I3(\value_o[7]_INST_0_i_3_n_0 ),
-        .I4(\value_o[7]_INST_0_i_1_n_0 ),
-        .I5(g1_b1_n_0),
+        .I4(\value_o[7]_INST_0_i_4_n_0 ),
+        .I5(\value_o[7]_INST_0_i_5_n_0 ),
         .O(value_o[1]));
   LUT6 #(
-    .INIT(64'h01515151FD5D5D5D)) 
-    \value_o[2]_INST_0 
-       (.I0(g0_b2_n_0),
-        .I1(\value_o[6]_INST_0_i_1_n_0 ),
-        .I2(\value_o[7]_INST_0_i_2_n_0 ),
-        .I3(\value_o[7]_INST_0_i_3_n_0 ),
+    .INIT(64'hFF00FF00FF00FFE2)) 
+    \value_o[3]_INST_0 
+       (.I0(\value_o[7]_INST_0_i_2_n_0 ),
+        .I1(\digitCount_reg_n_0_[2] ),
+        .I2(\value_o[7]_INST_0_i_3_n_0 ),
+        .I3(\value_o[7]_INST_0_i_5_n_0 ),
         .I4(\value_o[7]_INST_0_i_1_n_0 ),
-        .I5(g1_b2_n_0),
+        .I5(\value_o[7]_INST_0_i_4_n_0 ),
         .O(value_o[2]));
   LUT6 #(
-    .INIT(64'h01515151FD5D5D5D)) 
-    \value_o[3]_INST_0 
-       (.I0(g0_b3_n_0),
-        .I1(\value_o[6]_INST_0_i_1_n_0 ),
-        .I2(\value_o[7]_INST_0_i_2_n_0 ),
+    .INIT(64'h0000A95900005404)) 
+    \value_o[4]_INST_0 
+       (.I0(\value_o[7]_INST_0_i_1_n_0 ),
+        .I1(\value_o[7]_INST_0_i_2_n_0 ),
+        .I2(\digitCount_reg_n_0_[2] ),
         .I3(\value_o[7]_INST_0_i_3_n_0 ),
-        .I4(\value_o[7]_INST_0_i_1_n_0 ),
-        .I5(g1_b3_n_0),
+        .I4(\value_o[7]_INST_0_i_4_n_0 ),
+        .I5(\value_o[7]_INST_0_i_5_n_0 ),
         .O(value_o[3]));
   LUT6 #(
-    .INIT(64'h01515151FD5D5D5D)) 
-    \value_o[4]_INST_0 
-       (.I0(g0_b4_n_0),
-        .I1(\value_o[6]_INST_0_i_1_n_0 ),
-        .I2(\value_o[7]_INST_0_i_2_n_0 ),
+    .INIT(64'h0004000000040404)) 
+    \value_o[5]_INST_0 
+       (.I0(\value_o[7]_INST_0_i_5_n_0 ),
+        .I1(\value_o[7]_INST_0_i_1_n_0 ),
+        .I2(\value_o[7]_INST_0_i_4_n_0 ),
         .I3(\value_o[7]_INST_0_i_3_n_0 ),
-        .I4(\value_o[7]_INST_0_i_1_n_0 ),
-        .I5(g1_b4_n_0),
+        .I4(\digitCount_reg_n_0_[2] ),
+        .I5(\value_o[7]_INST_0_i_2_n_0 ),
         .O(value_o[4]));
   LUT6 #(
-    .INIT(64'h01515151FD5D5D5D)) 
-    \value_o[5]_INST_0 
-       (.I0(g0_b5_n_0),
-        .I1(\value_o[6]_INST_0_i_1_n_0 ),
-        .I2(\value_o[7]_INST_0_i_2_n_0 ),
-        .I3(\value_o[7]_INST_0_i_3_n_0 ),
-        .I4(\value_o[7]_INST_0_i_1_n_0 ),
-        .I5(g1_b5_n_0),
+    .INIT(64'h1011100020222000)) 
+    \value_o[6]_INST_0 
+       (.I0(\value_o[7]_INST_0_i_5_n_0 ),
+        .I1(\value_o[7]_INST_0_i_4_n_0 ),
+        .I2(\value_o[7]_INST_0_i_3_n_0 ),
+        .I3(\digitCount_reg_n_0_[2] ),
+        .I4(\value_o[7]_INST_0_i_2_n_0 ),
+        .I5(\value_o[7]_INST_0_i_1_n_0 ),
         .O(value_o[5]));
   LUT6 #(
-    .INIT(64'h01515151FD5D5D5D)) 
-    \value_o[6]_INST_0 
-       (.I0(g0_b6_n_0),
-        .I1(\value_o[6]_INST_0_i_1_n_0 ),
-        .I2(\value_o[7]_INST_0_i_2_n_0 ),
-        .I3(\value_o[7]_INST_0_i_3_n_0 ),
-        .I4(\value_o[7]_INST_0_i_1_n_0 ),
-        .I5(g1_b6_n_0),
-        .O(value_o[6]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT5 #(
-    .INIT(32'hEEAE22A2)) 
-    \value_o[6]_INST_0_i_1 
-       (.I0(\value_o[7] [6]),
-        .I1(\digitCount_reg_n_0_[2] ),
-        .I2(\digitCount_reg_n_0_[0] ),
-        .I3(\digitCount_reg_n_0_[1] ),
-        .I4(Q[6]),
-        .O(\value_o[6]_INST_0_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hCCE200E2FFFFFFFF)) 
+    .INIT(64'h0000015100005404)) 
     \value_o[7]_INST_0 
-       (.I0(Q[6]),
-        .I1(\value_o[7]_INST_0_i_1_n_0 ),
-        .I2(\value_o[7] [6]),
-        .I3(\value_o[7]_INST_0_i_2_n_0 ),
-        .I4(\value_o[7]_INST_0_i_3_n_0 ),
-        .I5(g0_b7_n_0),
-        .O(value_o[7]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT3 #(
-    .INIT(8'h5D)) 
-    \value_o[7]_INST_0_i_1 
-       (.I0(\digitCount_reg_n_0_[2] ),
-        .I1(\digitCount_reg_n_0_[0] ),
+       (.I0(\value_o[7]_INST_0_i_1_n_0 ),
+        .I1(\value_o[7]_INST_0_i_2_n_0 ),
+        .I2(\digitCount_reg_n_0_[2] ),
+        .I3(\value_o[7]_INST_0_i_3_n_0 ),
+        .I4(\value_o[7]_INST_0_i_4_n_0 ),
+        .I5(\value_o[7]_INST_0_i_5_n_0 ),
+        .O(value_o[6]));
+  MUXF7 \value_o[7]_INST_0_i_1 
+       (.I0(\value_o[7]_INST_0_i_6_n_0 ),
+        .I1(\value_o[7]_INST_0_i_7_n_0 ),
+        .O(\value_o[7]_INST_0_i_1_n_0 ),
+        .S(\digitCount_reg_n_0_[2] ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \value_o[7]_INST_0_i_10 
+       (.I0(Q[0]),
+        .I1(\value_o[7]_INST_0_i_4_0 [0]),
         .I2(\digitCount_reg_n_0_[1] ),
-        .O(\value_o[7]_INST_0_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
-  LUT2 #(
-    .INIT(4'hB)) 
+        .I3(\value_o[7]_INST_0_i_4_1 [0]),
+        .I4(\digitCount_reg_n_0_[0] ),
+        .I5(\value_o[7]_INST_0_i_4_2 [0]),
+        .O(\value_o[7]_INST_0_i_10_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \value_o[7]_INST_0_i_11 
+       (.I0(\value_o[7]_INST_0_i_4_3 [0]),
+        .I1(\value_o[7]_INST_0_i_4_4 [0]),
+        .I2(\digitCount_reg_n_0_[1] ),
+        .I3(\value_o[7]_INST_0_i_4_5 [0]),
+        .I4(\digitCount_reg_n_0_[0] ),
+        .I5(\value_o[7]_INST_0_i_4_6 [0]),
+        .O(\value_o[7]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \value_o[7]_INST_0_i_2 
-       (.I0(\digitCount_reg_n_0_[1] ),
-        .I1(\digitCount_reg_n_0_[2] ),
+       (.I0(Q[2]),
+        .I1(\value_o[7]_INST_0_i_4_0 [2]),
+        .I2(\digitCount_reg_n_0_[1] ),
+        .I3(\value_o[7]_INST_0_i_4_1 [2]),
+        .I4(\digitCount_reg_n_0_[0] ),
+        .I5(\value_o[7]_INST_0_i_4_2 [2]),
         .O(\value_o[7]_INST_0_i_2_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \value_o[7]_INST_0_i_3 
-       (.I0(\value_o[7]_0 [6]),
-        .I1(\value_o[7]_1 [6]),
+       (.I0(\value_o[7]_INST_0_i_4_3 [2]),
+        .I1(\value_o[7]_INST_0_i_4_4 [2]),
         .I2(\digitCount_reg_n_0_[1] ),
-        .I3(\value_o[7]_2 [6]),
+        .I3(\value_o[7]_INST_0_i_4_5 [2]),
         .I4(\digitCount_reg_n_0_[0] ),
-        .I5(\value_o[7]_3 [6]),
+        .I5(\value_o[7]_INST_0_i_4_6 [2]),
         .O(\value_o[7]_INST_0_i_3_n_0 ));
+  MUXF7 \value_o[7]_INST_0_i_4 
+       (.I0(\value_o[7]_INST_0_i_8_n_0 ),
+        .I1(\value_o[7]_INST_0_i_9_n_0 ),
+        .O(\value_o[7]_INST_0_i_4_n_0 ),
+        .S(\digitCount_reg_n_0_[2] ));
+  MUXF7 \value_o[7]_INST_0_i_5 
+       (.I0(\value_o[7]_INST_0_i_10_n_0 ),
+        .I1(\value_o[7]_INST_0_i_11_n_0 ),
+        .O(\value_o[7]_INST_0_i_5_n_0 ),
+        .S(\digitCount_reg_n_0_[2] ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \value_o[7]_INST_0_i_6 
+       (.I0(Q[1]),
+        .I1(\value_o[7]_INST_0_i_4_0 [1]),
+        .I2(\digitCount_reg_n_0_[1] ),
+        .I3(\value_o[7]_INST_0_i_4_1 [1]),
+        .I4(\digitCount_reg_n_0_[0] ),
+        .I5(\value_o[7]_INST_0_i_4_2 [1]),
+        .O(\value_o[7]_INST_0_i_6_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \value_o[7]_INST_0_i_7 
+       (.I0(\value_o[7]_INST_0_i_4_3 [1]),
+        .I1(\value_o[7]_INST_0_i_4_4 [1]),
+        .I2(\digitCount_reg_n_0_[1] ),
+        .I3(\value_o[7]_INST_0_i_4_5 [1]),
+        .I4(\digitCount_reg_n_0_[0] ),
+        .I5(\value_o[7]_INST_0_i_4_6 [1]),
+        .O(\value_o[7]_INST_0_i_7_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \value_o[7]_INST_0_i_8 
+       (.I0(Q[3]),
+        .I1(\value_o[7]_INST_0_i_4_0 [3]),
+        .I2(\digitCount_reg_n_0_[1] ),
+        .I3(\value_o[7]_INST_0_i_4_1 [3]),
+        .I4(\digitCount_reg_n_0_[0] ),
+        .I5(\value_o[7]_INST_0_i_4_2 [3]),
+        .O(\value_o[7]_INST_0_i_8_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \value_o[7]_INST_0_i_9 
+       (.I0(\value_o[7]_INST_0_i_4_3 [3]),
+        .I1(\value_o[7]_INST_0_i_4_4 [3]),
+        .I2(\digitCount_reg_n_0_[1] ),
+        .I3(\value_o[7]_INST_0_i_4_5 [3]),
+        .I4(\digitCount_reg_n_0_[0] ),
+        .I5(\value_o[7]_INST_0_i_4_6 [3]),
+        .O(\value_o[7]_INST_0_i_9_n_0 ));
 endmodule
 
 (* ORIG_REF_NAME = "SixDigitHexDisplay_v1_0" *) 
 module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0
-   (digit_o,
-    value_o,
+   (value_o,
+    digit_o,
     S_AXI_AWREADY,
     S_AXI_WREADY,
     S_AXI_ARREADY,
@@ -883,8 +666,8 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0
     s00_axi_wstrb,
     s00_axi_bready,
     s00_axi_rready);
-  output [5:0]digit_o;
-  output [7:0]value_o;
+  output [6:0]value_o;
+  output [7:0]digit_o;
   output S_AXI_AWREADY;
   output S_AXI_WREADY;
   output S_AXI_ARREADY;
@@ -906,7 +689,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0
   wire S_AXI_ARREADY;
   wire S_AXI_AWREADY;
   wire S_AXI_WREADY;
-  wire [5:0]digit_o;
+  wire [7:0]digit_o;
   wire s00_axi_aclk;
   wire [2:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -921,7 +704,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0
   wire [31:0]s00_axi_wdata;
   wire [3:0]s00_axi_wstrb;
   wire s00_axi_wvalid;
-  wire [7:0]value_o;
+  wire [6:0]value_o;
 
   Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI SixDigitHexDisplay_v1_0_S00_AXI_inst
        (.S_AXI_ARREADY(S_AXI_ARREADY),
@@ -947,8 +730,8 @@ endmodule
 
 (* ORIG_REF_NAME = "SixDigitHexDisplay_v1_0_S00_AXI" *) 
 module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
-   (digit_o,
-    value_o,
+   (value_o,
+    digit_o,
     S_AXI_AWREADY,
     S_AXI_WREADY,
     S_AXI_ARREADY,
@@ -966,8 +749,8 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
     s00_axi_wstrb,
     s00_axi_bready,
     s00_axi_rready);
-  output [5:0]digit_o;
-  output [7:0]value_o;
+  output [6:0]value_o;
+  output [7:0]digit_o;
   output S_AXI_AWREADY;
   output S_AXI_WREADY;
   output S_AXI_ARREADY;
@@ -1067,7 +850,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
   wire \axi_rdata[9]_i_3_n_0 ;
   wire axi_rvalid_i_1_n_0;
   wire axi_wready0;
-  wire [5:0]digit_o;
+  wire [7:0]digit_o;
   wire [2:0]p_0_in;
   wire [31:0]reg_data_out;
   wire s00_axi_aclk;
@@ -1120,21 +903,28 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
   wire \slv_reg6[23]_i_1_n_0 ;
   wire \slv_reg6[31]_i_1_n_0 ;
   wire \slv_reg6[7]_i_1_n_0 ;
+  wire [31:0]slv_reg7;
+  wire \slv_reg7[15]_i_1_n_0 ;
+  wire \slv_reg7[23]_i_1_n_0 ;
+  wire \slv_reg7[31]_i_1_n_0 ;
+  wire \slv_reg7[7]_i_1_n_0 ;
   wire slv_reg_rden;
   wire slv_reg_wren__2;
-  wire [7:0]value_o;
+  wire [6:0]value_o;
 
   Echo_Server_SixDigitHexDisplay_0_0_DisplayController DispController
-       (.Q(slv_reg1[6:0]),
+       (.Q(slv_reg4[3:0]),
         .digit_o(digit_o),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_aresetn(s00_axi_aresetn),
         .value_o(value_o),
-        .\value_o[7] (slv_reg0[6:0]),
-        .\value_o[7]_0 (slv_reg2[6:0]),
-        .\value_o[7]_1 (slv_reg3[6:0]),
-        .\value_o[7]_2 (slv_reg4[6:0]),
-        .\value_o[7]_3 (slv_reg5[6:0]));
+        .\value_o[7]_INST_0_i_4_0 (slv_reg5[3:0]),
+        .\value_o[7]_INST_0_i_4_1 (slv_reg6[3:0]),
+        .\value_o[7]_INST_0_i_4_2 (slv_reg7[3:0]),
+        .\value_o[7]_INST_0_i_4_3 (slv_reg0[3:0]),
+        .\value_o[7]_INST_0_i_4_4 (slv_reg1[3:0]),
+        .\value_o[7]_INST_0_i_4_5 (slv_reg2[3:0]),
+        .\value_o[7]_INST_0_i_4_6 (slv_reg3[3:0]));
   LUT6 #(
     .INIT(64'hBFFFBF00BF00BF00)) 
     aw_en_i_1
@@ -1193,7 +983,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .D(\axi_araddr[4]_i_1_n_0 ),
         .Q(sel0[2]),
         .S(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT2 #(
     .INIT(4'h2)) 
     axi_arready_i_1
@@ -1259,7 +1049,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
     axi_awready_i_1
        (.I0(s00_axi_aresetn),
         .O(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT4 #(
     .INIT(16'h0080)) 
     axi_awready_i_2
@@ -1300,14 +1090,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[0]),
         .O(\axi_rdata[0]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[0]_i_3 
-       (.I0(slv_reg6[0]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[0]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[0]),
+       (.I0(slv_reg7[0]),
+        .I1(slv_reg6[0]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[0]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[0]),
         .O(\axi_rdata[0]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1319,14 +1110,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[10]),
         .O(\axi_rdata[10]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[10]_i_3 
-       (.I0(slv_reg6[10]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[10]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[10]),
+       (.I0(slv_reg7[10]),
+        .I1(slv_reg6[10]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[10]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[10]),
         .O(\axi_rdata[10]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1338,14 +1130,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[11]),
         .O(\axi_rdata[11]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[11]_i_3 
-       (.I0(slv_reg6[11]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[11]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[11]),
+       (.I0(slv_reg7[11]),
+        .I1(slv_reg6[11]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[11]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[11]),
         .O(\axi_rdata[11]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1357,14 +1150,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[12]),
         .O(\axi_rdata[12]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[12]_i_3 
-       (.I0(slv_reg6[12]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[12]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[12]),
+       (.I0(slv_reg7[12]),
+        .I1(slv_reg6[12]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[12]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[12]),
         .O(\axi_rdata[12]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1376,14 +1170,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[13]),
         .O(\axi_rdata[13]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[13]_i_3 
-       (.I0(slv_reg6[13]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[13]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[13]),
+       (.I0(slv_reg7[13]),
+        .I1(slv_reg6[13]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[13]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[13]),
         .O(\axi_rdata[13]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1395,14 +1190,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[14]),
         .O(\axi_rdata[14]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[14]_i_3 
-       (.I0(slv_reg6[14]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[14]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[14]),
+       (.I0(slv_reg7[14]),
+        .I1(slv_reg6[14]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[14]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[14]),
         .O(\axi_rdata[14]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1414,14 +1210,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[15]),
         .O(\axi_rdata[15]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[15]_i_3 
-       (.I0(slv_reg6[15]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[15]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[15]),
+       (.I0(slv_reg7[15]),
+        .I1(slv_reg6[15]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[15]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[15]),
         .O(\axi_rdata[15]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1433,14 +1230,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[16]),
         .O(\axi_rdata[16]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[16]_i_3 
-       (.I0(slv_reg6[16]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[16]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[16]),
+       (.I0(slv_reg7[16]),
+        .I1(slv_reg6[16]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[16]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[16]),
         .O(\axi_rdata[16]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1452,14 +1250,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[17]),
         .O(\axi_rdata[17]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[17]_i_3 
-       (.I0(slv_reg6[17]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[17]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[17]),
+       (.I0(slv_reg7[17]),
+        .I1(slv_reg6[17]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[17]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[17]),
         .O(\axi_rdata[17]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1471,14 +1270,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[18]),
         .O(\axi_rdata[18]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[18]_i_3 
-       (.I0(slv_reg6[18]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[18]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[18]),
+       (.I0(slv_reg7[18]),
+        .I1(slv_reg6[18]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[18]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[18]),
         .O(\axi_rdata[18]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1490,14 +1290,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[19]),
         .O(\axi_rdata[19]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[19]_i_3 
-       (.I0(slv_reg6[19]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[19]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[19]),
+       (.I0(slv_reg7[19]),
+        .I1(slv_reg6[19]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[19]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[19]),
         .O(\axi_rdata[19]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1509,14 +1310,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[1]),
         .O(\axi_rdata[1]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[1]_i_3 
-       (.I0(slv_reg6[1]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[1]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[1]),
+       (.I0(slv_reg7[1]),
+        .I1(slv_reg6[1]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[1]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[1]),
         .O(\axi_rdata[1]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1528,14 +1330,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[20]),
         .O(\axi_rdata[20]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[20]_i_3 
-       (.I0(slv_reg6[20]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[20]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[20]),
+       (.I0(slv_reg7[20]),
+        .I1(slv_reg6[20]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[20]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[20]),
         .O(\axi_rdata[20]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1547,14 +1350,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[21]),
         .O(\axi_rdata[21]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[21]_i_3 
-       (.I0(slv_reg6[21]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[21]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[21]),
+       (.I0(slv_reg7[21]),
+        .I1(slv_reg6[21]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[21]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[21]),
         .O(\axi_rdata[21]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1566,14 +1370,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[22]),
         .O(\axi_rdata[22]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[22]_i_3 
-       (.I0(slv_reg6[22]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[22]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[22]),
+       (.I0(slv_reg7[22]),
+        .I1(slv_reg6[22]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[22]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[22]),
         .O(\axi_rdata[22]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1585,14 +1390,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[23]),
         .O(\axi_rdata[23]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[23]_i_3 
-       (.I0(slv_reg6[23]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[23]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[23]),
+       (.I0(slv_reg7[23]),
+        .I1(slv_reg6[23]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[23]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[23]),
         .O(\axi_rdata[23]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1604,14 +1410,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[24]),
         .O(\axi_rdata[24]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[24]_i_3 
-       (.I0(slv_reg6[24]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[24]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[24]),
+       (.I0(slv_reg7[24]),
+        .I1(slv_reg6[24]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[24]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[24]),
         .O(\axi_rdata[24]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1623,14 +1430,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[25]),
         .O(\axi_rdata[25]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[25]_i_3 
-       (.I0(slv_reg6[25]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[25]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[25]),
+       (.I0(slv_reg7[25]),
+        .I1(slv_reg6[25]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[25]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[25]),
         .O(\axi_rdata[25]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1642,14 +1450,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[26]),
         .O(\axi_rdata[26]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[26]_i_3 
-       (.I0(slv_reg6[26]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[26]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[26]),
+       (.I0(slv_reg7[26]),
+        .I1(slv_reg6[26]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[26]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[26]),
         .O(\axi_rdata[26]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1661,14 +1470,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[27]),
         .O(\axi_rdata[27]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[27]_i_3 
-       (.I0(slv_reg6[27]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[27]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[27]),
+       (.I0(slv_reg7[27]),
+        .I1(slv_reg6[27]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[27]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[27]),
         .O(\axi_rdata[27]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1680,14 +1490,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[28]),
         .O(\axi_rdata[28]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[28]_i_3 
-       (.I0(slv_reg6[28]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[28]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[28]),
+       (.I0(slv_reg7[28]),
+        .I1(slv_reg6[28]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[28]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[28]),
         .O(\axi_rdata[28]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1699,14 +1510,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[29]),
         .O(\axi_rdata[29]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[29]_i_3 
-       (.I0(slv_reg6[29]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[29]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[29]),
+       (.I0(slv_reg7[29]),
+        .I1(slv_reg6[29]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[29]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[29]),
         .O(\axi_rdata[29]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1718,14 +1530,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[2]),
         .O(\axi_rdata[2]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[2]_i_3 
-       (.I0(slv_reg6[2]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[2]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[2]),
+       (.I0(slv_reg7[2]),
+        .I1(slv_reg6[2]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[2]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[2]),
         .O(\axi_rdata[2]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1737,14 +1550,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[30]),
         .O(\axi_rdata[30]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[30]_i_3 
-       (.I0(slv_reg6[30]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[30]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[30]),
+       (.I0(slv_reg7[30]),
+        .I1(slv_reg6[30]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[30]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[30]),
         .O(\axi_rdata[30]_i_3_n_0 ));
   LUT3 #(
     .INIT(8'h08)) 
@@ -1763,14 +1577,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[31]),
         .O(\axi_rdata[31]_i_3_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[31]_i_4 
-       (.I0(slv_reg6[31]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[31]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[31]),
+       (.I0(slv_reg7[31]),
+        .I1(slv_reg6[31]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[31]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[31]),
         .O(\axi_rdata[31]_i_4_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1782,14 +1597,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[3]),
         .O(\axi_rdata[3]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[3]_i_3 
-       (.I0(slv_reg6[3]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[3]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[3]),
+       (.I0(slv_reg7[3]),
+        .I1(slv_reg6[3]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[3]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[3]),
         .O(\axi_rdata[3]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1801,14 +1617,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[4]),
         .O(\axi_rdata[4]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[4]_i_3 
-       (.I0(slv_reg6[4]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[4]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[4]),
+       (.I0(slv_reg7[4]),
+        .I1(slv_reg6[4]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[4]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[4]),
         .O(\axi_rdata[4]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1820,14 +1637,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[5]),
         .O(\axi_rdata[5]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[5]_i_3 
-       (.I0(slv_reg6[5]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[5]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[5]),
+       (.I0(slv_reg7[5]),
+        .I1(slv_reg6[5]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[5]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[5]),
         .O(\axi_rdata[5]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1839,14 +1657,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[6]),
         .O(\axi_rdata[6]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[6]_i_3 
-       (.I0(slv_reg6[6]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[6]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[6]),
+       (.I0(slv_reg7[6]),
+        .I1(slv_reg6[6]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[6]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[6]),
         .O(\axi_rdata[6]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1858,14 +1677,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[7]),
         .O(\axi_rdata[7]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[7]_i_3 
-       (.I0(slv_reg6[7]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[7]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[7]),
+       (.I0(slv_reg7[7]),
+        .I1(slv_reg6[7]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[7]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[7]),
         .O(\axi_rdata[7]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1877,14 +1697,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[8]),
         .O(\axi_rdata[8]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[8]_i_3 
-       (.I0(slv_reg6[8]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[8]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[8]),
+       (.I0(slv_reg7[8]),
+        .I1(slv_reg6[8]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[8]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[8]),
         .O(\axi_rdata[8]_i_3_n_0 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -1896,14 +1717,15 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I4(sel0[0]),
         .I5(slv_reg0[9]),
         .O(\axi_rdata[9]_i_2_n_0 ));
-  LUT5 #(
-    .INIT(32'h30BB3088)) 
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \axi_rdata[9]_i_3 
-       (.I0(slv_reg6[9]),
-        .I1(sel0[1]),
-        .I2(slv_reg5[9]),
-        .I3(sel0[0]),
-        .I4(slv_reg4[9]),
+       (.I0(slv_reg7[9]),
+        .I1(slv_reg6[9]),
+        .I2(sel0[1]),
+        .I3(slv_reg5[9]),
+        .I4(sel0[0]),
+        .I5(slv_reg4[9]),
         .O(\axi_rdata[9]_i_3_n_0 ));
   FDRE \axi_rdata_reg[0] 
        (.C(s00_axi_aclk),
@@ -2257,7 +2079,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .I1(\axi_rdata[9]_i_3_n_0 ),
         .O(reg_data_out[9]),
         .S(sel0[2]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT4 #(
     .INIT(16'h08F8)) 
     axi_rvalid_i_1
@@ -2272,7 +2094,7 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .D(axi_rvalid_i_1_n_0),
         .Q(s00_axi_rvalid),
         .R(axi_awready_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT4 #(
     .INIT(16'h0080)) 
     axi_wready_i_1
@@ -3890,6 +3712,234 @@ module Echo_Server_SixDigitHexDisplay_0_0_SixDigitHexDisplay_v1_0_S00_AXI
         .CE(\slv_reg6[15]_i_1_n_0 ),
         .D(s00_axi_wdata[9]),
         .Q(slv_reg6[9]),
+        .R(axi_awready_i_1_n_0));
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \slv_reg7[15]_i_1 
+       (.I0(slv_reg_wren__2),
+        .I1(p_0_in[1]),
+        .I2(p_0_in[0]),
+        .I3(p_0_in[2]),
+        .I4(s00_axi_wstrb[1]),
+        .O(\slv_reg7[15]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \slv_reg7[23]_i_1 
+       (.I0(slv_reg_wren__2),
+        .I1(p_0_in[1]),
+        .I2(p_0_in[0]),
+        .I3(p_0_in[2]),
+        .I4(s00_axi_wstrb[2]),
+        .O(\slv_reg7[23]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \slv_reg7[31]_i_1 
+       (.I0(slv_reg_wren__2),
+        .I1(p_0_in[1]),
+        .I2(p_0_in[0]),
+        .I3(p_0_in[2]),
+        .I4(s00_axi_wstrb[3]),
+        .O(\slv_reg7[31]_i_1_n_0 ));
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \slv_reg7[7]_i_1 
+       (.I0(slv_reg_wren__2),
+        .I1(p_0_in[1]),
+        .I2(p_0_in[0]),
+        .I3(p_0_in[2]),
+        .I4(s00_axi_wstrb[0]),
+        .O(\slv_reg7[7]_i_1_n_0 ));
+  FDRE \slv_reg7_reg[0] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[7]_i_1_n_0 ),
+        .D(s00_axi_wdata[0]),
+        .Q(slv_reg7[0]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[10] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[15]_i_1_n_0 ),
+        .D(s00_axi_wdata[10]),
+        .Q(slv_reg7[10]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[11] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[15]_i_1_n_0 ),
+        .D(s00_axi_wdata[11]),
+        .Q(slv_reg7[11]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[12] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[15]_i_1_n_0 ),
+        .D(s00_axi_wdata[12]),
+        .Q(slv_reg7[12]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[13] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[15]_i_1_n_0 ),
+        .D(s00_axi_wdata[13]),
+        .Q(slv_reg7[13]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[14] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[15]_i_1_n_0 ),
+        .D(s00_axi_wdata[14]),
+        .Q(slv_reg7[14]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[15] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[15]_i_1_n_0 ),
+        .D(s00_axi_wdata[15]),
+        .Q(slv_reg7[15]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[16] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[23]_i_1_n_0 ),
+        .D(s00_axi_wdata[16]),
+        .Q(slv_reg7[16]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[17] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[23]_i_1_n_0 ),
+        .D(s00_axi_wdata[17]),
+        .Q(slv_reg7[17]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[18] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[23]_i_1_n_0 ),
+        .D(s00_axi_wdata[18]),
+        .Q(slv_reg7[18]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[19] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[23]_i_1_n_0 ),
+        .D(s00_axi_wdata[19]),
+        .Q(slv_reg7[19]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[1] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[7]_i_1_n_0 ),
+        .D(s00_axi_wdata[1]),
+        .Q(slv_reg7[1]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[20] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[23]_i_1_n_0 ),
+        .D(s00_axi_wdata[20]),
+        .Q(slv_reg7[20]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[21] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[23]_i_1_n_0 ),
+        .D(s00_axi_wdata[21]),
+        .Q(slv_reg7[21]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[22] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[23]_i_1_n_0 ),
+        .D(s00_axi_wdata[22]),
+        .Q(slv_reg7[22]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[23] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[23]_i_1_n_0 ),
+        .D(s00_axi_wdata[23]),
+        .Q(slv_reg7[23]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[24] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[31]_i_1_n_0 ),
+        .D(s00_axi_wdata[24]),
+        .Q(slv_reg7[24]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[25] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[31]_i_1_n_0 ),
+        .D(s00_axi_wdata[25]),
+        .Q(slv_reg7[25]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[26] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[31]_i_1_n_0 ),
+        .D(s00_axi_wdata[26]),
+        .Q(slv_reg7[26]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[27] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[31]_i_1_n_0 ),
+        .D(s00_axi_wdata[27]),
+        .Q(slv_reg7[27]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[28] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[31]_i_1_n_0 ),
+        .D(s00_axi_wdata[28]),
+        .Q(slv_reg7[28]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[29] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[31]_i_1_n_0 ),
+        .D(s00_axi_wdata[29]),
+        .Q(slv_reg7[29]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[2] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[7]_i_1_n_0 ),
+        .D(s00_axi_wdata[2]),
+        .Q(slv_reg7[2]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[30] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[31]_i_1_n_0 ),
+        .D(s00_axi_wdata[30]),
+        .Q(slv_reg7[30]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[31] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[31]_i_1_n_0 ),
+        .D(s00_axi_wdata[31]),
+        .Q(slv_reg7[31]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[3] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[7]_i_1_n_0 ),
+        .D(s00_axi_wdata[3]),
+        .Q(slv_reg7[3]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[4] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[7]_i_1_n_0 ),
+        .D(s00_axi_wdata[4]),
+        .Q(slv_reg7[4]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[5] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[7]_i_1_n_0 ),
+        .D(s00_axi_wdata[5]),
+        .Q(slv_reg7[5]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[6] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[7]_i_1_n_0 ),
+        .D(s00_axi_wdata[6]),
+        .Q(slv_reg7[6]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[7] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[7]_i_1_n_0 ),
+        .D(s00_axi_wdata[7]),
+        .Q(slv_reg7[7]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[8] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[15]_i_1_n_0 ),
+        .D(s00_axi_wdata[8]),
+        .Q(slv_reg7[8]),
+        .R(axi_awready_i_1_n_0));
+  FDRE \slv_reg7_reg[9] 
+       (.C(s00_axi_aclk),
+        .CE(\slv_reg7[15]_i_1_n_0 ),
+        .D(s00_axi_wdata[9]),
+        .Q(slv_reg7[9]),
         .R(axi_awready_i_1_n_0));
 endmodule
 `ifndef GLBL

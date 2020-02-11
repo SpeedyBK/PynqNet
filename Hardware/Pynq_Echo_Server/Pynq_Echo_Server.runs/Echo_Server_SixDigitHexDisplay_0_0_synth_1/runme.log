@@ -10,7 +10,7 @@
 
 source Echo_Server_SixDigitHexDisplay_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/IpRepository/Display/SixDigitHexDisplay_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
 Command: synth_design -top Echo_Server_SixDigitHexDisplay_0_0 -part xc7z020clg400-1 -mode out_of_context
 Starting synth_design
@@ -18,30 +18,32 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11363 
+INFO: Helper process launched with PID 27623 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1740.082 ; gain = 152.715 ; free physical = 816 ; free virtual = 4868
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1740.047 ; gain = 152.684 ; free physical = 138 ; free virtual = 3904
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Echo_Server_SixDigitHexDisplay_0_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/synth/Echo_Server_SixDigitHexDisplay_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_SixDigitHexDisplay_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/synth/Echo_Server_SixDigitHexDisplay_0_0.vhd:84]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'SixDigitHexDisplay_v1_0' declared at '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0.vhd:5' bound to instance 'U0' of component 'SixDigitHexDisplay_v1_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/synth/Echo_Server_SixDigitHexDisplay_0_0.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'SixDigitHexDisplay_v1_0' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0.vhd:50]
+INFO: [Synth 8-3491] module 'SixDigitHexDisplay_v1_0' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0.vhd:5' bound to instance 'U0' of component 'SixDigitHexDisplay_v1_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/synth/Echo_Server_SixDigitHexDisplay_0_0.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'SixDigitHexDisplay_v1_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0.vhd:50]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'SixDigitHexDisplay_v1_0_S00_AXI' declared at '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:5' bound to instance 'SixDigitHexDisplay_v1_0_S00_AXI_inst' of component 'SixDigitHexDisplay_v1_0_S00_AXI' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'SixDigitHexDisplay_v1_0_S00_AXI' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-3491] module 'SixDigitHexDisplay_v1_0_S00_AXI' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:5' bound to instance 'SixDigitHexDisplay_v1_0_S00_AXI_inst' of component 'SixDigitHexDisplay_v1_0_S00_AXI' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'SixDigitHexDisplay_v1_0_S00_AXI' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:87]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-3491] module 'DisplayController' declared at '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/DisplayController.vhd:34' bound to instance 'DispController' of component 'DisplayController' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:444]
-INFO: [Synth 8-638] synthesizing module 'DisplayController' [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/DisplayController.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'DisplayController' (1#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/DisplayController.vhd:47]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:245]
-INFO: [Synth 8-256] done synthesizing module 'SixDigitHexDisplay_v1_0_S00_AXI' (2#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:87]
-INFO: [Synth 8-256] done synthesizing module 'SixDigitHexDisplay_v1_0' (3#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'Echo_Server_SixDigitHexDisplay_0_0' (4#1) [/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/synth/Echo_Server_SixDigitHexDisplay_0_0.vhd:84]
+INFO: [Synth 8-226] default block is never used [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:251]
+INFO: [Synth 8-226] default block is never used [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:417]
+INFO: [Synth 8-3491] module 'DisplayController' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/DisplayController.vhd:34' bound to instance 'DispController' of component 'DisplayController' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:459]
+INFO: [Synth 8-638] synthesizing module 'DisplayController' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/DisplayController.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'DisplayController' (1#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/DisplayController.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'SixDigitHexDisplay_v1_0_S00_AXI' (2#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'SixDigitHexDisplay_v1_0' (3#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'Echo_Server_SixDigitHexDisplay_0_0' (4#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/synth/Echo_Server_SixDigitHexDisplay_0_0.vhd:84]
 WARNING: [Synth 8-3331] design SixDigitHexDisplay_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design SixDigitHexDisplay_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
 WARNING: [Synth 8-3331] design SixDigitHexDisplay_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
@@ -49,7 +51,7 @@ WARNING: [Synth 8-3331] design SixDigitHexDisplay_v1_0_S00_AXI has unconnected p
 WARNING: [Synth 8-3331] design SixDigitHexDisplay_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design SixDigitHexDisplay_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1796.801 ; gain = 209.434 ; free physical = 841 ; free virtual = 4893
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1795.766 ; gain = 208.402 ; free physical = 214 ; free virtual = 3925
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -62,10 +64,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1800.770 ; gain = 213.402 ; free physical = 837 ; free virtual = 4890
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1801.703 ; gain = 214.340 ; free physical = 213 ; free virtual = 3923
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1800.770 ; gain = 213.402 ; free physical = 837 ; free virtual = 4890
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1801.703 ; gain = 214.340 ; free physical = 213 ; free virtual = 3923
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -73,32 +75,32 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1948.457 ; gain = 0.000 ; free physical = 751 ; free virtual = 4804
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1952.453 ; gain = 0.000 ; free physical = 136 ; free virtual = 3840
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1948.457 ; gain = 0.000 ; free physical = 749 ; free virtual = 4802
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1955.422 ; gain = 2.969 ; free physical = 132 ; free virtual = 3837
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 846 ; free virtual = 4898
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 199 ; free virtual = 3906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 846 ; free virtual = 4898
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 199 ; free virtual = 3906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 846 ; free virtual = 4898
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 199 ; free virtual = 3906
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5544] ROM "digit_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RomContent" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 838 ; free virtual = 4890
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 190 ; free virtual = 3896
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -111,18 +113,20 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 8     
+	               32 Bit    Registers := 9     
 	                5 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 7     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 7     
-	   8 Input     32 Bit        Muxes := 7     
-	   2 Input      6 Bit        Muxes := 1     
-	   7 Input      6 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	   8 Input     32 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -134,24 +138,26 @@ Hierarchical RTL Component report
 Module DisplayController 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      6 Bit        Muxes := 1     
-	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 3     
 Module SixDigitHexDisplay_v1_0_S00_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 8     
+	               32 Bit    Registers := 9     
 	                5 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 7     
-	   8 Input     32 Bit        Muxes := 7     
+	   2 Input     32 Bit        Muxes := 8     
+	   8 Input     32 Bit        Muxes := 8     
 	   2 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -180,22 +186,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/SixDi
 INFO: [Synth 8-3886] merging instance 'U0/SixDigitHexDisplay_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/SixDigitHexDisplay_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/SixDigitHexDisplay_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 816 ; free virtual = 4878
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-ROM:
-+-----------------------------------+------------+---------------+----------------+
-|Module Name                        | RTL Object | Depth x Width | Implemented As | 
-+-----------------------------------+------------+---------------+----------------+
-|DisplayController                  | p_0_out    | 128x8         | LUT            | 
-|Echo_Server_SixDigitHexDisplay_0_0 | p_0_out    | 128x8         | LUT            | 
-+-----------------------------------+------------+---------------+----------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 165 ; free virtual = 3876
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -207,13 +198,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 681 ; free virtual = 4752
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 123 ; free virtual = 3753
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 681 ; free virtual = 4752
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 123 ; free virtual = 3753
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -225,7 +216,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 679 ; free virtual = 4750
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 146 ; free virtual = 3747
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -249,7 +240,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 679 ; free virtual = 4750
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 147 ; free virtual = 3748
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -262,7 +253,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 679 ; free virtual = 4750
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 147 ; free virtual = 3748
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -274,25 +265,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 679 ; free virtual = 4750
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 147 ; free virtual = 3748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 679 ; free virtual = 4750
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 147 ; free virtual = 3748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 679 ; free virtual = 4750
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 147 ; free virtual = 3748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 679 ; free virtual = 4750
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 147 ; free virtual = 3748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -310,13 +301,13 @@ Report Cell Usage:
 +------+-------+------+
 |1     |CARRY4 |     4|
 |2     |LUT1   |     2|
-|3     |LUT2   |     2|
-|4     |LUT3   |     8|
-|5     |LUT4   |     8|
-|6     |LUT5   |    66|
-|7     |LUT6   |    74|
-|8     |MUXF7  |    32|
-|9     |FDRE   |   282|
+|3     |LUT2   |     1|
+|4     |LUT3   |    10|
+|5     |LUT4   |     9|
+|6     |LUT5   |    35|
+|7     |LUT6   |    85|
+|8     |MUXF7  |    35|
+|9     |FDRE   |   314|
 |10    |FDSE   |     4|
 +------+-------+------+
 
@@ -324,40 +315,40 @@ Report Instance Areas:
 +------+-----------------------------------------+--------------------------------+------+
 |      |Instance                                 |Module                          |Cells |
 +------+-----------------------------------------+--------------------------------+------+
-|1     |top                                      |                                |   482|
-|2     |  U0                                     |SixDigitHexDisplay_v1_0         |   482|
-|3     |    SixDigitHexDisplay_v1_0_S00_AXI_inst |SixDigitHexDisplay_v1_0_S00_AXI |   482|
-|4     |      DispController                     |DisplayController               |    75|
+|1     |top                                      |                                |   499|
+|2     |  U0                                     |SixDigitHexDisplay_v1_0         |   499|
+|3     |    SixDigitHexDisplay_v1_0_S00_AXI_inst |SixDigitHexDisplay_v1_0_S00_AXI |   499|
+|4     |      DispController                     |DisplayController               |    56|
 +------+-----------------------------------------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 679 ; free virtual = 4750
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 147 ; free virtual = 3748
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1948.457 ; gain = 213.402 ; free physical = 735 ; free virtual = 4805
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1948.457 ; gain = 361.090 ; free physical = 735 ; free virtual = 4805
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1955.422 ; gain = 214.340 ; free physical = 203 ; free virtual = 3803
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1955.422 ; gain = 368.059 ; free physical = 203 ; free virtual = 3804
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1969.238 ; gain = 0.000 ; free physical = 683 ; free virtual = 4743
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1968.297 ; gain = 0.000 ; free physical = 151 ; free virtual = 3753
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-30 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+32 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1969.238 ; gain = 567.469 ; free physical = 780 ; free virtual = 4840
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1969.238 ; gain = 0.000 ; free physical = 780 ; free virtual = 4840
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1968.297 ; gain = 566.531 ; free physical = 248 ; free virtual = 3850
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1968.297 ; gain = 0.000 ; free physical = 248 ; free virtual = 3850
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_SixDigitHexDisplay_0_0_synth_1/Echo_Server_SixDigitHexDisplay_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_SixDigitHexDisplay_0_0_synth_1/Echo_Server_SixDigitHexDisplay_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Echo_Server_SixDigitHexDisplay_0_0, cache-ID = 47a8f35a3ce60939
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Echo_Server_SixDigitHexDisplay_0_0, cache-ID = 39aa538733aab872
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1993.250 ; gain = 0.000 ; free physical = 780 ; free virtual = 4841
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1992.309 ; gain = 0.000 ; free physical = 246 ; free virtual = 3849
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_SixDigitHexDisplay_0_0_synth_1/Echo_Server_SixDigitHexDisplay_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_SixDigitHexDisplay_0_0_synth_1/Echo_Server_SixDigitHexDisplay_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Echo_Server_SixDigitHexDisplay_0_0_utilization_synth.rpt -pb Echo_Server_SixDigitHexDisplay_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Feb  8 12:29:34 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 17:53:53 2020...

@@ -1,0 +1,13 @@
+/*
+ * CustomFunction.c
+ *
+ *  Created on: 10.02.2020
+ *      Author: benjamin
+ */
+
+
+#include "CustomFunction.h"
+
+void HelloWorld(){
+	return;
+}

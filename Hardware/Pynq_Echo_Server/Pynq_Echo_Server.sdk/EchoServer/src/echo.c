@@ -67,14 +67,14 @@ void print_data(void* p, int length){
 }
 
 void display_print(void* p, int length){
-	if (length > 6){
+	if (length > 8){
 		xil_printf("To much Data to show \r\n");
 		return;
 	}
 	u8* bums = (u8*) p;
 	for (int i = 0; i < length; i++){
 		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
-			SIXDIGITHEXDISPLAY_mWriteReg(XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_BASEADDR, 4*i, *(bums+i) - 32); // Noch in Hardware Fixen!
+			SIXDIGITHEXDISPLAY_mWriteReg(XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_BASEADDR, 4*i, *(bums+i));
 		}
 	}
 }

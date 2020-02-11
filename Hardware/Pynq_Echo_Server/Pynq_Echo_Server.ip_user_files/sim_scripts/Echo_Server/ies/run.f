@@ -74,10 +74,14 @@
   "../../../bd/Echo_Server/ip/Echo_Server_xbar_0/sim/Echo_Server_xbar_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/Echo_Server/ipshared/7166/hdl/DisplayController.vhd" \
-  "../../../bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd" \
-  "../../../bd/Echo_Server/ipshared/7166/hdl/SixDigitHexDisplay_v1_0.vhd" \
+  "../../../bd/Echo_Server/ipshared/48bd/hdl/DisplayController.vhd" \
+  "../../../bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd" \
+  "../../../bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0.vhd" \
   "../../../bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/sim/Echo_Server_SixDigitHexDisplay_0_0.vhd" \
+  "../../../bd/Echo_Server/ipshared/4aab/hdl/ManInput.vhd" \
+  "../../../bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd" \
+  "../../../bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0.vhd" \
+  "../../../bd/Echo_Server/ip/Echo_Server_ManInput_0_0/sim/Echo_Server_ManInput_0_0.vhd" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_19 \
   "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
