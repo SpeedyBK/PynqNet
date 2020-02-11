@@ -19,6 +19,7 @@ Currenty it is not working and WIP.
 3. Use the EMIO Ports to establisch a connection between the Ethernet Chip and the PL of the Zynq Device. 
 4. Find a testmethode to verify if there is a connection. 
 5. Figure out, how to access the Ethernet Chip correctly.
+6. Link to LwIP: https://www.nongnu.org/lwip/2_1_x/index.html
 
 ## IP-Cores or Sub-Designs
 
