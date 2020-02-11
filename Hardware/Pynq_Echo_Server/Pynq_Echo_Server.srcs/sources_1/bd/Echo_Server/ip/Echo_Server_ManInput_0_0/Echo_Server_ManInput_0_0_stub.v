@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Sun Feb  9 16:16:11 2020
+// Date        : Tue Feb 11 11:08:21 2020
 // Host        : Laptop running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0_stub.v
+//               /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0_stub.v
 // Design      : Echo_Server_ManInput_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

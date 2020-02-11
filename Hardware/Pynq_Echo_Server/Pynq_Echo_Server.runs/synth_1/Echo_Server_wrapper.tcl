@@ -44,6 +44,9 @@ set_property used_in_implementation false [get_files -all /home/benjamin/Reposit
 set_property used_in_implementation false [get_files -all /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_rst_ps7_0_100M_0/Echo_Server_rst_ps7_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_rst_ps7_0_100M_0/Echo_Server_rst_ps7_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_xbar_0/Echo_Server_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_axi_gpio_1_0/Echo_Server_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_axi_gpio_1_0/Echo_Server_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_axi_gpio_1_0/Echo_Server_axi_gpio_1_0.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_auto_pc_0/Echo_Server_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/Echo_Server_ooc.xdc]
 

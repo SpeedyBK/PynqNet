@@ -78,9 +78,9 @@
   "../../../bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd" \
   "../../../bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0.vhd" \
   "../../../bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/sim/Echo_Server_SixDigitHexDisplay_0_0.vhd" \
-  "../../../bd/Echo_Server/ipshared/4aab/hdl/ManInput.vhd" \
-  "../../../bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd" \
-  "../../../bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0.vhd" \
+  "../../../bd/Echo_Server/ipshared/e908/hdl/ManInput.vhd" \
+  "../../../bd/Echo_Server/ipshared/e908/hdl/ManInput_v1_0_S00_AXI.vhd" \
+  "../../../bd/Echo_Server/ipshared/e908/hdl/ManInput_v1_0.vhd" \
   "../../../bd/Echo_Server/ip/Echo_Server_ManInput_0_0/sim/Echo_Server_ManInput_0_0.vhd" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_19 \

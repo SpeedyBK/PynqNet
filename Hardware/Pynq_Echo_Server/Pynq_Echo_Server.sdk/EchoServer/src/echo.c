@@ -58,7 +58,7 @@ struct pointer_length transfer_data() {
 void print_data(void* p, int length){
 	u8* bums = (u8*) p;
 	xil_printf("Received Bytes of Data: %d\r\n" , length);
-	for (int i = 0; i < length; i++){
+	for (int i = 0; i < length+2; i++){
 		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
 			xil_printf("%d", *(bums+i) - 48);
 		}
@@ -86,12 +86,12 @@ void print_app_header()
 #else
 	xil_printf("\n\r\n\r-----lwIPv6 TCP echo server ------\n\r");
 #endif
-	xil_printf("TCP packets sent to port 6001 will be echoed back\n\r");
+	xil_printf("TCP packets sent to port xxxx will be echoed back\n\r");
 }
 
 err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
                                struct pbuf *p, err_t err)
-{
+{	xil_printf("Begin recv_callback \r\n");
 	/* do not read the packet if we are not in ESTABLISHED state */
 	if (!p) {
 		tcp_close(tpcb);
@@ -117,7 +117,7 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
 
 	/* free the received pbuf */
 	pbuf_free(p);
-
+	xil_printf("End recv_callback \r\n");
 	return ERR_OK;
 }
 
@@ -143,7 +143,7 @@ int start_application()
 {
 	struct tcp_pcb *pcb;
 	err_t err;
-	unsigned port = 7;
+	unsigned port = 8;
 
 	/* create new TCP PCB structure */
 	pcb = tcp_new_ip_type(IPADDR_TYPE_ANY);

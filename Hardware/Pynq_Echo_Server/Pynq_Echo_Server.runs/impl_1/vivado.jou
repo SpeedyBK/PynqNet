@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Feb 10 17:54:39 2020
-# Process ID: 27971
+# Start of session at: Tue Feb 11 15:10:08 2020
+# Process ID: 22226
 # Current directory: /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/impl_1
 # Command line: vivado -log Echo_Server_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Echo_Server_wrapper.tcl -notrace
 # Log file: /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/impl_1/Echo_Server_wrapper.vdi

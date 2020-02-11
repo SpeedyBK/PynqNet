@@ -117,9 +117,9 @@ vcom -work xil_defaultlib -64 -93 \
 "../../../bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd" \
 "../../../bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0.vhd" \
 "../../../bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/sim/Echo_Server_SixDigitHexDisplay_0_0.vhd" \
-"../../../bd/Echo_Server/ipshared/4aab/hdl/ManInput.vhd" \
-"../../../bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0_S00_AXI.vhd" \
-"../../../bd/Echo_Server/ipshared/4aab/hdl/ManInput_v1_0.vhd" \
+"../../../bd/Echo_Server/ipshared/e908/hdl/ManInput.vhd" \
+"../../../bd/Echo_Server/ipshared/e908/hdl/ManInput_v1_0_S00_AXI.vhd" \
+"../../../bd/Echo_Server/ipshared/e908/hdl/ManInput_v1_0.vhd" \
 "../../../bd/Echo_Server/ip/Echo_Server_ManInput_0_0/sim/Echo_Server_ManInput_0_0.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_19 -64 "+incdir+../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ec67/hdl" "+incdir+../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/8c62/hdl" "+incdir+../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_processing_system7_0_0" "+incdir+/tools/Xilinx/Vivado/2019.1/data/xilinx_vip/include" \

@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Sun Feb  9 16:16:11 2020
+// Date        : Tue Feb 11 11:08:21 2020
 // Host        : Laptop running 64-bit Ubuntu 18.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
-//               /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0_sim_netlist.v
+//               /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_ManInput_0_0/Echo_Server_ManInput_0_0_sim_netlist.v
 // Design      : Echo_Server_ManInput_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -119,14 +119,14 @@ module Echo_Server_ManInput_0_0_ManInput
    (Q,
     SR,
     s00_axi_aclk,
-    push_to_send_i,
     switches_i,
+    push_to_send_i,
     s00_axi_aresetn);
   output [7:0]Q;
   output [0:0]SR;
   input s00_axi_aclk;
-  input push_to_send_i;
   input [7:0]switches_i;
+  input push_to_send_i;
   input s00_axi_aresetn;
 
   wire ButDeb_i_10_n_0;
@@ -145,7 +145,6 @@ module Echo_Server_ManInput_0_0_ManInput
   wire ButDeb_i_8_n_0;
   wire ButDeb_i_9_n_0;
   wire ButDeb_reg_n_0;
-  wire [30:0]ButReg;
   wire \ButReg[31]_i_2_n_0 ;
   wire \ButReg[31]_i_3_n_0 ;
   wire \ButReg[31]_i_4_n_0 ;
@@ -185,7 +184,7 @@ module Echo_Server_ManInput_0_0_ManInput
   wire \delay_reg[8]_i_1_n_6 ;
   wire \delay_reg[8]_i_1_n_7 ;
   wire p_0_in;
-  wire [0:0]p_1_out;
+  wire [31:1]p_2_in;
   wire push_to_send_i;
   wire s00_axi_aclk;
   wire s00_axi_aresetn;
@@ -206,70 +205,70 @@ module Echo_Server_ManInput_0_0_ManInput
   LUT6 #(
     .INIT(64'h8000000000000000)) 
     ButDeb_i_10
-       (.I0(ButReg[23]),
-        .I1(ButReg[24]),
-        .I2(ButReg[21]),
-        .I3(ButReg[22]),
-        .I4(ButReg[26]),
-        .I5(ButReg[25]),
+       (.I0(p_2_in[24]),
+        .I1(p_2_in[25]),
+        .I2(p_2_in[22]),
+        .I3(p_2_in[23]),
+        .I4(p_2_in[27]),
+        .I5(p_2_in[26]),
         .O(ButDeb_i_10_n_0));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     ButDeb_i_11
-       (.I0(ButReg[17]),
-        .I1(ButReg[18]),
-        .I2(ButReg[15]),
-        .I3(ButReg[16]),
-        .I4(ButReg[20]),
-        .I5(ButReg[19]),
+       (.I0(p_2_in[18]),
+        .I1(p_2_in[19]),
+        .I2(p_2_in[16]),
+        .I3(p_2_in[17]),
+        .I4(p_2_in[21]),
+        .I5(p_2_in[20]),
         .O(ButDeb_i_11_n_0));
   LUT6 #(
     .INIT(64'h0000000100000000)) 
     ButDeb_i_12
-       (.I0(ButReg[29]),
-        .I1(ButReg[30]),
-        .I2(ButReg[27]),
-        .I3(ButReg[28]),
+       (.I0(p_2_in[30]),
+        .I1(p_2_in[31]),
+        .I2(p_2_in[28]),
+        .I3(p_2_in[29]),
         .I4(\ButReg_reg_n_0_[31] ),
         .I5(s00_axi_aresetn),
         .O(ButDeb_i_12_n_0));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     ButDeb_i_13
-       (.I0(ButReg[23]),
-        .I1(ButReg[24]),
-        .I2(ButReg[21]),
-        .I3(ButReg[22]),
-        .I4(ButReg[26]),
-        .I5(ButReg[25]),
+       (.I0(p_2_in[24]),
+        .I1(p_2_in[25]),
+        .I2(p_2_in[22]),
+        .I3(p_2_in[23]),
+        .I4(p_2_in[27]),
+        .I5(p_2_in[26]),
         .O(ButDeb_i_13_n_0));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     ButDeb_i_14
-       (.I0(ButReg[5]),
-        .I1(ButReg[6]),
-        .I2(ButReg[3]),
-        .I3(ButReg[4]),
-        .I4(ButReg[8]),
-        .I5(ButReg[7]),
+       (.I0(p_2_in[6]),
+        .I1(p_2_in[7]),
+        .I2(p_2_in[4]),
+        .I3(p_2_in[5]),
+        .I4(p_2_in[9]),
+        .I5(p_2_in[8]),
         .O(ButDeb_i_14_n_0));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
     ButDeb_i_15
-       (.I0(ButReg[11]),
-        .I1(ButReg[12]),
-        .I2(ButReg[9]),
-        .I3(ButReg[10]),
-        .I4(ButReg[14]),
-        .I5(ButReg[13]),
+       (.I0(p_2_in[12]),
+        .I1(p_2_in[13]),
+        .I2(p_2_in[10]),
+        .I3(p_2_in[11]),
+        .I4(p_2_in[15]),
+        .I5(p_2_in[14]),
         .O(ButDeb_i_15_n_0));
   LUT5 #(
     .INIT(32'h80000000)) 
     ButDeb_i_2
        (.I0(ButDeb_i_6_n_0),
-        .I1(ButReg[2]),
-        .I2(ButReg[1]),
-        .I3(ButReg[0]),
+        .I1(p_2_in[3]),
+        .I2(p_2_in[2]),
+        .I3(p_2_in[1]),
         .I4(ButDeb_i_7_n_0),
         .O(ButDeb_i_2_n_0));
   LUT3 #(
@@ -290,48 +289,48 @@ module Echo_Server_ManInput_0_0_ManInput
     .INIT(32'h00020000)) 
     ButDeb_i_5
        (.I0(ButDeb_i_14_n_0),
-        .I1(ButReg[2]),
-        .I2(ButReg[1]),
-        .I3(ButReg[0]),
+        .I1(p_2_in[3]),
+        .I2(p_2_in[2]),
+        .I3(p_2_in[1]),
         .I4(ButDeb_i_15_n_0),
         .O(ButDeb_i_5_n_0));
   LUT6 #(
     .INIT(64'h8000000000000000)) 
     ButDeb_i_6
-       (.I0(ButReg[5]),
-        .I1(ButReg[6]),
-        .I2(ButReg[3]),
-        .I3(ButReg[4]),
-        .I4(ButReg[8]),
-        .I5(ButReg[7]),
+       (.I0(p_2_in[6]),
+        .I1(p_2_in[7]),
+        .I2(p_2_in[4]),
+        .I3(p_2_in[5]),
+        .I4(p_2_in[9]),
+        .I5(p_2_in[8]),
         .O(ButDeb_i_6_n_0));
   LUT6 #(
     .INIT(64'h8000000000000000)) 
     ButDeb_i_7
-       (.I0(ButReg[11]),
-        .I1(ButReg[12]),
-        .I2(ButReg[9]),
-        .I3(ButReg[10]),
-        .I4(ButReg[14]),
-        .I5(ButReg[13]),
+       (.I0(p_2_in[12]),
+        .I1(p_2_in[13]),
+        .I2(p_2_in[10]),
+        .I3(p_2_in[11]),
+        .I4(p_2_in[15]),
+        .I5(p_2_in[14]),
         .O(ButDeb_i_7_n_0));
   LUT6 #(
     .INIT(64'h8000000000000000)) 
     ButDeb_i_8
-       (.I0(ButReg[17]),
-        .I1(ButReg[18]),
-        .I2(ButReg[15]),
-        .I3(ButReg[16]),
-        .I4(ButReg[20]),
-        .I5(ButReg[19]),
+       (.I0(p_2_in[18]),
+        .I1(p_2_in[19]),
+        .I2(p_2_in[16]),
+        .I3(p_2_in[17]),
+        .I4(p_2_in[21]),
+        .I5(p_2_in[20]),
         .O(ButDeb_i_8_n_0));
   LUT6 #(
     .INIT(64'h8000000000000000)) 
     ButDeb_i_9
-       (.I0(ButReg[29]),
-        .I1(ButReg[30]),
-        .I2(ButReg[27]),
-        .I3(ButReg[28]),
+       (.I0(p_2_in[30]),
+        .I1(p_2_in[31]),
+        .I2(p_2_in[28]),
+        .I3(p_2_in[29]),
         .I4(s00_axi_aresetn),
         .I5(\ButReg_reg_n_0_[31] ),
         .O(ButDeb_i_9_n_0));
@@ -341,11 +340,6 @@ module Echo_Server_ManInput_0_0_ManInput
         .D(ButDeb_i_1_n_0),
         .Q(ButDeb_reg_n_0),
         .R(1'b0));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \ButReg[0]_i_1 
-       (.I0(push_to_send_i),
-        .O(p_1_out));
   LUT6 #(
     .INIT(64'h8000000000000000)) 
     \ButReg[31]_i_1 
@@ -383,194 +377,194 @@ module Echo_Server_ManInput_0_0_ManInput
   FDRE \ButReg_reg[0] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(p_1_out),
-        .Q(ButReg[0]),
+        .D(push_to_send_i),
+        .Q(p_2_in[1]),
         .R(SR));
   FDRE \ButReg_reg[10] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[9]),
-        .Q(ButReg[10]),
+        .D(p_2_in[10]),
+        .Q(p_2_in[11]),
         .R(SR));
   FDRE \ButReg_reg[11] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[10]),
-        .Q(ButReg[11]),
+        .D(p_2_in[11]),
+        .Q(p_2_in[12]),
         .R(SR));
   FDRE \ButReg_reg[12] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[11]),
-        .Q(ButReg[12]),
+        .D(p_2_in[12]),
+        .Q(p_2_in[13]),
         .R(SR));
   FDRE \ButReg_reg[13] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[12]),
-        .Q(ButReg[13]),
+        .D(p_2_in[13]),
+        .Q(p_2_in[14]),
         .R(SR));
   FDRE \ButReg_reg[14] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[13]),
-        .Q(ButReg[14]),
+        .D(p_2_in[14]),
+        .Q(p_2_in[15]),
         .R(SR));
   FDRE \ButReg_reg[15] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[14]),
-        .Q(ButReg[15]),
+        .D(p_2_in[15]),
+        .Q(p_2_in[16]),
         .R(SR));
   FDRE \ButReg_reg[16] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[15]),
-        .Q(ButReg[16]),
+        .D(p_2_in[16]),
+        .Q(p_2_in[17]),
         .R(SR));
   FDRE \ButReg_reg[17] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[16]),
-        .Q(ButReg[17]),
+        .D(p_2_in[17]),
+        .Q(p_2_in[18]),
         .R(SR));
   FDRE \ButReg_reg[18] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[17]),
-        .Q(ButReg[18]),
+        .D(p_2_in[18]),
+        .Q(p_2_in[19]),
         .R(SR));
   FDRE \ButReg_reg[19] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[18]),
-        .Q(ButReg[19]),
+        .D(p_2_in[19]),
+        .Q(p_2_in[20]),
         .R(SR));
   FDRE \ButReg_reg[1] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[0]),
-        .Q(ButReg[1]),
+        .D(p_2_in[1]),
+        .Q(p_2_in[2]),
         .R(SR));
   FDRE \ButReg_reg[20] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[19]),
-        .Q(ButReg[20]),
+        .D(p_2_in[20]),
+        .Q(p_2_in[21]),
         .R(SR));
   FDRE \ButReg_reg[21] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[20]),
-        .Q(ButReg[21]),
+        .D(p_2_in[21]),
+        .Q(p_2_in[22]),
         .R(SR));
   FDRE \ButReg_reg[22] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[21]),
-        .Q(ButReg[22]),
+        .D(p_2_in[22]),
+        .Q(p_2_in[23]),
         .R(SR));
   FDRE \ButReg_reg[23] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[22]),
-        .Q(ButReg[23]),
+        .D(p_2_in[23]),
+        .Q(p_2_in[24]),
         .R(SR));
   FDRE \ButReg_reg[24] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[23]),
-        .Q(ButReg[24]),
+        .D(p_2_in[24]),
+        .Q(p_2_in[25]),
         .R(SR));
   FDRE \ButReg_reg[25] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[24]),
-        .Q(ButReg[25]),
+        .D(p_2_in[25]),
+        .Q(p_2_in[26]),
         .R(SR));
   FDRE \ButReg_reg[26] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[25]),
-        .Q(ButReg[26]),
+        .D(p_2_in[26]),
+        .Q(p_2_in[27]),
         .R(SR));
   FDRE \ButReg_reg[27] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[26]),
-        .Q(ButReg[27]),
+        .D(p_2_in[27]),
+        .Q(p_2_in[28]),
         .R(SR));
   FDRE \ButReg_reg[28] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[27]),
-        .Q(ButReg[28]),
+        .D(p_2_in[28]),
+        .Q(p_2_in[29]),
         .R(SR));
   FDRE \ButReg_reg[29] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[28]),
-        .Q(ButReg[29]),
+        .D(p_2_in[29]),
+        .Q(p_2_in[30]),
         .R(SR));
   FDRE \ButReg_reg[2] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[1]),
-        .Q(ButReg[2]),
+        .D(p_2_in[2]),
+        .Q(p_2_in[3]),
         .R(SR));
   FDRE \ButReg_reg[30] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[29]),
-        .Q(ButReg[30]),
+        .D(p_2_in[30]),
+        .Q(p_2_in[31]),
         .R(SR));
   FDRE \ButReg_reg[31] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[30]),
+        .D(p_2_in[31]),
         .Q(\ButReg_reg_n_0_[31] ),
         .R(SR));
   FDRE \ButReg_reg[3] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[2]),
-        .Q(ButReg[3]),
+        .D(p_2_in[3]),
+        .Q(p_2_in[4]),
         .R(SR));
   FDRE \ButReg_reg[4] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[3]),
-        .Q(ButReg[4]),
+        .D(p_2_in[4]),
+        .Q(p_2_in[5]),
         .R(SR));
   FDRE \ButReg_reg[5] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[4]),
-        .Q(ButReg[5]),
+        .D(p_2_in[5]),
+        .Q(p_2_in[6]),
         .R(SR));
   FDRE \ButReg_reg[6] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[5]),
-        .Q(ButReg[6]),
+        .D(p_2_in[6]),
+        .Q(p_2_in[7]),
         .R(SR));
   FDRE \ButReg_reg[7] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[6]),
-        .Q(ButReg[7]),
+        .D(p_2_in[7]),
+        .Q(p_2_in[8]),
         .R(SR));
   FDRE \ButReg_reg[8] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[7]),
-        .Q(ButReg[8]),
+        .D(p_2_in[8]),
+        .Q(p_2_in[9]),
         .R(SR));
   FDRE \ButReg_reg[9] 
        (.C(s00_axi_aclk),
         .CE(p_0_in),
-        .D(ButReg[8]),
-        .Q(ButReg[9]),
+        .D(p_2_in[9]),
+        .Q(p_2_in[10]),
         .R(SR));
   LUT1 #(
     .INIT(2'h1)) 
@@ -790,15 +784,15 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0
     s00_axi_bvalid,
     switches_i,
     s00_axi_aclk,
+    push_to_send_i,
+    s00_axi_araddr,
+    s00_axi_arvalid,
     s00_axi_awaddr,
     s00_axi_wvalid,
     s00_axi_awvalid,
     s00_axi_wdata,
-    s00_axi_araddr,
-    s00_axi_arvalid,
     s00_axi_aresetn,
     s00_axi_wstrb,
-    push_to_send_i,
     s00_axi_bready,
     s00_axi_rready);
   output S_AXI_WREADY;
@@ -809,15 +803,15 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0
   output s00_axi_bvalid;
   input [7:0]switches_i;
   input s00_axi_aclk;
+  input push_to_send_i;
+  input [1:0]s00_axi_araddr;
+  input s00_axi_arvalid;
   input [1:0]s00_axi_awaddr;
   input s00_axi_wvalid;
   input s00_axi_awvalid;
   input [31:0]s00_axi_wdata;
-  input [1:0]s00_axi_araddr;
-  input s00_axi_arvalid;
   input s00_axi_aresetn;
   input [3:0]s00_axi_wstrb;
-  input push_to_send_i;
   input s00_axi_bready;
   input s00_axi_rready;
 
@@ -873,15 +867,15 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
     s00_axi_bvalid,
     switches_i,
     s00_axi_aclk,
+    push_to_send_i,
+    s00_axi_araddr,
+    s00_axi_arvalid,
     s00_axi_awaddr,
     s00_axi_wvalid,
     s00_axi_awvalid,
     s00_axi_wdata,
-    s00_axi_araddr,
-    s00_axi_arvalid,
     s00_axi_aresetn,
     s00_axi_wstrb,
-    push_to_send_i,
     s00_axi_bready,
     s00_axi_rready);
   output S_AXI_WREADY;
@@ -892,15 +886,15 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
   output s00_axi_bvalid;
   input [7:0]switches_i;
   input s00_axi_aclk;
+  input push_to_send_i;
+  input [1:0]s00_axi_araddr;
+  input s00_axi_arvalid;
   input [1:0]s00_axi_awaddr;
   input s00_axi_wvalid;
   input s00_axi_awvalid;
   input [31:0]s00_axi_wdata;
-  input [1:0]s00_axi_araddr;
-  input s00_axi_arvalid;
   input s00_axi_aresetn;
   input [3:0]s00_axi_wstrb;
-  input push_to_send_i;
   input s00_axi_bready;
   input s00_axi_rready;
 
@@ -920,7 +914,7 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
   wire axi_bvalid_i_1_n_0;
   wire axi_rvalid_i_1_n_0;
   wire axi_wready0;
-  wire [7:0]codeword_o;
+  wire [7:0]codeword;
   wire [1:0]p_0_in;
   wire [31:7]p_1_in;
   wire push_to_send_i;
@@ -959,7 +953,7 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
   wire [7:0]switches_i;
 
   Echo_Server_ManInput_0_0_ManInput IO
-       (.Q(codeword_o),
+       (.Q(codeword),
         .SR(IO_n_8),
         .push_to_send_i(push_to_send_i),
         .s00_axi_aclk(s00_axi_aclk),
@@ -1086,10 +1080,10 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
         .Q(s00_axi_bvalid),
         .R(IO_n_8));
   LUT6 #(
-    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    .INIT(64'hF0AAFF33F0AA0033)) 
     \axi_rdata[0]_i_1 
        (.I0(slv_reg1[0]),
-        .I1(codeword_o[0]),
+        .I1(codeword[0]),
         .I2(slv_reg3[0]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -1196,10 +1190,10 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
         .I5(slv_reg2[19]),
         .O(reg_data_out[19]));
   LUT6 #(
-    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    .INIT(64'hF0AAFF33F0AA0033)) 
     \axi_rdata[1]_i_1 
        (.I0(slv_reg1[1]),
-        .I1(codeword_o[1]),
+        .I1(codeword[1]),
         .I2(slv_reg3[1]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -1306,10 +1300,10 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
         .I5(slv_reg2[29]),
         .O(reg_data_out[29]));
   LUT6 #(
-    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    .INIT(64'hF0AAFF33F0AA0033)) 
     \axi_rdata[2]_i_1 
        (.I0(slv_reg1[2]),
-        .I1(codeword_o[2]),
+        .I1(codeword[2]),
         .I2(slv_reg3[2]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -1343,50 +1337,50 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
         .I5(slv_reg2[31]),
         .O(reg_data_out[31]));
   LUT6 #(
-    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    .INIT(64'hF0AAFF33F0AA0033)) 
     \axi_rdata[3]_i_1 
        (.I0(slv_reg1[3]),
-        .I1(codeword_o[3]),
+        .I1(codeword[3]),
         .I2(slv_reg3[3]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(slv_reg2[3]),
         .O(reg_data_out[3]));
   LUT6 #(
-    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    .INIT(64'hF0AAFF33F0AA0033)) 
     \axi_rdata[4]_i_1 
        (.I0(slv_reg1[4]),
-        .I1(codeword_o[4]),
+        .I1(codeword[4]),
         .I2(slv_reg3[4]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(slv_reg2[4]),
         .O(reg_data_out[4]));
   LUT6 #(
-    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    .INIT(64'hF0AAFF33F0AA0033)) 
     \axi_rdata[5]_i_1 
        (.I0(slv_reg1[5]),
-        .I1(codeword_o[5]),
+        .I1(codeword[5]),
         .I2(slv_reg3[5]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(slv_reg2[5]),
         .O(reg_data_out[5]));
   LUT6 #(
-    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    .INIT(64'hF0AAFF33F0AA0033)) 
     \axi_rdata[6]_i_1 
        (.I0(slv_reg1[6]),
-        .I1(codeword_o[6]),
+        .I1(codeword[6]),
         .I2(slv_reg3[6]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
         .I5(slv_reg2[6]),
         .O(reg_data_out[6]));
   LUT6 #(
-    .INIT(64'hF0AAFFCCF0AA00CC)) 
+    .INIT(64'hF0AAFF33F0AA0033)) 
     \axi_rdata[7]_i_1 
        (.I0(slv_reg1[7]),
-        .I1(codeword_o[7]),
+        .I1(codeword[7]),
         .I2(slv_reg3[7]),
         .I3(axi_araddr[3]),
         .I4(axi_araddr[2]),
@@ -1658,14 +1652,6 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
         .I2(p_0_in[0]),
         .I3(s00_axi_wstrb[3]),
         .O(\slv_reg0[31]_i_1_n_0 ));
-  LUT4 #(
-    .INIT(16'h8000)) 
-    \slv_reg0[31]_i_2 
-       (.I0(s00_axi_awvalid),
-        .I1(S_AXI_AWREADY),
-        .I2(S_AXI_WREADY),
-        .I3(s00_axi_wvalid),
-        .O(slv_reg_wren__2));
   FDRE \slv_reg0_reg[10] 
        (.C(s00_axi_aclk),
         .CE(\slv_reg0[15]_i_1_n_0 ),
@@ -2282,6 +2268,14 @@ module Echo_Server_ManInput_0_0_ManInput_v1_0_S00_AXI
         .I2(p_0_in[0]),
         .I3(p_0_in[1]),
         .O(p_1_in[31]));
+  LUT4 #(
+    .INIT(16'h8000)) 
+    \slv_reg3[31]_i_2 
+       (.I0(s00_axi_awvalid),
+        .I1(S_AXI_AWREADY),
+        .I2(S_AXI_WREADY),
+        .I3(s00_axi_wvalid),
+        .O(slv_reg_wren__2));
   LUT4 #(
     .INIT(16'h8000)) 
     \slv_reg3[7]_i_1 
