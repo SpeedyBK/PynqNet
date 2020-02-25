@@ -154,13 +154,34 @@ void read_print_switches(){
 
 int main()
 {
+
+	init_platform();
+	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_SetDataDirection(&Gpio, 1, 0);
+
+	XGpio_Initialize(&Gpio2, XPAR_AXI_GPIO_1_DEVICE_ID);
+	XGpio_SetDataDirection(&Gpio2, 1, 0xFFFFFFFF);
+
 #if LWIP_IPV6==0
 	ip_addr_t ipaddr, netmask, gw;
 
 #endif
 	/* the mac address of the board. this should be unique per board */
-	unsigned char mac_ethernet_address[] =
-	{ 0x00, 0x0a, 0x35, 0x00, 0x01, 0x02 };
+
+	unsigned char mac_ethernet_address[] = { 0x00, 0x0a, 0x35, 0x00, 0x01, 0x01 };
+
+	switch (XGpio_DiscreteRead(&Gpio2, 1)){
+	case 0 : mac_ethernet_address[5] = 0x10; break;
+	case 1 : mac_ethernet_address[5] = 0x11; break;
+	case 2 : mac_ethernet_address[5] = 0x12; break;
+	case 3 : mac_ethernet_address[5] = 0x13; break;
+	default : mac_ethernet_address[5] = 0x01; break;
+	}
+
+	xil_printf("Mac Add: \n\r");
+	for (int i = 0; i < 6; i++){
+		xil_printf(" %X", mac_ethernet_address[i]);
+	}
 
 	echo_netif = &server_netif;
 #if defined (__arm__) && !defined (ARMR5)
@@ -177,13 +198,6 @@ int main()
 		return -1;
 	}
 #endif
-
-	init_platform();
-	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
-	XGpio_SetDataDirection(&Gpio, 1, 0);
-
-	XGpio_Initialize(&Gpio2, XPAR_AXI_GPIO_1_DEVICE_ID);
-	XGpio_SetDataDirection(&Gpio2, 1, 0xFFFFFFFF);
 
 #if LWIP_IPV6==0
 #if LWIP_DHCP==1

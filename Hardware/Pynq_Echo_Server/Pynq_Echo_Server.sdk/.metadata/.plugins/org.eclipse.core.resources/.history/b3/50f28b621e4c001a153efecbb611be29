@@ -1,1 +1,0 @@
-src/CustomFunction.o src/CustomFunction.o: ../src/CustomFunction.c
