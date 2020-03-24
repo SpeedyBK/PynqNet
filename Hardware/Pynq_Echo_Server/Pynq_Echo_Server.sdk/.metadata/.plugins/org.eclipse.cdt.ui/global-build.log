@@ -8880,3 +8880,726 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: Für das Ziel „main-build“ ist nichts zu tun.
+13:54:43 **** Build of configuration Debug for project EchoServer_bsp_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/xemacps_example_intr_dma.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_intr_dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_intr_dma.d" -MT"src/xemacps_example_intr_dma.o" -o "src/xemacps_example_intr_dma.o" "../src/xemacps_example_intr_dma.c"
+Finished building: ../src/xemacps_example_intr_dma.c
+ 
+Building file: ../src/xemacps_example_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xemacps_example_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xemacps_example_util.d" -MT"src/xemacps_example_util.o" -o "src/xemacps_example_util.o" "../src/xemacps_example_util.c"
+Finished building: ../src/xemacps_example_util.c
+ 
+Building target: EchoServer_bsp_xemacps_example_intr_dma_1.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer_bsp_xemacps_example_intr_dma_1.elf"  ./src/xemacps_example_intr_dma.o ./src/xemacps_example_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer_bsp_xemacps_example_intr_dma_1.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer_bsp_xemacps_example_intr_dma_1.elf  |tee "EchoServer_bsp_xemacps_example_intr_dma_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  54368	   2336	3168560	3225264	 3136b0	EchoServer_bsp_xemacps_example_intr_dma_1.elf
+Finished building: EchoServer_bsp_xemacps_example_intr_dma_1.elf.size
+ 
+13:54:45 **** Auto Build of configuration Debug for project EchoServer_bsp_xemacps_example_intr_dma_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+14:08:05 **** Clean-only build of configuration Debug for project EchoServer ****
+make clean 
+rm -rf  ./src/CustomFunction.o ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o  ./src/CustomFunction.d ./src/echo.d ./src/i2c_access.d ./src/iic_phyreset.d ./src/main.d ./src/platform.d ./src/platform_mb.d ./src/platform_ppc.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/sfp.d ./src/si5324.d  EchoServer.elf.size  EchoServer.elf
+ 
+14:08:05 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+Finished building: ../src/echo.c
+ 
+Building file: ../src/i2c_access.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+Finished building: ../src/i2c_access.c
+ 
+Building file: ../src/iic_phyreset.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+Finished building: ../src/iic_phyreset.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/platform_mb.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+Finished building: ../src/platform_mb.c
+ 
+Building file: ../src/platform_ppc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+Finished building: ../src/platform_ppc.c
+ 
+Building file: ../src/platform_zynq.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+Finished building: ../src/platform_zynq.c
+ 
+Building file: ../src/platform_zynqmp.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+Finished building: ../src/platform_zynqmp.c
+ 
+Building file: ../src/sfp.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+Finished building: ../src/sfp.c
+ 
+Building file: ../src/si5324.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+Finished building: ../src/si5324.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120064	   3464	5364000	5487528	 53bba8	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+14:14:37 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:173:72: error: expected ')' before ';' token
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+  mac_ethernet_address[5] = set_MACAddress(XGpio_DiscreteRead(&Gpio2, 1);
+                                                                        ^
+                                                                        )
+../src/main.c:308:11: error: expected ';' before '}' token
+  return 0;
+           ^
+           ;
+ }
+ ~          
+../src/main.c:171:16: warning: variable 'mac_ethernet_address' set but not used [-Wunused-but-set-variable]
+  unsigned char mac_ethernet_address[] = { 0x00, 0x0a, 0x35, 0x00, 0x01, 0x01 };
+                ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:166:29: warning: unused variable 'gw' [-Wunused-variable]
+  ip_addr_t ipaddr, netmask, gw;
+                             ^~
+../src/main.c:166:20: warning: unused variable 'netmask' [-Wunused-variable]
+  ip_addr_t ipaddr, netmask, gw;
+                    ^~~~~~~
+../src/main.c:166:12: warning: unused variable 'ipaddr' [-Wunused-variable]
+  ip_addr_t ipaddr, netmask, gw;
+            ^~~~~~
+At top level:
+../src/main.c:84:21: warning: 'server_netif' defined but not used [-Wunused-variable]
+ static struct netif server_netif;
+                     ^~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+14:15:03 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120128	   3464	5364000	5487592	 53bbe8	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+14:16:30 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120128	   3464	5364000	5487592	 53bbe8	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+14:23:35 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120244	   3464	5364000	5487708	 53bc5c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+14:32:15 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+14:34:31 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+14:51:14 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h: In function 'set_IPAddress':
+../src/CustomFunction.h:29:4: warning: implicit declaration of function 'xil_printf'; did you mean 'viprintf'? [-Wimplicit-function-declaration]
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+    viprintf
+../src/CustomFunction.h: In function 'transfer_data':
+../src/CustomFunction.h:52:14: error: 'pay' undeclared (first use in this function); did you mean 'paylen'?
+  paylen.pl = pay;
+              ^~~
+              paylen
+../src/CustomFunction.h:52:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/CustomFunction.h:53:18: error: 'length' undeclared (first use in this function)
+  paylen.length = length;
+                  ^~~~~~
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/echo.c:41:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h: At top level:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: warning: conflicting types for 'xil_printf'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:29:4: note: previous implicit declaration of 'xil_printf' was here
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+../src/echo.c:52:23: error: redefinition of 'transfer_data'
+ struct pointer_length transfer_data() {
+                       ^~~~~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:50:23: note: previous definition of 'transfer_data' was here
+ struct pointer_length transfer_data() {
+                       ^~~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/echo.o' failed
+make: *** [src/echo.o] Error 1
+14:52:12 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h: In function 'set_IPAddress':
+../src/CustomFunction.h:29:4: warning: implicit declaration of function 'xil_printf'; did you mean 'viprintf'? [-Wimplicit-function-declaration]
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+    viprintf
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/echo.c:41:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h: At top level:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: warning: conflicting types for 'xil_printf'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:29:4: note: previous implicit declaration of 'xil_printf' was here
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+../src/echo.c:52:23: error: redefinition of 'transfer_data'
+ struct pointer_length transfer_data() {
+                       ^~~~~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:50:23: note: previous definition of 'transfer_data' was here
+ struct pointer_length transfer_data(void* pay, int length) {
+                       ^~~~~~~~~~~~~
+../src/echo.c: In function 'transfer_data':
+../src/echo.c:52:8: error: number of arguments doesn't match prototype
+ struct pointer_length transfer_data() {
+        ^~~~~~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:50:23: error: prototype declaration
+ struct pointer_length transfer_data(void* pay, int length) {
+                       ^~~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/echo.o' failed
+make: *** [src/echo.o] Error 1
+14:52:43 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h: In function 'set_IPAddress':
+../src/CustomFunction.h:29:4: warning: implicit declaration of function 'xil_printf'; did you mean 'viprintf'? [-Wimplicit-function-declaration]
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+    viprintf
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/echo.c:41:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h: At top level:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: warning: conflicting types for 'xil_printf'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:29:4: note: previous implicit declaration of 'xil_printf' was here
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+../src/echo.c:52:23: error: redefinition of 'transfer_data'
+ struct pointer_length transfer_data() {
+                       ^~~~~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:50:23: note: previous definition of 'transfer_data' was here
+ struct pointer_length transfer_data (void* pay, int length) {
+                       ^~~~~~~~~~~~~
+../src/echo.c: In function 'transfer_data':
+../src/echo.c:52:8: error: number of arguments doesn't match prototype
+ struct pointer_length transfer_data() {
+        ^~~~~~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:50:23: error: prototype declaration
+ struct pointer_length transfer_data (void* pay, int length) {
+                       ^~~~~~~~~~~~~
+make: *** [src/echo.o] Error 1
+src/subdir.mk:51: recipe for target 'src/echo.o' failed
+14:53:13 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h: In function 'set_IPAddress':
+../src/CustomFunction.h:29:4: warning: implicit declaration of function 'xil_printf'; did you mean 'viprintf'? [-Wimplicit-function-declaration]
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+    viprintf
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/echo.c:41:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h: At top level:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: warning: conflicting types for 'xil_printf'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:29:4: note: previous implicit declaration of 'xil_printf' was here
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+Finished building: ../src/echo.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:314:29: error: too few arguments to function 'transfer_data'
+   struct pointer_length p = transfer_data();
+                             ^~~~~~~~~~~~~
+In file included from ../src/main.c:42:
+../src/CustomFunction.h:50:23: note: declared here
+ struct pointer_length transfer_data (void* pay, int length) {
+                       ^~~~~~~~~~~~~
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+14:53:32 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:313:29: error: too few arguments to function 'transfer_data'
+   struct pointer_length p = transfer_data();
+                             ^~~~~~~~~~~~~
+In file included from ../src/main.c:42:
+../src/CustomFunction.h:50:23: note: declared here
+ struct pointer_length transfer_data (void* pay, int length) {
+                       ^~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+14:59:51 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h: In function 'set_IPAddress':
+../src/CustomFunction.h:29:4: warning: implicit declaration of function 'xil_printf'; did you mean 'viprintf'? [-Wimplicit-function-declaration]
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+    viprintf
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/echo.c:41:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h: At top level:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: warning: conflicting types for 'xil_printf'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+In file included from ../src/echo.c:32:
+../src/CustomFunction.h:29:4: note: previous implicit declaration of 'xil_printf' was here
+    xil_printf("Configuring IP 192.168.1.10\r\n");
+    ^~~~~~~~~~
+Finished building: ../src/echo.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:313:29: warning: implicit declaration of function 'transfer_data' [-Wimplicit-function-declaration]
+   struct pointer_length p = transfer_data();
+                             ^~~~~~~~~~~~~
+../src/main.c:313:29: error: invalid initializer
+make: *** [src/main.o] Error 1
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+15:03:14 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+Finished building: ../src/echo.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:313:29: warning: implicit declaration of function 'transfer_data' [-Wimplicit-function-declaration]
+   struct pointer_length p = transfer_data();
+                             ^~~~~~~~~~~~~
+../src/main.c:313:29: error: invalid initializer
+src/subdir.mk:51: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+15:04:47 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+/tools/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld: ./src/main.o: in function `set_MACAddress':
+makefile:39: recipe for target 'EchoServer.elf' failed
+/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/../src/CustomFunction.h:15: multiple definition of `set_MACAddress'; ./src/echo.o:/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/../src/CustomFunction.h:15: first defined here
+/tools/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld: ./src/main.o: in function `set_IPAddress':
+/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/../src/CustomFunction.h:26: multiple definition of `set_IPAddress'; ./src/echo.o:/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/../src/CustomFunction.h:26: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [EchoServer.elf] Error 1
+15:05:43 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+/tools/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld: ./src/main.o: in function `set_MACAddress':
+makefile:39: recipe for target 'EchoServer.elf' failed
+/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/../src/CustomFunction.h:15: multiple definition of `set_MACAddress'; ./src/echo.o:/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/../src/CustomFunction.h:15: first defined here
+/tools/Xilinx/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/bin/ld: ./src/main.o: in function `set_IPAddress':
+/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/../src/CustomFunction.h:26: multiple definition of `set_IPAddress'; ./src/echo.o:/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/Debug/../src/CustomFunction.h:26: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [EchoServer.elf] Error 1
+15:06:09 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+Finished building: ../src/echo.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+08:22:24 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/socket.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/socket.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/socket.d" -MT"src/socket.o" -o "src/socket.o" "../src/socket.c"
+Finished building: ../src/socket.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/socket.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+08:22:36 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/socket.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/socket.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/socket.d" -MT"src/socket.o" -o "src/socket.o" "../src/socket.c"
+../src/socket.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(void)
+      ^~~~
+../src/socket.c: In function 'main':
+../src/socket.c:14:71: error: storage size of 'sa' isn't known
+     int addr_size,sent_data; char data_buffer[80]; struct sockaddr_in sa,ra,isa;
+                                                                       ^~
+../src/socket.c:14:74: error: storage size of 'ra' isn't known
+     int addr_size,sent_data; char data_buffer[80]; struct sockaddr_in sa,ra,isa;
+                                                                          ^~
+../src/socket.c:14:77: error: storage size of 'isa' isn't known
+     int addr_size,sent_data; char data_buffer[80]; struct sockaddr_in sa,ra,isa;
+                                                                             ^~~
+../src/socket.c:20:17: warning: implicit declaration of function 'socket' [-Wimplicit-function-declaration]
+     socket_fd = socket(PF_INET, SOCK_STREAM, 0);
+                 ^~~~~~
+../src/socket.c:20:24: error: 'PF_INET' undeclared (first use in this function)
+     socket_fd = socket(PF_INET, SOCK_STREAM, 0);
+                        ^~~~~~~
+../src/socket.c:20:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/socket.c:20:33: error: 'SOCK_STREAM' undeclared (first use in this function)
+     socket_fd = socket(PF_INET, SOCK_STREAM, 0);
+                                 ^~~~~~~~~~~
+../src/socket.c:30:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+     memset(&sa, 0, sizeof(struct sockaddr_in));
+     ^~~~~~
+../src/socket.c:30:5: warning: incompatible implicit declaration of built-in function 'memset'
+../src/socket.c:30:5: note: include '<string.h>' or provide a declaration of 'memset'
+../src/socket.c:2:1:
++#include <string.h>
+ 
+../src/socket.c:30:5:
+     memset(&sa, 0, sizeof(struct sockaddr_in));
+     ^~~~~~
+../src/socket.c:30:27: error: invalid application of 'sizeof' to incomplete type 'struct sockaddr_in'
+     memset(&sa, 0, sizeof(struct sockaddr_in));
+                           ^~~~~~
+../src/socket.c:31:21: error: 'AF_INET' undeclared (first use in this function)
+src/subdir.mk:54: recipe for target 'src/socket.o' failed
+     sa.sin_family = AF_INET;
+                     ^~~~~~~
+../src/socket.c:32:26: warning: implicit declaration of function 'inet_addr' [-Wimplicit-function-declaration]
+     sa.sin_addr.s_addr = inet_addr(SENDER_IP_ADDR);
+                          ^~~~~~~~~
+../src/socket.c:33:19: warning: implicit declaration of function 'htons' [-Wimplicit-function-declaration]
+     sa.sin_port = htons(SENDER_PORT_NUM);
+                   ^~~~~
+../src/socket.c:41:9: warning: implicit declaration of function 'bind'; did you mean 'rand'? [-Wimplicit-function-declaration]
+     if (bind(socket_fd, (struct sockaddr *)&sa, sizeof(sa)) == -1)
+         ^~~~
+         rand
+../src/socket.c:44:5: warning: implicit declaration of function 'close'; did you mean 'pclose'? [-Wimplicit-function-declaration]
+     close(socket_fd);
+     ^~~~~
+     pclose
+../src/socket.c:48:5: warning: implicit declaration of function 'listen'; did you mean 'system'? [-Wimplicit-function-declaration]
+     listen(socket_fd,5);
+     ^~~~~~
+     system
+../src/socket.c:50:17: warning: implicit declaration of function 'accept' [-Wimplicit-function-declaration]
+     accept_fd = accept(socket_fd, (struct sockaddr*)&isa,&addr_size);
+                 ^~~~~~
+../src/socket.c:59:5: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+     strcpy(data_buffer,"Hello World\n");
+     ^~~~~~
+../src/socket.c:59:5: warning: incompatible implicit declaration of built-in function 'strcpy'
+../src/socket.c:59:5: note: include '<string.h>' or provide a declaration of 'strcpy'
+../src/socket.c:60:17: warning: implicit declaration of function 'send'; did you mean 'srand'? [-Wimplicit-function-declaration]
+     sent_data = send(accept_fd, data_buffer,sizeof("Hello World",0));
+                 ^~~~
+                 srand
+../src/socket.c:60:65: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+     sent_data = send(accept_fd, data_buffer,sizeof("Hello World",0));
+                                                                 ^
+../src/socket.c:14:77: warning: unused variable 'isa' [-Wunused-variable]
+     int addr_size,sent_data; char data_buffer[80]; struct sockaddr_in sa,ra,isa;
+                                                                             ^~~
+../src/socket.c:14:74: warning: unused variable 'ra' [-Wunused-variable]
+     int addr_size,sent_data; char data_buffer[80]; struct sockaddr_in sa,ra,isa;
+                                                                          ^~
+../src/socket.c:14:71: warning: unused variable 'sa' [-Wunused-variable]
+     int addr_size,sent_data; char data_buffer[80]; struct sockaddr_in sa,ra,isa;
+                                                                       ^~
+make: *** [src/socket.o] Error 1
+08:29:12 **** Clean-only build of configuration Debug for project EchoServer ****
+make clean 
+rm -rf  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o ./src/socket.o  ./src/echo.d ./src/i2c_access.d ./src/iic_phyreset.d ./src/main.d ./src/platform.d ./src/platform_mb.d ./src/platform_ppc.d ./src/platform_zynq.d ./src/platform_zynqmp.d ./src/sfp.d ./src/si5324.d ./src/socket.d  EchoServer.elf.size  EchoServer.elf
+ 
+08:29:12 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+Finished building: ../src/echo.c
+ 
+Building file: ../src/i2c_access.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
+Finished building: ../src/i2c_access.c
+ 
+Building file: ../src/iic_phyreset.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+Finished building: ../src/iic_phyreset.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/platform_mb.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
+Finished building: ../src/platform_mb.c
+ 
+Building file: ../src/platform_ppc.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
+Finished building: ../src/platform_ppc.c
+ 
+Building file: ../src/platform_zynq.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
+Finished building: ../src/platform_zynq.c
+ 
+Building file: ../src/platform_zynqmp.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
+Finished building: ../src/platform_zynqmp.c
+ 
+Building file: ../src/sfp.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
+Finished building: ../src/sfp.c
+ 
+Building file: ../src/si5324.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+Finished building: ../src/si5324.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 

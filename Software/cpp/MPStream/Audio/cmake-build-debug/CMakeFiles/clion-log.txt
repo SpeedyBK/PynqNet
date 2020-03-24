@@ -1,0 +1,4 @@
+/home/benjamin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/benjamin/Repositories/PynqNet/Software/cpp/MPStream/Audio
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/benjamin/Repositories/PynqNet/Software/cpp/MPStream/Audio/cmake-build-debug

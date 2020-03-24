@@ -4121,3 +4121,18 @@ con
 12:56:21 INFO  : Invoking Bootgen: bootgen -image BootStaticIP.bif -arch zynq -o /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/BOOTStaticIP.bin -w on
 12:56:21 INFO  : Overwriting existing bif file /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/BootStaticIP.bif
 12:56:23 INFO  : Bootgen command execution is done.
+12:36:04 INFO  : Registering command handlers for SDK TCF services
+12:36:06 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
+12:36:10 INFO  : XSCT server has started successfully.
+12:36:10 INFO  : Successfully done setting XSCT server connection channel  
+12:36:11 INFO  : Successfully done setting SDK workspace  
+12:36:11 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
+12:36:11 INFO  : Checking for hwspec changes in the project Echo_Server_wrapper_hw_platform_0.
+13:54:43 INFO  : Example project EchoServer_bsp_xemacps_example_intr_dma_1 has been created successfully.
+08:20:12 INFO  : Registering command handlers for SDK TCF services
+08:20:14 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
+08:20:17 INFO  : XSCT server has started successfully.
+08:20:17 INFO  : Successfully done setting XSCT server connection channel  
+08:20:17 INFO  : Successfully done setting SDK workspace  
+08:20:17 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
+08:20:17 INFO  : Checking for hwspec changes in the project Echo_Server_wrapper_hw_platform_0.

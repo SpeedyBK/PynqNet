@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;EchoServer_bsp_xemacps_example_intr_dma_1&apos;" deleteContents="true" description="Delete resource &apos;EchoServer_bsp_xemacps_example_intr_dma_1&apos;" element1="/EchoServer_bsp_xemacps_example_intr_dma_1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1584450395654"/>&#x0A;<refactoring comment="Delete resource &apos;EchoServer/src/CustomFunction.c&apos;" deleteContents="false" description="Delete resource &apos;EchoServer/src/CustomFunction.c&apos;" element1="/EchoServer/src/CustomFunction.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1584450485230"/>
+</session>
