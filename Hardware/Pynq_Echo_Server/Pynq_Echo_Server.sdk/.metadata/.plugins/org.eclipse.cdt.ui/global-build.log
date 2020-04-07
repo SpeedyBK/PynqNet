@@ -9603,3 +9603,128 @@ arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
  120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
 Finished building: EchoServer.elf.size
  
+12:48:32 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+12:48:32 **** Incremental Build of configuration Debug for project FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+12:48:47 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/si5324.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+Finished building: ../src/si5324.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+12:50:14 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/si5324.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
+Finished building: ../src/si5324.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+12:51:58 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+12:52:08 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+12:57:00 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_phyreset.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+Finished building: ../src/iic_phyreset.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+12:57:29 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/iic_phyreset.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
+Finished building: ../src/iic_phyreset.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+12:57:59 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+13:16:45 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+13:16:57 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+13:16:57 **** Incremental Build of configuration Debug for project FSBL ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+13:22:29 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.

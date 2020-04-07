@@ -4136,3 +4136,17 @@ con
 08:20:17 INFO  : Successfully done setting SDK workspace  
 08:20:17 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
 08:20:17 INFO  : Checking for hwspec changes in the project Echo_Server_wrapper_hw_platform_0.
+12:07:18 INFO  : Registering command handlers for SDK TCF services
+12:07:20 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
+12:07:23 INFO  : XSCT server has started successfully.
+12:07:23 INFO  : Successfully done setting XSCT server connection channel  
+12:07:23 INFO  : Successfully done setting SDK workspace  
+12:07:23 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
+12:07:23 INFO  : Checking for hwspec changes in the project Echo_Server_wrapper_hw_platform_0.
+09:14:59 INFO  : Registering command handlers for SDK TCF services
+09:15:00 INFO  : Launching XSCT server: xsct -n -interactive /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/temp_xsdb_launch_script.tcl
+09:15:03 INFO  : XSCT server has started successfully.
+09:15:03 INFO  : Successfully done setting XSCT server connection channel  
+09:15:03 INFO  : Successfully done setting SDK workspace  
+09:15:03 INFO  : Processing command line option -hwspec /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/Echo_Server_wrapper.hdf.
+09:15:03 INFO  : Checking for hwspec changes in the project Echo_Server_wrapper_hw_platform_0.

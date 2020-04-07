@@ -30,6 +30,7 @@
 * @file si5324.c
 *
 * This file programs si5324 chip which generates clock for the peripherals.
+* For the PYNQ Board this file is not needed. - Benjamin
 *
 * Please refer to Si5324 Datasheet for more information
 * http://www.silabs.com/Support%20Documents/TechnicalDocs/Si5324.pdf
@@ -184,4 +185,5 @@ int ProgramSi5324(void)
 	return XST_SUCCESS;
 }
 #endif
+
 #endif
