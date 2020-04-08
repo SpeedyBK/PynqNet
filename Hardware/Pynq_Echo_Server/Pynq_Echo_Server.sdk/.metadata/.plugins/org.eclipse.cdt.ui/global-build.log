@@ -9728,3 +9728,486 @@ make pre-build main-build
 a9-linaro-pre-build-step
  
 make: Für das Ziel „main-build“ ist nichts zu tun.
+10:51:34 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/send.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/send.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/send.d" -MT"src/send.o" -o "src/send.o" "../src/send.c"
+Finished building: ../src/send.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+10:56:15 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/send.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/send.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/send.d" -MT"src/send.o" -o "src/send.o" "../src/send.c"
+../src/send.c: In function 'start_send_app':
+../src/send.c:29:11: warning: unused variable 'port' [-Wunused-variable]
+  unsigned port = 8;
+           ^~~~
+../src/send.c:28:8: warning: unused variable 'err' [-Wunused-variable]
+  err_t err;
+        ^~~
+../src/send.c:27:18: warning: unused variable 'pcb' [-Wunused-variable]
+  struct tcp_pcb *pcb;
+                  ^~~
+../src/send.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/send.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+10:59:17 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/send.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/send.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/send.d" -MT"src/send.o" -o "src/send.o" "../src/send.c"
+../src/send.c: In function 'start_send_app':
+../src/send.c:31:16: error: expected expression before 'void'
+  pcb = tcp_new(void);
+                ^~~~
+../src/send.c:31:8: error: too many arguments to function 'tcp_new'
+  pcb = tcp_new(void);
+        ^~~~~~~
+In file included from ../src/send.c:20:
+../../EchoServer_bsp/ps7_cortexa9_0/include/lwip/tcp.h:411:18: note: declared here
+ struct tcp_pcb * tcp_new     (void);
+                  ^~~~~~~
+../src/send.c:29:11: warning: unused variable 'port' [-Wunused-variable]
+src/subdir.mk:54: recipe for target 'src/send.o' failed
+  unsigned port = 8;
+           ^~~~
+../src/send.c:28:8: warning: unused variable 'err' [-Wunused-variable]
+  err_t err;
+        ^~~
+../src/send.c:27:18: warning: variable 'pcb' set but not used [-Wunused-but-set-variable]
+  struct tcp_pcb *pcb;
+                  ^~~
+../src/send.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/send.o] Error 1
+10:59:25 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/send.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/send.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/send.d" -MT"src/send.o" -o "src/send.o" "../src/send.c"
+../src/send.c: In function 'start_send_app':
+../src/send.c:29:11: warning: unused variable 'port' [-Wunused-variable]
+  unsigned port = 8;
+           ^~~~
+../src/send.c:28:8: warning: unused variable 'err' [-Wunused-variable]
+  err_t err;
+        ^~~
+../src/send.c:27:18: warning: variable 'pcb' set but not used [-Wunused-but-set-variable]
+  struct tcp_pcb *pcb;
+                  ^~~
+../src/send.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/send.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120308	   3464	5364000	5487772	 53bc9c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+11:02:30 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:304:2: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  start_send_app();
+  ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/send.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/send.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/send.d" -MT"src/send.o" -o "src/send.o" "../src/send.c"
+../src/send.c: In function 'start_send_app':
+../src/send.c:29:11: warning: unused variable 'port' [-Wunused-variable]
+  unsigned port = 8;
+           ^~~~
+../src/send.c:28:8: warning: unused variable 'err' [-Wunused-variable]
+  err_t err;
+        ^~~
+../src/send.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/send.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120408	   3464	5364000	5487872	 53bd00	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+11:06:18 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:304:2: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  start_send_app();
+  ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/send.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/send.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/send.d" -MT"src/send.o" -o "src/send.o" "../src/send.c"
+../src/send.c: In function 'start_send_app':
+../src/send.c:29:11: warning: unused variable 'port' [-Wunused-variable]
+  unsigned port = 8;
+           ^~~~
+../src/send.c:28:8: warning: unused variable 'err' [-Wunused-variable]
+  err_t err;
+        ^~~
+../src/send.c:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/send.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120280	   3464	5364000	5487744	 53bc80	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+11:07:59 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:305:9: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  bums = start_send_app();
+         ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building file: ../src/send.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/send.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/send.d" -MT"src/send.o" -o "src/send.o" "../src/send.c"
+../src/send.c: In function 'start_send_app':
+../src/send.c:29:11: warning: unused variable 'port' [-Wunused-variable]
+  unsigned port = 8;
+           ^~~~
+../src/send.c:28:8: warning: unused variable 'err' [-Wunused-variable]
+  err_t err;
+        ^~~
+Finished building: ../src/send.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120280	   3464	5364000	5487744	 53bc80	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+11:08:12 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+11:08:45 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+12:57:09 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:305:9: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  bums = start_send_app();
+         ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120288	   3464	5364000	5487752	 53bc88	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+12:57:32 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+12:58:47 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+12:59:48 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:305:9: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  bums = start_send_app();
+         ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120288	   3464	5364000	5487752	 53bc88	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+13:02:02 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:305:14: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  errorcode = start_send_app();
+              ^~~~~~~~~~~~~~
+../src/main.c:326:22: error: expected ')' before string constant
+  xil_printf(errorcode "%d");
+                      ^~~~~
+                      )
+../src/main.c:326:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(errorcode "%d");
+             ^~~~~~~~~
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/main.c:34:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:31: note: expected 'const char8 *' {aka 'const char *'} but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+                  ~~~~~~~~~~~~~^~~~~
+../src/main.c:328:9: error: 'bums' undeclared (first use in this function); did you mean 'bcmp'?
+src/subdir.mk:54: recipe for target 'src/main.o' failed
+  return bums;
+         ^~~~
+         bcmp
+../src/main.c:328:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+13:02:11 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:305:14: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  errorcode = start_send_app();
+              ^~~~~~~~~~~~~~
+../src/main.c:326:22: error: expected ')' before string constant
+  xil_printf(errorcode "%d");
+                      ^~~~~
+                      )
+../src/main.c:326:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(errorcode "%d");
+             ^~~~~~~~~
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/main.c:34:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:31: note: expected 'const char8 *' {aka 'const char *'} but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+                  ~~~~~~~~~~~~~^~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:54: recipe for target 'src/main.o' failed
+13:02:40 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:305:14: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  errorcode = start_send_app();
+              ^~~~~~~~~~~~~~
+../src/main.c:326:22: error: expected ')' before string constant
+  xil_printf(errorcode " %d");
+                      ^~~~~~
+                      )
+../src/main.c:326:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(errorcode " %d");
+             ^~~~~~~~~
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/main.c:34:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:31: note: expected 'const char8 *' {aka 'const char *'} but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+                  ~~~~~~~~~~~~~^~~~~
+src/subdir.mk:54: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+13:02:51 **** Auto Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:305:14: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  errorcode = start_send_app();
+              ^~~~~~~~~~~~~~
+../src/main.c:326:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(errorcode, " %d");
+             ^~~~~~~~~
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/main.c:34:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:31: note: expected 'const char8 *' {aka 'const char *'} but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+                  ~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120292	   3464	5364000	5487756	 53bc8c	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+13:03:00 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Für das Ziel „main-build“ ist nichts zu tun.
+13:04:38 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:305:14: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  errorcode = start_send_app();
+              ^~~~~~~~~~~~~~
+../src/main.c:326:13: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+  xil_printf(errorcode, " %X\r\n");
+             ^~~~~~~~~
+In file included from ../../EchoServer_bsp/ps7_cortexa9_0/include/xil_io.h:61,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio_l.h:83,
+                 from ../../EchoServer_bsp/ps7_cortexa9_0/include/xgpio.h:133,
+                 from ../src/main.c:34:
+../../EchoServer_bsp/ps7_cortexa9_0/include/xil_printf.h:39:31: note: expected 'const char8 *' {aka 'const char *'} but argument is of type 'int'
+ void xil_printf( const char8 *ctrl1, ...);
+                  ~~~~~~~~~~~~~^~~~~
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120288	   3464	5364000	5487752	 53bc88	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 
+13:08:42 **** Incremental Build of configuration Debug for project EchoServer ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../EchoServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:305:14: warning: implicit declaration of function 'start_send_app' [-Wimplicit-function-declaration]
+  errorcode = start_send_app();
+              ^~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: EchoServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../EchoServer_bsp/ps7_cortexa9_0/lib -o "EchoServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/send.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: EchoServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 120296	   3464	5364000	5487760	 53bc90	EchoServer.elf
+Finished building: EchoServer.elf.size
+ 

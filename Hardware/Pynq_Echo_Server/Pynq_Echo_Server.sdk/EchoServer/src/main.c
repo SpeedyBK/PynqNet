@@ -298,10 +298,14 @@ int main()
 
 #endif
 	/* start the application (web server, rxtest, txtest, etc..) */
-	start_application();
+	//start_application();
+
+	/*send stuff */
+	int errorcode;
+	errorcode = start_send_app();
 
 	/* receive and process packets */
-	while (1) {
+	/*while (1) {
 		if (TcpFastTmrFlag) {
 			tcp_fasttmr();
 			TcpFastTmrFlag = 0;
@@ -314,10 +318,13 @@ int main()
 		struct pointer_length p = transfer_data();
 		gpio_print(p.pl, p.length);
 		read_print_switches();
-	}
+	}*/
 
 	/* never reached */
 	cleanup_platform();
 
-	return 0;
+
+	xil_printf(" %d\r\n", errorcode);
+	xil_printf("Done \n");
+	return errorcode;
 }

@@ -5,6 +5,8 @@
 #ifndef WAVEPROJECT_IAUDIOCONTEXT_H
 #define WAVEPROJECT_IAUDIOCONTEXT_H
 
+#include <list>
+
 #include "AudioObject.h"
 
 class IAudioContext {
@@ -16,6 +18,12 @@ public:
     virtual void playAudio (AudioObject& ao) = 0;
     virtual void stopAudio (AudioObject& ao) = 0;
     virtual void pauseAudio(AudioObject& ao) = 0;
+    virtual void increasePitch(AudioObject &ao) = 0;
+    virtual void decreasePitch(AudioObject &ao) = 0;
+    virtual void increaseVolume(AudioObject &ao) = 0;
+    virtual void decreaseVolume(AudioObject &ao) = 0;
+    virtual void setupFilter(std::list<float> coeffs) = 0;
+    virtual void selEffects(char sel) = 0;
 
 private:
 

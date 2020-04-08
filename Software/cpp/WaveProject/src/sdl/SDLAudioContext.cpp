@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <time.h>
 #include "SDLAudioContext.h"
 
 
@@ -35,7 +36,6 @@ SDLAudioContext::SDLAudioContext() {
 
 SDLAudioContext::~SDLAudioContext() { SDL_CloseAudioDevice(m_device); }
 
-
 void SDLAudioContext::generateSamples(Uint8 *streamIn, int streamInLength) {
 
     size_t streamLength = (size_t)(streamInLength/2);
@@ -57,10 +57,9 @@ void SDLAudioContext::generateSamples(Uint8 *streamIn, int streamInLength) {
     for (size_t i = 0; i < streamLength; i++){
         auto val = floatstream[i];
 
-        if      (val >  1.0) { val =  1.0; }
-        else if (val < -1.0) { val = -1.0; }
-
-        stream[i] = (Sint16)(val*SDL_MAX_SINT16);
+        if      (val >  1.0f) { val =  1.0f; }
+        else if (val < -1.0f) { val = -1.0f; }
+        stream[i] = dsp((Sint16)(val*SDL_MAX_SINT16));
     }
 }
 
@@ -103,4 +102,94 @@ void SDLAudioContext::pauseAudio(AudioObject &ao) {
     removeAudio(ao);
 
     SDL_UnlockAudioDevice(m_device);
+}
+
+void SDLAudioContext::increasePitch(AudioObject &ao) {
+    ao.increasePitch();
+}
+
+void SDLAudioContext::decreasePitch(AudioObject &ao) {
+    ao.decreasePitch();
+}
+
+void SDLAudioContext::increaseVolume(AudioObject &ao) {
+    ao.increaseVolume();
+}
+
+void SDLAudioContext::decreaseVolume(AudioObject &ao) {
+    ao.decreaseVolume();
+}
+
+void SDLAudioContext::selEffects(char sel) {
+    m_effects = sel;
+}
+
+void SDLAudioContext::setupFilter(std::list<float> coeffs) {
+    for (auto &it : coeffs){
+        m_coeffs.push_back(it);
+    }
+    m_filterArray.reserve(m_coeffs.size());
+    srand (time(NULL));
+}
+
+Sint16 SDLAudioContext::audioFilter(Sint16 sample) {
+
+    for (int i = m_coeffs.size() - 1; i > 0; i--){
+        m_filterArray[i] = m_filterArray[i-1];
+    }
+
+    m_filterArray[0] = sample;
+
+    float out = 0;
+
+    for (int i = 0; i < m_coeffs.size(); i++){
+        out += ((float)m_filterArray[i] * m_coeffs[i]);
+    }
+
+    return (Sint16)out;
+}
+
+Sint16 SDLAudioContext::audioFilterNoisy(Sint16 sample) {
+    for (int i = m_coeffs.size() - 1; i > 0; i--){
+        m_filterArray[i] = m_filterArray[i-1];
+    }
+
+    m_filterArray[0] = sample;
+
+    float out = 0;
+
+    for (int i = 0; i < m_coeffs.size(); i++){
+        out += ((float)m_filterArray[i] * m_coeffs[i] / m_coeffs.size());
+    }
+
+    return (Sint16)out * 128;
+}
+
+Sint16 SDLAudioContext::cracks(Sint16 Sample) {
+    static int randn = 4000;
+    static int i = 0;
+
+    if (i == randn){
+        i = 0;
+        randn = rand() % (SDL_MAX_SINT16 * 3);
+        return randn/3;
+    }
+
+    i++;
+    return Sample;
+}
+
+Sint16 SDLAudioContext::dsp(Sint16 samples) {
+    if (m_effects == 'n') {
+        return samples;
+    }
+    else if (m_effects == 'f'){
+        return audioFilter(samples);
+    }
+    else if (m_effects == 'g'){
+        return cracks(audioFilterNoisy(samples));
+    }
+    else {
+        return 0;
+    }
 }

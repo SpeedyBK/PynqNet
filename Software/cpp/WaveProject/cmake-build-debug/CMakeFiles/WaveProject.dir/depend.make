@@ -10,6 +10,7 @@ CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/AudioObject.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/IAudioContext.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/IAudioData.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/IAudioDevice.h
+CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/MainFunctions.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/SampleInfo.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/sdl/SDLAudioContext.h

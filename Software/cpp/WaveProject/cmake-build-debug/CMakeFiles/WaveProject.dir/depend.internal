@@ -11,6 +11,7 @@ CMakeFiles/WaveProject.dir/src/main.cpp.o
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioContext.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioData.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioDevice.h
+ /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/MainFunctions.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/SampleInfo.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/main.cpp
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/sdl/SDLAudioContext.h
