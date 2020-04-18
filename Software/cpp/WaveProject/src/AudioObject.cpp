@@ -43,8 +43,10 @@ void AudioObject::decreasePitch() {
 
 void AudioObject::increaseVolume() {
     m_sampleinfo.volume += 0.1f;
+    std::cout << m_sampleinfo.volume << std::endl;
 }
 
 void AudioObject::decreaseVolume() {
     m_sampleinfo.volume -= 0.1f;
+    std::cout << m_sampleinfo.volume << std::endl;
 }

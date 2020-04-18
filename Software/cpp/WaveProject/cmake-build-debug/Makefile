@@ -150,6 +150,60 @@ src/AudioObject.cpp.s:
 	$(MAKE) -f CMakeFiles/WaveProject.dir/build.make CMakeFiles/WaveProject.dir/src/AudioObject.cpp.s
 .PHONY : src/AudioObject.cpp.s
 
+src/Exception.o: src/Exception.cpp.o
+
+.PHONY : src/Exception.o
+
+# target to build an object file
+src/Exception.cpp.o:
+	$(MAKE) -f CMakeFiles/WaveProject.dir/build.make CMakeFiles/WaveProject.dir/src/Exception.cpp.o
+.PHONY : src/Exception.cpp.o
+
+src/Exception.i: src/Exception.cpp.i
+
+.PHONY : src/Exception.i
+
+# target to preprocess a source file
+src/Exception.cpp.i:
+	$(MAKE) -f CMakeFiles/WaveProject.dir/build.make CMakeFiles/WaveProject.dir/src/Exception.cpp.i
+.PHONY : src/Exception.cpp.i
+
+src/Exception.s: src/Exception.cpp.s
+
+.PHONY : src/Exception.s
+
+# target to generate assembly for a file
+src/Exception.cpp.s:
+	$(MAKE) -f CMakeFiles/WaveProject.dir/build.make CMakeFiles/WaveProject.dir/src/Exception.cpp.s
+.PHONY : src/Exception.cpp.s
+
+src/Network/TCPClient.o: src/Network/TCPClient.cpp.o
+
+.PHONY : src/Network/TCPClient.o
+
+# target to build an object file
+src/Network/TCPClient.cpp.o:
+	$(MAKE) -f CMakeFiles/WaveProject.dir/build.make CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o
+.PHONY : src/Network/TCPClient.cpp.o
+
+src/Network/TCPClient.i: src/Network/TCPClient.cpp.i
+
+.PHONY : src/Network/TCPClient.i
+
+# target to preprocess a source file
+src/Network/TCPClient.cpp.i:
+	$(MAKE) -f CMakeFiles/WaveProject.dir/build.make CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.i
+.PHONY : src/Network/TCPClient.cpp.i
+
+src/Network/TCPClient.s: src/Network/TCPClient.cpp.s
+
+.PHONY : src/Network/TCPClient.s
+
+# target to generate assembly for a file
+src/Network/TCPClient.cpp.s:
+	$(MAKE) -f CMakeFiles/WaveProject.dir/build.make CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.s
+.PHONY : src/Network/TCPClient.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -270,6 +324,12 @@ help:
 	@echo "... src/AudioObject.o"
 	@echo "... src/AudioObject.i"
 	@echo "... src/AudioObject.s"
+	@echo "... src/Exception.o"
+	@echo "... src/Exception.i"
+	@echo "... src/Exception.s"
+	@echo "... src/Network/TCPClient.o"
+	@echo "... src/Network/TCPClient.i"
+	@echo "... src/Network/TCPClient.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

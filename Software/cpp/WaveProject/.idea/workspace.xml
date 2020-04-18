@@ -12,38 +12,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76aabd47-85a5-4f9d-8d29-05823268bf33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MainFunctions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Network/TCPClient.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Network/TCPClient.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt/gui_handlers.wdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt/gui_handlers.wdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt/java_command_handlers.wdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt/java_command_handlers.wdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt/project.wpc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt/project.wpc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt/webtalk_pa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.cache/wt/webtalk_pa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.bak_0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.bak_0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.core/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.core/.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.core/EchoServer.1581263273738.pdom" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.core/EchoServer.1581263273738.pdom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.core/FSBL.1581263331694.pdom" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.core/FSBL.1581263331694.pdom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/EchoServer.build.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/EchoServer.build.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/EchoServer_bsp.build.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/EchoServer_bsp.build.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/FSBL.build.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/FSBL.build.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/FSBL_bsp.build.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/FSBL_bsp.build.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/global-build.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.cdt.ui/global-build.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/EchoServer/.indexes/e4/history.index" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/EchoServer/.indexes/e4/history.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.root/12.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/3/30d7023bbf78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/34/100961fbac78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/40/103af786be78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/45/20909892bf78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/48/a030b282ae78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/4f/5000a546af78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/56/10a2f3e5be78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/56/209ad10aaf78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/5c/90abd20aaf78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/62/a07938e99975001a1816c95b779436cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/6a/400d2824c078001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/7f/a0ce0c9a9c75001a1816c95b779436cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/a5/d0ae2253bf78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/b2/00e059679d75001a1816c95b779436cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/be/f0a171a3ad78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/c4/203fcdd79975001a1816c95b779436cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/c5/900d3be69875001a1816c95b779436cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/c9/d0c3d014ae78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/cb/50ec6e35bf78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/cc/c0f58d4cbf78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/d9/809b60fb9975001a1816c95b779436cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/e7/e0e30410ae78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/f/b0eaa546af78001a117dd33e7d1d1e5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.history/f6/e06b162a9975001a1816c95b779436cb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.projects/EchoServer/.indexes/e4/history.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.root/13.tree" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.sdkterminal.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.sdkterminal.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.xilinx.sdk.utils.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.xilinx.sdk.utils.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/src/echo.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/src/echo.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer_bsp/ps7_cortexa9_0/lib/liblwip4.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer_bsp/ps7_cortexa9_0/lib/liblwip4.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer_bsp/ps7_cortexa9_0/lib/libxil.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/EchoServer_bsp/ps7_cortexa9_0/lib/libxil.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/FSBL_bsp/ps7_cortexa9_0/lib/libxil.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/FSBL_bsp/ps7_cortexa9_0/lib/libxil.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/FSBL_bsp/ps7_cortexa9_0/lib/libxilffs.a" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/FSBL_bsp/ps7_cortexa9_0/lib/libxilffs.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/SDK.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/SDK.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EchoServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EchoServer/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/src/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/src/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/WaveProject" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WaveProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IAudioContext.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/WaveProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/WaveProject.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AudioObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/AudioObject.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IAudioContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/IAudioContext.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sdl/SDLAudioContext.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdl/SDLAudioContext.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sdl/SDLAudioContext.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/sdl/SDLAudioContext.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../vivado.jou" beforeDir="false" afterPath="$PROJECT_DIR$/../../../vivado.jou" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../vivado.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../vivado.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,11 +103,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="765">
+              <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -71,10 +116,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/IAudioData.h">
+        <entry file="file://$PROJECT_DIR$/src/Network/TCPClient.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state relative-caret-position="252">
+              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <folding>
+                <element signature="e#43#61#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IAudioContext.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+            <state relative-caret-position="187">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding>
                 <element signature="e#116#131#0" expanded="true" />
               </folding>
@@ -91,11 +139,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainFunctions.h">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioContext.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="249">
+              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+              <folding>
+                <element signature="e#43#62#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioContext.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="515">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#120#149#0" expanded="true" />
               </folding>
@@ -113,12 +164,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioContext.cpp">
+        <entry file="file://$PROJECT_DIR$/src/Network/TCPClient.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="161" column="56" selection-start-line="161" selection-start-column="56" selection-end-line="161" selection-end-column="56" />
+            <state relative-caret-position="357">
+              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
-                <element signature="e#43#62#0" expanded="true" />
+                <element signature="e#108#130#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,7 +188,6 @@
         <option value="$PROJECT_DIR$/src/IAudioData.h" />
         <option value="$PROJECT_DIR$/src/IAudioDevice.h" />
         <option value="$PROJECT_DIR$/src/sdl/IAudioContext.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/sdl/SDLAudioDevice.cpp" />
         <option value="$PROJECT_DIR$/src/sdl/SDLAudioDevice.h" />
         <option value="$PROJECT_DIR$/src/sdl/SDLWaveAudioData.h" />
@@ -145,17 +195,24 @@
         <option value="$PROJECT_DIR$/src/SampleInfo.h" />
         <option value="$PROJECT_DIR$/src/AudioObject.h" />
         <option value="$PROJECT_DIR$/src/AudioObject.cpp" />
+        <option value="$PROJECT_DIR$/src/TCP.h" />
+        <option value="$PROJECT_DIR$/src/Exeption.h" />
+        <option value="$PROJECT_DIR$/src/Exeption.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/MainFunctions.h" />
         <option value="$PROJECT_DIR$/src/IAudioContext.h" />
         <option value="$PROJECT_DIR$/src/sdl/SDLAudioContext.h" />
-        <option value="$PROJECT_DIR$/src/sdl/SDLAudioContext.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/Network/TCPClient.h" />
+        <option value="$PROJECT_DIR$/src/Network/TCPClient.cpp" />
+        <option value="$PROJECT_DIR$/src/sdl/SDLAudioContext.cpp" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="293" />
-    <option name="y" value="53" />
+    <option name="x" value="67" />
+    <option name="y" value="43" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -181,6 +238,12 @@
               <item name="WaveProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="WaveProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WaveProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WaveProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WaveProject" type="b2602c69:ProjectViewProjectNode" />
@@ -255,21 +318,28 @@
       <workItem from="1586243812877" duration="403000" />
       <workItem from="1586302157226" duration="281000" />
       <workItem from="1586336154614" duration="20500000" />
+      <workItem from="1586384666452" duration="859000" />
+      <workItem from="1586891031342" duration="378000" />
+      <workItem from="1587137011108" duration="2775000" />
+      <workItem from="1587141863775" duration="15516000" />
+      <workItem from="1587198768662" duration="6093000" />
+      <workItem from="1587211952260" duration="5447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56707000" />
+    <option name="totallyTimeSpent" value="87775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2733813" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29330382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32972974" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32972974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -281,7 +351,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32972974" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32756758" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -292,13 +362,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/include/SDL2/SDL_audio.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8228">
-          <caret line="484" column="21" selection-start-line="484" selection-start-column="21" selection-end-line="484" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IAudioObject.h" />
     <entry file="file://$PROJECT_DIR$/src/IAudioObject.cpp" />
     <entry file="file://$PROJECT_DIR$/src/IAudioData.cpp">
@@ -307,13 +370,6 @@
     <entry file="file://$PROJECT_DIR$/src/IAudioDevice.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SampleInfo.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -321,59 +377,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/IAudioContext.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AudioObject.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="39" column="31" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
-          <folding>
-            <element signature="e#43#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sdl/SDLWaveAudioData.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="e#43#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AudioObject.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#112#135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioDevice.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#119#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioDevice.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="e#43#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IAudioContext.cpp" />
     <entry file="file://$PROJECT_DIR$/src/sdl/SDLWaveAudioData.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -396,54 +400,165 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IAudioData.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        <state relative-caret-position="340">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioContext.cpp">
+    <entry file="file://$PROJECT_DIR$/src/AudioObject.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="161" column="56" selection-start-line="161" selection-start-column="56" selection-end-line="161" selection-end-column="56" />
+        <state relative-caret-position="323">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="e#112#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TCP.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/TCP.h" />
+    <entry file="file://$PROJECT_DIR$/SDL/build/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AudioObject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#43#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exeption.h" />
+    <entry file="file://$PROJECT_DIR$/src/Exeption.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/Exception.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Exception.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioDevice.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#119#136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdl/SDLWaveAudioData.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="e#43#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioDevice.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#43#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/x86_64-linux-gnu/sys/socket.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="144" column="15" selection-start-line="144" selection-start-column="15" selection-end-line="144" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainFunctions.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/SDL2/SDL_audio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="385" lean-forward="true" selection-start-line="385" selection-end-line="385" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/TCPClient.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding>
+            <element signature="e#108#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Network/TCPClient.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="e#43#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioContext.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="515">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#120#149#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainFunctions.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IAudioContext.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+        <state relative-caret-position="187">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
             <element signature="e#116#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/src/sdl/SDLAudioContext.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="249">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#43#62#0" expanded="true" />
           </folding>
         </state>
       </provider>

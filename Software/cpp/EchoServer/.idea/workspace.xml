@@ -12,7 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44b1a94d-28c1-4f01-9a8e-d403edb40684" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../WaveProject/src/Network/TCPClient.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WaveProject/src/Network/TCPClient.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/WaveProject" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/WaveProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/WaveProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/cmake-build-debug/WaveProject.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/src/AudioObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/src/AudioObject.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WaveProject/src/sdl/SDLAudioContext.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../WaveProject/src/sdl/SDLAudioContext.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="803">
-              <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+            <state>
+              <caret selection-end-line="5" selection-end-column="19" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -79,8 +98,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,16 +140,20 @@
       <workItem from="1581457717508" duration="1243000" />
       <workItem from="1581497317279" duration="32000" />
       <workItem from="1581773946827" duration="5000" />
+      <workItem from="1587137084523" duration="36000" />
+      <workItem from="1587137162859" duration="867000" />
+      <workItem from="1587140466242" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1280000" />
+    <option name="totallyTimeSpent" value="2191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.255119" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26342005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -162,8 +185,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+        <state>
+          <caret selection-end-line="5" selection-end-column="19" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>

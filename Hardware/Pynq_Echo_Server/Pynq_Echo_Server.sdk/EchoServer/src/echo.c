@@ -57,18 +57,18 @@ struct pointer_length transfer_data() {
 
 void print_data(void* p, int length){
 	u8* bums = (u8*) p;
-	xil_printf("Received Bytes of Data: %d\r\n" , length);
+	//xil_printf("Received Bytes of Data: %d\r\n" , length);
 	for (int i = 0; i < length+2; i++){
 		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
-			xil_printf("%d", *(bums+i) - 48);
+			//xil_printf("%d", *(bums+i) - 48);
 		}
 	}
-	xil_printf("\n");
+	//xil_printf("\n");
 }
 
 void display_print(void* p, int length){
 	if (length > 8){
-		xil_printf("To much Data to show \r\n");
+		//xil_printf("To much Data to show \r\n");
 		return;
 	}
 	u8* bums = (u8*) p;
@@ -91,7 +91,7 @@ void print_app_header()
 
 err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
                                struct pbuf *p, err_t err)
-{	xil_printf("Begin recv_callback \r\n");
+{	//xil_printf("Begin recv_callback \r\n");
 	/* do not read the packet if we are not in ESTABLISHED state */
 	if (!p) {
 		tcp_close(tpcb);
@@ -117,7 +117,7 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
 
 	/* free the received pbuf */
 	pbuf_free(p);
-	xil_printf("End recv_callback \r\n");
+	//xil_printf("End recv_callback \r\n");
 	return ERR_OK;
 }
 

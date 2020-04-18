@@ -92,6 +92,12 @@
 		<Unit filename="/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/AudioObject.h">
 			<Option target="WaveProject"/>
 		</Unit>
+		<Unit filename="/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Exception.cpp">
+			<Option target="WaveProject"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Exception.h">
+			<Option target="WaveProject"/>
+		</Unit>
 		<Unit filename="/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioContext.h">
 			<Option target="WaveProject"/>
 		</Unit>
@@ -99,6 +105,12 @@
 			<Option target="WaveProject"/>
 		</Unit>
 		<Unit filename="/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioDevice.h">
+			<Option target="WaveProject"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.cpp">
+			<Option target="WaveProject"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.h">
 			<Option target="WaveProject"/>
 		</Unit>
 		<Unit filename="/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/SampleInfo.h">

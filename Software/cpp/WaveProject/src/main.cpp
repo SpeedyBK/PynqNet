@@ -10,50 +10,65 @@
 #include "sdl/SDLAudioDevice.h"
 #include "sdl/SDLAudioContext.h"
 
-#define FILE_PATH "../Audio/Careless.wav"
+#include "Network/TCPClient.h"
+
+#define FILE_PATH "../Audio/BossHoss.wav"
 #define COEFF_PATH "../Audio/TelefonFIR.fcf"
 
-int main(int argc, char** argv) {
+#define HOST_IP "192.168.1.10"
+#define PORT 8
 
-    SDL_Init(SDL_INIT_AUDIO);
+    int main(int argc, char **argv) {
 
-    IAudioDevice* device = new SDLAudioDevice();
+        SDL_Init(SDL_INIT_AUDIO);
 
-    IAudioContext* context = new SDLAudioContext();
-    std::list<float> coeffs = parsefcf(COEFF_PATH);
-    context->setupFilter(coeffs);
+        IAudioDevice *device = new SDLAudioDevice();
 
-    IAudioData* data = device->createAudioFromFile(FILE_PATH);
+        IAudioContext *context = new SDLAudioContext();
+        std::list<float> coeffs = parsefcf(COEFF_PATH);
+        context->setupFilter(coeffs);
 
-    SampleInfo info;
-    info.volume = 1.0f;
-    info.pitch  = 1.0f;
+        IAudioData *data = device->createAudioFromFile(FILE_PATH);
 
-    AudioObject sound(info, data);
+        SampleInfo info;
+        info.volume = 1.0f;
+        info.pitch = 1.0f;
 
-    char in = 0;
-    while (in != 'q'){
+        AudioObject sound(info, data);
+
+        std::cout << std::endl << "Creating Socket!" << std::endl;
+        TCPClient *tcp = new TCPClient(HOST_IP, PORT);
+        char in = 0;
         std::cin >> in;
-        switch (in) {
-            case 'a': context->playAudio(sound) ;     break;
-            case 'p': context->pauseAudio(sound);     break;
-            case 's': context->stopAudio(sound);      break;
-            case '+': context->increasePitch(sound);  break;
-            case '-': context->decreasePitch(sound);  break;
-            case 'k': context->increaseVolume(sound); break;
-            case 'm': context->decreaseVolume(sound); break;
-            case 'n': context->selEffects('n');       break;
-            case 'f': context->selEffects('f');       break;
-            case 'g': context->selEffects('g');       break;
-            default : break;
+        if (in == 'e') {
+            std::cout << "Connecting to Host!"<< std::endl;
+            tcp->connectToHost();
+            std::cout << "Connection: Success!"<< std::endl;
         }
+
+        while (in != 'q') {
+            std::cin >> in;
+            switch (in) {
+                case 'a': context->playAudio(sound); break;
+                case 'p': context->pauseAudio(sound); break;
+                case 's': context->stopAudio(sound); break;
+                case '+': context->increasePitch(sound); break;
+                case '-': context->decreasePitch(sound); break;
+                case 'k': context->increaseVolume(sound); break;
+                case 'm': context->decreaseVolume(sound); break;
+                case 'n': context->selEffects('n', nullptr); break;
+                case 'f': context->selEffects('f', nullptr); break;
+                case 'g': context->selEffects('g', nullptr); break;
+                case 't': context->selEffects('t', tcp); break;
+                default : break;
+            }
+        }
+
+        device->releaseAudio(data);
+        delete context;
+        delete device;
+
+        SDL_Quit();
+
+        return 0;
     }
-
-    device->releaseAudio(data);
-    delete context;
-    delete device;
-
-    SDL_Quit();
-
-    return 0;
-}

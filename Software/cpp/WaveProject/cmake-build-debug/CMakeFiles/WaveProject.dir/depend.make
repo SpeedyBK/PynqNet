@@ -6,22 +6,49 @@ CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o: ../src/AudioObject.h
 CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o: ../src/IAudioData.h
 CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o: ../src/SampleInfo.h
 
+CMakeFiles/WaveProject.dir/src/Exception.cpp.o: ../src/Exception.cpp
+CMakeFiles/WaveProject.dir/src/Exception.cpp.o: ../src/Exception.h
+
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: ../src/Exception.h
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: ../src/Network/TCPClient.cpp
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: ../src/Network/TCPClient.h
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: /usr/local/include/SDL2/SDL_config.h
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: /usr/local/include/SDL2/SDL_platform.h
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: /usr/local/include/SDL2/SDL_stdinc.h
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: /usr/local/include/SDL2/SDL_types.h
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: /usr/local/include/SDL2/begin_code.h
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: /usr/local/include/SDL2/close_code.h
+
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/AudioObject.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/IAudioContext.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/IAudioData.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/IAudioDevice.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/MainFunctions.h
+CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/Network/TCPClient.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/SampleInfo.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/sdl/SDLAudioContext.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o: ../src/sdl/SDLAudioDevice.h
+CMakeFiles/WaveProject.dir/src/main.cpp.o: /usr/local/include/SDL2/SDL_config.h
+CMakeFiles/WaveProject.dir/src/main.cpp.o: /usr/local/include/SDL2/SDL_platform.h
+CMakeFiles/WaveProject.dir/src/main.cpp.o: /usr/local/include/SDL2/SDL_stdinc.h
+CMakeFiles/WaveProject.dir/src/main.cpp.o: /usr/local/include/SDL2/SDL_types.h
+CMakeFiles/WaveProject.dir/src/main.cpp.o: /usr/local/include/SDL2/begin_code.h
+CMakeFiles/WaveProject.dir/src/main.cpp.o: /usr/local/include/SDL2/close_code.h
 
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: ../src/AudioObject.h
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: ../src/IAudioContext.h
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: ../src/IAudioData.h
+CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: ../src/Network/TCPClient.h
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: ../src/SampleInfo.h
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: ../src/sdl/SDLAudioContext.cpp
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: ../src/sdl/SDLAudioContext.h
+CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: /usr/local/include/SDL2/SDL_config.h
+CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: /usr/local/include/SDL2/SDL_platform.h
+CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: /usr/local/include/SDL2/SDL_stdinc.h
+CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: /usr/local/include/SDL2/SDL_types.h
+CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: /usr/local/include/SDL2/begin_code.h
+CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o: /usr/local/include/SDL2/close_code.h
 
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.o: ../src/IAudioData.h
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.o: ../src/IAudioDevice.h

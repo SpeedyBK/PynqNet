@@ -20,5 +20,9 @@ add_executable(WaveProject
                src/IAudioData.h
                src/IAudioDevice.h
                src/SampleInfo.h
+               src/Network/TCPClient.h
+               src/Network/TCPClient.cpp
+               src/Exception.cpp
+               src/Exception.h
         )
 target_link_libraries(WaveProject ${SDL2_LIBRARIES})

@@ -61,6 +61,10 @@ void SDLAudioContext::generateSamples(Uint8 *streamIn, int streamInLength) {
         else if (val < -1.0f) { val = -1.0f; }
         stream[i] = dsp((Sint16)(val*SDL_MAX_SINT16));
     }
+
+    if (m_effects == 't') {
+        m_TCP->transfer(stream, sizeof(stream));
+    }
 }
 
 
@@ -120,8 +124,9 @@ void SDLAudioContext::decreaseVolume(AudioObject &ao) {
     ao.decreaseVolume();
 }
 
-void SDLAudioContext::selEffects(char sel) {
+void SDLAudioContext::selEffects(char sel, TCPClient* TCP) {
     m_effects = sel;
+    m_TCP = TCP;
 }
 
 void SDLAudioContext::setupFilter(std::list<float> coeffs) {
@@ -172,7 +177,7 @@ Sint16 SDLAudioContext::cracks(Sint16 Sample) {
     if (i == randn){
         i = 0;
         randn = rand() % (SDL_MAX_SINT16 * 3);
-        return randn/3;
+        return randn/6;
     }
 
     i++;
@@ -190,6 +195,6 @@ Sint16 SDLAudioContext::dsp(Sint16 samples) {
         return cracks(audioFilterNoisy(samples));
     }
     else {
-        return 0;
+        return samples;
     }
 }

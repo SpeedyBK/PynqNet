@@ -26,7 +26,7 @@ public:
     virtual void increaseVolume(AudioObject &ao);
     virtual void decreaseVolume(AudioObject &ao);
     virtual void setupFilter(std::list<float> coeffs);
-    virtual void selEffects(char sel);
+    virtual void selEffects(char sel, TCPClient* TCP);
 
     void generateSamples(Uint8* stream, int streamLength);
     Sint16 audioFilter(Sint16 sample);
@@ -42,6 +42,7 @@ private:
     std::vector<Sint16>       m_filterArray;
     std::vector<float>        m_coeffs;
     char                      m_effects;
+    TCPClient*                m_TCP;
 
     bool removeAudio(AudioObject& ao);
 

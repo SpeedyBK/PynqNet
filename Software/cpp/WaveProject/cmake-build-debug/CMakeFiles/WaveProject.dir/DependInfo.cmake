@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/AudioObject.cpp" "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o"
+  "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Exception.cpp" "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/Exception.cpp.o"
+  "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.cpp" "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o"
   "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/main.cpp" "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/main.cpp.o"
   "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/sdl/SDLAudioContext.cpp" "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o"
   "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/sdl/SDLAudioDevice.cpp" "/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.o"

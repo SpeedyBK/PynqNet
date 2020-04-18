@@ -1,8 +1,0 @@
-Brief Documentation of the Project. 
-
-SDK-Application Project Files:
-
-- si5324.c: This file is not needed for the hardware this project should be used on. 
-- sfp.c: This file is not needed for the hardware this project should be used on. 
-- i2c_access.c: This file is not needed for the hardware this project should be used on. 
-- 

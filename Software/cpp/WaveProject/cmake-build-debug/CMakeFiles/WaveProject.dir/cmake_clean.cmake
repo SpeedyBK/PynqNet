@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o"
   "CMakeFiles/WaveProject.dir/src/sdl/SDLWaveAudioData.cpp.o"
   "CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.o"
+  "CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o"
+  "CMakeFiles/WaveProject.dir/src/Exception.cpp.o"
   "WaveProject.pdb"
   "WaveProject"
 )

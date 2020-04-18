@@ -122,13 +122,41 @@ CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/sdl/SDLAudioDevice.cpp -o CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.s
 
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: CMakeFiles/WaveProject.dir/flags.make
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o: ../src/Network/TCPClient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o -c /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.cpp
+
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.cpp > CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.i
+
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.cpp -o CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.s
+
+CMakeFiles/WaveProject.dir/src/Exception.cpp.o: CMakeFiles/WaveProject.dir/flags.make
+CMakeFiles/WaveProject.dir/src/Exception.cpp.o: ../src/Exception.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/WaveProject.dir/src/Exception.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/WaveProject.dir/src/Exception.cpp.o -c /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Exception.cpp
+
+CMakeFiles/WaveProject.dir/src/Exception.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/WaveProject.dir/src/Exception.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Exception.cpp > CMakeFiles/WaveProject.dir/src/Exception.cpp.i
+
+CMakeFiles/WaveProject.dir/src/Exception.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/WaveProject.dir/src/Exception.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Exception.cpp -o CMakeFiles/WaveProject.dir/src/Exception.cpp.s
+
 # Object files for target WaveProject
 WaveProject_OBJECTS = \
 "CMakeFiles/WaveProject.dir/src/main.cpp.o" \
 "CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o" \
 "CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o" \
 "CMakeFiles/WaveProject.dir/src/sdl/SDLWaveAudioData.cpp.o" \
-"CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.o"
+"CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.o" \
+"CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o" \
+"CMakeFiles/WaveProject.dir/src/Exception.cpp.o"
 
 # External object files for target WaveProject
 WaveProject_EXTERNAL_OBJECTS =
@@ -138,9 +166,11 @@ WaveProject: CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o
 WaveProject: CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o
 WaveProject: CMakeFiles/WaveProject.dir/src/sdl/SDLWaveAudioData.cpp.o
 WaveProject: CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.o
+WaveProject: CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o
+WaveProject: CMakeFiles/WaveProject.dir/src/Exception.cpp.o
 WaveProject: CMakeFiles/WaveProject.dir/build.make
 WaveProject: CMakeFiles/WaveProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable WaveProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable WaveProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/WaveProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

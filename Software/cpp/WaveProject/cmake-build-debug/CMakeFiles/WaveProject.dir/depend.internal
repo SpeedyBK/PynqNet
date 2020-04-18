@@ -6,23 +6,50 @@ CMakeFiles/WaveProject.dir/src/AudioObject.cpp.o
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/AudioObject.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioData.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/SampleInfo.h
+CMakeFiles/WaveProject.dir/src/Exception.cpp.o
+ /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Exception.cpp
+ /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Exception.h
+CMakeFiles/WaveProject.dir/src/Network/TCPClient.cpp.o
+ /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Exception.h
+ /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.cpp
+ /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.h
+ /usr/local/include/SDL2/SDL_config.h
+ /usr/local/include/SDL2/SDL_platform.h
+ /usr/local/include/SDL2/SDL_stdinc.h
+ /usr/local/include/SDL2/SDL_types.h
+ /usr/local/include/SDL2/begin_code.h
+ /usr/local/include/SDL2/close_code.h
 CMakeFiles/WaveProject.dir/src/main.cpp.o
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/AudioObject.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioContext.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioData.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioDevice.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/MainFunctions.h
+ /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/SampleInfo.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/main.cpp
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/sdl/SDLAudioContext.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/sdl/SDLAudioDevice.h
+ /usr/local/include/SDL2/SDL_config.h
+ /usr/local/include/SDL2/SDL_platform.h
+ /usr/local/include/SDL2/SDL_stdinc.h
+ /usr/local/include/SDL2/SDL_types.h
+ /usr/local/include/SDL2/begin_code.h
+ /usr/local/include/SDL2/close_code.h
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioContext.cpp.o
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/AudioObject.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioContext.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioData.h
+ /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/Network/TCPClient.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/SampleInfo.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/sdl/SDLAudioContext.cpp
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/sdl/SDLAudioContext.h
+ /usr/local/include/SDL2/SDL_config.h
+ /usr/local/include/SDL2/SDL_platform.h
+ /usr/local/include/SDL2/SDL_stdinc.h
+ /usr/local/include/SDL2/SDL_types.h
+ /usr/local/include/SDL2/begin_code.h
+ /usr/local/include/SDL2/close_code.h
 CMakeFiles/WaveProject.dir/src/sdl/SDLAudioDevice.cpp.o
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioData.h
  /home/benjamin/Repositories/PynqNet/Software/cpp/WaveProject/src/IAudioDevice.h
