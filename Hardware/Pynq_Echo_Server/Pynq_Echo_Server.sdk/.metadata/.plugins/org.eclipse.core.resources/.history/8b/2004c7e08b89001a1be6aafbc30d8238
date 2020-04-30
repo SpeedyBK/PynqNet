@@ -1,0 +1,287 @@
+/*
+ * Copyright (C) 2009 - 2019 Xilinx, Inc.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ * 3. The name of the author may not be used to endorse or promote products
+ *    derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+ * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+ * OF SUCH DAMAGE.
+ *
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include "ManInput.h"
+#include "SixDigitHexDisplay.h"
+#include "xil_io.h"
+
+#include "lwip/err.h"
+#include "lwip/tcp.h"
+#if defined (__arm__) || defined (__aarch64__)
+#include "xil_printf.h"
+#endif
+
+uint32_t message_count=0;
+
+u8_t   data[100];
+
+struct tcp_pcb *echoclient_pcb;
+
+
+/* ECHO protocol states */
+enum echoclient_states
+{
+  ES_NOT_CONNECTED = 0,
+  ES_CONNECTED,
+  ES_RECEIVED,
+  ES_CLOSING,
+};
+
+
+/* structure to be passed as argument to the tcp callbacks */
+struct echoclient
+{
+  enum echoclient_states state; /* connection status */
+  struct tcp_pcb *pcb;          /* pointer on the current tcp_pcb */
+  struct pbuf *p_tx;            /* pointer on pbuf to be transmitted */
+};
+
+
+void display_print(void* p, int length);
+
+void set_IPAddress (ip_addr_t* ipaddr, int switches);
+err_t recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err);
+err_t accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err);
+static err_t tcp_connected(void *arg, struct tcp_pcb *tpcb, err_t err);
+static void tcp_echoclient_send(struct tcp_pcb *tpcb, struct echoclient * es);
+static void tcp_echoclient_connection_close(struct tcp_pcb *tpcb, struct echoclient * es );
+
+
+int start_application_ding(unsigned port)
+{
+
+	  ip_addr_t DestIPaddr;
+
+	  /* create new tcp pcb */
+	  echoclient_pcb = tcp_new();
+
+	  if (echoclient_pcb != NULL)
+	  {
+	    IP4_ADDR( &DestIPaddr, 192, 168, 1, 21);
+
+	    tcp_bind (echoclient_pcb, &DestIPaddr, port);
+
+	    /* connect to destination address/port */
+	    tcp_connect(echoclient_pcb,&DestIPaddr,port,tcp_connected);
+	  }
+	  else
+	  {
+	    /* deallocate the pcb */
+	    memp_free(MEMP_TCP_PCB, echoclient_pcb);
+	  }
+
+}
+
+
+void display_print(void* p, int length){
+	if (length > 8){
+		//xil_printf("To much Data to show \r\n");
+		length = 8;
+		//return;
+	}
+	u8* bums = (u8*) p;
+	for (int i = 0; i < length; i++){
+		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
+			SIXDIGITHEXDISPLAY_mWriteReg(XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_BASEADDR, 4*i, *(bums+i));
+		}
+	}
+
+}
+
+
+err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
+                               struct pbuf *p, err_t err)
+{
+	/* do not read the packet if we are not in ESTABLISHED state */
+	if (!p) {
+		tcp_close(tpcb);
+		tcp_recv(tpcb, NULL);
+		return ERR_OK;
+	}
+
+	/* indicate that the packet has been received */
+	tcp_recved(tpcb, p->len);
+	display_print(p->payload, p->len);
+
+	/* echo back the payload */
+	/* in this case, we assume that the payload is < TCP_SND_BUF */
+	if (tcp_sndbuf(tpcb) > p->len) {
+		err = tcp_write(tpcb, p->payload, p->len, 1);
+	} else{
+		xil_printf("no space in tcp_sndbuf\n\r");
+	}
+	/* free the received pbuf */
+	pbuf_free(p);
+
+	return ERR_OK;
+}
+
+
+err_t accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err){
+	static int connection = 1;
+
+	/* set the receive callback for this connection */
+	tcp_recv(newpcb, recv_callback);
+
+	/* just use an integer number indicating the connection id as the
+	   callback argument */
+	tcp_arg(newpcb, (void*)(UINTPTR)connection);
+
+	/* increment for subsequent accepted connections */
+	connection++;
+
+	return ERR_OK;
+}
+
+
+static err_t tcp_connected(void *arg, struct tcp_pcb *tpcb, err_t err){
+
+	  xil_printf("Bums");
+	  struct echoclient *es = NULL;
+
+	  if (err == ERR_OK)
+	  {
+	    /* allocate structure es to maintain tcp connection informations */
+	    es = (struct echoclient *)mem_malloc(sizeof(struct echoclient));
+
+	    if (es != NULL)
+	    {
+	      es->state = ES_CONNECTED;
+	      es->pcb = tpcb;
+
+	      xil_printf((char*)data, "sending tcp client message %d", (int)message_count);
+
+	      /* allocate pbuf */
+	      es->p_tx = pbuf_alloc(PBUF_TRANSPORT, strlen((char*)data) , PBUF_POOL);
+
+	      if (es->p_tx)
+	      {
+	        /* copy data to pbuf */
+	        pbuf_take(es->p_tx, (char*)data, strlen((char*)data));
+
+	        /* pass newly allocated es structure as argument to tpcb */
+	        tcp_arg(tpcb, es);
+
+	        /* initialize LwIP tcp_recv callback function */
+	        //tcp_recv(tpcb, tcp_echoclient_recv);
+
+	        /* initialize LwIP tcp_sent callback function */
+	        tcp_sent(tpcb, tcp_echoclient_send);
+
+	        /* initialize LwIP tcp_poll callback function */
+	        //tcp_poll(tpcb, tcp_echoclient_poll, 1);
+
+	        /* send data */
+	        tcp_echoclient_send(tpcb,es);
+
+	        return ERR_OK;
+	      }
+	    }
+	    else
+	    {
+	      /* close connection */
+	      tcp_echoclient_connection_close(tpcb, es);
+
+	      /* return memory allocation error */
+	      return ERR_MEM;
+	    }
+	  }
+	  else
+	  {
+	    /* close connection */
+	    tcp_echoclient_connection_close(tpcb, es);
+	  }
+	  return err;
+}
+
+
+static void tcp_echoclient_send(struct tcp_pcb *tpcb, struct echoclient * es)
+{
+  struct pbuf *ptr;
+  err_t wr_err = ERR_OK;
+
+  while ((wr_err == ERR_OK) &&
+         (es->p_tx != NULL) &&
+         (es->p_tx->len <= tcp_sndbuf(tpcb)))
+  {
+
+    /* get pointer on pbuf from es structure */
+    ptr = es->p_tx;
+
+    char* dat = "1234";
+    /* enqueue data for transmission */
+    wr_err = tcp_write(tpcb, dat, 4, 1);
+
+    if (wr_err == ERR_OK)
+    {
+      /* continue with next pbuf in chain (if any) */
+      es->p_tx = ptr->next;
+
+      if(es->p_tx != NULL)
+      {
+        /* increment reference count for es->p */
+        pbuf_ref(es->p_tx);
+      }
+
+      /* free pbuf: will free pbufs up to es->p (because es->p has a reference count > 0) */
+      pbuf_free(ptr);
+   }
+   else if(wr_err == ERR_MEM)
+   {
+      /* we are low on memory, try later, defer to poll */
+     es->p_tx = ptr;
+   }
+   else
+   {
+     /* other problem ?? */
+   }
+  }
+}
+
+static void tcp_echoclient_connection_close(struct tcp_pcb *tpcb, struct echoclient * es )
+{
+  /* remove callbacks */
+  tcp_recv(tpcb, NULL);
+  tcp_sent(tpcb, NULL);
+  tcp_poll(tpcb, NULL,0);
+
+  if (es != NULL)
+  {
+    mem_free(es);
+  }
+
+  /* close tcp connection */
+  tcp_close(tpcb);
+
+}
+
+int transfer_data() {
+	return 0;
+}

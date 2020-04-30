@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-70] Compilation errors found: In file included from FilterBS300/src/TopLevel.cpp:1:&#xA;In file included from FilterBS300/src/TopLevel.cpp:3:&#xA;FilterBS300/src/TopLevelFunctions.h:20:35: error: no member named 'stof' in namespace 'std'&#xA;            coeffs.push_back(std::stof(line));&#xA;                             ~~~~~^&#xA;FilterBS300/src/TopLevelFunctions.h:28:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]&#xA;        for (auto &amp;it : coeffs) {&#xA;             ^&#xA;FilterBS300/src/TopLevelFunctions.h:28:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]&#xA;        for (auto &amp;it : coeffs) {&#xA;                      ^&#xA;2 warnings and 1 error generated.&#xA;Failed during preprocessing.&#xA;    while executing&#xA;&quot;source /home/benjamin/Repositories/PynqNet/Hardware/ip_repo/FilterBS300/solution1/csynth.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/benjamin/Repositories/PynqNet/Hardware/ip_repo/FilterBS300/solution1/csynth.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="FilterBS300" solutionName="solution1" date="2020-04-23T10:52:11.306+0200"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

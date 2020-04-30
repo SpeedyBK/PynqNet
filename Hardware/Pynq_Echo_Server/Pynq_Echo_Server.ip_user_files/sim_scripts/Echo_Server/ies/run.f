@@ -28,20 +28,8 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/Echo_Server/ip/Echo_Server_processing_system7_0_0/sim/Echo_Server_processing_system7_0_0.v" \
 -endlib
--makelib ies_lib/axi_lite_ipif_v3_0_4 \
-  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
--endlib
 -makelib ies_lib/lib_cdc_v1_0_2 \
   "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
--endlib
--makelib ies_lib/interrupt_control_v3_1_4 \
-  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
--endlib
--makelib ies_lib/axi_gpio_v2_0_21 \
-  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/Echo_Server/ip/Echo_Server_axi_gpio_0_0/sim/Echo_Server_axi_gpio_0_0.vhd" \
 -endlib
 -makelib ies_lib/proc_sys_reset_v5_0_13 \
   "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
@@ -78,10 +66,22 @@
   "../../../bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0_S00_AXI.vhd" \
   "../../../bd/Echo_Server/ipshared/48bd/hdl/SixDigitHexDisplay_v1_0.vhd" \
   "../../../bd/Echo_Server/ip/Echo_Server_SixDigitHexDisplay_0_0/sim/Echo_Server_SixDigitHexDisplay_0_0.vhd" \
-  "../../../bd/Echo_Server/ipshared/e908/hdl/ManInput.vhd" \
-  "../../../bd/Echo_Server/ipshared/e908/hdl/ManInput_v1_0_S00_AXI.vhd" \
-  "../../../bd/Echo_Server/ipshared/e908/hdl/ManInput_v1_0.vhd" \
+  "../../../bd/Echo_Server/ipshared/8a9a/hdl/ManInput.vhd" \
+  "../../../bd/Echo_Server/ipshared/8a9a/hdl/ManInput_v1_0_S00_AXI.vhd" \
+  "../../../bd/Echo_Server/ipshared/8a9a/hdl/ManInput_v1_0.vhd" \
   "../../../bd/Echo_Server/ip/Echo_Server_ManInput_0_0/sim/Echo_Server_ManInput_0_0.vhd" \
+-endlib
+-makelib ies_lib/axi_lite_ipif_v3_0_4 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/interrupt_control_v3_1_4 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/a040/hdl/interrupt_control_v3_1_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/axi_gpio_v2_0_21 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/9c6e/hdl/axi_gpio_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/Echo_Server/ip/Echo_Server_axi_gpio_1_0/sim/Echo_Server_axi_gpio_1_0.vhd" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_19 \
   "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

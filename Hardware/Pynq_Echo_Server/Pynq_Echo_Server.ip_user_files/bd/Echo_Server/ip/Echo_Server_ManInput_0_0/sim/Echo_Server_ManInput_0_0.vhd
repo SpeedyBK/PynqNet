@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: user.org:user:ManInput:1.0
--- IP Revision: 4
+-- IP Revision: 5
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -58,6 +58,8 @@ ENTITY Echo_Server_ManInput_0_0 IS
     switches_i : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     bleds_o : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     push_to_send_i : IN STD_LOGIC;
+    ip_select_i : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    ip_leds_o : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s00_axi_awvalid : IN STD_LOGIC;
@@ -94,6 +96,8 @@ ARCHITECTURE Echo_Server_ManInput_0_0_arch OF Echo_Server_ManInput_0_0 IS
       switches_i : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       bleds_o : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
       push_to_send_i : IN STD_LOGIC;
+      ip_select_i : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      ip_leds_o : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s00_axi_awvalid : IN STD_LOGIC;
@@ -154,6 +158,8 @@ BEGIN
       switches_i => switches_i,
       bleds_o => bleds_o,
       push_to_send_i => push_to_send_i,
+      ip_select_i => ip_select_i,
+      ip_leds_o => ip_leds_o,
       s00_axi_awaddr => s00_axi_awaddr,
       s00_axi_awprot => s00_axi_awprot,
       s00_axi_awvalid => s00_axi_awvalid,

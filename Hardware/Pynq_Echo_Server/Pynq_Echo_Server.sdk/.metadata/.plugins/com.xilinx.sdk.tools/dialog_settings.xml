@@ -4,7 +4,7 @@
 	<item value="Local" key="Echo_Server_wrapper_hw_platform_0-target"/>
 	<item value="Echo_Server_wrapper_hw_platform_0" key="programflash.hwplatform"/>
 	<item value="true" key="Echo_Server_wrapper_hw_platform_0-verifyFlash"/>
-	<item value="/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/BOOTStaticIP.bin" key="Echo_Server_wrapper_hw_platform_0-imgFile"/>
+	<item value="/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/BOOT.bin" key="Echo_Server_wrapper_hw_platform_0-imgFile"/>
 	<item value="true" key="Echo_Server_wrapper_hw_platform_0-blankCheck"/>
 	<item value="/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.sdk/FSBL/Debug/FSBL.elf" key="Echo_Server_wrapper_hw_platform_0-fsblFile"/>
 	<item value="Auto Detect" key="Echo_Server_wrapper_hw_platform_0-device"/>

@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Sun Feb  9 16:15:24 2020
+-- Date        : Sun Feb  9 16:15:23 2020
 -- Host        : Laptop running 64-bit Ubuntu 18.04.3 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/benjamin/Repositories/PynqNet/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_xbar_0/Echo_Server_xbar_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top Echo_Server_xbar_0 -prefix
+--               Echo_Server_xbar_0_ Echo_Server_xbar_0_sim_netlist.vhdl
 -- Design      : Echo_Server_xbar_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -70,8 +70,6 @@ entity Echo_Server_xbar_0_axi_crossbar_v2_1_20_addr_arbiter_sasd is
     mi_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     mi_wready : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Echo_Server_xbar_0_axi_crossbar_v2_1_20_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_20_addr_arbiter_sasd";
 end Echo_Server_xbar_0_axi_crossbar_v2_1_20_addr_arbiter_sasd;
 
 architecture STRUCTURE of Echo_Server_xbar_0_axi_crossbar_v2_1_20_addr_arbiter_sasd is
@@ -1494,8 +1492,6 @@ entity Echo_Server_xbar_0_axi_crossbar_v2_1_20_decerr_slave is
     \gen_axilite.s_axi_bvalid_i_reg_1\ : in STD_LOGIC;
     aa_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Echo_Server_xbar_0_axi_crossbar_v2_1_20_decerr_slave : entity is "axi_crossbar_v2_1_20_decerr_slave";
 end Echo_Server_xbar_0_axi_crossbar_v2_1_20_decerr_slave;
 
 architecture STRUCTURE of Echo_Server_xbar_0_axi_crossbar_v2_1_20_decerr_slave is
@@ -1698,8 +1694,6 @@ entity Echo_Server_xbar_0_axi_crossbar_v2_1_20_splitter is
     aresetn_d : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Echo_Server_xbar_0_axi_crossbar_v2_1_20_splitter : entity is "axi_crossbar_v2_1_20_splitter";
 end Echo_Server_xbar_0_axi_crossbar_v2_1_20_splitter;
 
 architecture STRUCTURE of Echo_Server_xbar_0_axi_crossbar_v2_1_20_splitter is
@@ -1893,8 +1887,6 @@ entity Echo_Server_xbar_0_axi_register_slice_v2_1_19_axic_register_slice is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Echo_Server_xbar_0_axi_register_slice_v2_1_19_axic_register_slice : entity is "axi_register_slice_v2_1_19_axic_register_slice";
 end Echo_Server_xbar_0_axi_register_slice_v2_1_19_axic_register_slice;
 
 architecture STRUCTURE of Echo_Server_xbar_0_axi_register_slice_v2_1_19_axic_register_slice is
@@ -3475,8 +3467,6 @@ entity Echo_Server_xbar_0_axi_crossbar_v2_1_20_crossbar_sasd is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Echo_Server_xbar_0_axi_crossbar_v2_1_20_crossbar_sasd : entity is "axi_crossbar_v2_1_20_crossbar_sasd";
 end Echo_Server_xbar_0_axi_crossbar_v2_1_20_crossbar_sasd;
 
 architecture STRUCTURE of Echo_Server_xbar_0_axi_crossbar_v2_1_20_crossbar_sasd is
@@ -3948,8 +3938,6 @@ entity Echo_Server_xbar_0_axi_crossbar_v2_1_20_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of Echo_Server_xbar_0_axi_crossbar_v2_1_20_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of Echo_Server_xbar_0_axi_crossbar_v2_1_20_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Echo_Server_xbar_0_axi_crossbar_v2_1_20_axi_crossbar : entity is "axi_crossbar_v2_1_20_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of Echo_Server_xbar_0_axi_crossbar_v2_1_20_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

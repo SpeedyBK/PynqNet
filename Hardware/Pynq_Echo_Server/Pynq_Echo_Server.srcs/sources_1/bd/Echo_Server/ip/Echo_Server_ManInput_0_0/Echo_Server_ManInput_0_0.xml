@@ -581,11 +581,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 11 10:06:38 UTC 2020</spirit:value>
+            <spirit:value>Fri Apr 24 12:55:21 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7da72e59</spirit:value>
+            <spirit:value>9:16a1c5e9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -596,7 +596,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7da72e59</spirit:value>
+            <spirit:value>9:16a1c5e9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -612,11 +612,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 11 10:06:38 UTC 2020</spirit:value>
+            <spirit:value>Fri Apr 24 12:55:21 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7da72e59</spirit:value>
+            <spirit:value>9:16a1c5e9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -632,11 +632,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 11 10:06:38 UTC 2020</spirit:value>
+            <spirit:value>Fri Apr 24 12:55:21 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9921d0ff</spirit:value>
+            <spirit:value>9:f648db5d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -652,11 +652,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 11 10:06:38 UTC 2020</spirit:value>
+            <spirit:value>Fri Apr 24 12:55:21 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9921d0ff</spirit:value>
+            <spirit:value>9:f648db5d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -670,11 +670,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 11 10:08:21 UTC 2020</spirit:value>
+            <spirit:value>Fri Apr 24 12:56:04 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7da72e59</spirit:value>
+            <spirit:value>9:16a1c5e9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -721,6 +721,40 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ip_select_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ip_leds_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
               <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
               <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
@@ -1072,15 +1106,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/e908/hdl/ManInput.vhd</spirit:name>
+        <spirit:name>../../ipshared/8a9a/hdl/ManInput.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e908/hdl/ManInput_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:name>../../ipshared/8a9a/hdl/ManInput_v1_0_S00_AXI.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e908/hdl/ManInput_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/8a9a/hdl/ManInput_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1095,15 +1129,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/e908/hdl/ManInput.vhd</spirit:name>
+        <spirit:name>../../ipshared/8a9a/hdl/ManInput.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e908/hdl/ManInput_v1_0_S00_AXI.vhd</spirit:name>
+        <spirit:name>../../ipshared/8a9a/hdl/ManInput_v1_0_S00_AXI.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e908/hdl/ManInput_v1_0.vhd</spirit:name>
+        <spirit:name>../../ipshared/8a9a/hdl/ManInput_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1212,7 +1246,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>ManInput_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreRevision>5</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7e5a2021_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6393a77d_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
@@ -1251,6 +1285,36 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2f56eda8_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3c71bd6_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2454975d_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1282e8a6_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ae75dd6_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a013780_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b9d4064_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a86cdf9_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@690efe09_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@490c5dc3_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b029ea7_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d5b155c_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d21b26_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32d61f82_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4efddc88_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b84f07a_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5632a7e2_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d32e35a_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b812f1b_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d6caab7_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34437fc4_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@617eb809_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e74312b_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50366952_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35ce2b8c_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fab66b1_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a1e3250_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5207fdff_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d249c7d_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cb18a26_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@660e2da1_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d75a58d_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7723dc6b_ARCHIVE_LOCATION">/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/ManInput/ManInput_1.0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
@@ -1285,8 +1349,8 @@
       <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="631e9c5f"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="f40d734b"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="aa1740b8"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="889c86d5"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2860ebbf"/>
     </xilinx:packagingInfo>

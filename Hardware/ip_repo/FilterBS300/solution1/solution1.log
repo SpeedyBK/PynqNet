@@ -1,0 +1,278 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FilterBS300/src/TopLevel.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FilterBS300/src/TopLevel.cpp:1:
+In file included from FilterBS300/src/TopLevel.cpp:3:
+FilterBS300/src/TopLevelFunctions.h:6:19: error: no matching constructor for initialization of 'std::ifstream' (aka 'basic_ifstream<char>')
+    std::ifstream coefffile(FCFPATH);
+                  ^         ~~~~~~~
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:459:7: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const char *' for 1st argument; 
+      basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+      ^
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc:968:25: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::basic_ifstream<char>' for 1st argument; 
+  extern template class basic_ifstream<char>;
+                        ^
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:445:7: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+      basic_ifstream() : __istream_type(), _M_filebuf()
+      ^
+In file included from FilterBS300/src/TopLevel.cpp:1:
+In file included from FilterBS300/src/TopLevel.cpp:3:
+FilterBS300/src/TopLevelFunctions.h:7:10: error: no member named 'list' in namespace 'std'
+    std::list<float> coeffs;
+    ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:7:20: error: expected '(' for function-style cast or type construction
+    std::list<float> coeffs;
+              ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:7:22: error: use of undeclared identifier 'coeffs'
+    std::list<float> coeffs;
+                     ^
+FilterBS300/src/TopLevelFunctions.h:10:10: error: no member named 'cout' in namespace 'std'
+    std::cout << FCFPATH << std::endl << std::endl;
+    ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:18:13: error: use of undeclared identifier 'coeffs'
+            coeffs.push_back(std::stof(line));
+            ^
+FilterBS300/src/TopLevelFunctions.h:18:35: error: no member named 'stof' in namespace 'std'
+            coeffs.push_back(std::stof(line));
+                             ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:22:14: error: no member named 'cout' in namespace 'std'
+        std::cout << "File found, getting coefficients..." << std::endl;
+        ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:23:14: error: no member named 'cout' in namespace 'std'
+        std::cout << "Filtercoefficients:" << std::endl << std::endl;
+        ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:26:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+             ^
+FilterBS300/src/TopLevelFunctions.h:26:25: error: use of undeclared identifier 'coeffs'
+        for (auto &it : coeffs) {
+                        ^
+FilterBS300/src/TopLevelFunctions.h:26:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+                      ^
+FilterBS300/src/TopLevelFunctions.h:27:18: error: no member named 'cout' in namespace 'std'
+            std::cout << j++ << ": " << it << std::endl;
+            ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:30:12: error: use of undeclared identifier 'coeffs'
+    return coeffs;
+           ^
+2 warnings and 12 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FilterBS300/src/TopLevel.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FilterBS300/src/TopLevel.cpp:1:
+In file included from FilterBS300/src/TopLevel.cpp:3:
+FilterBS300/src/TopLevelFunctions.h:7:19: error: no matching constructor for initialization of 'std::ifstream' (aka 'basic_ifstream<char>')
+    std::ifstream coefffile(FCFPATH);
+                  ^         ~~~~~~~
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:459:7: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const char *' for 1st argument; 
+      basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+      ^
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc:968:25: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::basic_ifstream<char>' for 1st argument; 
+  extern template class basic_ifstream<char>;
+                        ^
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:445:7: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+      basic_ifstream() : __istream_type(), _M_filebuf()
+      ^
+In file included from FilterBS300/src/TopLevel.cpp:1:
+In file included from FilterBS300/src/TopLevel.cpp:3:
+FilterBS300/src/TopLevelFunctions.h:8:10: error: no member named 'list' in namespace 'std'
+    std::list<float> coeffs;
+    ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:8:20: error: expected '(' for function-style cast or type construction
+    std::list<float> coeffs;
+              ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:8:22: error: use of undeclared identifier 'coeffs'
+    std::list<float> coeffs;
+                     ^
+FilterBS300/src/TopLevelFunctions.h:11:10: error: no member named 'cout' in namespace 'std'
+    std::cout << FCFPATH << std::endl << std::endl;
+    ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:19:13: error: use of undeclared identifier 'coeffs'
+            coeffs.push_back(std::stof(line));
+            ^
+FilterBS300/src/TopLevelFunctions.h:19:35: error: no member named 'stof' in namespace 'std'
+            coeffs.push_back(std::stof(line));
+                             ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:23:14: error: no member named 'cout' in namespace 'std'
+        std::cout << "File found, getting coefficients..." << std::endl;
+        ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:24:14: error: no member named 'cout' in namespace 'std'
+        std::cout << "Filtercoefficients:" << std::endl << std::endl;
+        ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:27:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+             ^
+FilterBS300/src/TopLevelFunctions.h:27:25: error: use of undeclared identifier 'coeffs'
+        for (auto &it : coeffs) {
+                        ^
+FilterBS300/src/TopLevelFunctions.h:27:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+                      ^
+FilterBS300/src/TopLevelFunctions.h:28:18: error: no member named 'cout' in namespace 'std'
+            std::cout << j++ << ": " << it << std::endl;
+            ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:31:12: error: use of undeclared identifier 'coeffs'
+    return coeffs;
+           ^
+2 warnings and 12 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FilterBS300/src/TopLevel.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FilterBS300/src/TopLevel.cpp:1:
+In file included from FilterBS300/src/TopLevel.cpp:3:
+FilterBS300/src/TopLevelFunctions.h:8:19: error: no matching constructor for initialization of 'std::ifstream' (aka 'basic_ifstream<char>')
+    std::ifstream coefffile(FCFPATH);
+                  ^         ~~~~~~~
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:459:7: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const char *' for 1st argument; 
+      basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+      ^
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc:968:25: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::basic_ifstream<char>' for 1st argument; 
+  extern template class basic_ifstream<char>;
+                        ^
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:445:7: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+      basic_ifstream() : __istream_type(), _M_filebuf()
+      ^
+In file included from FilterBS300/src/TopLevel.cpp:1:
+In file included from FilterBS300/src/TopLevel.cpp:3:
+FilterBS300/src/TopLevelFunctions.h:9:10: error: no member named 'list' in namespace 'std'
+    std::list<float> coeffs;
+    ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:9:20: error: expected '(' for function-style cast or type construction
+    std::list<float> coeffs;
+              ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:9:22: error: use of undeclared identifier 'coeffs'
+    std::list<float> coeffs;
+                     ^
+FilterBS300/src/TopLevelFunctions.h:20:13: error: use of undeclared identifier 'coeffs'
+            coeffs.push_back(std::stof(line));
+            ^
+FilterBS300/src/TopLevelFunctions.h:20:35: error: no member named 'stof' in namespace 'std'
+            coeffs.push_back(std::stof(line));
+                             ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:28:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+             ^
+FilterBS300/src/TopLevelFunctions.h:28:25: error: use of undeclared identifier 'coeffs'
+        for (auto &it : coeffs) {
+                        ^
+FilterBS300/src/TopLevelFunctions.h:28:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+                      ^
+FilterBS300/src/TopLevelFunctions.h:32:12: error: use of undeclared identifier 'coeffs'
+    return coeffs;
+           ^
+2 warnings and 8 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FilterBS300/src/TopLevel.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FilterBS300/src/TopLevel.cpp:1:
+In file included from FilterBS300/src/TopLevel.cpp:3:
+FilterBS300/src/TopLevelFunctions.h:8:19: error: no matching constructor for initialization of 'std::ifstream' (aka 'basic_ifstream<char>')
+    std::ifstream coefffile(FCFPATH);
+                  ^         ~~~~~~~
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:459:7: note: candidate constructor not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const char *' for 1st argument; 
+      basic_ifstream(const char* __s, ios_base::openmode __mode = ios_base::in)
+      ^
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc:968:25: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'std::string' (aka 'basic_string<char>') to 'const std::basic_ifstream<char>' for 1st argument; 
+  extern template class basic_ifstream<char>;
+                        ^
+/tools/Xilinx/Vivado/2019.1/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream:445:7: note: candidate constructor not viable: requires 0 arguments, but 1 was provided
+      basic_ifstream() : __istream_type(), _M_filebuf()
+      ^
+In file included from FilterBS300/src/TopLevel.cpp:1:
+In file included from FilterBS300/src/TopLevel.cpp:3:
+FilterBS300/src/TopLevelFunctions.h:9:10: error: no member named 'list' in namespace 'std'
+    std::list<float> coeffs;
+    ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:9:20: error: expected '(' for function-style cast or type construction
+    std::list<float> coeffs;
+              ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:9:22: error: use of undeclared identifier 'coeffs'
+    std::list<float> coeffs;
+                     ^
+FilterBS300/src/TopLevelFunctions.h:20:13: error: use of undeclared identifier 'coeffs'
+            coeffs.push_back(std::stof(line));
+            ^
+FilterBS300/src/TopLevelFunctions.h:20:35: error: no member named 'stof' in namespace 'std'
+            coeffs.push_back(std::stof(line));
+                             ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:28:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+             ^
+FilterBS300/src/TopLevelFunctions.h:28:25: error: use of undeclared identifier 'coeffs'
+        for (auto &it : coeffs) {
+                        ^
+FilterBS300/src/TopLevelFunctions.h:28:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+                      ^
+FilterBS300/src/TopLevelFunctions.h:32:12: error: use of undeclared identifier 'coeffs'
+    return coeffs;
+           ^
+2 warnings and 8 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'FilterBS300/src/TopLevel.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from FilterBS300/src/TopLevel.cpp:1:
+In file included from FilterBS300/src/TopLevel.cpp:3:
+FilterBS300/src/TopLevelFunctions.h:9:10: error: no member named 'list' in namespace 'std'
+    std::list<float> coeffs;
+    ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:9:20: error: expected '(' for function-style cast or type construction
+    std::list<float> coeffs;
+              ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:9:22: error: use of undeclared identifier 'coeffs'
+    std::list<float> coeffs;
+                     ^
+FilterBS300/src/TopLevelFunctions.h:20:13: error: use of undeclared identifier 'coeffs'
+            coeffs.push_back(std::stof(line));
+            ^
+FilterBS300/src/TopLevelFunctions.h:20:35: error: no member named 'stof' in namespace 'std'
+            coeffs.push_back(std::stof(line));
+                             ~~~~~^
+FilterBS300/src/TopLevelFunctions.h:28:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+             ^
+FilterBS300/src/TopLevelFunctions.h:28:25: error: use of undeclared identifier 'coeffs'
+        for (auto &it : coeffs) {
+                        ^
+FilterBS300/src/TopLevelFunctions.h:28:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
+        for (auto &it : coeffs) {
+                      ^
+FilterBS300/src/TopLevelFunctions.h:32:12: error: use of undeclared identifier 'coeffs'
+    return coeffs;
+           ^
+2 warnings and 7 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

@@ -12,11 +12,11 @@
 
 #include "Network/TCPClient.h"
 
-#define FILE_PATH "../Audio/BossHoss.wav"
+#define FILE_PATH "../Audio/Careless.wav"
 #define COEFF_PATH "../Audio/TelefonFIR.fcf"
 
 #define HOST_IP "192.168.1.10"
-#define PORT 8
+#define PORT 8000
 
     int main(int argc, char **argv) {
 

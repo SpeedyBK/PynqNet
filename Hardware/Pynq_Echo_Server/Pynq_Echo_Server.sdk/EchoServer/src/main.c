@@ -60,7 +60,6 @@
 #endif
 
 /* defined by each RAW mode application */
-void print_app_header();
 int start_application();
 void tcp_fasttmr(void);
 void tcp_slowtmr(void);
@@ -82,7 +81,6 @@ static struct netif server_netif;
 struct netif *echo_netif;
 
 XGpio Gpio;
-XGpio Gpio2;
 
 #if LWIP_IPV6==1
 void print_ip6(char *msg, ip_addr_t *ip)
@@ -153,11 +151,8 @@ int main()
 {
 
 	init_platform();
-	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_1_DEVICE_ID);
 	XGpio_SetDataDirection(&Gpio, 1, 0);
-
-	XGpio_Initialize(&Gpio2, XPAR_AXI_GPIO_1_DEVICE_ID);
-	XGpio_SetDataDirection(&Gpio2, 1, 0xFFFFFFFF);
 
 #if LWIP_IPV6==0
 	ip_addr_t ipaddr, netmask, gw;
@@ -168,7 +163,7 @@ int main()
 
 	unsigned char mac_ethernet_address[] = { 0x00, 0x0a, 0x35, 0x00, 0x01, 0x01 };
 
-	mac_ethernet_address[5] = set_MACAddress(XGpio_DiscreteRead(&Gpio2, 1));
+	mac_ethernet_address[5] = set_MACAddress(XGpio_DiscreteRead(&Gpio, 1));
 
 	xil_printf("Mac Add: \n\r");
 	for (int i = 0; i < 6; i++){
@@ -211,7 +206,6 @@ int main()
 	IP4_ADDR(&gw,      192, 168,   1,  1);
 #endif
 #endif
-	print_app_header();
 
 	lwip_init();
 
@@ -261,29 +255,7 @@ int main()
 	if (dhcp_timoutcntr <= 0) {
 		if ((echo_netif->ip_addr.addr) == 0) {
 			xil_printf("DHCP Timeout\r\n");
-			set_IPAddress(&(echo_netif->ip_addr), XGpio_DiscreteRead(&Gpio2, 1));
-			/*switch (XGpio_DiscreteRead(&Gpio2, 1)){
-			 case 0  :
-				 IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 10);
-				 xil_printf("Configuring IP 192.168.1.10\r\n");
-			 	 break;
-			 case 1  :
-				 IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 11);
-				 xil_printf("Configuring IP 192.168.1.11\r\n");
-				 break;
-			 case 2  :
-				 IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 12);
-				 xil_printf("Configuring IP 192.168.1.12\r\n");
-				 break;
-			 case 3  :
-				 IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 13);
-				 xil_printf("Configuring IP 192.168.1.13\r\n");
-				 break;
-			 default :
-				 IP4_ADDR(&(echo_netif->ip_addr), 192, 168, 1, 20);
-				 xil_printf("Configuring IP 192.168.1.20\r\n");
-				 break;
-			}*/
+			set_IPAddress(&(echo_netif->ip_addr), XGpio_DiscreteRead(&Gpio, 1));
 			IP4_ADDR(&(echo_netif->netmask), 255, 255, 255,  0);
 			IP4_ADDR(&(echo_netif->gw),      192, 168,   1,  1);
 		}
