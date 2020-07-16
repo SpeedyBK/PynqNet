@@ -1,0 +1,222 @@
+/*
+ * Copyright (C) 2009 - 2019 Xilinx, Inc.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright notice,
+ *    this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ *    this list of conditions and the following disclaimer in the documentation
+ *    and/or other materials provided with the distribution.
+ * 3. The name of the author may not be used to endorse or promote products
+ *    derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+ * SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+ * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+ * OF SUCH DAMAGE.
+ *
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include "ManInput.h"
+#include "SixDigitHexDisplay.h"
+#include "xfir16bita.h"
+#include "xil_io.h"
+
+#include "lwip/err.h"
+#include "lwip/tcp.h"
+#if defined (__arm__) || defined (__aarch64__)
+#include "xil_printf.h"
+#endif
+
+#define ManIOBase 0x43C10000
+
+void display_print(void* p, int length);
+void filter (void* p, int length);
+
+void set_IPAddress (ip_addr_t* ipaddr, int switches);
+err_t recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err);
+err_t accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err);
+
+static err_t
+close_con(void *arg, struct tcp_pcb *pcb, u16_t len)
+{
+  tcp_arg(pcb, NULL);
+  tcp_sent(pcb, NULL);
+  tcp_close(pcb);
+}
+
+int start_application_echo(unsigned port)
+{
+	struct tcp_pcb *pcb;
+	err_t err;
+
+	XFir16bita fir;
+	XFir16bita_Initialize(&fir, XPAR_FIR16BITA_0_DEVICE_ID);
+	XFir16bita_Start(&fir);
+
+	/* create new TCP PCB structure */
+	pcb = tcp_new_ip_type(IPADDR_TYPE_ANY);
+	if (!pcb) {
+		xil_printf("Error creating PCB. Out of Memory\n\r");
+		return -1;
+	}
+
+	/* bind to specified @port */
+	err = tcp_bind(pcb, IP_ANY_TYPE, port);
+	if (err != ERR_OK) {
+		xil_printf("Unable to bind to port %d: err = %d\n\r", port, err);
+		return -2;
+	}
+
+	/* we do not need any arguments to callback functions */
+	tcp_arg(pcb, NULL);
+
+	/* listen for connections */
+	pcb = tcp_listen(pcb);
+	if (!pcb) {
+		xil_printf("Out of memory while tcp_listen\n\r");
+		return -3;
+	}
+
+	/* specify callback to use for incoming connections */
+	tcp_accept(pcb, accept_callback);
+
+	xil_printf("TCP echo server started @ port %d\n\r", port);
+
+	return 0;
+}
+
+int start_application_ding(unsigned port)
+{
+	  struct tcp_pcb *pcb;
+	  ip_addr_t server;
+	  err_t ret_val;
+	  int bufspace = 0;
+	  struct pbuf *pb;
+	  char* string = "1";
+
+	  char dat = MANINPUT_mReadReg(ManIOBase, 0x0);
+
+	  memcpy(string, &dat, 1);
+
+	  pb = pbuf_alloc(PBUF_TRANSPORT, 0, PBUF_REF);
+	  pb->payload = string;
+	  pb->len = pb->tot_len = strlen(string);
+
+	  set_IPAddress (&server, MANINPUT_mReadReg(ManIOBase, 0x4));
+
+	  pcb = tcp_new(); // create tcp pcb
+	  tcp_bind(pcb, IP_ADDR_ANY, 7); //bind client port for outgoing connection
+	  ret_val = tcp_connect(pcb, &server, 7, NULL); //connect to the server
+
+	  if (ret_val != ERR_OK) {
+	    printf("\r\n Error: %d\n", ret_val);
+	  }
+	  else {
+	     printf("\r\n Connect ok [%d]", ret_val);
+	     bufspace = tcp_sndbuf(pcb); // get space which can be used to sent the data
+	     if (bufspace) {
+	       do {
+	          ret_val = tcp_write(pcb, pb->payload,pb->len, 0);
+	          display_print(pb->payload, pb->tot_len);
+	          printf("\r\nRet val: %d", ret_val);
+	        } while (ret_val == ERR_MEM);
+
+	       tcp_output(pcb);
+	       tcp_sent(pcb, close_con);
+	     }
+	  }
+	  pbuf_free(pb);
+
+	}
+
+
+void display_print(void* p, int length){
+	if (length > 8){
+		//xil_printf("To much Data to show \r\n");
+		length = 8;
+		//return;
+	}
+	u8* bums = (u8*) p;
+	for (int i = 0; i < length; i++){
+		if (!(*(bums+i) == (13) || *(bums+i) == (10))){
+			SIXDIGITHEXDISPLAY_mWriteReg(XPAR_SIXDIGITHEXDISPLAY_0_S00_AXI_BASEADDR, 4*i, *(bums+i));
+		}
+	}
+
+}
+
+void filter (void* p, int length, XFir16bita* fir){
+
+	u8* data = (u8*) p;
+
+	int i = 0;
+	while (i < length){
+		if (XFir16bita_IsReady(fir) > 0){
+			XFir16bita_Set_a(&fir, *(data+i) + *(data+i+1));
+			xil_printf(XFir16bita_Get_c(&fir));
+			i += 2;
+		}
+	}
+}
+
+
+err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
+                               struct pbuf *p, err_t err)
+{
+	/* do not read the packet if we are not in ESTABLISHED state */
+	if (!p) {
+		tcp_close(tpcb);
+		tcp_recv(tpcb, NULL);
+		return ERR_OK;
+	}
+
+	/* indicate that the packet has been received */
+	tcp_recved(tpcb, p->len);
+	display_print(p->payload, p->len);
+	filter(p->payload, p->len);
+
+	/* echo back the payload */
+	/* in this case, we assume that the payload is < TCP_SND_BUF */
+	if (tcp_sndbuf(tpcb) > p->len) {
+		err = tcp_write(tpcb, p->payload, p->len, 1);
+	} else{
+		xil_printf("no space in tcp_sndbuf\n\r");
+	}
+	/* free the received pbuf */
+	pbuf_free(p);
+
+	return ERR_OK;
+}
+
+
+err_t accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err){
+	static int connection = 1;
+
+	/* set the receive callback for this connection */
+	tcp_recv(newpcb, recv_callback);
+
+	/* just use an integer number indicating the connection id as the
+	   callback argument */
+	tcp_arg(newpcb, (void*)(UINTPTR)connection);
+
+	/* increment for subsequent accepted connections */
+	connection++;
+
+	return ERR_OK;
+}
+
+int transfer_data() {
+	return 0;
+}

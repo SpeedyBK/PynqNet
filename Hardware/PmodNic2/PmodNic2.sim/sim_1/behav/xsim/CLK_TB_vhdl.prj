@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PmodNic2.srcs/sources_1/new/S_Clock.vhd" \
+"../../../../PmodNic2.srcs/sim_1/new/CLK_TB.vhd" \
+
+# Do not sort compile order
+nosort

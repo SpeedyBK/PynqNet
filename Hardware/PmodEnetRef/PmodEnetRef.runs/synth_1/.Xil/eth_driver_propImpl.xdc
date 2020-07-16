@@ -1,0 +1,27 @@
+set_property SRC_FILE_INFO {cfile:/home/benjamin/Repositories/PynqNet/Hardware/PmodEnetRef/PmodEnetRef.srcs/constrs_1/imports/pynq/pynq.xdc rfile:../../../PmodEnetRef.srcs/constrs_1/imports/pynq/pynq.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN H16   IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L13P_T2_MRCC_35 Sch=sysclk
+set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN M20   IOSTANDARD LVCMOS33 } [get_ports { rst }]; #IO_L7N_T1_AD2N_35 Sch=sw[0]
+set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN L15   IOSTANDARD LVCMOS33 } [get_ports { status_debug[0] }]; #IO_L22N_T3_AD7N_35 Sch=led4_b
+set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN N15   IOSTANDARD LVCMOS33 } [get_ports { status_error }]; #IO_L21P_T3_DQS_AD14P_35 Sch=led4_r
+set_property src_info {type:XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN G14   IOSTANDARD LVCMOS33 } [get_ports { status_debug[1] }]; #IO_0_35 Sch=led5_b
+set_property src_info {type:XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33 } [get_ports { status_stage[0] }]; #IO_L6N_T0_VREF_34 Sch=led[0]
+set_property src_info {type:XDC file:1 line:28 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33 } [get_ports { status_stage[1] }]; #IO_L6P_T0_34 Sch=led[1]
+set_property src_info {type:XDC file:1 line:29 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN N16   IOSTANDARD LVCMOS33 } [get_ports { status_stage[2] }]; #IO_L21N_T3_DQS_AD14N_35 Sch=led[2]
+set_property src_info {type:XDC file:1 line:30 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN M14   IOSTANDARD LVCMOS33 } [get_ports { status_stage[3] }]; #IO_L23P_T3_35 Sch=led[3]
+set_property src_info {type:XDC file:1 line:52 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVCMOS33 } [get_ports { pmod_ss }]; #IO_L8P_T1_34 Sch=jb_p[1]
+set_property src_info {type:XDC file:1 line:53 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { pmod_mosi }]; #IO_L8N_T1_34 Sch=jb_n[1]
+set_property src_info {type:XDC file:1 line:54 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33 } [get_ports { pmod_miso }]; #IO_L1P_T0_34 Sch=jb_p[2]
+set_property src_info {type:XDC file:1 line:55 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVCMOS33 } [get_ports { pmod_sck }]; #IO_L1N_T0_34 Sch=jb_n[2]

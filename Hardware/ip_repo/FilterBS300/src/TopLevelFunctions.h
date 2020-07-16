@@ -17,7 +17,7 @@ std::vector <float> parsefcf(std::string FCFPATH){
             getline(coefffile, line);
         }
         while (!line.empty()) {
-            coeffs.push_back(std::stof(line));
+            coeffs.push_back(std::atof(line));
             getline(coefffile, line);
         }
         coefffile.close();
@@ -25,9 +25,6 @@ std::vector <float> parsefcf(std::string FCFPATH){
         std::cout << "Filtercoefficients:" << std::endl << std::endl;
 
         int j = 0;
-        for (auto &it : coeffs) {
-            std::cout << j++ << ": " << it << std::endl;
-        }
     }
     return coeffs;
 }

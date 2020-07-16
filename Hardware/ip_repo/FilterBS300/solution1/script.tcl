@@ -7,7 +7,7 @@ open_project FilterBS300
 set_top TopLevel
 add_files FilterBS300/src/TopLevel.cpp
 open_solution "solution1"
-set_part {xc7z020clg400-1} -tool vivado
+set_part {xc7z020-clg400-1} -tool vivado
 create_clock -period 10 -name default
 #source "./FilterBS300/solution1/directives.tcl"
 #csim_design

@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'benjamin' on host 'Laptop' (Linux_x86_64 version 5.3.0-46-generic) on Thu Apr 23 10:52:07 CEST 2020
+INFO: [HLS 200-10] For user 'benjamin' on host 'Laptop' (Linux_x86_64 version 5.3.0-46-generic) on Thu Apr 30 13:08:29 CEST 2020
 INFO: [HLS 200-10] On os Ubuntu 18.04.4 LTS
 INFO: [HLS 200-10] In directory '/home/benjamin/Repositories/PynqNet/Hardware/ip_repo'
 Sourcing Tcl script '/home/benjamin/Repositories/PynqNet/Hardware/ip_repo/FilterBS300/solution1/csynth.tcl'
@@ -15,13 +15,7 @@ In file included from FilterBS300/src/TopLevel.cpp:3:
 FilterBS300/src/TopLevelFunctions.h:20:35: error: no member named 'stof' in namespace 'std'
             coeffs.push_back(std::stof(line));
                              ~~~~~^
-FilterBS300/src/TopLevelFunctions.h:28:14: warning: 'auto' type specifier is a C++11 extension [-Wc++11-extensions]
-        for (auto &it : coeffs) {
-             ^
-FilterBS300/src/TopLevelFunctions.h:28:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
-        for (auto &it : coeffs) {
-                      ^
-2 warnings and 1 error generated.
+1 error generated.
 Failed during preprocessing.
     while executing
 "source /home/benjamin/Repositories/PynqNet/Hardware/ip_repo/FilterBS300/solution1/csynth.tcl"

@@ -7,11 +7,5 @@ In file included from FilterBS300/src/TopLevel.cpp:3:
 FilterBS300/src/TopLevelFunctions.h:20:35: error: no member named &apos;stof&apos; in namespace &apos;std&apos;
             coeffs.push_back(std::stof(line));
                              ~~~~~^
-FilterBS300/src/TopLevelFunctions.h:28:14: warning: &apos;auto&apos; type specifier is a C++11 extension [-Wc++11-extensions]
-        for (auto &amp;it : coeffs) {
-             ^
-FilterBS300/src/TopLevelFunctions.h:28:23: warning: range-based for loop is a C++11 extension [-Wc++11-extensions]
-        for (auto &amp;it : coeffs) {
-                      ^
-2 warnings and 1 error generated."/>
+1 error generated."/>
 </Messages>

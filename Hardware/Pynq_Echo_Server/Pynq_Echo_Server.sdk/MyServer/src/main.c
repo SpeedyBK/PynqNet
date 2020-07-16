@@ -59,6 +59,7 @@
 
 /* defined by each RAW mode application */
 void print_app_header();
+void filter (void* p, int length);
 int start_application_echo(unsigned port);
 int start_application_ding(unsigned port);
 int transfer_data();
@@ -144,7 +145,7 @@ int main()
 	int newval = -1;
 	int oldval =  0;
 	while (1){
-		if (MANINPUT_mReadReg(ManIOBase, 0x8)){
+		/*if (MANINPUT_mReadReg(ManIOBase, 0x8)){
 			newval = MANINPUT_mReadReg(ManIOBase, 0x0);
 			if (newval != oldval){
 				int success = start_application_ding(port);
@@ -154,7 +155,7 @@ int main()
 				}
 			oldval = newval;
 			}
-		}
+		}*/
 
 	//xil_printf("Running at port: %d" , port);
 

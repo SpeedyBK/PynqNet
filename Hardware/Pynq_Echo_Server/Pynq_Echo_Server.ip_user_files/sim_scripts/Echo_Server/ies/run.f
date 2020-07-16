@@ -83,6 +83,44 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/Echo_Server/ip/Echo_Server_axi_gpio_1_0/sim/Echo_Server_axi_gpio_1_0.vhd" \
 -endlib
+-makelib ies_lib/xbip_utils_v3_0_10 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/1123/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/axi_utils_v2_0_6 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/1971/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_pipe_v3_0_6 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_dsp48_wrapper_v3_0_4 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/cdbf/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_dsp48_addsub_v3_0_6 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/910d/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_dsp48_multadd_v3_0_6 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/b0ac/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xbip_bram18k_v3_0_6 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/d367/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/mult_gen_v12_0_15 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/d4d2/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/floating_point_v7_1_8 \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_BUS_A_s_axi.vhd" \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1.vhd" \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_m_filterArray.vhd" \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_sitofp_32s_32_6_1.vhd" \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/p_hls_fptosi_float_i.vhd" \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd" \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_fmul_2_max_dsp_32.vhd" \
+  "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_sitofp_4_no_dsp_32.vhd" \
+  "../../../bd/Echo_Server/ip/Echo_Server_FIR16BitA_0_0/sim/Echo_Server_FIR16BitA_0_0.vhd" \
+-endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_19 \
   "../../../../Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/c83a/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib

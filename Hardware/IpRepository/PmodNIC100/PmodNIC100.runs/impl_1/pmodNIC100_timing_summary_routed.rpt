@@ -1,0 +1,1348 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Thu Jun 18 09:28:11 2020
+| Host         : Laptop running 64-bit Ubuntu 18.04.4 LTS
+| Command      : report_timing_summary -max_paths 10 -file pmodNIC100_timing_summary_routed.rpt -pb pmodNIC100_timing_summary_routed.pb -rpx pmodNIC100_timing_summary_routed.rpx -warn_on_violation
+| Design       : pmodNIC100
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 8 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There is 1 port with no output delay but with a timing clock defined on it or propagating through it (LOW)
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      2.562        0.000                      0                  320        0.140        0.000                      0                  320        3.500        0.000                       0                   171  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)         Period(ns)      Frequency(MHz)
+-----        ------------         ----------      --------------
+sys_clk_pin  {0.000 4.000}        8.000           125.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin         2.562        0.000                      0                  320        0.140        0.000                      0                  320        3.500        0.000                       0                   171  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        2.562ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.140ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             2.562ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[1]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.058ns  (logic 1.080ns (21.352%)  route 3.978ns (78.648%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.358ns = ( 13.358 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.777    10.980    EthernetController/l[31]_i_1_n_0
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[1]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.594    13.358    EthernetController/CLK
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[1]/C
+                         clock pessimism              0.423    13.782    
+                         clock uncertainty           -0.035    13.746    
+    SLICE_X105Y73        FDCE (Setup_fdce_C_CE)      -0.205    13.541    EthernetController/l_reg[1]
+  -------------------------------------------------------------------
+                         required time                         13.541    
+                         arrival time                         -10.980    
+  -------------------------------------------------------------------
+                         slack                                  2.562    
+
+Slack (MET) :             2.562ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[22]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.058ns  (logic 1.080ns (21.352%)  route 3.978ns (78.648%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.358ns = ( 13.358 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.777    10.980    EthernetController/l[31]_i_1_n_0
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[22]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.594    13.358    EthernetController/CLK
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[22]/C
+                         clock pessimism              0.423    13.782    
+                         clock uncertainty           -0.035    13.746    
+    SLICE_X105Y73        FDCE (Setup_fdce_C_CE)      -0.205    13.541    EthernetController/l_reg[22]
+  -------------------------------------------------------------------
+                         required time                         13.541    
+                         arrival time                         -10.980    
+  -------------------------------------------------------------------
+                         slack                                  2.562    
+
+Slack (MET) :             2.562ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[24]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.058ns  (logic 1.080ns (21.352%)  route 3.978ns (78.648%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.358ns = ( 13.358 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.777    10.980    EthernetController/l[31]_i_1_n_0
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[24]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.594    13.358    EthernetController/CLK
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[24]/C
+                         clock pessimism              0.423    13.782    
+                         clock uncertainty           -0.035    13.746    
+    SLICE_X105Y73        FDCE (Setup_fdce_C_CE)      -0.205    13.541    EthernetController/l_reg[24]
+  -------------------------------------------------------------------
+                         required time                         13.541    
+                         arrival time                         -10.980    
+  -------------------------------------------------------------------
+                         slack                                  2.562    
+
+Slack (MET) :             2.562ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[26]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.058ns  (logic 1.080ns (21.352%)  route 3.978ns (78.648%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.358ns = ( 13.358 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.777    10.980    EthernetController/l[31]_i_1_n_0
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[26]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.594    13.358    EthernetController/CLK
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[26]/C
+                         clock pessimism              0.423    13.782    
+                         clock uncertainty           -0.035    13.746    
+    SLICE_X105Y73        FDCE (Setup_fdce_C_CE)      -0.205    13.541    EthernetController/l_reg[26]
+  -------------------------------------------------------------------
+                         required time                         13.541    
+                         arrival time                         -10.980    
+  -------------------------------------------------------------------
+                         slack                                  2.562    
+
+Slack (MET) :             2.562ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[3]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.058ns  (logic 1.080ns (21.352%)  route 3.978ns (78.648%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.358ns = ( 13.358 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.777    10.980    EthernetController/l[31]_i_1_n_0
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[3]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.594    13.358    EthernetController/CLK
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[3]/C
+                         clock pessimism              0.423    13.782    
+                         clock uncertainty           -0.035    13.746    
+    SLICE_X105Y73        FDCE (Setup_fdce_C_CE)      -0.205    13.541    EthernetController/l_reg[3]
+  -------------------------------------------------------------------
+                         required time                         13.541    
+                         arrival time                         -10.980    
+  -------------------------------------------------------------------
+                         slack                                  2.562    
+
+Slack (MET) :             2.562ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[5]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.058ns  (logic 1.080ns (21.352%)  route 3.978ns (78.648%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.358ns = ( 13.358 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.777    10.980    EthernetController/l[31]_i_1_n_0
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[5]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.594    13.358    EthernetController/CLK
+    SLICE_X105Y73        FDCE                                         r  EthernetController/l_reg[5]/C
+                         clock pessimism              0.423    13.782    
+                         clock uncertainty           -0.035    13.746    
+    SLICE_X105Y73        FDCE (Setup_fdce_C_CE)      -0.205    13.541    EthernetController/l_reg[5]
+  -------------------------------------------------------------------
+                         required time                         13.541    
+                         arrival time                         -10.980    
+  -------------------------------------------------------------------
+                         slack                                  2.562    
+
+Slack (MET) :             2.597ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[29]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.024ns  (logic 1.080ns (21.499%)  route 3.944ns (78.501%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.139ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.359ns = ( 13.359 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.743    10.945    EthernetController/l[31]_i_1_n_0
+    SLICE_X105Y72        FDCE                                         r  EthernetController/l_reg[29]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.595    13.359    EthernetController/CLK
+    SLICE_X105Y72        FDCE                                         r  EthernetController/l_reg[29]/C
+                         clock pessimism              0.423    13.783    
+                         clock uncertainty           -0.035    13.747    
+    SLICE_X105Y72        FDCE (Setup_fdce_C_CE)      -0.205    13.542    EthernetController/l_reg[29]
+  -------------------------------------------------------------------
+                         required time                         13.542    
+                         arrival time                         -10.945    
+  -------------------------------------------------------------------
+                         slack                                  2.597    
+
+Slack (MET) :             2.597ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[4]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.024ns  (logic 1.080ns (21.499%)  route 3.944ns (78.501%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.139ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.359ns = ( 13.359 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.743    10.945    EthernetController/l[31]_i_1_n_0
+    SLICE_X105Y72        FDCE                                         r  EthernetController/l_reg[4]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.595    13.359    EthernetController/CLK
+    SLICE_X105Y72        FDCE                                         r  EthernetController/l_reg[4]/C
+                         clock pessimism              0.423    13.783    
+                         clock uncertainty           -0.035    13.747    
+    SLICE_X105Y72        FDCE (Setup_fdce_C_CE)      -0.205    13.542    EthernetController/l_reg[4]
+  -------------------------------------------------------------------
+                         required time                         13.542    
+                         arrival time                         -10.945    
+  -------------------------------------------------------------------
+                         slack                                  2.597    
+
+Slack (MET) :             2.598ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[10]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.058ns  (logic 1.080ns (21.352%)  route 3.978ns (78.648%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.358ns = ( 13.358 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.777    10.980    EthernetController/l[31]_i_1_n_0
+    SLICE_X104Y73        FDCE                                         r  EthernetController/l_reg[10]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.594    13.358    EthernetController/CLK
+    SLICE_X104Y73        FDCE                                         r  EthernetController/l_reg[10]/C
+                         clock pessimism              0.423    13.782    
+                         clock uncertainty           -0.035    13.746    
+    SLICE_X104Y73        FDCE (Setup_fdce_C_CE)      -0.169    13.577    EthernetController/l_reg[10]
+  -------------------------------------------------------------------
+                         required time                         13.577    
+                         arrival time                         -10.980    
+  -------------------------------------------------------------------
+                         slack                                  2.598    
+
+Slack (MET) :             2.598ns  (required time - arrival time)
+  Source:                 EthernetController/FSM_sequential_control_state_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/l_reg[12]/CE
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (sys_clk_pin rise@8.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        5.058ns  (logic 1.080ns (21.352%)  route 3.978ns (78.648%))
+  Logic Levels:           3  (LUT3=1 LUT6=2)
+  Clock Path Skew:        -0.140ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.358ns = ( 13.358 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.922ns
+    Clock Pessimism Removal (CPR):    0.423ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.451     1.451 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.522     3.973    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     4.074 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.922    EthernetController/CLK
+    SLICE_X111Y72        FDCE                                         r  EthernetController/FSM_sequential_control_state_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y72        FDCE (Prop_fdce_C_Q)         0.456     6.378 f  EthernetController/FSM_sequential_control_state_reg[0]/Q
+                         net (fo=94, routed)          1.524     7.902    EthernetController/control_state__0[0]
+    SLICE_X104Y71        LUT3 (Prop_lut3_I1_O)        0.152     8.054 f  EthernetController/l[31]_i_11/O
+                         net (fo=1, routed)           1.131     9.185    EthernetController/l[31]_i_11_n_0
+    SLICE_X105Y74        LUT6 (Prop_lut6_I0_O)        0.348     9.533 f  EthernetController/l[31]_i_5/O
+                         net (fo=1, routed)           0.545    10.079    EthernetController/l[31]_i_5_n_0
+    SLICE_X106Y74        LUT6 (Prop_lut6_I2_O)        0.124    10.203 r  EthernetController/l[31]_i_1/O
+                         net (fo=32, routed)          0.777    10.980    EthernetController/l[31]_i_1_n_0
+    SLICE_X104Y73        FDCE                                         r  EthernetController/l_reg[12]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      8.000     8.000 r  
+    H16                                               0.000     8.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     8.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         1.380     9.380 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           2.293    11.673    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.764 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.594    13.358    EthernetController/CLK
+    SLICE_X104Y73        FDCE                                         r  EthernetController/l_reg[12]/C
+                         clock pessimism              0.423    13.782    
+                         clock uncertainty           -0.035    13.746    
+    SLICE_X104Y73        FDCE (Setup_fdce_C_CE)      -0.169    13.577    EthernetController/l_reg[12]
+  -------------------------------------------------------------------
+                         required time                         13.577    
+                         arrival time                         -10.980    
+  -------------------------------------------------------------------
+                         slack                                  2.598    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.140ns  (arrival time - required time)
+  Source:                 SPI/i_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            SPI/wr_done_reg/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.274ns  (logic 0.186ns (67.773%)  route 0.088ns (32.227%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.240ns
+    Source Clock Delay      (SCD):    1.714ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.628     1.714    SPI/CLK
+    SLICE_X113Y69        FDCE                                         r  SPI/i_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y69        FDCE (Prop_fdce_C_Q)         0.141     1.855 f  SPI/i_reg[2]/Q
+                         net (fo=13, routed)          0.088     1.944    SPI/i_reg_n_0_[2]
+    SLICE_X112Y69        LUT6 (Prop_lut6_I2_O)        0.045     1.989 r  SPI/wr_done_i_1/O
+                         net (fo=1, routed)           0.000     1.989    SPI/wr_done_i_1_n_0
+    SLICE_X112Y69        FDCE                                         r  SPI/wr_done_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.898     2.240    SPI/CLK
+    SLICE_X112Y69        FDCE                                         r  SPI/wr_done_reg/C
+                         clock pessimism             -0.513     1.727    
+    SLICE_X112Y69        FDCE (Hold_fdce_C_D)         0.121     1.848    SPI/wr_done_reg
+  -------------------------------------------------------------------
+                         required time                         -1.848    
+                         arrival time                           1.989    
+  -------------------------------------------------------------------
+                         slack                                  0.140    
+
+Slack (MET) :             0.166ns  (arrival time - required time)
+  Source:                 SPI/i_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            SPI/i_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.299ns  (logic 0.186ns (62.279%)  route 0.113ns (37.721%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.240ns
+    Source Clock Delay      (SCD):    1.714ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.628     1.714    SPI/CLK
+    SLICE_X113Y69        FDCE                                         r  SPI/i_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y69        FDCE (Prop_fdce_C_Q)         0.141     1.855 r  SPI/i_reg[0]/Q
+                         net (fo=16, routed)          0.113     1.968    SPI/i_reg_n_0_[0]
+    SLICE_X112Y69        LUT6 (Prop_lut6_I0_O)        0.045     2.013 r  SPI/i[1]_i_1/O
+                         net (fo=1, routed)           0.000     2.013    SPI/i[1]_i_1_n_0
+    SLICE_X112Y69        FDCE                                         r  SPI/i_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.898     2.240    SPI/CLK
+    SLICE_X112Y69        FDCE                                         r  SPI/i_reg[1]/C
+                         clock pessimism             -0.513     1.727    
+    SLICE_X112Y69        FDCE (Hold_fdce_C_D)         0.120     1.847    SPI/i_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.847    
+                         arrival time                           2.013    
+  -------------------------------------------------------------------
+                         slack                                  0.166    
+
+Slack (MET) :             0.204ns  (arrival time - required time)
+  Source:                 SPI/tmp_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            SPI/rd_data_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.280ns  (logic 0.141ns (50.334%)  route 0.139ns (49.666%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.242ns
+    Source Clock Delay      (SCD):    1.716ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.630     1.716    SPI/CLK
+    SLICE_X113Y67        FDCE                                         r  SPI/tmp_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y67        FDCE (Prop_fdce_C_Q)         0.141     1.857 r  SPI/tmp_reg[6]/Q
+                         net (fo=3, routed)           0.139     1.996    SPI/mux4_out[6]
+    SLICE_X112Y67        FDCE                                         r  SPI/rd_data_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.900     2.242    SPI/CLK
+    SLICE_X112Y67        FDCE                                         r  SPI/rd_data_reg[6]/C
+                         clock pessimism             -0.513     1.729    
+    SLICE_X112Y67        FDCE (Hold_fdce_C_D)         0.063     1.792    SPI/rd_data_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.792    
+                         arrival time                           1.996    
+  -------------------------------------------------------------------
+                         slack                                  0.204    
+
+Slack (MET) :             0.209ns  (arrival time - required time)
+  Source:                 SPI/tmp_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            SPI/rd_data_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.281ns  (logic 0.141ns (50.217%)  route 0.140ns (49.783%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.242ns
+    Source Clock Delay      (SCD):    1.716ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.630     1.716    SPI/CLK
+    SLICE_X113Y67        FDCE                                         r  SPI/tmp_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y67        FDCE (Prop_fdce_C_Q)         0.141     1.857 r  SPI/tmp_reg[2]/Q
+                         net (fo=3, routed)           0.140     1.997    SPI/mux4_out[2]
+    SLICE_X112Y67        FDCE                                         r  SPI/rd_data_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.900     2.242    SPI/CLK
+    SLICE_X112Y67        FDCE                                         r  SPI/rd_data_reg[2]/C
+                         clock pessimism             -0.513     1.729    
+    SLICE_X112Y67        FDCE (Hold_fdce_C_D)         0.059     1.788    SPI/rd_data_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.788    
+                         arrival time                           1.997    
+  -------------------------------------------------------------------
+                         slack                                  0.209    
+
+Slack (MET) :             0.227ns  (arrival time - required time)
+  Source:                 EthernetController/buf_reg[8]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/debug_var_reg[8]/D
+                            (rising edge-triggered cell FDPE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.310ns  (logic 0.141ns (45.484%)  route 0.169ns (54.516%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.238ns
+    Source Clock Delay      (SCD):    1.713ns
+    Clock Pessimism Removal (CPR):    0.512ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.627     1.713    EthernetController/CLK
+    SLICE_X110Y70        FDCE                                         r  EthernetController/buf_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X110Y70        FDCE (Prop_fdce_C_Q)         0.141     1.854 r  EthernetController/buf_reg[8]/Q
+                         net (fo=3, routed)           0.169     2.023    EthernetController/buf_reg_n_0_[8]
+    SLICE_X111Y71        FDPE                                         r  EthernetController/debug_var_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.896     2.238    EthernetController/CLK
+    SLICE_X111Y71        FDPE                                         r  EthernetController/debug_var_reg[8]/C
+                         clock pessimism             -0.512     1.726    
+    SLICE_X111Y71        FDPE (Hold_fdpe_C_D)         0.070     1.796    EthernetController/debug_var_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -1.796    
+                         arrival time                           2.023    
+  -------------------------------------------------------------------
+                         slack                                  0.227    
+
+Slack (MET) :             0.240ns  (arrival time - required time)
+  Source:                 SPI/tmp_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            SPI/rd_data_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.326ns  (logic 0.141ns (43.316%)  route 0.185ns (56.684%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.241ns
+    Source Clock Delay      (SCD):    1.715ns
+    Clock Pessimism Removal (CPR):    0.512ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.629     1.715    SPI/CLK
+    SLICE_X113Y68        FDCE                                         r  SPI/tmp_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y68        FDCE (Prop_fdce_C_Q)         0.141     1.856 r  SPI/tmp_reg[4]/Q
+                         net (fo=3, routed)           0.185     2.041    SPI/mux4_out[4]
+    SLICE_X111Y68        FDCE                                         r  SPI/rd_data_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.899     2.241    SPI/CLK
+    SLICE_X111Y68        FDCE                                         r  SPI/rd_data_reg[4]/C
+                         clock pessimism             -0.512     1.729    
+    SLICE_X111Y68        FDCE (Hold_fdce_C_D)         0.072     1.801    SPI/rd_data_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -1.801    
+                         arrival time                           2.041    
+  -------------------------------------------------------------------
+                         slack                                  0.240    
+
+Slack (MET) :             0.242ns  (arrival time - required time)
+  Source:                 EthernetController/buf_reg[10]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/debug_var_reg[10]/D
+                            (rising edge-triggered cell FDPE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.359ns  (logic 0.141ns (39.239%)  route 0.218ns (60.761%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.032ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.235ns
+    Source Clock Delay      (SCD):    1.713ns
+    Clock Pessimism Removal (CPR):    0.490ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.627     1.713    EthernetController/CLK
+    SLICE_X111Y70        FDCE                                         r  EthernetController/buf_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y70        FDCE (Prop_fdce_C_Q)         0.141     1.854 r  EthernetController/buf_reg[10]/Q
+                         net (fo=3, routed)           0.218     2.073    EthernetController/buf_reg_n_0_[10]
+    SLICE_X108Y71        FDPE                                         r  EthernetController/debug_var_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.893     2.235    EthernetController/CLK
+    SLICE_X108Y71        FDPE                                         r  EthernetController/debug_var_reg[10]/C
+                         clock pessimism             -0.490     1.745    
+    SLICE_X108Y71        FDPE (Hold_fdpe_C_D)         0.085     1.830    EthernetController/debug_var_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -1.830    
+                         arrival time                           2.073    
+  -------------------------------------------------------------------
+                         slack                                  0.242    
+
+Slack (MET) :             0.244ns  (arrival time - required time)
+  Source:                 SPI/tmp_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            SPI/rd_data_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.324ns  (logic 0.141ns (43.454%)  route 0.183ns (56.546%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.241ns
+    Source Clock Delay      (SCD):    1.715ns
+    Clock Pessimism Removal (CPR):    0.512ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.629     1.715    SPI/CLK
+    SLICE_X113Y68        FDCE                                         r  SPI/tmp_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y68        FDCE (Prop_fdce_C_Q)         0.141     1.856 r  SPI/tmp_reg[1]/Q
+                         net (fo=3, routed)           0.183     2.040    SPI/mux4_out[1]
+    SLICE_X111Y68        FDCE                                         r  SPI/rd_data_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.899     2.241    SPI/CLK
+    SLICE_X111Y68        FDCE                                         r  SPI/rd_data_reg[1]/C
+                         clock pessimism             -0.512     1.729    
+    SLICE_X111Y68        FDCE (Hold_fdce_C_D)         0.066     1.795    SPI/rd_data_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.795    
+                         arrival time                           2.040    
+  -------------------------------------------------------------------
+                         slack                                  0.244    
+
+Slack (MET) :             0.247ns  (arrival time - required time)
+  Source:                 EthernetController/buf_reg[13]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/debug_var_reg[13]/D
+                            (rising edge-triggered cell FDPE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.326ns  (logic 0.141ns (43.244%)  route 0.185ns (56.756%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.238ns
+    Source Clock Delay      (SCD):    1.713ns
+    Clock Pessimism Removal (CPR):    0.512ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.627     1.713    EthernetController/CLK
+    SLICE_X111Y70        FDCE                                         r  EthernetController/buf_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y70        FDCE (Prop_fdce_C_Q)         0.141     1.854 r  EthernetController/buf_reg[13]/Q
+                         net (fo=3, routed)           0.185     2.039    EthernetController/buf_reg_n_0_[13]
+    SLICE_X111Y71        FDPE                                         r  EthernetController/debug_var_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.896     2.238    EthernetController/CLK
+    SLICE_X111Y71        FDPE                                         r  EthernetController/debug_var_reg[13]/C
+                         clock pessimism             -0.512     1.726    
+    SLICE_X111Y71        FDPE (Hold_fdpe_C_D)         0.066     1.792    EthernetController/debug_var_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -1.792    
+                         arrival time                           2.039    
+  -------------------------------------------------------------------
+                         slack                                  0.247    
+
+Slack (MET) :             0.252ns  (arrival time - required time)
+  Source:                 EthernetController/k_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            EthernetController/status_stage_o_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.384ns  (logic 0.186ns (48.404%)  route 0.198ns (51.596%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.012ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.238ns
+    Source Clock Delay      (SCD):    1.714ns
+    Clock Pessimism Removal (CPR):    0.512ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.219     0.219 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.842     1.060    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.086 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.628     1.714    EthernetController/CLK
+    SLICE_X110Y69        FDCE                                         r  EthernetController/k_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X110Y69        FDCE (Prop_fdce_C_Q)         0.141     1.855 r  EthernetController/k_reg[1]/Q
+                         net (fo=6, routed)           0.198     2.053    EthernetController/k_reg_n_0_[1]
+    SLICE_X112Y71        LUT5 (Prop_lut5_I3_O)        0.045     2.098 r  EthernetController/status_stage_o[3]_i_1/O
+                         net (fo=1, routed)           0.000     2.098    EthernetController/status_stage_o[3]_i_1_n_0
+    SLICE_X112Y71        FDCE                                         r  EthernetController/status_stage_o_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    H16                                               0.000     0.000 r  clk_i (IN)
+                         net (fo=0)                   0.000     0.000    clk_i
+    H16                  IBUF (Prop_ibuf_I_O)         0.406     0.406 r  clk_i_IBUF_inst/O
+                         net (fo=2, routed)           0.907     1.313    clk_i_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.342 r  clk_i_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.896     2.238    EthernetController/CLK
+    SLICE_X112Y71        FDCE                                         r  EthernetController/status_stage_o_reg[3]/C
+                         clock pessimism             -0.512     1.726    
+    SLICE_X112Y71        FDCE (Hold_fdce_C_D)         0.120     1.846    EthernetController/status_stage_o_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.846    
+                         arrival time                           2.098    
+  -------------------------------------------------------------------
+                         slack                                  0.252    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { clk_i }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         8.000       5.845      BUFGCTRL_X0Y16  clk_i_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X111Y72   EthernetController/FSM_sequential_control_state_reg[0]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X108Y70   EthernetController/FSM_sequential_control_state_reg[1]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X111Y70   EthernetController/buf_reg[10]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X110Y67   EthernetController/buf_reg[11]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X110Y67   EthernetController/buf_reg[12]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X111Y70   EthernetController/buf_reg[13]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X110Y70   EthernetController/buf_reg[14]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X110Y67   EthernetController/buf_reg[15]/C
+Min Period        n/a     FDCE/C   n/a            1.000         8.000       7.000      SLICE_X112Y70   EthernetController/buf_reg[1]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X108Y70   EthernetController/FSM_sequential_control_state_reg[1]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X111Y70   EthernetController/buf_reg[10]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X110Y67   EthernetController/buf_reg[11]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X110Y67   EthernetController/buf_reg[12]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X111Y70   EthernetController/buf_reg[13]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X110Y70   EthernetController/buf_reg[14]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X110Y67   EthernetController/buf_reg[15]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X112Y70   EthernetController/buf_reg[1]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X111Y69   EthernetController/buf_reg[2]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X111Y67   EthernetController/buf_reg[3]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X111Y72   EthernetController/FSM_sequential_control_state_reg[0]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X108Y70   EthernetController/FSM_sequential_control_state_reg[1]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X111Y70   EthernetController/buf_reg[10]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X110Y67   EthernetController/buf_reg[11]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X110Y67   EthernetController/buf_reg[12]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X111Y70   EthernetController/buf_reg[13]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X110Y70   EthernetController/buf_reg[14]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X110Y67   EthernetController/buf_reg[15]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X112Y70   EthernetController/buf_reg[1]/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         4.000       3.500      SLICE_X111Y69   EthernetController/buf_reg[2]/C
+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jun 18 12:32:53 2020
+# Process ID: 3455
+# Current directory: /home/benjamin/Repositories/PynqNet/Hardware/PmodEnetRef/PmodEnetRef.runs/synth_1
+# Command line: vivado -log eth_driver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source eth_driver.tcl
+# Log file: /home/benjamin/Repositories/PynqNet/Hardware/PmodEnetRef/PmodEnetRef.runs/synth_1/eth_driver.vds
+# Journal file: /home/benjamin/Repositories/PynqNet/Hardware/PmodEnetRef/PmodEnetRef.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source eth_driver.tcl -notrace

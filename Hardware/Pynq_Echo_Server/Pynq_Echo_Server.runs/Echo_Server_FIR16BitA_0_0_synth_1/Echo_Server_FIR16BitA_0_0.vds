@@ -1,0 +1,780 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jul  1 17:01:17 2020
+# Process ID: 12455
+# Current directory: /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_FIR16BitA_0_0_synth_1
+# Command line: vivado -log Echo_Server_FIR16BitA_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Echo_Server_FIR16BitA_0_0.tcl
+# Log file: /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_FIR16BitA_0_0_synth_1/Echo_Server_FIR16BitA_0_0.vds
+# Journal file: /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_FIR16BitA_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source Echo_Server_FIR16BitA_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/Hardware/ip_repo/AudioFilterBlock_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/Hardware/ip_repo/HLS_Repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top Echo_Server_FIR16BitA_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12542 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1741.082 ; gain = 153.715 ; free physical = 137 ; free virtual = 4568
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Echo_Server_FIR16BitA_0_0' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_FIR16BitA_0_0/synth/Echo_Server_FIR16BitA_0_0.vhd:81]
+	Parameter C_S_AXI_BUS_A_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_BUS_A_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FIR16BitA' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:12' bound to instance 'U0' of component 'FIR16BitA' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_FIR16BitA_0_0/synth/Echo_Server_FIR16BitA_0_0.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'FIR16BitA' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:40]
+	Parameter C_S_AXI_BUS_A_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_BUS_A_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:509]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:512]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:518]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:537]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:542]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:549]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:554]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:559]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:564]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:568]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:572]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:576]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:580]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:584]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:588]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:592]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:596]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:600]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:604]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:608]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:612]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:616]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:620]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:624]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:628]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:632]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:636]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:640]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:644]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:648]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:652]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:656]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:660]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:664]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:668]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:672]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:680]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:685]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:690]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:696]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:700]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:704]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:708]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:712]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:716]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:720]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:724]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:728]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:732]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:736]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:740]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:744]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:748]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:752]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:756]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:760]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:764]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:768]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:772]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:776]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:780]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:784]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:788]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:792]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:796]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:800]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:804]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:808]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:814]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:819]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:824]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:828]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:832]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:836]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:840]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:844]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:848]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:852]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:856]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:860]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:864]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:868]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:872]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:876]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:880]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:884]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:888]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:892]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:896]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:900]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:904]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:908]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:912]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:916]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:920]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:924]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:928]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:932]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:939]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:944]
+INFO: [Common 17-14] Message 'Synth 8-5534' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 129 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FIR16BitA_m_filterArray' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_m_filterArray.vhd:102' bound to instance 'm_filterArray_U' of component 'FIR16BitA_m_filterArray' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:2195]
+INFO: [Synth 8-638] synthesizing module 'FIR16BitA_m_filterArray' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_m_filterArray.vhd:122]
+	Parameter DataWidth bound to: 16 - type: integer 
+	Parameter AddressRange bound to: 129 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FIR16BitA_m_filterArray_ram' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_m_filterArray.vhd:10' bound to instance 'FIR16BitA_m_filterArray_ram_U' of component 'FIR16BitA_m_filterArray_ram' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_m_filterArray.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'FIR16BitA_m_filterArray_ram' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_m_filterArray.vhd:33]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 129 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FIR16BitA_m_filterArray_ram' (1#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_m_filterArray.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'FIR16BitA_m_filterArray' (2#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_m_filterArray.vhd:122]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FIR16BitA_BUS_A_s_axi' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_BUS_A_s_axi.vhd:9' bound to instance 'FIR16BitA_BUS_A_s_axi_U' of component 'FIR16BitA_BUS_A_s_axi' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:2214]
+INFO: [Synth 8-638] synthesizing module 'FIR16BitA_BUS_A_s_axi' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_BUS_A_s_axi.vhd:74]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FIR16BitA_BUS_A_s_axi' (3#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_BUS_A_s_axi.vhd:74]
+INFO: [Synth 8-3491] module 'p_hls_fptosi_float_i' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/p_hls_fptosi_float_i.vhd:12' bound to instance 'grp_p_hls_fptosi_float_i_fu_699' of component 'p_hls_fptosi_float_i' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:2248]
+INFO: [Synth 8-638] synthesizing module 'p_hls_fptosi_float_i' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/p_hls_fptosi_float_i.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'p_hls_fptosi_float_i' (4#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/p_hls_fptosi_float_i.vhd:22]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1.vhd:8' bound to instance 'FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2' of component 'FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:2256]
+INFO: [Synth 8-638] synthesizing module 'FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FIR16BitA_ap_fmul_2_max_dsp_32' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_fmul_2_max_dsp_32.vhd:59' bound to instance 'FIR16BitA_ap_fmul_2_max_dsp_32_u' of component 'FIR16BitA_ap_fmul_2_max_dsp_32' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'FIR16BitA_ap_fmul_2_max_dsp_32' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_fmul_2_max_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_fmul_2_max_dsp_32.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'FIR16BitA_ap_fmul_2_max_dsp_32' (20#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1' (21#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FIR16BitA_sitofp_32s_32_6_1' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_sitofp_32s_32_6_1.vhd:8' bound to instance 'FIR16BitA_sitofp_32s_32_6_1_U3' of component 'FIR16BitA_sitofp_32s_32_6_1' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:2271]
+INFO: [Synth 8-638] synthesizing module 'FIR16BitA_sitofp_32s_32_6_1' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_sitofp_32s_32_6_1.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'FIR16BitA_ap_sitofp_4_no_dsp_32' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_sitofp_4_no_dsp_32.vhd:59' bound to instance 'FIR16BitA_ap_sitofp_4_no_dsp_32_u' of component 'FIR16BitA_ap_sitofp_4_no_dsp_32' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_sitofp_32s_32_6_1.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'FIR16BitA_ap_sitofp_4_no_dsp_32' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_sitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_8' declared at '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd:94214' bound to instance 'U0' of component 'floating_point_v7_1_8' [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_sitofp_4_no_dsp_32.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'FIR16BitA_ap_sitofp_4_no_dsp_32' (31#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/ip/FIR16BitA_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'FIR16BitA_sitofp_32s_32_6_1' (32#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA_sitofp_32s_32_6_1.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'FIR16BitA' (33#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ipshared/75a9/hdl/vhdl/FIR16BitA.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Echo_Server_FIR16BitA_0_0' (34#1) [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_FIR16BitA_0_0/synth/Echo_Server_FIR16BitA_0_0.vhd:81]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized50 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized50 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized50 has unconnected port SINIT
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DATA[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[7]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[5]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized44 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized46 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized46 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized46 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized1 has unconnected port B[31]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized62 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized56 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized56 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized56 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized56 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized56 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[10]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[9]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[8]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[7]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[6]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[5]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[4]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[3]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[2]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[1]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized60 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized5 has unconnected port B[11]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized54 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized54 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized54 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized54 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized54 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized52 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized52 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized52 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized52 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized52 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized58 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized58 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized58 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized58 has unconnected port SSET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1930.512 ; gain = 343.145 ; free physical = 340 ; free virtual = 4519
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1936.449 ; gain = 349.082 ; free physical = 348 ; free virtual = 4527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 1936.449 ; gain = 349.082 ; free physical = 348 ; free virtual = 4527
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 176 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_FIR16BitA_0_0/constraints/FIR16BitA_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/sources_1/bd/Echo_Server/ip/Echo_Server_FIR16BitA_0_0/constraints/FIR16BitA_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_FIR16BitA_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_FIR16BitA_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2058.168 ; gain = 0.000 ; free physical = 202 ; free virtual = 4400
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  FDE => FDRE: 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2058.168 ; gain = 0.000 ; free physical = 199 ; free virtual = 4397
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2058.168 ; gain = 470.801 ; free physical = 293 ; free virtual = 4498
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2058.168 ; gain = 470.801 ; free physical = 293 ; free virtual = 4498
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_FIR16BitA_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2058.168 ; gain = 470.801 ; free physical = 293 ; free virtual = 4498
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'FIR16BitA_BUS_A_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'FIR16BitA_BUS_A_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "FIR16BitA_m_filterArray_ram:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'FIR16BitA_BUS_A_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'FIR16BitA_BUS_A_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 2058.168 ; gain = 470.801 ; free physical = 284 ; free virtual = 4487
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/FIR16BitA_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/FIR16BitA_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/FIR16BitA_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/FIR16BitA_ap_fmul_2_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized31) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized31) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |FIR16BitA__GB0 |           1|     44010|
+|2     |FIR16BitA__GB1 |           1|     16898|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3971] The signal "U0/m_filterArray_U/FIR16BitA_m_filterArray_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[30]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[29]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[28]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[27]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[26]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[25]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[24]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[23]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[22]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[21]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[20]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[19]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[18]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[17]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[16]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[15]' (FDE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/din1_buf1_reg[27]' (FDE) to 'U0/i_0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/din1_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/din1_buf1_reg[28]' (FDE) to 'U0/i_0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/din1_buf1_reg[29]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/\din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/\din1_buf1_reg[30] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module FIR16BitA_BUS_A_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module FIR16BitA_BUS_A_s_axi.
+INFO: [Synth 8-3886] merging instance 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[5]' (FDRE) to 'U0/i_0/FIR16BitA_sitofp_32s_32_6_1_U3/FIR16BitA_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[6]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 2058.168 ; gain = 470.801 ; free physical = 287 ; free virtual = 4422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/i_0/i_0/m_filterArray_U/FIR16BitA_m_filterArray_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_0/i_0/m_filterArray_U/FIR16BitA_m_filterArray_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |FIR16BitA__GB0 |           1|     30621|
+|2     |FIR16BitA__GB1 |           1|     14755|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:09 . Memory (MB): peak = 2058.168 ; gain = 470.801 ; free physical = 147 ; free virtual = 4291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:29 . Memory (MB): peak = 2118.457 ; gain = 531.090 ; free physical = 199 ; free virtual = 4188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |FIR16BitA_GT0 |           1|     13698|
+|2     |FIR16BitA_GT1 |           1|     31678|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/dout_r_reg[28]' (FDE) to 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/dout_r_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/FIR16BitA_sitofp_32s_32_6_1_U3/ce_r_reg' (FD) to 'U0/grp_p_hls_fptosi_float_i_fu_699/ap_ce_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/ce_r_reg' (FD) to 'U0/grp_p_hls_fptosi_float_i_fu_699/ap_ce_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/reg_796_reg[28]' (FDE) to 'U0/reg_796_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/reg_786_reg[28]' (FDE) to 'U0/reg_786_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/reg_791_reg[28]' (FDE) to 'U0/reg_791_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_84_reg_3788_reg[28]' (FDE) to 'U0/tmp_84_reg_3788_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/reg_806_reg[28]' (FDE) to 'U0/reg_806_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/din0_buf1_reg[28]' (FDE) to 'U0/FIR16BitA_fmul_32ns_32ns_32_4_max_dsp_1_U2/din0_buf1_reg[29]'
+INFO: [Synth 8-6837] The timing for the instance U0/m_filterArray_U/FIR16BitA_m_filterArray_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/m_filterArray_U/FIR16BitA_m_filterArray_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:39 . Memory (MB): peak = 2338.285 ; gain = 750.918 ; free physical = 425 ; free virtual = 4266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:41 . Memory (MB): peak = 2338.285 ; gain = 750.918 ; free physical = 425 ; free virtual = 4267
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:01:42 . Memory (MB): peak = 2338.285 ; gain = 750.918 ; free physical = 425 ; free virtual = 4267
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:43 . Memory (MB): peak = 2338.285 ; gain = 750.918 ; free physical = 426 ; free virtual = 4267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:43 . Memory (MB): peak = 2338.285 ; gain = 750.918 ; free physical = 426 ; free virtual = 4267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 2338.285 ; gain = 750.918 ; free physical = 425 ; free virtual = 4266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 2338.285 ; gain = 750.918 ; free physical = 425 ; free virtual = 4266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   624|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_2 |     1|
+|5     |LUT1      |    37|
+|6     |LUT2      |   636|
+|7     |LUT3      |  1316|
+|8     |LUT4      |  1029|
+|9     |LUT5      |   638|
+|10    |LUT6      |  3807|
+|11    |MUXCY     |    89|
+|12    |MUXF7     |     3|
+|13    |RAMB18E1  |     1|
+|14    |SRL16E    |     1|
+|15    |XORCY     |    64|
+|16    |FDE       |    16|
+|17    |FDRE      |  6444|
+|18    |FDSE      |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 2338.285 ; gain = 750.918 ; free physical = 425 ; free virtual = 4266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:30 ; elapsed = 00:01:40 . Memory (MB): peak = 2338.285 ; gain = 629.199 ; free physical = 492 ; free virtual = 4334
+Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 2338.293 ; gain = 750.918 ; free physical = 507 ; free virtual = 4348
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 800 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2370.301 ; gain = 0.000 ; free physical = 447 ; free virtual = 4290
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 23 instances
+  FDE => FDRE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+203 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:49 . Memory (MB): peak = 2370.301 ; gain = 968.531 ; free physical = 568 ; free virtual = 4411
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2370.301 ; gain = 0.000 ; free physical = 569 ; free virtual = 4412
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_FIR16BitA_0_0_synth_1/Echo_Server_FIR16BitA_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Echo_Server_FIR16BitA_0_0, cache-ID = 0ef9065afa9d3d45
+INFO: [Coretcl 2-1174] Renamed 77 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2394.312 ; gain = 0.000 ; free physical = 549 ; free virtual = 4406
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.runs/Echo_Server_FIR16BitA_0_0_synth_1/Echo_Server_FIR16BitA_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Echo_Server_FIR16BitA_0_0_utilization_synth.rpt -pb Echo_Server_FIR16BitA_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 17:03:23 2020...

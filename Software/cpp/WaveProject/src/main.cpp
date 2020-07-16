@@ -12,11 +12,13 @@
 
 #include "Network/TCPClient.h"
 
-#define FILE_PATH "../Audio/Careless.wav"
+#define FILE_PATH "../Audio/Thriller.wav"
 #define COEFF_PATH "../Audio/TelefonFIR.fcf"
 
 #define HOST_IP "192.168.1.10"
 #define PORT 8000
+
+    void testfilter (std::list<float> &coeffs);
 
     int main(int argc, char **argv) {
 
@@ -27,6 +29,8 @@
         IAudioContext *context = new SDLAudioContext();
         std::list<float> coeffs = parsefcf(COEFF_PATH);
         context->setupFilter(coeffs);
+
+        testfilter(coeffs);
 
         IAudioData *data = device->createAudioFromFile(FILE_PATH);
 
@@ -71,4 +75,43 @@
         SDL_Quit();
 
         return 0;
+    }
+
+    void testfilter (std::list<float> &coeffs){
+
+        std::cout << std::endl;
+
+        std::vector<float> m_coeffs;
+        std::vector<Sint16> m_filterArray = {0};
+        for (auto &it : coeffs){
+            m_coeffs.push_back(it);
+        }
+        m_filterArray.reserve(m_coeffs.size());
+
+        Sint16 dirac[390];
+        for (int i = 0; i < sizeof(dirac)/ sizeof(Sint16); i++){
+            if (i == 240){
+                dirac[i] = 10000;
+            }else {
+                dirac[i] = 0;
+            }
+            std::cout << i << ": " << dirac[i] << std::endl;
+        }
+
+        for (auto &it : dirac) {
+
+            for (int i = m_coeffs.size() - 1; i > 0; i--) {
+                m_filterArray[i] = m_filterArray[i - 1];
+            }
+
+            m_filterArray[0] = it;
+
+            float out = 0;
+
+            for (int i = 0; i < m_coeffs.size(); i++) {
+                out += ((float) m_filterArray[i] * m_coeffs[i]);
+            }
+
+            std::cout << (Sint16) out << std::endl;
+        }
     }

@@ -1,8 +1,31 @@
-11:32:34 **** Incremental Build of configuration Debug for project MyServer ****
+18:51:13 **** Incremental Build of configuration Debug for project MyServer ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
-make: Für das Ziel „main-build“ ist nichts zu tun.
+Building file: ../src/echo.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../MyServer_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c: In function 'close_con':
+../src/echo.c:59:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/echo.c: In function 'start_application_ding':
+../src/echo.c:143:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../src/echo.c
+ 
+Building target: MyServer.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../MyServer_bsp/ps7_cortexa9_0/lib -o "MyServer.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+Finished building target: MyServer.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size MyServer.elf  |tee "MyServer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 142380	   3456	5364000	5509836	 5412cc	MyServer.elf
+Finished building: MyServer.elf.size
+ 
 
-11:32:35 Build Finished (took 74ms)
+18:51:13 Build Finished (took 212ms)
 

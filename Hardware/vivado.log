@@ -1,0 +1,431 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  5 11:41:41 2020
+# Process ID: 12773
+# Current directory: /home/benjamin/Repositories/PynqNet/Hardware
+# Command line: vivado
+# Log file: /home/benjamin/Repositories/PynqNet/Hardware/vivado.log
+# Journal file: /home/benjamin/Repositories/PynqNet/Hardware/vivado.jou
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2019.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+create_project PmodNIC100 /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100 -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+import_files -fileset constrs_1 -force -norecurse /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc
+file mkdir /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new
+close [ open /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd w ]
+add_files /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-1
+Top: BRAM
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7002.066 ; gain = 152.578 ; free physical = 413 ; free virtual = 5813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BRAM' [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd:61]
+	Parameter SIZE bound to: 2048 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'Aclk_i' is read in the process but is not in the sensitivity list [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'BRAM' (1#1) [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd:61]
+WARNING: [Synth 8-3331] design BRAM has unconnected port Bclk_i
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7054.816 ; gain = 205.328 ; free physical = 439 ; free virtual = 5841
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7057.785 ; gain = 208.297 ; free physical = 435 ; free virtual = 5837
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7057.785 ; gain = 208.297 ; free physical = 435 ; free virtual = 5837
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc]
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7189.473 ; gain = 0.000 ; free physical = 317 ; free virtual = 5744
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 7270.195 ; gain = 420.707 ; free physical = 234 ; free virtual = 5667
+6 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 7270.195 ; gain = 606.469 ; free physical = 234 ; free virtual = 5667
+file mkdir /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd w ]
+add_files -fileset sim_1 /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 7304.219 ; gain = 0.000 ; free physical = 220 ; free virtual = 5585
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'BRAM' [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd:61]
+	Parameter SIZE bound to: 2048 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'Aclk_i' is read in the process but is not in the sensitivity list [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'BRAM' (1#1) [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd:61]
+WARNING: [Synth 8-3331] design BRAM has unconnected port Bclk_i
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7310.211 ; gain = 5.992 ; free physical = 255 ; free virtual = 5621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7328.023 ; gain = 23.805 ; free physical = 258 ; free virtual = 5623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7328.023 ; gain = 23.805 ; free physical = 258 ; free virtual = 5623
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc]
+Finished Parsing XDC File [/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 7380.816 ; gain = 76.598 ; free physical = 139 ; free virtual = 5500
+close_design
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'BRAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj BRAM_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BRAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BRAM_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.BRAM [bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.bram_tb
+Built simulation snapshot BRAM_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim/xsim.dir/BRAM_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim/xsim.dir/BRAM_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue May  5 13:23:09 2020. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue May  5 13:23:09 2020...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 7380.816 ; gain = 0.000 ; free physical = 186 ; free virtual = 5571
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "BRAM_tb_behav -key {Behavioral:sim_1:Functional:BRAM_tb} -tclbatch {BRAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source BRAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+ERROR: [Common 17-39] 'add_wave' failed due to earlier errors.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'BRAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 7412.613 ; gain = 31.797 ; free physical = 196 ; free virtual = 5594
+run 1 us
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 7412.613 ; gain = 0.000 ; free physical = 222 ; free virtual = 5627
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'BRAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj BRAM_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BRAM_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.BRAM [bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.bram_tb
+Built simulation snapshot BRAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 7412.613 ; gain = 0.000 ; free physical = 219 ; free virtual = 5621
+run 1 ms
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'BRAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj BRAM_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BRAM_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.BRAM [bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.bram_tb
+Built simulation snapshot BRAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "BRAM_tb_behav -key {Behavioral:sim_1:Functional:BRAM_tb} -tclbatch {BRAM_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source BRAM_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+ERROR: [Common 17-39] 'add_wave' failed due to earlier errors.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'BRAM_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7430.621 ; gain = 18.008 ; free physical = 666 ; free virtual = 5684
+ERROR: [Wavedata 42-31] Couldn't write waveform viewer preferences file /home/benjamin/.Xilinx/Vivado/2019.1/waveform/wv.ini: cannot open file.
+run 1 ms
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'BRAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj BRAM_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BRAM_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.BRAM [bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.bram_tb
+Built simulation snapshot BRAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 7431.617 ; gain = 0.996 ; free physical = 596 ; free virtual = 5611
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'BRAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj BRAM_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BRAM_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.BRAM [bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.bram_tb
+Built simulation snapshot BRAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'BRAM_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj BRAM_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BRAM_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.sim/sim_1/behav/xsim'
+xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 4226c0e2577e4090896c2d41180c5140 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot BRAM_tb_behav xil_defaultlib.BRAM_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.BRAM [bram_default]
+Compiling architecture behavioral of entity xil_defaultlib.bram_tb
+Built simulation snapshot BRAM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7439.621 ; gain = 0.000 ; free physical = 286 ; free virtual = 5589
+run 1 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs synth_1 -jobs 8
+[Tue May  5 13:53:31 2020] Launched synth_1...
+Run output will be captured here: /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  5 13:54:21 2020...

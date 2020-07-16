@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="FIR16BitA" xd:componentRef="FIR16BitA" xd:initiationInterval="129" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_BUS_A" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(a)" xd:originalName="a" xd:direction="in" xd:interfaceRef="s_axi_BUS_A" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(c)" xd:originalName="c" xd:direction="out" xd:interfaceRef="s_axi_BUS_A" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_vld" xd:statusOffset="0x1C" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="144" xd:worst-case="144" xd:average-case="144"/>
+  <xd:resourceEstimates xd:LUT="8436" xd:FF="6601" xd:BRAM="1" xd:DSP="3"/>
+</xd:acceleratorMap>

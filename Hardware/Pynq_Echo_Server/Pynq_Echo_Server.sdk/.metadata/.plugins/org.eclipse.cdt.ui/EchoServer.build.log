@@ -1,4 +1,4 @@
-15:36:37 **** Build of configuration Debug for project EchoServer ****
+13:11:14 **** Build of configuration Debug for project EchoServer ****
 make pre-build main-build 
 a9-linaro-pre-build-step
  
@@ -81,5 +81,5 @@ arm-none-eabi-size EchoServer.elf  |tee "EchoServer.elf.size"
 Finished building: EchoServer.elf.size
  
 
-15:36:38 Build Finished (took 815ms)
+13:11:15 Build Finished (took 1s.130ms)
 

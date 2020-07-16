@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../PmodNIC100.srcs/sources_1/new/BRAM.vhd" \
+"../../../../PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd" \
+
+# Do not sort compile order
+nosort

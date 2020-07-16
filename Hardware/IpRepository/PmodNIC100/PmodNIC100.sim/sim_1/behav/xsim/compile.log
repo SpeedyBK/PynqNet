@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/PmodCLK.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PmodCLK'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/PmodCLK_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PmodCLK_tb'

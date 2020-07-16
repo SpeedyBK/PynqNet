@@ -30,6 +30,7 @@
 #include <string.h>
 #include "ManInput.h"
 #include "SixDigitHexDisplay.h"
+#include "xfir16bita.h"
 #include "xil_io.h"
 
 #include "lwip/err.h"
@@ -40,7 +41,10 @@
 
 #define ManIOBase 0x43C10000
 
+XFir16bita fir;
+
 void display_print(void* p, int length);
+u8* filter (void* p, int length);
 
 void set_IPAddress (ip_addr_t* ipaddr, int switches);
 err_t recv_callback(void *arg, struct tcp_pcb *tpcb, struct pbuf *p, err_t err);
@@ -58,6 +62,10 @@ int start_application_echo(unsigned port)
 {
 	struct tcp_pcb *pcb;
 	err_t err;
+
+	XFir16bita_Initialize(&fir, XPAR_FIR16BITA_0_DEVICE_ID);
+	int a = 0;
+	filter(&a, 8);
 
 	/* create new TCP PCB structure */
 	pcb = tcp_new_ip_type(IPADDR_TYPE_ANY);
@@ -132,7 +140,6 @@ int start_application_ding(unsigned port)
 	     }
 	  }
 	  pbuf_free(pb);
-
 	}
 
 
@@ -151,10 +158,44 @@ void display_print(void* p, int length){
 
 }
 
+u8* filter (void* p, int length){
+
+	//u8* data = (u8*) p;
+
+	u8 dataA[380];
+	for (int j = 0; j < 380; j++){
+		if (j == 10 ){
+			dataA[j] = 39;
+		}else if (j == 11){
+			dataA[j] = 16;
+		}else {
+			dataA[j] = 0;
+		}
+	}
+
+	u8* data = dataA;
+
+	int i = 0;
+	while (i < 380){
+		if (XFir16bita_IsReady(&fir) > 0){
+			XFir16bita_Set_a(&fir, ((*(data+i) << 8) + *(data+i+1)));
+			//xil_printf(" %d\r\n", ((*(data+i) << 8) + *(data+i+1)));
+			XFir16bita_Start(&fir);
+			int filtered = XFir16bita_Get_c(&fir);
+			*(data + i) = (u8)(filtered >> 8);
+			*(data + i + 1) = (u8)filtered;
+			//xil_printf(" %d\r\n", (*(data+i) << 8) + *(data+i+1));
+			i += 2;
+		}
+	}
+	return data;
+}
+
 
 err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
                                struct pbuf *p, err_t err)
 {
+
 	/* do not read the packet if we are not in ESTABLISHED state */
 	if (!p) {
 		tcp_close(tpcb);
@@ -165,11 +206,13 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
 	/* indicate that the packet has been received */
 	tcp_recved(tpcb, p->len);
 	display_print(p->payload, p->len);
+	//u8* dat = filter(p->payload, p->len);
 
 	/* echo back the payload */
 	/* in this case, we assume that the payload is < TCP_SND_BUF */
 	if (tcp_sndbuf(tpcb) > p->len) {
-		err = tcp_write(tpcb, p->payload, p->len, 1);
+    	err = tcp_write(tpcb, p->payload, p->len, 1);
+    	tcp_output(tpcb);
 	} else{
 		xil_printf("no space in tcp_sndbuf\n\r");
 	}

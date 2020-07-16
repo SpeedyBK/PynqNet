@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  5 11:41:41 2020
+# Process ID: 12773
+# Current directory: /home/benjamin/Repositories/PynqNet/Hardware
+# Command line: vivado
+# Log file: /home/benjamin/Repositories/PynqNet/Hardware/vivado.log
+# Journal file: /home/benjamin/Repositories/PynqNet/Hardware/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project PmodNIC100 /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100 -part xc7z020clg400-1
+set_property board_part www.digilentinc.com:pynq-z1:part0:1.0 [current_project]
+set_property target_language VHDL [current_project]
+import_files -fileset constrs_1 -force -norecurse /home/benjamin/Repositories/PynqNet/Hardware/Pynq_Echo_Server/Pynq_Echo_Server.srcs/constrs_1/imports/Downloads/Pynq_constraint_file.xdc
+file mkdir /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new
+close [ open /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd w ]
+add_files /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sources_1/new/BRAM.vhd
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+file mkdir /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd w ]
+add_files -fileset sim_1 /home/benjamin/Repositories/PynqNet/Hardware/IpRepository/PmodNIC100/PmodNIC100.srcs/sim_1/new/BRAM_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+refresh_design
+close_design
+launch_simulation
+source BRAM_tb.tcl
+run 1 us
+relaunch_sim
+run 1 ms
+close_sim
+launch_simulation
+source BRAM_tb.tcl
+run 1 ms
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 1 ms
+close_sim
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1

@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="TopLevel" name="FilterBS300">
+<project xmlns="com.autoesl.autopilot.project" name="FilterBS300" top="TopLevel">
     <includePaths/>
     <libraryPaths/>
     <Simulation>
